@@ -1,5 +1,8 @@
 # conodb
 
+https://doi.org/10.5281/zenodo.24010252
+https://doi.org/10.5281/zenodo.24010288
+
 Reproducible builder for the ConoDictor reference database. One command
 downloads the current UniProt data, extracts precursor regions, clusters
 them, audits how much independent evidence each superfamily has, builds the
