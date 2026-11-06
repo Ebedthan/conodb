@@ -63,6 +63,7 @@ def cysteine_framework(seq: str) -> str:
 
 # ----------------------------------------------------------- HMM scoring ----
 
+
 def _s(x) -> str:
     return x if isinstance(x, str) else x.decode()
 
@@ -78,8 +79,15 @@ class DomainHit:
     seq_aln: str = ""
 
 
-def best_domains(hmms: list, seqs: Iterable[tuple[str, str]], *, min_bits: float = -1000.0, max_mode: bool = True,
-                 cpus: int = 0, alignments: bool = False) -> dict[tuple[str, str], DomainHit]:
+def best_domains(
+    hmms: list,
+    seqs: Iterable[tuple[str, str]],
+    *,
+    min_bits: float = -1000.0,
+    max_mode: bool = True,
+    cpus: int = 0,
+    alignments: bool = False,
+) -> dict[tuple[str, str], DomainHit]:
     """Best domain of every (sequence, HMM) pair HMMER reports: {(seq_id, hmm_name): DomainHit}.
 
     Fixed Z (E-values unused), optional max mode (no acceleration filters,
@@ -95,7 +103,12 @@ def best_domains(hmms: list, seqs: Iterable[tuple[str, str]], *, min_bits: float
         return {}
     alpha = easel.Alphabet.amino()
     block = easel.TextSequenceBlock(
-        [easel.TextSequence(name=i.encode(), sequence=re.sub(r"[^A-Z]", "X", s.upper())) for i, s in seqs]
+        [
+            easel.TextSequence(
+                name=i.encode(), sequence=re.sub(r"[^A-Z]", "X", s.upper())
+            )
+            for i, s in seqs
+        ]
     ).digitize(alpha)
     kw = dict(Z=1, domZ=1, T=min_bits, domT=min_bits, cpus=cpus or os.cpu_count() or 1)
     if max_mode:
@@ -120,8 +133,14 @@ def best_domains(hmms: list, seqs: Iterable[tuple[str, str]], *, min_bits: float
 
 # ------------------------------------------------------ region prediction ----
 
-def transfer_labels(seqlen: int, hit: DomainHit, labels: list[str], overhang: int = 5,
-                    extension: str = "within") -> list[str]:
+
+def transfer_labels(
+    seqlen: int,
+    hit: DomainHit,
+    labels: list[str],
+    overhang: int = 5,
+    extension: str = "within",
+) -> list[str]:
     """Per-residue region labels ('-' = none) from an alignment to a labelled full-precursor HMM.
 
     Unaligned ends are extended ungapped over the remaining model states,
@@ -137,13 +156,13 @@ def transfer_labels(seqlen: int, hit: DomainHit, labels: list[str], overhang: in
     cross = extension == "cross"
     M = len(labels)
     out = ["-"] * seqlen
-    k, t = hit.hmm_from, hit.start          # 1-based model state, sequence position
+    k, t = hit.hmm_from, hit.start  # 1-based model state, sequence position
     for h, q in zip(hit.hmm_aln, hit.seq_aln, strict=True):
-        if h == ".":                         # insert: residue between states
+        if h == ".":  # insert: residue between states
             if 1 <= t <= seqlen:
                 out[t - 1] = labels[max(0, k - 2)] if k > 1 else labels[0]
             t += 1
-        elif q == "-":                       # deletion: state without residue
+        elif q == "-":  # deletion: state without residue
             k += 1
         else:
             if 1 <= t <= seqlen and 1 <= k <= M:
@@ -156,7 +175,9 @@ def transfer_labels(seqlen: int, hit: DomainHit, labels: list[str], overhang: in
     while i >= 1 and s >= 1 and (cross or labels[s - 1] == first):
         out[i - 1] = labels[s - 1]
         i, s = i - 1, s - 1
-    tail = labels[0] if s == 0 else first    # model start reached, or (within) region boundary
+    tail = (
+        labels[0] if s == 0 else first
+    )  # model start reached, or (within) region boundary
     for j in range(i, max(0, i - overhang), -1):
         out[j - 1] = tail
     # C-terminal side
@@ -214,11 +235,14 @@ def segments_from_labels(labels: list[str], min_run: int) -> Segments:
     return order_segments(_runs(labels), min_run)
 
 
-def envelope_segments(region_hits: dict[str, tuple[int, int]], min_run: int) -> Segments:
+def envelope_segments(
+    region_hits: dict[str, tuple[int, int]], min_run: int
+) -> Segments:
     return order_segments(dict(region_hits), min_run)
 
 
 # ----------------------------------------------------------------- sites ----
+
 
 def site_boundaries(seg: Segments, seqlen: int) -> dict[str, int]:
     """Boundary positions b (last residue before the cut), where both sides exist."""
@@ -236,7 +260,7 @@ def site_window(seq: str, b: int, left: int, right: int) -> str | None:
     """Residues b-left+1 .. b+right (1-based), or None if out of range / non-standard."""
     if b - left < 0 or b + right > len(seq):
         return None
-    w = seq[b - left:b + right].upper()
+    w = seq[b - left : b + right].upper()
     return w if all(c in AA for c in w) else None
 
 
@@ -247,18 +271,26 @@ class SiteModels:
     matrices: dict  # site type -> lightmotif ScoringMatrix
 
     @classmethod
-    def from_windows(cls, windows: dict[str, list[str]], left: int, right: int, pseudocount: float) -> SiteModels:
+    def from_windows(
+        cls, windows: dict[str, list[str]], left: int, right: int, pseudocount: float
+    ) -> SiteModels:
         import lightmotif
+
         mats = {}
         for t, ws in windows.items():
             ws = [w for w in ws if len(w) == left + right]
             if len(ws) >= 5:
-                mats[t] = lightmotif.create(ws, protein=True).counts.normalize(pseudocount).log_odds()
+                mats[t] = (
+                    lightmotif.create(ws, protein=True)
+                    .counts.normalize(pseudocount)
+                    .log_odds()
+                )
         return cls(left, right, mats)
 
     def scores(self, seq: str, site: str) -> list[float] | None:
         """Log-odds of the window starting at each 0-based position."""
         import lightmotif
+
         m = self.matrices.get(site)
         L = self.left + self.right
         if m is None or len(seq) < L:
@@ -268,8 +300,15 @@ class SiteModels:
         return [float(striped[i]) for i in range(len(s) - L + 1)]
 
 
-def refine_segments(seq: str, seg: Segments, sites: SiteModels, radius: int, penalty: float,
-                    min_run: int, site_types: tuple[str, ...] | list[str] = SITE_TYPES) -> Segments:
+def refine_segments(
+    seq: str,
+    seg: Segments,
+    sites: SiteModels,
+    radius: int,
+    penalty: float,
+    min_run: int,
+    site_types: tuple[str, ...] | list[str] = SITE_TYPES,
+) -> Segments:
     """Move each chosen cleavage boundary to the best-scoring site within +/- radius.
     A boundary is refined only where residues exist on both sides of it."""
     seg = dict(seg)
@@ -285,7 +324,11 @@ def refine_segments(seq: str, seg: Segments, sites: SiteModels, radius: int, pen
             i = nb - sites.left
             if 0 <= i < len(sc):
                 v = sc[i] - penalty * abs(nb - b)
-                if best_val is None or v > best_val or (v == best_val and abs(nb - b) < abs(best - b)):
+                if (
+                    best_val is None
+                    or v > best_val
+                    or (v == best_val and abs(nb - b) < abs(best - b))
+                ):
                     best, best_val = nb, v
         if best == b:
             continue
@@ -315,7 +358,7 @@ def trim_cterm(seq: str, seg: Segments, min_run: int) -> tuple[Segments, bool]:
     if "MAT" not in seg or seg.get("POST"):
         return seg, False
     s, e = seg["MAT"]
-    m = _CTERM.search(seq[s - 1:e].upper())
+    m = _CTERM.search(seq[s - 1 : e].upper())
     if not m or (e - s + 1) - len(m.group()) < min_run:
         return seg, False
     out = dict(seg)
@@ -323,18 +366,31 @@ def trim_cterm(seq: str, seg: Segments, min_run: int) -> tuple[Segments, bool]:
     return out, True
 
 
-def predict_segments(seq: str, *, method: str, full_hit: DomainHit | None = None, labels: list[str] | None = None,
-                     region_hits: dict[str, tuple[int, int]] | None = None, sites: SiteModels | None = None,
-                     radius: int = 6, penalty: float = 0.5, min_run: int = 3, overhang: int = 5,
-                     extension: str = "within", site_types: tuple[str, ...] | list[str] | None = None,
-                     cterm: bool = False) -> Segments:
+def predict_segments(
+    seq: str,
+    *,
+    method: str,
+    full_hit: DomainHit | None = None,
+    labels: list[str] | None = None,
+    region_hits: dict[str, tuple[int, int]] | None = None,
+    sites: SiteModels | None = None,
+    radius: int = 6,
+    penalty: float = 0.5,
+    min_run: int = 3,
+    overhang: int = 5,
+    extension: str = "within",
+    site_types: tuple[str, ...] | list[str] | None = None,
+    cterm: bool = False,
+) -> Segments:
     """Regions of one sequence for one candidate family. `site_types`: which
     boundaries the site matrices refine (None = all three); `cterm`: apply
     the C-terminal G[KR]* processing rule (`trim_cterm`)."""
     if method == "transfer":
         if full_hit is None or not labels:
             return {}
-        seg = segments_from_labels(transfer_labels(len(seq), full_hit, labels, overhang, extension), min_run)
+        seg = segments_from_labels(
+            transfer_labels(len(seq), full_hit, labels, overhang, extension), min_run
+        )
     elif method == "envelope":
         seg = envelope_segments(region_hits or {}, min_run)
     else:
@@ -349,18 +405,21 @@ def predict_segments(seq: str, *, method: str, full_hit: DomainHit | None = None
 
 # ------------------------------------------------------------- framework ----
 
+
 def mature_framework(seq: str, seg: Segments, short_peptide_length: int) -> str | None:
     """Cysteine framework of the predicted mature peptide ('-' = no cysteine);
     a short sequence without a prediction is taken as a mature peptide."""
     if "MAT" in seg:
         s, e = seg["MAT"]
-        return cysteine_framework(seq[s - 1:e]) or "-"
+        return cysteine_framework(seq[s - 1 : e]) or "-"
     if len(seq) <= short_peptide_length:
         return cysteine_framework(seq) or "-"
     return None
 
 
-def framework_logprob(fw: str | None, counts: Counter, vocab: int, pseudocount: float) -> float:
+def framework_logprob(
+    fw: str | None, counts: Counter, vocab: int, pseudocount: float
+) -> float:
     """log P(framework | family), smoothed; None (no mature peptide) counts as unseen."""
     n = sum(counts.values())
     c = counts.get(fw, 0) if fw is not None else 0
@@ -368,6 +427,7 @@ def framework_logprob(fw: str | None, counts: Counter, vocab: int, pseudocount: 
 
 
 # ---------------------------------------------------------- model apply ----
+
 
 def apply_model(model: dict, raw: np.ndarray) -> dict:
     """Class probabilities for one sequence.
@@ -399,6 +459,10 @@ def apply_model(model: dict, raw: np.ndarray) -> dict:
     prob = full / full.sum()
     k = int(np.argmax(prob[:-1]))
     fam_prob = prob[:-1] / max(prob[:-1].sum(), 1e-300)
-    return {"probabilities": dict(zip(fams + [NONE], prob.round(6).tolist(), strict=True)),
-            "prediction": (fams + [NONE])[int(np.argmax(prob))], "p_none": float(prob[-1]),
-            "best_family": fams[k], "best_family_conditional": float(fam_prob[k])}
+    return {
+        "probabilities": dict(zip(fams + [NONE], prob.round(6).tolist(), strict=True)),
+        "prediction": (fams + [NONE])[int(np.argmax(prob))],
+        "p_none": float(prob[-1]),
+        "best_family": fams[k],
+        "best_family_conditional": float(fam_prob[k]),
+    }

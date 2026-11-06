@@ -27,7 +27,9 @@ def atomic_open(path: Path, mode: str = "w", gz: bool = False):
     try:
         binary = "b" in mode
         if gz:
-            fh = gzip.open(tmp, "wb" if binary else "wt", encoding=None if binary else "utf-8")
+            fh = gzip.open(
+                tmp, "wb" if binary else "wt", encoding=None if binary else "utf-8"
+            )
         elif binary:
             fh = open(tmp, mode)
         else:
@@ -43,7 +45,13 @@ def atomic_open(path: Path, mode: str = "w", gz: bool = False):
 def write_tsv(path: Path, rows: Iterable[dict[str, Any]], fields: list[str]) -> int:
     n = 0
     with atomic_open(path) as fh:
-        w = csv.DictWriter(fh, fieldnames=fields, delimiter="\t", lineterminator="\n", extrasaction="ignore")
+        w = csv.DictWriter(
+            fh,
+            fieldnames=fields,
+            delimiter="\t",
+            lineterminator="\n",
+            extrasaction="ignore",
+        )
         w.writeheader()
         for row in rows:
             w.writerow({k: _fmt(row.get(k)) for k in fields})
@@ -95,7 +103,9 @@ def sha256_file(path: Path) -> str:
 
 
 def sha256_obj(obj: Any) -> str:
-    return hashlib.sha256(json.dumps(obj, sort_keys=True, default=str).encode()).hexdigest()
+    return hashlib.sha256(
+        json.dumps(obj, sort_keys=True, default=str).encode()
+    ).hexdigest()
 
 
 def write_json(path: Path, obj: Any) -> None:

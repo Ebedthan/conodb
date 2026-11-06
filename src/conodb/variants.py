@@ -30,7 +30,13 @@ GRID_REGIONS = ("SIG", "PRO", "MAT")
 FEATURE_SETS = (("hmm",), ("hmm", "pssm"), ("hmm", "pwm"), ("hmm", "pssm", "pwm"))
 LABEL = {"hmm": "HMM", "pssm": "PSSM", "pwm": "PWM", "framework": "FW"}
 SITE_ABBR = {"signal": "S", "mature_start": "MS", "mature_end": "ME"}
-SITE_SETS = ((), ("signal",), ("mature_start",), ("signal", "mature_start"), ("signal", "mature_start", "mature_end"))
+SITE_SETS = (
+    (),
+    ("signal",),
+    ("mature_start",),
+    ("signal", "mature_start"),
+    ("signal", "mature_start", "mature_end"),
+)
 
 
 def _floor_name(f: float) -> str:
@@ -45,7 +51,9 @@ def classifier_name(methods, regions, floor) -> str:
 
 
 def _complexity(methods, regions) -> int:
-    return sum(len(regions) for m in methods if m != "framework") + ("framework" in methods)
+    return sum(len(regions) for m in methods if m != "framework") + (
+        "framework" in methods
+    )
 
 
 def classifier_variants(cfg: Config, have: set[str]) -> list[dict]:
@@ -57,19 +65,36 @@ def classifier_variants(cfg: Config, have: set[str]) -> list[dict]:
         regions = tuple(r for r in ("SIG", "PRO", "MAT", "POST") if r in regions)
         key = (methods, regions, float(floor))
         if key in seen or not set(methods) <= have or not methods or not regions:
-            for v in out:                      # keep the note on the existing entry
-                if (v["methods"], v["regions"], v["hmm_floor"]) == key and note and note not in v["note"]:
+            for v in out:  # keep the note on the existing entry
+                if (
+                    (v["methods"], v["regions"], v["hmm_floor"]) == key
+                    and note
+                    and note not in v["note"]
+                ):
                     v["note"] = (v["note"] + "; " + note).strip("; ")
             return
         seen.add(key)
-        out.append({"name": classifier_name(methods, regions, floor), "methods": methods, "regions": regions,
-                    "hmm_floor": float(floor), "complexity": _complexity(methods, regions), "note": note})
+        out.append(
+            {
+                "name": classifier_name(methods, regions, floor),
+                "methods": methods,
+                "regions": regions,
+                "hmm_floor": float(floor),
+                "complexity": _complexity(methods, regions),
+                "note": note,
+            }
+        )
 
     for floor in (0.0, -20.0):
         for fs in FEATURE_SETS:
             for fw in (False, True):
                 add(fs + (("framework",) if fw else ()), GRID_REGIONS, floor)
-    add(("hmm", "pssm"), ("SIG", "PRO", "MAT", "POST"), 0.0, "previous ConoDictor database")
+    add(
+        ("hmm", "pssm"),
+        ("SIG", "PRO", "MAT", "POST"),
+        0.0,
+        "previous ConoDictor database",
+    )
     fc = cfg.fit
     cur = tuple(m for m in fc.methods if m in have)
     add(cur, ("SIG",), fc.hmm_floor, "signal only")
@@ -80,8 +105,11 @@ def classifier_variants(cfg: Config, have: set[str]) -> list[dict]:
 
 def region_name(method, extension, overhang, sites, cterm=False) -> str:
     base = "envelope" if method == "envelope" else f"transfer/{extension}/oh{overhang}"
-    return (base + (" + sites " + "+".join(SITE_ABBR[s] for s in sites) if sites else "")
-            + (" + Cterm" if cterm else ""))
+    return (
+        base
+        + (" + sites " + "+".join(SITE_ABBR[s] for s in sites) if sites else "")
+        + (" + Cterm" if cterm else "")
+    )
 
 
 def region_variants(cfg: Config) -> list[dict]:
@@ -98,9 +126,19 @@ def region_variants(cfg: Config) -> list[dict]:
                     v["note"] = (v["note"] + "; " + note).strip("; ")
             return
         seen.add(key)
-        out.append({"name": region_name(method, extension, overhang, sites, cterm), "key": key, "method": method,
-                    "extension": extension, "overhang": int(overhang), "sites": sites, "cterm": bool(cterm),
-                    "complexity": len(sites) + (overhang > 0) + bool(cterm), "note": note})
+        out.append(
+            {
+                "name": region_name(method, extension, overhang, sites, cterm),
+                "key": key,
+                "method": method,
+                "extension": extension,
+                "overhang": int(overhang),
+                "sites": sites,
+                "cterm": bool(cterm),
+                "complexity": len(sites) + (overhang > 0) + bool(cterm),
+                "note": note,
+            }
+        )
 
     for ct in (False, True):
         add("envelope", "-", 0, (), ct)
@@ -110,14 +148,27 @@ def region_variants(cfg: Config) -> list[dict]:
                 for ss in SITE_SETS:
                     add("transfer", ext, oh, ss, ct)
     an = cfg.anatomy
-    add(an.method, an.extension, an.terminal_overhang, an.site_types, an.cterm_trim, "current settings")
+    add(
+        an.method,
+        an.extension,
+        an.terminal_overhang,
+        an.site_types,
+        an.cterm_trim,
+        "current settings",
+    )
     return out
 
 
 def region_kwargs(cfg: Config, v: dict) -> dict:
     """core.predict_segments keyword arguments of a region variant."""
     an = cfg.anatomy
-    return {"method": v["method"], "radius": an.search_radius, "penalty": an.distance_penalty,
-            "min_run": an.min_run, "overhang": v["overhang"],
-            "extension": v["extension"] if v["method"] == "transfer" else "within", "site_types": v["sites"],
-            "cterm": v["cterm"]}
+    return {
+        "method": v["method"],
+        "radius": an.search_radius,
+        "penalty": an.distance_penalty,
+        "min_run": an.min_run,
+        "overhang": v["overhang"],
+        "extension": v["extension"] if v["method"] == "transfer" else "within",
+        "site_types": v["sites"],
+        "cterm": v["cterm"],
+    }

@@ -53,7 +53,9 @@ def _url(cfg: SourceConfig, size: int) -> str:
 def _get(url: str, cfg: SourceConfig) -> tuple[bytes, dict[str, str]]:
     delay = 2.0
     for attempt in range(1, cfg.retries + 1):
-        req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Accept": "application/json"})
+        req = urllib.request.Request(
+            url, headers={"User-Agent": USER_AGENT, "Accept": "application/json"}
+        )
         try:
             with urllib.request.urlopen(req, timeout=cfg.timeout) as resp:
                 return resp.read(), {k.lower(): v for k, v in resp.headers.items()}
@@ -66,7 +68,12 @@ def _get(url: str, cfg: SourceConfig) -> tuple[bytes, dict[str, str]]:
             if attempt == cfg.retries:
                 raise FetchError(f"Network error for {url}: {e}") from e
             wait = delay
-        log.warning("Request failed (attempt %d/%d), retrying in %.0fs", attempt, cfg.retries, wait)
+        log.warning(
+            "Request failed (attempt %d/%d), retrying in %.0fs",
+            attempt,
+            cfg.retries,
+            wait,
+        )
         time.sleep(wait)
         delay = min(delay * 2, 120)
     raise FetchError(f"Giving up on {url}")  # pragma: no cover
@@ -91,7 +98,12 @@ def probe(cfg: SourceConfig) -> ReleaseInfo:
     _, headers = _get(_url(cfg, 1), cfg)
     total = int(headers.get("x-total-results", "-1"))
     info = _release(headers, total)
-    log.info("UniProt release %s (%s): %d entries match the query", info.release, info.release_date or "?", total)
+    log.info(
+        "UniProt release %s (%s): %d entries match the query",
+        info.release,
+        info.release_date or "?",
+        total,
+    )
     return info
 
 
@@ -105,15 +117,24 @@ def fetch_all(cfg: SourceConfig, out: Path) -> ReleaseInfo:
             body, headers = _get(url, cfg)
             if info is None:
                 info = _release(headers, int(headers.get("x-total-results", "-1")))
-            elif headers.get("x-uniprot-release", info.release).replace("/", "_") != info.release:
+            elif (
+                headers.get("x-uniprot-release", info.release).replace("/", "_")
+                != info.release
+            ):
                 raise FetchError("UniProt release changed during download; rerun later")
             for entry in json.loads(body).get("results", []):
                 fh.write(json.dumps(entry, separators=(",", ":")) + "\n")
                 n += 1
-            log.info("  downloaded %d / %s entries", n, info.total if info.total >= 0 else "?")
+            log.info(
+                "  downloaded %d / %s entries",
+                n,
+                info.total if info.total >= 0 else "?",
+            )
             url = next_link(headers)
         assert info is not None
         if info.total >= 0 and n != info.total:
-            raise FetchError(f"Expected {info.total} entries, received {n}; download incomplete")
+            raise FetchError(
+                f"Expected {info.total} entries, received {n}; download incomplete"
+            )
     info.total = n
     return info

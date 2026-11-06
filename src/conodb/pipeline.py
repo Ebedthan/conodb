@@ -37,38 +37,71 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from . import __version__
-from .audit import (
-    CONFLICT_FIELDS, DIFF_FIELDS, diff_entries, family_fields, diff_tiers, render_report,
-    run_audit, support_fields,
-)
-from .cluster import cluster_levels
-from .config import Config
-from .io import (
-    atomic_open, iter_jsonl_gz, read_json, read_tsv, sha256_file, sha256_obj, write_fasta,
-    write_json, write_tsv,
-)
-from .build import PROFILE_FIELDS, run_build
-from .negatives import NEGATIVE_FIELDS, build_negatives, fetch_negatives
-from .evaluate import ABLATION_FIELDS, CALIB_FIELDS, METRIC_FIELDS, MISS_FIELDS, render_evaluation, run_evaluate
+from .anatomy import ERROR_FIELDS as ANATOMY_ERROR_FIELDS
 from .anatomy import METRIC_FIELDS as ANATOMY_METRIC_FIELDS
 from .anatomy import PRED_FIELDS as ANATOMY_PRED_FIELDS
 from .anatomy import SEQ_FIELDS as ANATOMY_SEQ_FIELDS
-from .anatomy import ERROR_FIELDS as ANATOMY_ERROR_FIELDS
 from .anatomy import render_anatomy, run_anatomy
+from .audit import (
+    CONFLICT_FIELDS,
+    DIFF_FIELDS,
+    diff_entries,
+    diff_tiers,
+    family_fields,
+    render_report,
+    run_audit,
+    support_fields,
+)
+from .build import PROFILE_FIELDS, run_build
+from .cluster import cluster_levels
+from .config import Config
+from .evaluate import (
+    ABLATION_FIELDS,
+    CALIB_FIELDS,
+    METRIC_FIELDS,
+    MISS_FIELDS,
+    render_evaluation,
+    run_evaluate,
+)
+from .fit import (
+    FIT_FORMAT,
+    STAN_FILE,
+    NothingToFit,
+    bayes_core_key,
+    bayes_wanted,
+    load_bayes,
+    load_design,
+    render_fit,
+    run_bayes,
+    run_fit,
+)
+from .io import (
+    atomic_open,
+    iter_jsonl_gz,
+    read_json,
+    read_tsv,
+    sha256_file,
+    sha256_obj,
+    write_fasta,
+    write_json,
+    write_tsv,
+)
+from .negatives import NEGATIVE_FIELDS, build_negatives, fetch_negatives
+from .package import run_package
+from .parse import (
+    ENTRY_FIELDS,
+    PROFILE_REGIONS,
+    REGION_FIELDS,
+    LabelResolver,
+    parse_entry,
+    unmapped_rows,
+)
+from .partition import PARTITION_FIELDS, SUMMARY_FIELDS, render_partition, run_partition
+from .score import SCORE_FIELDS, run_score
 from .select import CLS_FIELDS as SELECT_CLS_FIELDS
 from .select import ERR_FIELDS as SELECT_ERR_FIELDS
 from .select import REG_FIELDS as SELECT_REG_FIELDS
 from .select import render_selection, run_select
-from .fit import (
-    FIT_FORMAT, STAN_FILE, NothingToFit, bayes_core_key, bayes_wanted, load_bayes, load_design, render_fit, run_bayes,
-    run_fit,
-)
-from .package import run_package
-from .score import SCORE_FIELDS, run_score
-from .partition import PARTITION_FIELDS, SUMMARY_FIELDS, render_partition, run_partition
-from .parse import (
-    ENTRY_FIELDS, PROFILE_REGIONS, REGION_FIELDS, LabelResolver, parse_entry, unmapped_rows,
-)
 from .uniprot import ReleaseInfo, fetch_all, probe
 
 log = logging.getLogger("conodb")
@@ -77,10 +110,20 @@ EVAL_FORMAT = 3
 ANATOMY_FORMAT = 3
 SELECT_FORMAT = 2
 PACKAGE_FORMAT = 1
-ANATOMY_OUTPUTS = ("anatomy.md", "anatomy_metrics.tsv", "anatomy_sequences.tsv", "anatomy_predictions.tsv",
-                   "anatomy_errors.tsv")
-SELECT_OUTPUTS = ("selection.md", "selection_classification.tsv", "selection_regions.tsv", "selection_region_errors.tsv",
-                  "selection_recommended.json")
+ANATOMY_OUTPUTS = (
+    "anatomy.md",
+    "anatomy_metrics.tsv",
+    "anatomy_sequences.tsv",
+    "anatomy_predictions.tsv",
+    "anatomy_errors.tsv",
+)
+SELECT_OUTPUTS = (
+    "selection.md",
+    "selection_classification.tsv",
+    "selection_regions.tsv",
+    "selection_region_errors.tsv",
+    "selection_recommended.json",
+)
 
 
 class CurationNeeded(RuntimeError):
@@ -118,6 +161,7 @@ class Stage:
 
 # ------------------------------------------------------------------ stages --
 
+
 def stage_fetch(ctx: Context) -> dict:
     out = ctx.p("raw/uniprot.jsonl.gz")
     if ctx.local_input is not None:
@@ -128,7 +172,9 @@ def stage_fetch(ctx: Context) -> dict:
         return {"entries": n, "source": str(ctx.local_input)}
     info = fetch_all(ctx.cfg.source, out)
     if info.release != ctx.release.release:
-        raise RuntimeError(f"UniProt release changed from {ctx.release.release} to {info.release}; rerun")
+        raise RuntimeError(
+            f"UniProt release changed from {ctx.release.release} to {info.release}; rerun"
+        )
     ctx.release.total = info.total
     return {"entries": info.total}
 
@@ -146,8 +192,14 @@ def stage_parse(ctx: Context) -> dict:
     write_tsv(ctx.p("entries.tsv"), entries, ENTRY_FIELDS)
     write_tsv(ctx.p("regions.tsv"), regions, REGION_FIELDS)
     unmapped = unmapped_rows(resolver)
-    write_tsv(ctx.p("unmapped_labels.tsv"), unmapped, ["raw_superfamily", "raw_family", "entries"])
-    write_tsv(ctx.p("parse_warnings.tsv"), ({"warning": w} for w in warnings), ["warning"])
+    write_tsv(
+        ctx.p("unmapped_labels.tsv"),
+        unmapped,
+        ["raw_superfamily", "raw_family", "entries"],
+    )
+    write_tsv(
+        ctx.p("parse_warnings.tsv"), ({"warning": w} for w in warnings), ["warning"]
+    )
     for region in PROFILE_REGIONS:
         write_fasta(
             ctx.p(f"regions/{region}.fasta"),
@@ -159,8 +211,13 @@ def stage_parse(ctx: Context) -> dict:
             f"and add them to {ctx.cfg.labels.overrides or 'a labels.tsv file'}"
         )
     scopes = Counter(e["scope"] for e in entries)
-    return {"entries": len(entries), "regions": len(regions), "warnings": len(warnings),
-            "unmapped_labels": len(unmapped), "scopes": dict(scopes)}
+    return {
+        "entries": len(entries),
+        "regions": len(regions),
+        "warnings": len(warnings),
+        "unmapped_labels": len(unmapped),
+        "scopes": dict(scopes),
+    }
 
 
 def stage_cluster(ctx: Context) -> dict:
@@ -169,23 +226,45 @@ def stage_cluster(ctx: Context) -> dict:
     idents = ctx.cfg.cluster.identities
     threads = ctx.cfg.cluster.threads
     rows = []
-    sets = {"FULL": [(e["accession"], e["sequence"]) for e in entries if e["scope"] != "exclude" and e["sequence"]]}
+    sets = {
+        "FULL": [
+            (e["accession"], e["sequence"])
+            for e in entries
+            if e["scope"] != "exclude" and e["sequence"]
+        ]
+    }
     keep = {e["accession"] for e in entries if e["scope"] != "exclude"}
     for region in PROFILE_REGIONS:
-        sets[region] = [(r["region_id"], r["sequence"]) for r in regions if r["region"] == region and r["accession"] in keep]
+        sets[region] = [
+            (r["region_id"], r["sequence"])
+            for r in regions
+            if r["region"] == region and r["accession"] in keep
+        ]
     counts = {}
     for kind, items in sets.items():
         t0 = time.time()
         levels = cluster_levels(items, idents, threads)
         for t, assign in levels.items():
-            rows.extend({"item_id": i, "kind": kind, "identity": t, "cluster": c} for i, c in assign.items())
+            rows.extend(
+                {"item_id": i, "kind": kind, "identity": t, "cluster": c}
+                for i, c in assign.items()
+            )
         counts[kind] = {f"{t:g}": len(set(a.values())) for t, a in levels.items()}
-        log.info("  %-4s %5d sequences -> %s clusters (%.1fs)", kind, len(items),
-                 "/".join(str(counts[kind][f"{t:g}"]) for t in sorted(idents, reverse=True)), time.time() - t0)
+        log.info(
+            "  %-4s %5d sequences -> %s clusters (%.1fs)",
+            kind,
+            len(items),
+            "/".join(str(counts[kind][f"{t:g}"]) for t in sorted(idents, reverse=True)),
+            time.time() - t0,
+        )
     rows.sort(key=lambda r: (r["kind"], -r["identity"], r["item_id"]))
     write_tsv(ctx.p("clusters.tsv"), rows, ["item_id", "kind", "identity", "cluster"])
     g = ctx.cfg.cluster.group_identity
-    groups = [{"accession": r["item_id"], "group": r["cluster"]} for r in rows if r["kind"] == "FULL" and r["identity"] == g]
+    groups = [
+        {"accession": r["item_id"], "group": r["cluster"]}
+        for r in rows
+        if r["kind"] == "FULL" and r["identity"] == g
+    ]
     write_tsv(ctx.p("entry_groups.tsv"), groups, ["accession", "group"])
     return {"clusters": counts}
 
@@ -211,36 +290,78 @@ def stage_audit(ctx: Context) -> dict:
     if ctx.previous is not None:
         prev_name = ctx.previous.name
         entry_diff = diff_entries(read_tsv(ctx.previous / "entries.tsv"), entries)
-        tier_diff = diff_tiers(read_tsv(ctx.previous / "families.tsv"), [
-            {k: str(v) for k, v in f.items()} for f in result.families])
+        tier_diff = diff_tiers(
+            read_tsv(ctx.previous / "families.tsv"),
+            [{k: str(v) for k, v in f.items()} for f in result.families],
+        )
     write_tsv(ctx.p("diff_entries.tsv"), entry_diff or [], DIFF_FIELDS)
-    write_tsv(ctx.p("diff_tiers.tsv"), tier_diff or [], ["superfamily", "family", "old", "new"])
+    write_tsv(
+        ctx.p("diff_tiers.tsv"),
+        tier_diff or [],
+        ["superfamily", "family", "old", "new"],
+    )
 
     report = render_report(
-        cfg, {"release": ctx.release.release, "release_date": ctx.release.release_date, "total": len(entries)},
-        result, read_tsv(ctx.p("unmapped_labels.tsv")), dict(warn_counts), entry_diff, tier_diff, prev_name,
+        cfg,
+        {
+            "release": ctx.release.release,
+            "release_date": ctx.release.release_date,
+            "total": len(entries),
+        },
+        result,
+        read_tsv(ctx.p("unmapped_labels.tsv")),
+        dict(warn_counts),
+        entry_diff,
+        tier_diff,
+        prev_name,
     )
     with atomic_open(ctx.p("report.md")) as fh:
         fh.write(report)
-    tiers = Counter(f["tier"] for f in result.families if f["family"] == "*" and f["tier"] != "")
-    return {"tiers": {str(k): v for k, v in sorted(tiers.items())}, "label_conflicts": len(result.conflicts),
-            "changes": len(entry_diff) if entry_diff is not None else None}
+    tiers = Counter(
+        f["tier"] for f in result.families if f["family"] == "*" and f["tier"] != ""
+    )
+    return {
+        "tiers": {str(k): v for k, v in sorted(tiers.items())},
+        "label_conflicts": len(result.conflicts),
+        "changes": len(entry_diff) if entry_diff is not None else None,
+    }
 
 
 def stage_partition(ctx: Context) -> dict:
     entries = read_tsv(ctx.p("entries.tsv"))
     families = read_tsv(ctx.p("families.tsv"))
-    audit_tiers = {f["superfamily"]: f["tier"] for f in families if f["family"] == "*" and f["scope"] == "conopeptide"}
+    audit_tiers = {
+        f["superfamily"]: f["tier"]
+        for f in families
+        if f["family"] == "*" and f["scope"] == "conopeptide"
+    }
     prev_file = ctx.previous / "partition.tsv" if ctx.previous else None
     previous = read_tsv(prev_file) if prev_file and prev_file.exists() else None
-    res = run_partition(ctx.cfg, entries, read_tsv(ctx.p("entry_groups.tsv")), read_tsv(ctx.p("label_conflicts.tsv")),
-                        audit_tiers, previous)
+    res = run_partition(
+        ctx.cfg,
+        entries,
+        read_tsv(ctx.p("entry_groups.tsv")),
+        read_tsv(ctx.p("label_conflicts.tsv")),
+        audit_tiers,
+        previous,
+    )
     write_tsv(ctx.p("partition.tsv"), res.rows, PARTITION_FIELDS)
     write_tsv(ctx.p("partition_summary.tsv"), res.summary, SUMMARY_FIELDS)
     with atomic_open(ctx.p("partition.md")) as fh:
-        fh.write(render_partition(ctx.cfg, ctx.release.release, res, ctx.previous.name if previous else None))
+        fh.write(
+            render_partition(
+                ctx.cfg,
+                ctx.release.release,
+                res,
+                ctx.previous.name if previous else None,
+            )
+        )
     roles = Counter(r["role"] for r in res.rows)
-    return {"roles": dict(roles), "excluded": len(res.excluded), "moved_to_test": len(res.reassigned)}
+    return {
+        "roles": dict(roles),
+        "excluded": len(res.excluded),
+        "moved_to_test": len(res.reassigned),
+    }
 
 
 def stage_negatives(ctx: Context) -> dict:
@@ -248,19 +369,35 @@ def stage_negatives(ctx: Context) -> dict:
     raw = ctx.p("raw/negatives.jsonl.gz")
     fetched = {}
     if nc.enabled:
-        fetched = fetch_negatives(ctx.cfg, ctx.release, raw, offline=ctx.local_input is not None)
+        fetched = fetch_negatives(
+            ctx.cfg, ctx.release, raw, offline=ctx.local_input is not None
+        )
     prev_file = ctx.previous / "negatives.tsv" if ctx.previous else None
     previous = read_tsv(prev_file) if prev_file and prev_file.exists() else None
-    rows, stats = build_negatives(ctx.cfg, read_tsv(ctx.p("entries.tsv")), read_tsv(ctx.p("regions.tsv")),
-                                  read_tsv(ctx.p("partition.tsv")), raw if nc.enabled else None, previous)
+    rows, stats = build_negatives(
+        ctx.cfg,
+        read_tsv(ctx.p("entries.tsv")),
+        read_tsv(ctx.p("regions.tsv")),
+        read_tsv(ctx.p("partition.tsv")),
+        raw if nc.enabled else None,
+        previous,
+    )
     write_tsv(ctx.p("negatives.tsv"), rows, NEGATIVE_FIELDS)
-    write_fasta(ctx.p("negatives.fasta"), ((r["id"], r["sequence"]) for r in rows if r["role"] in ("train", "test")))
+    write_fasta(
+        ctx.p("negatives.fasta"),
+        ((r["id"], r["sequence"]) for r in rows if r["role"] in ("train", "test")),
+    )
     return stats | {"fetch": fetched}
 
 
 def stage_build(ctx: Context) -> dict:
-    rows, stats = run_build(ctx.cfg, ctx.rdir, read_tsv(ctx.p("entries.tsv")), read_tsv(ctx.p("regions.tsv")),
-                            read_tsv(ctx.p("partition.tsv")))
+    rows, stats = run_build(
+        ctx.cfg,
+        ctx.rdir,
+        read_tsv(ctx.p("entries.tsv")),
+        read_tsv(ctx.p("regions.tsv")),
+        read_tsv(ctx.p("partition.tsv")),
+    )
     write_tsv(ctx.p("profiles.tsv"), rows, PROFILE_FIELDS)
     for note in stats.get("notes", []):
         log.info("  %s", note)
@@ -269,8 +406,14 @@ def stage_build(ctx: Context) -> dict:
 
 def stage_score(ctx: Context) -> dict:
     scores, features, fields, stats = run_score(
-        ctx.cfg, ctx.rdir, read_tsv(ctx.p("entries.tsv")), read_tsv(ctx.p("partition.tsv")),
-        read_tsv(ctx.p("negatives.tsv")), read_tsv(ctx.p("profiles.tsv")), read_tsv(ctx.p("regions.tsv")))
+        ctx.cfg,
+        ctx.rdir,
+        read_tsv(ctx.p("entries.tsv")),
+        read_tsv(ctx.p("partition.tsv")),
+        read_tsv(ctx.p("negatives.tsv")),
+        read_tsv(ctx.p("profiles.tsv")),
+        read_tsv(ctx.p("regions.tsv")),
+    )
     write_tsv(ctx.p("scores.tsv"), scores, SCORE_FIELDS)
     write_tsv(ctx.p("features.tsv"), features, fields)
     return stats
@@ -283,13 +426,19 @@ _LEGACY_FIT_FORMAT = 4
 
 
 def _legacy_fit_key(ctx: Context) -> str:
-    return sha256_obj({
-        "stage": "fit",
-        "conodb": "0.1.0",
-        "config": {s: ctx.cfg.section(s) for s in ("fit", "score")},
-        "inputs": {"features.tsv": sha256_file(ctx.p("features.tsv"))},
-        "extra": [ctx.cfg.fit.bayes != "false" and _cmdstan_id(ctx.cfg), _LEGACY_FIT_FORMAT, sha256_file(STAN_FILE)],
-    })
+    return sha256_obj(
+        {
+            "stage": "fit",
+            "conodb": "0.1.0",
+            "config": {s: ctx.cfg.section(s) for s in ("fit", "score")},
+            "inputs": {"features.tsv": sha256_file(ctx.p("features.tsv"))},
+            "extra": [
+                ctx.cfg.fit.bayes != "false" and _cmdstan_id(ctx.cfg),
+                _LEGACY_FIT_FORMAT,
+                sha256_file(STAN_FILE),
+            ],
+        }
+    )
 
 
 def _legacy_match(ctx: Context) -> bool:
@@ -304,7 +453,9 @@ def _legacy_match(ctx: Context) -> bool:
 
 def stage_bayes(ctx: Context) -> dict:
     try:
-        status = run_bayes(ctx.cfg, ctx.rdir, ctx.root / ".cache" / "stan", _legacy_match(ctx))
+        status = run_bayes(
+            ctx.cfg, ctx.rdir, ctx.root / ".cache" / "stan", _legacy_match(ctx)
+        )
     except NothingToFit as e:
         status = {"status": "skipped", "reason": str(e)}
     write_json(ctx.p("fit/bayes_status.json"), status)
@@ -331,21 +482,40 @@ def stage_fit(ctx: Context) -> dict:
         out = run_fit(ctx.cfg, ctx.rdir)
     except NothingToFit as e:
         log.warning("Nothing to fit: %s", e)
-        write_tsv(ctx.p("cutoffs.tsv"), [], ["family", "region", "method", "cutoff_bits", "negatives", "quantile"])
+        write_tsv(
+            ctx.p("cutoffs.tsv"),
+            [],
+            ["family", "region", "method", "cutoff_bits", "negatives", "quantile"],
+        )
         write_tsv(ctx.p("predictions.tsv"), [], ["id"])
         write_json(ctx.p("fit/model_map.json"), {"model": None, "reason": str(e)})
         write_json(ctx.p("fit/model_ship.json"), {"model": None, "reason": str(e)})
         with atomic_open(ctx.p("fit.md")) as fh:
-            fh.write(f"# Classifier fit: UniProt {ctx.release.release}\n\nNothing to fit: {e}.\n")
+            fh.write(
+                f"# Classifier fit: UniProt {ctx.release.release}\n\nNothing to fit: {e}.\n"
+            )
         return {"nothing_to_fit": str(e)}
-    write_tsv(ctx.p("cutoffs.tsv"), out["cutoffs"], ["family", "region", "method", "cutoff_bits", "negatives", "quantile"])
+    write_tsv(
+        ctx.p("cutoffs.tsv"),
+        out["cutoffs"],
+        ["family", "region", "method", "cutoff_bits", "negatives", "quantile"],
+    )
     write_tsv(ctx.p("predictions.tsv"), out["predictions"], out["pred_fields"])
     if not ctx.cfg.fit.ship_all_data:
-        write_json(ctx.p("fit/model_ship.json"), {"model": None, "reason": "fit.ship_all_data = false"})
+        write_json(
+            ctx.p("fit/model_ship.json"),
+            {"model": None, "reason": "fit.ship_all_data = false"},
+        )
     with atomic_open(ctx.p("fit.md")) as fh:
         fh.write(render_fit(ctx.cfg, ctx.release.release, out))
-    summary = {split: {m: {k: round(v, 4) for k, v in r.items() if isinstance(v, float)}
-                       for m, r in res.items() if r} for split, res in out["results"].items()}
+    summary = {
+        split: {
+            m: {k: round(v, 4) for k, v in r.items() if isinstance(v, float)}
+            for m, r in res.items()
+            if r
+        }
+        for split, res in out["results"].items()
+    }
     return {"results": summary}
 
 
@@ -361,9 +531,15 @@ def stage_anatomy(ctx: Context) -> dict:
     write_tsv(ctx.p("anatomy_metrics.tsv"), out["metrics"], ANATOMY_METRIC_FIELDS)
     write_tsv(ctx.p("anatomy_sequences.tsv"), out["sequences"], ANATOMY_SEQ_FIELDS)
     write_tsv(ctx.p("anatomy_errors.tsv"), out["errors"], ANATOMY_ERROR_FIELDS)
-    rec = read_json(ctx.p("selection_recommended.json")) if ctx.p("selection_recommended.json").exists() else {}
+    rec = (
+        read_json(ctx.p("selection_recommended.json"))
+        if ctx.p("selection_recommended.json").exists()
+        else {}
+    )
     with atomic_open(ctx.p("anatomy.md")) as fh:
-        fh.write(render_anatomy(ctx.cfg, ctx.release.release, out, rec.get("region_variant")))
+        fh.write(
+            render_anatomy(ctx.cfg, ctx.release.release, out, rec.get("region_variant"))
+        )
     return {"sequences": out["n"], "predictions": len(out["predictions"])}
 
 
@@ -383,16 +559,35 @@ def stage_select(ctx: Context) -> dict:
         with atomic_open(ctx.p("selection.md")) as fh:
             fh.write(f"# Selection of the defaults\n\nNot run: {reason}.\n")
         return {"selected": False, "reason": reason}
-    write_tsv(ctx.p("selection_classification.tsv"), out["classifier"]["table"], SELECT_CLS_FIELDS)
-    write_tsv(ctx.p("selection_regions.tsv"), out["regions"]["table"], SELECT_REG_FIELDS)
-    write_tsv(ctx.p("selection_region_errors.tsv"), out["regions"].get("errors", []), SELECT_ERR_FIELDS)
-    write_json(ctx.p("selection_recommended.json"), out["recommended"] | {"changes": out["changes"]})
+    write_tsv(
+        ctx.p("selection_classification.tsv"),
+        out["classifier"]["table"],
+        SELECT_CLS_FIELDS,
+    )
+    write_tsv(
+        ctx.p("selection_regions.tsv"), out["regions"]["table"], SELECT_REG_FIELDS
+    )
+    write_tsv(
+        ctx.p("selection_region_errors.tsv"),
+        out["regions"].get("errors", []),
+        SELECT_ERR_FIELDS,
+    )
+    write_json(
+        ctx.p("selection_recommended.json"),
+        out["recommended"] | {"changes": out["changes"]},
+    )
     with atomic_open(ctx.p("selection.md")) as fh:
         fh.write(render_selection(ctx.cfg, ctx.release.release, out))
     if out["changes"]:
-        log.info("  cross-validation recommends: %s (see selection.md)", "; ".join(out["changes"]))
-    return {"classifier": out["recommended"]["classifier_variant"],
-            "regions": out["recommended"].get("region_variant"), "changes": out["changes"]}
+        log.info(
+            "  cross-validation recommends: %s (see selection.md)",
+            "; ".join(out["changes"]),
+        )
+    return {
+        "classifier": out["recommended"]["classifier_variant"],
+        "regions": out["recommended"].get("region_variant"),
+        "changes": out["changes"],
+    }
 
 
 def stage_package(ctx: Context) -> dict:
@@ -404,8 +599,13 @@ def stage_package(ctx: Context) -> dict:
     return out
 
 
-EVAL_OUTPUTS = ("evaluation.md", "evaluation_metrics.tsv", "evaluation_misses.tsv", "evaluation_calibration.tsv",
-                "evaluation_ablations.tsv")
+EVAL_OUTPUTS = (
+    "evaluation.md",
+    "evaluation_metrics.tsv",
+    "evaluation_misses.tsv",
+    "evaluation_calibration.tsv",
+    "evaluation_ablations.tsv",
+)
 
 
 def stage_evaluate(ctx: Context) -> dict:
@@ -413,7 +613,9 @@ def stage_evaluate(ctx: Context) -> dict:
         for o in EVAL_OUTPUTS[1:]:
             write_tsv(ctx.p(o), [], ["empty"])
         with atomic_open(ctx.p("evaluation.md")) as fh:
-            fh.write(f"# Evaluation: UniProt {ctx.release.release}\n\nNo model to evaluate.\n")
+            fh.write(
+                f"# Evaluation: UniProt {ctx.release.release}\n\nNo model to evaluate.\n"
+            )
         return {"evaluated": False}
     out = run_evaluate(ctx.cfg, ctx.rdir)
     write_tsv(ctx.p("evaluation_metrics.tsv"), out["metrics"], METRIC_FIELDS)
@@ -422,116 +624,283 @@ def stage_evaluate(ctx: Context) -> dict:
     write_tsv(ctx.p("evaluation_ablations.tsv"), out["ablations"], ABLATION_FIELDS)
     with atomic_open(ctx.p("evaluation.md")) as fh:
         fh.write(render_evaluation(ctx.cfg, ctx.release.release, out))
-    return {"methods": out["methods"], "misses": len(out["misses"]), "ablations": len(out["ablations"])}
+    return {
+        "methods": out["methods"],
+        "misses": len(out["misses"]),
+        "ablations": len(out["ablations"]),
+    }
 
 
 def _verify_profiles(ctx: Context) -> bool:
     """Every profile file listed in profiles.tsv still exists unchanged."""
     for r in read_tsv(ctx.p("profiles.tsv")):
         for col, sha in (("hmm", "hmm_sha256"), ("pssm", "pssm_sha256")):
-            if r.get(col) and (not ctx.p(r[col]).exists() or sha256_file(ctx.p(r[col])) != r[sha]):
+            if r.get(col) and (
+                not ctx.p(r[col]).exists() or sha256_file(ctx.p(r[col])) != r[sha]
+            ):
                 return False
     return True
 
 
 def _warning_kind(msg: str) -> str:
-    for key in ("uncertain boundary", "unknown boundary", "outside sequence", "shorter than"):
+    for key in (
+        "uncertain boundary",
+        "unknown boundary",
+        "outside sequence",
+        "shorter than",
+    ):
         if key in msg:
             return msg.split(" ", 1)[0] + " " + key
     return msg
 
 
 STAGES: list[Stage] = [
-    Stage("fetch", ("source",), (), ("raw/uniprot.jsonl.gz",), stage_fetch,
-          extra_key=lambda ctx: [ctx.release.release, str(ctx.local_input and sha256_file(ctx.local_input))],
-          description="Download matching UniProt entries (JSON)"),
-    Stage("parse", ("labels", "regions"), ("raw/uniprot.jsonl.gz",),
-          ("entries.tsv", "regions.tsv", "unmapped_labels.tsv", "parse_warnings.tsv")
-          + tuple(f"regions/{r}.fasta" for r in PROFILE_REGIONS),
-          stage_parse,
-          extra_key=lambda ctx: [p and sha256_file(p) for p in (ctx.cfg.labels.overrides, ctx.cfg.labels.entry_overrides)],
-          description="Labels, precursor regions, evidence"),
-    Stage("cluster", ("cluster",), ("entries.tsv", "regions.tsv"), ("clusters.tsv", "entry_groups.tsv"),
-          stage_cluster, description="Identity clusters per region and entry groups"),
-    Stage("audit", ("tiers", "cluster", "audit"),
-          ("entries.tsv", "regions.tsv", "clusters.tsv", "entry_groups.tsv", "unmapped_labels.tsv", "parse_warnings.tsv"),
-          ("families.tsv", "region_support.tsv", "label_conflicts.tsv", "diff_entries.tsv", "diff_tiers.tsv", "report.md"),
-          stage_audit,
-          extra_key=lambda ctx: ctx.previous and sha256_file(ctx.previous / "entries.tsv"),
-          description="Support per family/region, tiers, QC, diff, report"),
-    Stage("partition", ("partition", "tiers", "cluster"),
-          ("entries.tsv", "entry_groups.tsv", "families.tsv", "label_conflicts.tsv"),
-          ("partition.tsv", "partition_summary.tsv", "partition.md"),
-          stage_partition,
-          extra_key=lambda ctx: ctx.previous and (ctx.previous / "partition.tsv").exists()
-          and sha256_file(ctx.previous / "partition.tsv"),
-          description="Held-out test set and CV folds (stable across releases)"),
-    Stage("negatives", ("negatives", "partition", "cluster"), ("entries.tsv", "regions.tsv", "partition.tsv"),
-          ("negatives.tsv", "negatives.fasta"), stage_negatives,
-          extra_key=lambda ctx: [ctx.release.release, ctx.local_input is not None,
-                                 ctx.previous and (ctx.previous / "negatives.tsv").exists()
-                                 and sha256_file(ctx.previous / "negatives.tsv")],
-          description="Negatives: UniProt query, venom 'other', shuffled precursors"),
-    Stage("build", ("build", "partition", "anatomy"), ("entries.tsv", "regions.tsv", "partition.tsv"),
-          ("profiles.tsv", "profiles/final.hmm", "profiles/final.sites.json", "profiles/ship.sites.json"), stage_build,
-          extra_key=lambda ctx: [shutil.which(ctx.cfg.build.pfw), shutil.which(ctx.cfg.build.pfmake)]
-          if ctx.cfg.build.pssm != "false" else None,
-          verify=_verify_profiles,
-          description="Region HMM/PSSM/PWM profiles, full-precursor models, site windows: final, holdouts, ship"),
-    Stage("score", ("score", "anatomy"), ("entries.tsv", "regions.tsv", "partition.tsv", "negatives.tsv", "profiles.tsv"),
-          ("scores.tsv", "features.tsv"), stage_score,
-          extra_key=lambda ctx: shutil.which(ctx.cfg.score.pfsearch) if ctx.cfg.score.pssm != "false" else None,
-          description="Out-of-fold HMM/PSSM/PWM scores and framework feature of positives and negatives"),
-    Stage("select", ("evaluate", "fit", "anatomy", "score", "partition"),
-          ("entries.tsv", "regions.tsv", "partition.tsv", "features.tsv", "profiles.tsv"),
-          SELECT_OUTPUTS, stage_select, extra_key=lambda ctx: [SELECT_FORMAT],
-          description="Choice of the defaults: grouped cross-validation of classifier and region variants on training rows"),
-    Stage("bayes", ("fit",), ("features.tsv",), ("fit/bayes_status.json",), stage_bayes,
-          key_fn=_bayes_key, verify=_verify_bayes,
-          description="Hierarchical Bayesian model (Stan); reused whenever the training design and model settings are unchanged"),
-    Stage("fit", ("fit", "score"), ("features.tsv", "fit/bayes_status.json"),
-          ("cutoffs.tsv", "predictions.tsv", "fit.md", "fit/model_map.json", "fit/model_ship.json"), stage_fit,
-          extra_key=lambda ctx: [FIT_FORMAT],
-          description="Baseline and penalised classifier (seconds); shipped model refitted on all data"),
-    Stage("anatomy", ("anatomy", "score"), ("entries.tsv", "regions.tsv", "partition.tsv", "predictions.tsv",
-                                            "profiles.tsv", "selection_recommended.json"),
-          ANATOMY_OUTPUTS, stage_anatomy, extra_key=lambda ctx: [ANATOMY_FORMAT],
-          description="Region prediction benchmark on the test set: every region variant"),
-    Stage("evaluate", ("evaluate", "fit", "score", "cluster"),
-          ("entries.tsv", "regions.tsv", "partition.tsv", "negatives.tsv", "features.tsv", "scores.tsv",
-           "fit/model_map.json", "fit/bayes_status.json", "selection_recommended.json"),
-          EVAL_OUTPUTS, stage_evaluate, extra_key=lambda ctx: [EVAL_FORMAT],
-          description="Held-out performance by sequence type and identity, calibration, misses, ablations"),
-    Stage("package", ("package", "score", "fit", "anatomy", "build"),
-          ("profiles.tsv", "negatives.tsv", "regions.tsv", "partition.tsv", "fit/model_map.json",
-           "fit/model_ship.json", "evaluation.md", "anatomy.md", "selection.md"),
-          ("package.json",), stage_package, extra_key=lambda ctx: [PACKAGE_FORMAT, ctx.release.release],
-          verify=lambda ctx: (ctx.rdir / read_json(ctx.p("package.json"))["package"]).exists(),
-          description="Database for conodictor (calibrated cutoffs, models) + supplementary bundle"),
+    Stage(
+        "fetch",
+        ("source",),
+        (),
+        ("raw/uniprot.jsonl.gz",),
+        stage_fetch,
+        extra_key=lambda ctx: [
+            ctx.release.release,
+            str(ctx.local_input and sha256_file(ctx.local_input)),
+        ],
+        description="Download matching UniProt entries (JSON)",
+    ),
+    Stage(
+        "parse",
+        ("labels", "regions"),
+        ("raw/uniprot.jsonl.gz",),
+        ("entries.tsv", "regions.tsv", "unmapped_labels.tsv", "parse_warnings.tsv")
+        + tuple(f"regions/{r}.fasta" for r in PROFILE_REGIONS),
+        stage_parse,
+        extra_key=lambda ctx: [
+            p and sha256_file(p)
+            for p in (ctx.cfg.labels.overrides, ctx.cfg.labels.entry_overrides)
+        ],
+        description="Labels, precursor regions, evidence",
+    ),
+    Stage(
+        "cluster",
+        ("cluster",),
+        ("entries.tsv", "regions.tsv"),
+        ("clusters.tsv", "entry_groups.tsv"),
+        stage_cluster,
+        description="Identity clusters per region and entry groups",
+    ),
+    Stage(
+        "audit",
+        ("tiers", "cluster", "audit"),
+        (
+            "entries.tsv",
+            "regions.tsv",
+            "clusters.tsv",
+            "entry_groups.tsv",
+            "unmapped_labels.tsv",
+            "parse_warnings.tsv",
+        ),
+        (
+            "families.tsv",
+            "region_support.tsv",
+            "label_conflicts.tsv",
+            "diff_entries.tsv",
+            "diff_tiers.tsv",
+            "report.md",
+        ),
+        stage_audit,
+        extra_key=lambda ctx: (
+            ctx.previous and sha256_file(ctx.previous / "entries.tsv")
+        ),
+        description="Support per family/region, tiers, QC, diff, report",
+    ),
+    Stage(
+        "partition",
+        ("partition", "tiers", "cluster"),
+        ("entries.tsv", "entry_groups.tsv", "families.tsv", "label_conflicts.tsv"),
+        ("partition.tsv", "partition_summary.tsv", "partition.md"),
+        stage_partition,
+        extra_key=lambda ctx: (
+            ctx.previous
+            and (ctx.previous / "partition.tsv").exists()
+            and sha256_file(ctx.previous / "partition.tsv")
+        ),
+        description="Held-out test set and CV folds (stable across releases)",
+    ),
+    Stage(
+        "negatives",
+        ("negatives", "partition", "cluster"),
+        ("entries.tsv", "regions.tsv", "partition.tsv"),
+        ("negatives.tsv", "negatives.fasta"),
+        stage_negatives,
+        extra_key=lambda ctx: [
+            ctx.release.release,
+            ctx.local_input is not None,
+            ctx.previous
+            and (ctx.previous / "negatives.tsv").exists()
+            and sha256_file(ctx.previous / "negatives.tsv"),
+        ],
+        description="Negatives: UniProt query, venom 'other', shuffled precursors",
+    ),
+    Stage(
+        "build",
+        ("build", "partition", "anatomy"),
+        ("entries.tsv", "regions.tsv", "partition.tsv"),
+        (
+            "profiles.tsv",
+            "profiles/final.hmm",
+            "profiles/final.sites.json",
+            "profiles/ship.sites.json",
+        ),
+        stage_build,
+        extra_key=lambda ctx: (
+            [shutil.which(ctx.cfg.build.pfw), shutil.which(ctx.cfg.build.pfmake)]
+            if ctx.cfg.build.pssm != "false"
+            else None
+        ),
+        verify=_verify_profiles,
+        description="Region HMM/PSSM/PWM profiles, full-precursor models, site windows: final, holdouts, ship",
+    ),
+    Stage(
+        "score",
+        ("score", "anatomy"),
+        (
+            "entries.tsv",
+            "regions.tsv",
+            "partition.tsv",
+            "negatives.tsv",
+            "profiles.tsv",
+        ),
+        ("scores.tsv", "features.tsv"),
+        stage_score,
+        extra_key=lambda ctx: (
+            shutil.which(ctx.cfg.score.pfsearch)
+            if ctx.cfg.score.pssm != "false"
+            else None
+        ),
+        description="Out-of-fold HMM/PSSM/PWM scores and framework feature of positives and negatives",
+    ),
+    Stage(
+        "select",
+        ("evaluate", "fit", "anatomy", "score", "partition"),
+        ("entries.tsv", "regions.tsv", "partition.tsv", "features.tsv", "profiles.tsv"),
+        SELECT_OUTPUTS,
+        stage_select,
+        extra_key=lambda ctx: [SELECT_FORMAT],
+        description="Choice of the defaults: grouped cross-validation of classifier and region variants on training rows",
+    ),
+    Stage(
+        "bayes",
+        ("fit",),
+        ("features.tsv",),
+        ("fit/bayes_status.json",),
+        stage_bayes,
+        key_fn=_bayes_key,
+        verify=_verify_bayes,
+        description="Hierarchical Bayesian model (Stan); reused whenever the training design and model settings are unchanged",
+    ),
+    Stage(
+        "fit",
+        ("fit", "score"),
+        ("features.tsv", "fit/bayes_status.json"),
+        (
+            "cutoffs.tsv",
+            "predictions.tsv",
+            "fit.md",
+            "fit/model_map.json",
+            "fit/model_ship.json",
+        ),
+        stage_fit,
+        extra_key=lambda ctx: [FIT_FORMAT],
+        description="Baseline and penalised classifier (seconds); shipped model refitted on all data",
+    ),
+    Stage(
+        "anatomy",
+        ("anatomy", "score"),
+        (
+            "entries.tsv",
+            "regions.tsv",
+            "partition.tsv",
+            "predictions.tsv",
+            "profiles.tsv",
+            "selection_recommended.json",
+        ),
+        ANATOMY_OUTPUTS,
+        stage_anatomy,
+        extra_key=lambda ctx: [ANATOMY_FORMAT],
+        description="Region prediction benchmark on the test set: every region variant",
+    ),
+    Stage(
+        "evaluate",
+        ("evaluate", "fit", "score", "cluster"),
+        (
+            "entries.tsv",
+            "regions.tsv",
+            "partition.tsv",
+            "negatives.tsv",
+            "features.tsv",
+            "scores.tsv",
+            "fit/model_map.json",
+            "fit/bayes_status.json",
+            "selection_recommended.json",
+        ),
+        EVAL_OUTPUTS,
+        stage_evaluate,
+        extra_key=lambda ctx: [EVAL_FORMAT],
+        description="Held-out performance by sequence type and identity, calibration, misses, ablations",
+    ),
+    Stage(
+        "package",
+        ("package", "score", "fit", "anatomy", "build"),
+        (
+            "profiles.tsv",
+            "negatives.tsv",
+            "regions.tsv",
+            "partition.tsv",
+            "fit/model_map.json",
+            "fit/model_ship.json",
+            "evaluation.md",
+            "anatomy.md",
+            "selection.md",
+        ),
+        ("package.json",),
+        stage_package,
+        extra_key=lambda ctx: [PACKAGE_FORMAT, ctx.release.release],
+        verify=lambda ctx: (
+            ctx.rdir / read_json(ctx.p("package.json"))["package"]
+        ).exists(),
+        description="Database for conodictor (calibrated cutoffs, models) + supplementary bundle",
+    ),
 ]
 
 
 def _cmdstan_id(cfg) -> str | None:
     from .fit import cmdstan_available
+
     if not cmdstan_available(cfg):
         return None
     import cmdstanpy
+
     return cmdstanpy.cmdstan_path()
+
+
 STAGE_NAMES = [s.name for s in STAGES]
 
 
 # ------------------------------------------------------------------ runner --
 
+
 def _stage_key(ctx: Context, stage: Stage) -> str:
     if stage.key_fn is not None:
         return stage.key_fn(ctx)
-    return sha256_obj({
-        "stage": stage.name,
-        "conodb": __version__,
-        "config": {s: ctx.cfg.section(s) for s in stage.sections},
-        "inputs": {i: sha256_file(ctx.p(i)) for i in stage.inputs},
-        "extra": stage.extra_key(ctx),
-    })
+    return sha256_obj(
+        {
+            "stage": stage.name,
+            "conodb": __version__,
+            "config": {s: ctx.cfg.section(s) for s in stage.sections},
+            "inputs": {i: sha256_file(ctx.p(i)) for i in stage.inputs},
+            "extra": stage.extra_key(ctx),
+        }
+    )
 
 
 def _up_to_date(ctx: Context, stage: Stage, key: str) -> bool:
@@ -541,7 +910,10 @@ def _up_to_date(ctx: Context, stage: Stage, key: str) -> bool:
     s = read_json(stamp)
     if s.get("key") != key:
         return False
-    if not all(ctx.p(o).exists() and sha256_file(ctx.p(o)) == s["outputs"].get(o) for o in stage.outputs):
+    if not all(
+        ctx.p(o).exists() and sha256_file(ctx.p(o)) == s["outputs"].get(o)
+        for o in stage.outputs
+    ):
         return False
     return stage.verify(ctx) if stage.verify else True
 
@@ -560,29 +932,47 @@ def _find_previous(root: Path, current: Path) -> Path | None:
 
 def _setup_file_log(rdir: Path) -> logging.Handler:
     (rdir / "logs").mkdir(parents=True, exist_ok=True)
-    h = logging.FileHandler(rdir / "logs" / f"{datetime.now().strftime('%Y%m%dT%H%M%S')}.log", encoding="utf-8")
+    h = logging.FileHandler(
+        rdir / "logs" / f"{datetime.now().strftime('%Y%m%dT%H%M%S')}.log",
+        encoding="utf-8",
+    )
     h.setFormatter(logging.Formatter("%(asctime)s %(levelname)s %(name)s: %(message)s"))
     h.setLevel(logging.DEBUG)
     logging.getLogger().addHandler(h)
     return h
 
 
-def resolve_release(cfg: Config, local_input: Path | None, release_name: str | None) -> ReleaseInfo:
+def resolve_release(
+    cfg: Config, local_input: Path | None, release_name: str | None
+) -> ReleaseInfo:
     if local_input is not None:
         name = release_name or f"local-{sha256_file(local_input)[:10]}"
         return ReleaseInfo(release=name, release_date="", total=-1)
     return probe(cfg.source)
 
 
-def run(cfg: Config, *, force: bool = False, from_stage: str | None = None, until_stage: str | None = None,
-        local_input: Path | None = None, release_name: str | None = None) -> Path:
+def run(
+    cfg: Config,
+    *,
+    force: bool = False,
+    from_stage: str | None = None,
+    until_stage: str | None = None,
+    local_input: Path | None = None,
+    release_name: str | None = None,
+) -> Path:
     root = cfg.output.root
     release = resolve_release(cfg, local_input, release_name)
     rdir = root / "releases" / release.dirname
     rdir.mkdir(parents=True, exist_ok=True)
     handler = _setup_file_log(rdir)
-    ctx = Context(cfg=cfg, root=root, release=release, rdir=rdir, local_input=local_input,
-                  previous=_find_previous(root, rdir))
+    ctx = Context(
+        cfg=cfg,
+        root=root,
+        release=release,
+        rdir=rdir,
+        local_input=local_input,
+        previous=_find_previous(root, rdir),
+    )
     started = datetime.now(timezone.utc).isoformat(timespec="seconds")
     log.info("conodb %s: building release %s in %s", __version__, release.release, rdir)
     if ctx.previous:
@@ -608,7 +998,9 @@ def run(cfg: Config, *, force: bool = False, from_stage: str | None = None, unti
                 "outputs": {o: sha256_file(ctx.p(o)) for o in stage.outputs},
                 "stats": stats,
                 "seconds": round(time.time() - t0, 2),
-                "finished": datetime.now(timezone.utc).isoformat(timespec="microseconds"),
+                "finished": datetime.now(timezone.utc).isoformat(
+                    timespec="microseconds"
+                ),
             }
             write_json(ctx.p(f".stamps/{stage.name}.json"), stamp)
             stage_info[stage.name] = stamp
@@ -622,9 +1014,17 @@ def run(cfg: Config, *, force: bool = False, from_stage: str | None = None, unti
         _write_manifest(ctx, started, stage_info)
         _update_latest(root, rdir)
     if not ran:
-        log.info("Nothing to do: release %s is already built with this configuration.", release.release)
+        log.info(
+            "Nothing to do: release %s is already built with this configuration.",
+            release.release,
+        )
     else:
-        log.info("Built release %s (stages run: %s). Report: %s", release.release, ", ".join(ran), ctx.p("report.md"))
+        log.info(
+            "Built release %s (stages run: %s). Report: %s",
+            release.release,
+            ", ".join(ran),
+            ctx.p("report.md"),
+        )
     return rdir
 
 
@@ -634,23 +1034,58 @@ def _write_manifest(ctx: Context, started: str, stage_info: dict) -> None:
     import pyopal
 
     outputs = sorted({o for s in STAGES for o in s.outputs})
-    write_json(ctx.p("manifest.json"), {
-        "conodb_version": __version__,
-        "python": sys.version.split()[0],
-        "platform": platform.platform(),
-        "packages": {"pyopal": pyopal.__version__, "pyhmmer": pyhmmer.__version__, "pyfamsa": pyfamsa.__version__},
-        "uniprot": {"release": ctx.release.release, "release_date": ctx.release.release_date,
-                    "query": ctx.cfg.source.query,
-                    "entries": stage_info.get("fetch", {}).get("stats", {}).get("entries", ctx.release.total)},
-        "config": {s: ctx.cfg.section(s) for s in ("source", "labels", "regions", "cluster", "tiers", "audit", "partition", "negatives", "build", "score", "fit", "evaluate", "anatomy", "package")},
-        "entry_overrides_sha256": ctx.cfg.labels.entry_overrides and sha256_file(ctx.cfg.labels.entry_overrides),
-        "labels_sha256": ctx.cfg.labels.overrides and sha256_file(ctx.cfg.labels.overrides),
-        "previous_release": ctx.previous.name if ctx.previous else None,
-        "started": started,
-        "finished": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-        "stages": {k: {"stats": v.get("stats"), "finished": v.get("finished")} for k, v in stage_info.items()},
-        "files": {o: sha256_file(ctx.p(o)) for o in outputs if ctx.p(o).exists()},
-    })
+    write_json(
+        ctx.p("manifest.json"),
+        {
+            "conodb_version": __version__,
+            "python": sys.version.split()[0],
+            "platform": platform.platform(),
+            "packages": {
+                "pyopal": pyopal.__version__,
+                "pyhmmer": pyhmmer.__version__,
+                "pyfamsa": pyfamsa.__version__,
+            },
+            "uniprot": {
+                "release": ctx.release.release,
+                "release_date": ctx.release.release_date,
+                "query": ctx.cfg.source.query,
+                "entries": stage_info.get("fetch", {})
+                .get("stats", {})
+                .get("entries", ctx.release.total),
+            },
+            "config": {
+                s: ctx.cfg.section(s)
+                for s in (
+                    "source",
+                    "labels",
+                    "regions",
+                    "cluster",
+                    "tiers",
+                    "audit",
+                    "partition",
+                    "negatives",
+                    "build",
+                    "score",
+                    "fit",
+                    "evaluate",
+                    "anatomy",
+                    "package",
+                )
+            },
+            "entry_overrides_sha256": ctx.cfg.labels.entry_overrides
+            and sha256_file(ctx.cfg.labels.entry_overrides),
+            "labels_sha256": ctx.cfg.labels.overrides
+            and sha256_file(ctx.cfg.labels.overrides),
+            "previous_release": ctx.previous.name if ctx.previous else None,
+            "started": started,
+            "finished": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+            "stages": {
+                k: {"stats": v.get("stats"), "finished": v.get("finished")}
+                for k, v in stage_info.items()
+            },
+            "files": {o: sha256_file(ctx.p(o)) for o in outputs if ctx.p(o).exists()},
+        },
+    )
 
 
 GITIGNORE = """# Written by conodb. Commit the small summary tables of each release; the

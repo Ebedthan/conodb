@@ -17,9 +17,7 @@ if sys.version_info >= (3, 11):
 else:  # pragma: no cover
     import tomli as tomllib
 
-DEFAULT_QUERY = (
-    "taxonomy_id:37797 AND (cc_tissue_specificity:venom OR cc_scl_term:SL-0177) AND reviewed:true"
-)
+DEFAULT_QUERY = "taxonomy_id:37797 AND (cc_tissue_specificity:venom OR cc_scl_term:SL-0177) AND reviewed:true"
 
 
 @dataclass
@@ -83,7 +81,9 @@ class AuditConfig:
     # Label-conflict check: which sequence kinds to compare, and the minimum
     # length for a region to count (short regions such as C-terminal 'GKR'
     # propeptides are identical across families by chance).
-    conflict_kinds: list[str] = field(default_factory=lambda: ["FULL", "SIG", "MAT", "PRO"])
+    conflict_kinds: list[str] = field(
+        default_factory=lambda: ["FULL", "SIG", "MAT", "PRO"]
+    )
     conflict_min_length: int = 10
 
 
@@ -107,11 +107,13 @@ class NegativesConfig:
     # Conus proteins plus secreted gastropod proteins, toxins excluded.
     # Small secreted metazoan proteins (precursor-sized, signal peptides) plus
     # non-venom Conus proteins; toxins and venom proteins excluded.
-    query: str = ("(taxonomy_id:6490 OR (taxonomy_id:33208 AND cc_scl_term:SL-0243 AND length:[30 TO 300])) "
-                  "AND reviewed:true NOT cc_tissue_specificity:venom NOT keyword:KW-0800")
+    query: str = (
+        "(taxonomy_id:6490 OR (taxonomy_id:33208 AND cc_scl_term:SL-0243 AND length:[30 TO 300])) "
+        "AND reviewed:true NOT cc_tissue_specificity:venom NOT keyword:KW-0800"
+    )
     enabled: bool = True
-    include_venom_other: bool = True     # scope 'other' venom proteins of the main set
-    shuffles: int = 1                    # shuffled copies per complete precursor (0 = none)
+    include_venom_other: bool = True  # scope 'other' venom proteins of the main set
+    shuffles: int = 1  # shuffled copies per complete precursor (0 = none)
     min_length: int = 30
     max_length: int = 1000
     # Real negatives this identical to a conopeptide are removed (likely toxins).
@@ -124,6 +126,7 @@ class NegativesConfig:
 @dataclass
 class AnatomyConfig:
     """Precursor region prediction (build, score, the anatomy benchmark, conodictor)."""
+
     # Full-precursor HMMs: an alignment column becomes a match state (and
     # carries a region label) when at least this fraction of sequences has a
     # residue there.
@@ -163,13 +166,22 @@ class AnatomyConfig:
             return ("signal", "mature_start", "mature_end")
         if self.sites is False:
             return ()
-        return tuple(t for t in ("signal", "mature_start", "mature_end") if t in self.sites)
+        return tuple(
+            t for t in ("signal", "mature_start", "mature_end") if t in self.sites
+        )
 
     def region_kwargs(self) -> dict:
         """Keyword arguments of core.predict_segments for these settings (sites passed separately)."""
-        return {"method": self.method, "radius": self.search_radius, "penalty": self.distance_penalty,
-                "min_run": self.min_run, "overhang": self.terminal_overhang, "extension": self.extension,
-                "site_types": self.site_types, "cterm": self.cterm_trim}
+        return {
+            "method": self.method,
+            "radius": self.search_radius,
+            "penalty": self.distance_penalty,
+            "min_run": self.min_run,
+            "overhang": self.terminal_overhang,
+            "extension": self.extension,
+            "site_types": self.site_types,
+            "cterm": self.cterm_trim,
+        }
 
 
 @dataclass
@@ -226,11 +238,11 @@ class FitConfig:
     # HMM scores below this (or not reported) are set to it. 0 = the
     # censoring of earlier versions; a negative floor keeps weak evidence.
     hmm_floor: float = 0.0
-    weight_by_group: bool = True        # case weight 1 / entry-group size
+    weight_by_group: bool = True  # case weight 1 / entry-group size
     # Give shuffled and real negatives the same total weight, so a large
     # synthetic set does not decide what "NONE" looks like.
     balance_negative_sources: bool = True
-    baseline_fpr: float = 0.01          # baseline cutoffs: false-positive rate per sequence
+    baseline_fpr: float = 0.01  # baseline cutoffs: false-positive rate per sequence
     # Penalised fit (fast, always run): shrinkage per feature from the
     # Bayesian posterior when one exists, else tau_fixed.
     tau_fixed: float = 0.5
@@ -244,7 +256,7 @@ class FitConfig:
     alpha_prior_sd: float = 2.5
     # Bayesian fit with Stan: "auto" (if CmdStan is installed) | "true" | "false"
     bayes: str = "auto"
-    cmdstan: str = ""                   # CmdStan path; "" = cmdstanpy default / CMDSTAN
+    cmdstan: str = ""  # CmdStan path; "" = cmdstanpy default / CMDSTAN
     chains: int = 4
     iter_warmup: int = 1000
     iter_sampling: int = 1000
@@ -260,7 +272,9 @@ class FitConfig:
 @dataclass
 class EvaluateConfig:
     # Upper edges of the identity-to-training bands (last band ends at 1).
-    identity_bands: list[float] = field(default_factory=lambda: [0.5, 0.6, 0.7, 0.8, 0.9])
+    identity_bands: list[float] = field(
+        default_factory=lambda: [0.5, 0.6, 0.7, 0.8, 0.9]
+    )
     # Upper edges of the confidence bins for calibration.
     calibration_bins: list[float] = field(default_factory=lambda: [0.5, 0.7, 0.9, 0.99])
     # Penalised refits of the variant grid on the test set (seconds each).
@@ -268,8 +282,10 @@ class EvaluateConfig:
     # Selection stage: grouped cross-validation on training rows (classifier
     # variants, region-prediction variants) and a recommended configuration.
     select: bool = True
-    bootstrap: int = 1000                 # resamples of entry groups for intervals
-    select_taus: list[float] = field(default_factory=lambda: [0.25, 0.5, 1.0])  # tau sensitivity
+    bootstrap: int = 1000  # resamples of entry groups for intervals
+    select_taus: list[float] = field(
+        default_factory=lambda: [0.25, 0.5, 1.0]
+    )  # tau sensitivity
     seed: int = 20261106
 
 
@@ -278,7 +294,7 @@ class PackageConfig:
     # Calibrated cutoffs written into the shipped profiles: false-positive
     # rate per sequence on all negatives (Bonferroni over profiles).
     cutoff_fpr: float = 0.01
-    archive: bool = True                # also write a .tar.gz
+    archive: bool = True  # also write a .tar.gz
 
 
 @dataclass
@@ -324,13 +340,19 @@ class Config:
                 raise FileNotFoundError(f"labels.{name} not found: {path}")
         p = self.partition
         if not 0 < p.test_fraction < 1 or p.folds < 2:
-            raise ValueError("partition.test_fraction must be in (0, 1) and partition.folds >= 2")
+            raise ValueError(
+                "partition.test_fraction must be in (0, 1) and partition.folds >= 2"
+            )
         if p.temporal_cutoff:
             import datetime as _dt
+
             _dt.date.fromisoformat(p.temporal_cutoff)
         if self.fit.bayes not in ("auto", "true", "false"):
             raise ValueError('fit.bayes must be "auto", "true" or "false"')
-        if not set(self.fit.methods) <= {"hmm", "pssm", "pwm", "framework"} or not self.fit.methods:
+        if (
+            not set(self.fit.methods) <= {"hmm", "pssm", "pwm", "framework"}
+            or not self.fit.methods
+        ):
             raise ValueError("fit.methods: hmm, pssm, pwm, framework")
         if set(self.fit.regions) - {"SIG", "PRO", "MAT", "POST"}:
             raise ValueError("fit.regions: SIG, PRO, MAT, POST")
@@ -339,8 +361,11 @@ class Config:
         if self.anatomy.extension not in ("within", "cross"):
             raise ValueError('anatomy.extension must be "within" or "cross"')
         if not isinstance(self.anatomy.sites, bool) and (
-                set(self.anatomy.sites) - {"signal", "mature_start", "mature_end"}):
-            raise ValueError('anatomy.sites: true, false, or a list of "signal", "mature_start", "mature_end"')
+            set(self.anatomy.sites) - {"signal", "mature_start", "mature_end"}
+        ):
+            raise ValueError(
+                'anatomy.sites: true, false, or a list of "signal", "mature_start", "mature_end"'
+            )
         if self.evaluate.bootstrap < 0:
             raise ValueError("evaluate.bootstrap must be >= 0")
         if self.score.pssm not in ("auto", "true", "false"):
@@ -371,7 +396,11 @@ _SECTIONS = {
     "package": PackageConfig,
     "output": OutputConfig,
 }
-_PATH_FIELDS = {("labels", "overrides"), ("labels", "entry_overrides"), ("output", "root")}
+_PATH_FIELDS = {
+    ("labels", "overrides"),
+    ("labels", "entry_overrides"),
+    ("output", "root"),
+}
 
 
 def load_config(path: Path | None) -> Config:
@@ -511,7 +540,7 @@ seed = 20261106
 [anatomy]
 method = "transfer"         # region prediction: "transfer" (full-precursor HMM) or "envelope"
 sites = ["signal", "mature_start"]  # boundaries refined with lightmotif site matrices (true = all, false = none)
-cterm_trim = false          # drop a trailing G[KR]{0,3} from a C-terminal mature peptide (amidation)
+cterm_trim = false          # drop a trailing G[KR]{0, 3} from a C-terminal mature peptide (amidation)
 extension = "within"        # label transfer: extend unaligned ends within the region ("within") or across ("cross")
 min_occupancy = 0.5
 min_run = 3

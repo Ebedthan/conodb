@@ -23,7 +23,7 @@ import re
 from dataclasses import dataclass, field
 
 from .config import LabelsConfig, RegionsConfig
-from .core import cysteine_framework  # noqa: F401  (re-exported; defined in core)
+from .core import cysteine_framework
 from .io import read_tsv
 
 log = logging.getLogger(__name__)
@@ -38,7 +38,9 @@ _EVIDENCE = [
     ("similarity", {"ECO:0000250", "ECO:0000266"}),
     ("predicted", {"ECO:0000255", "ECO:0000256", "ECO:0000259"}),
 ]
-EVIDENCE_RANK = {name: i for i, (name, _) in enumerate(_EVIDENCE)} | {"none": len(_EVIDENCE)}
+EVIDENCE_RANK = {name: i for i, (name, _) in enumerate(_EVIDENCE)} | {
+    "none": len(_EVIDENCE)
+}
 
 
 def evidence_class(codes: list[str]) -> str:
@@ -51,12 +53,18 @@ def evidence_class(codes: list[str]) -> str:
 # ---------------------------------------------------------------- labels ----
 
 _SUPER_RULES = [
-    (re.compile(r"^(?:conotoxin|conopeptide)\s+(\S+)\s+superfamily$", re.I), "conopeptide"),
-    (re.compile(r"^(?:conotoxin|conopeptide)\s+(\S+)\s+family$", re.I), "conopeptide"),
+    (
+        re.compile(r"^(?:conotoxin|conopeptide)\s+(\S+)\s+superfamily$", re.IGNORECASE),
+        "conopeptide",
+    ),
+    (
+        re.compile(r"^(?:conotoxin|conopeptide)\s+(\S+)\s+family$", re.IGNORECASE),
+        "conopeptide",
+    ),
     # Bare superfamily codes as UniProt sometimes writes them: "O2 superfamily"
     (re.compile(r"^([A-Z][A-Za-z0-9]{0,3}(?:-like)?)\s+superfamily$"), "conopeptide"),
 ]
-_FAMILY_RULE = re.compile(r"^(.+?)\s+(?:sub)?family$", re.I)
+_FAMILY_RULE = re.compile(r"^(.+?)\s+(?:sub)?family$", re.IGNORECASE)
 
 
 @dataclass
@@ -65,15 +73,15 @@ class Label:
     raw_family: str = ""
     superfamily: str = ""
     family: str = ""
-    scope: str = "unlabelled"   # conopeptide | reference | other | exclude | unlabelled | unmapped
-    source: str = ""            # rule | override | ""
+    scope: str = "unlabelled"  # conopeptide | reference | other | exclude | unlabelled | unmapped
+    source: str = ""  # rule | override | ""
 
 
 def split_similarity(text: str) -> tuple[str, str]:
     """'Belongs to the conotoxin C superfamily. Consomatin family.' ->
     ('conotoxin C superfamily', 'Consomatin family')."""
     text = text.strip()
-    m = re.match(r"^Belongs to the (.+?)(?:\.\s+(.+?))?\.?$", text, re.S)
+    m = re.match(r"^Belongs to the (.+?)(?:\.\s+(.+?))?\.?$", text, re.DOTALL)
     if not m:
         return text.rstrip("."), ""
     return m.group(1).strip(), (m.group(2) or "").strip().rstrip(".")
@@ -96,8 +104,13 @@ class LabelResolver:
                     continue
                 scope = (row.get("scope") or "conopeptide").strip()
                 if scope not in {"conopeptide", "other", "exclude"}:
-                    raise ValueError(f"{cfg.overrides}: invalid scope {scope!r} for {raw_sf!r}")
-                key = (raw_sf.lower(), (row.get("raw_family") or "*").strip().lower() or "*")
+                    raise ValueError(
+                        f"{cfg.overrides}: invalid scope {scope!r} for {raw_sf!r}"
+                    )
+                key = (
+                    raw_sf.lower(),
+                    (row.get("raw_family") or "*").strip().lower() or "*",
+                )
                 table[key] = {
                     "superfamily": (row.get("superfamily") or "").strip(),
                     "family": (row.get("family") or "").strip(),
@@ -111,10 +124,17 @@ class LabelResolver:
                     continue
                 scope = (row.get("scope") or "conopeptide").strip()
                 if scope not in {"conopeptide", "other", "exclude"}:
-                    raise ValueError(f"{cfg.entry_overrides}: invalid scope {scope!r} for {acc}")
-                per_entry[acc] = {"superfamily": (row.get("superfamily") or "").strip(),
-                                  "family": (row.get("family") or "").strip(), "scope": scope}
-        return cls(overrides=table, entries=per_entry, taxon_scope=frozenset(cfg.taxon_scope))
+                    raise ValueError(
+                        f"{cfg.entry_overrides}: invalid scope {scope!r} for {acc}"
+                    )
+                per_entry[acc] = {
+                    "superfamily": (row.get("superfamily") or "").strip(),
+                    "family": (row.get("family") or "").strip(),
+                    "scope": scope,
+                }
+        return cls(
+            overrides=table, entries=per_entry, taxon_scope=frozenset(cfg.taxon_scope)
+        )
 
     def apply_taxon(self, taxon_family: str, lab: Label) -> tuple[Label, str | None]:
         """Demote conopeptide labels outside the taxonomic scope to 'reference'."""
@@ -136,7 +156,12 @@ class LabelResolver:
                 self.unmapped[(lab.raw_superfamily, lab.raw_family)] = n
             else:
                 self.unmapped.pop((lab.raw_superfamily, lab.raw_family), None)
-        lab.superfamily, lab.family, lab.scope, lab.source = o["superfamily"], o["family"], o["scope"], "entry_override"
+        lab.superfamily, lab.family, lab.scope, lab.source = (
+            o["superfamily"],
+            o["family"],
+            o["scope"],
+            "entry_override",
+        )
         return lab
 
     def resolve(self, raw_sf: str, raw_fam: str) -> Label:
@@ -146,7 +171,11 @@ class LabelResolver:
         for key in ((raw_sf.lower(), raw_fam.lower()), (raw_sf.lower(), "*")):
             if key in self.overrides:
                 o = self.overrides[key]
-                lab.superfamily, lab.scope, lab.source = o["superfamily"], o["scope"], "override"
+                lab.superfamily, lab.scope, lab.source = (
+                    o["superfamily"],
+                    o["scope"],
+                    "override",
+                )
                 lab.family = o["family"] or _family_name(raw_fam)
                 return lab
         for rx, scope in _SUPER_RULES:
@@ -171,6 +200,7 @@ def _family_name(raw: str) -> str:
 
 
 # --------------------------------------------------------------- regions ----
+
 
 @dataclass
 class Feature:
@@ -219,10 +249,14 @@ def extract_regions(entry: dict, cfg: RegionsConfig) -> tuple[list[dict], list[s
             warnings.append(f"{acc}: {f.type} with unknown boundary skipped")
             continue
         if not f.exact and not cfg.allow_uncertain:
-            warnings.append(f"{acc}: {f.type} {f.start}-{f.end} has uncertain boundary, skipped")
+            warnings.append(
+                f"{acc}: {f.type} {f.start}-{f.end} has uncertain boundary, skipped"
+            )
             continue
         if not (1 <= f.start <= f.end <= len(seq)):
-            warnings.append(f"{acc}: {f.type} {f.start}-{f.end} outside sequence, skipped")
+            warnings.append(
+                f"{acc}: {f.type} {f.start}-{f.end} outside sequence, skipped"
+            )
             continue
         usable.append(f)
 
@@ -232,7 +266,11 @@ def extract_regions(entry: dict, cfg: RegionsConfig) -> tuple[list[dict], list[s
     mat_source = "Peptide"
     if not mats:
         blockers = sig + props
-        mats = [f for f in usable if f.type == "Chain" and not any(_overlaps(f, b) for b in blockers)]
+        mats = [
+            f
+            for f in usable
+            if f.type == "Chain" and not any(_overlaps(f, b) for b in blockers)
+        ]
         mat_source = "Chain"
 
     assigned: list[tuple[str, Feature, str]] = [("SIG", f, "Signal") for f in sig[:1]]
@@ -256,7 +294,9 @@ def extract_regions(entry: dict, cfg: RegionsConfig) -> tuple[list[dict], list[s
     for region, f, source in sorted(assigned, key=lambda t: t[1].start):  # type: ignore[arg-type,return-value]
         sub = seq[f.start - 1 : f.end]  # type: ignore[operator]
         if len(sub) < cfg.min_length:
-            warnings.append(f"{acc}: {region} {f.start}-{f.end} shorter than {cfg.min_length} aa, skipped")
+            warnings.append(
+                f"{acc}: {region} {f.start}-{f.end} shorter than {cfg.min_length} aa, skipped"
+            )
             continue
         counters[region] = counters.get(region, 0) + 1
         rows.append(
@@ -280,6 +320,7 @@ def extract_regions(entry: dict, cfg: RegionsConfig) -> tuple[list[dict], list[s
 
 
 # ---------------------------------------------------------------- entries ---
+
 
 def _similarity_text(entry: dict) -> str:
     for c in entry.get("comments", []):
@@ -307,7 +348,9 @@ def _taxon_family(lineage: list) -> str:
     return fams[-1] if fams else ""
 
 
-def parse_entry(entry: dict, resolver: LabelResolver, rcfg: RegionsConfig) -> tuple[dict, list[dict], list[str]]:
+def parse_entry(
+    entry: dict, resolver: LabelResolver, rcfg: RegionsConfig
+) -> tuple[dict, list[dict], list[str]]:
     acc = entry["primaryAccession"]
     org = entry.get("organism", {})
     audit = entry.get("entryAudit", {})
@@ -315,7 +358,9 @@ def parse_entry(entry: dict, resolver: LabelResolver, rcfg: RegionsConfig) -> tu
     flag = entry.get("proteinDescription", {}).get("flag", "") or ""
     raw_sf, raw_fam = split_similarity(_similarity_text(entry))
     taxon_family = _taxon_family(org.get("lineage", []))
-    label, taxon_warning = resolver.apply_taxon(taxon_family, resolver.resolve(raw_sf, raw_fam))
+    label, taxon_warning = resolver.apply_taxon(
+        taxon_family, resolver.resolve(raw_sf, raw_fam)
+    )
     label = resolver.apply_entry(acc, label)
     regions, warnings = extract_regions(entry, rcfg)
     if taxon_warning:
@@ -336,7 +381,9 @@ def parse_entry(entry: dict, resolver: LabelResolver, rcfg: RegionsConfig) -> tu
         "label_source": label.source,
         "length": len(seq),
         "fragment": "fragment" in flag.lower(),
-        "complete_precursor": {"SIG", "MAT"} <= present and seq.startswith("M") and "fragment" not in flag.lower(),
+        "complete_precursor": {"SIG", "MAT"} <= present
+        and seq.startswith("M")
+        and "fragment" not in flag.lower(),
         "regions": sorted(present, key=REGIONS.index),
         "first_public": audit.get("firstPublicDate", ""),
         "last_update": audit.get("lastAnnotationUpdateDate", ""),
@@ -348,14 +395,42 @@ def parse_entry(entry: dict, resolver: LabelResolver, rcfg: RegionsConfig) -> tu
 
 
 ENTRY_FIELDS = [
-    "accession", "entry_name", "protein_name", "organism", "taxon_id", "taxon_family",
-    "superfamily", "family", "scope", "label_source", "raw_superfamily", "raw_family",
-    "length", "fragment", "complete_precursor", "regions", "first_public", "last_update",
-    "entry_version", "sequence_version", "sequence",
+    "accession",
+    "entry_name",
+    "protein_name",
+    "organism",
+    "taxon_id",
+    "taxon_family",
+    "superfamily",
+    "family",
+    "scope",
+    "label_source",
+    "raw_superfamily",
+    "raw_family",
+    "length",
+    "fragment",
+    "complete_precursor",
+    "regions",
+    "first_public",
+    "last_update",
+    "entry_version",
+    "sequence_version",
+    "sequence",
 ]
 REGION_FIELDS = [
-    "region_id", "accession", "region", "index", "start", "end", "length", "source_feature",
-    "exact", "evidence", "evidence_codes", "framework", "sequence",
+    "region_id",
+    "accession",
+    "region",
+    "index",
+    "start",
+    "end",
+    "length",
+    "source_feature",
+    "exact",
+    "evidence",
+    "evidence_codes",
+    "framework",
+    "sequence",
 ]
 
 

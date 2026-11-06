@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "conodb"
 version = "0.1.0"
-description = "Reproducible builder for the ConoDictor reference database (UniProt -> regions -> audit -> profiles)."
+description = "Reproducible builder for the ConoDictor reference database (UniProt => regions => audit => profiles)."
 readme = "README.md"
 license = "GPL-3.0-or-later"
 requires-python = ">=3.10"

@@ -31,12 +31,39 @@ from .config import Config
 
 log = logging.getLogger(__name__)
 
-PARTITION_FIELDS = ["accession", "superfamily", "family", "scope", "tier", "group", "role", "fold", "inherited", "reason"]
-SUMMARY_FIELDS = ["superfamily", "tier", "groups", "entries", "train_groups", "test_groups", "temporal_test_groups",
-                  "train_entries", "test_entries", "temporal_test_entries", "fold_groups"]
+PARTITION_FIELDS = [
+    "accession",
+    "superfamily",
+    "family",
+    "scope",
+    "tier",
+    "group",
+    "role",
+    "fold",
+    "inherited",
+    "reason",
+]
+SUMMARY_FIELDS = [
+    "superfamily",
+    "tier",
+    "groups",
+    "entries",
+    "train_groups",
+    "test_groups",
+    "temporal_test_groups",
+    "train_entries",
+    "test_entries",
+    "temporal_test_entries",
+    "fold_groups",
+]
 
-_SCOPE_ROLE = {"other": "negative", "reference": "reference", "unlabelled": "unlabelled",
-               "unmapped": "unmapped", "exclude": "excluded"}
+_SCOPE_ROLE = {
+    "other": "negative",
+    "reference": "reference",
+    "unlabelled": "unlabelled",
+    "unmapped": "unmapped",
+    "exclude": "excluded",
+}
 
 
 def _h(seed: str, key: str) -> str:
@@ -49,7 +76,7 @@ class Group:
     members: list[dict]
     superfamily: str = ""
     mixed: bool = False
-    key: str = ""                 # smallest accession: stable identity across releases
+    key: str = ""  # smallest accession: stable identity across releases
     first_public: str = ""
     role: str = ""
     fold: str = ""
@@ -68,8 +95,14 @@ class PartitionResult:
     mixed_groups: list[str]
 
 
-def run_partition(cfg: Config, entries: list[dict], groups_tsv: list[dict], conflicts: list[dict],
-                  audit_tiers: dict[str, str], previous: list[dict] | None) -> PartitionResult:
+def run_partition(
+    cfg: Config,
+    entries: list[dict],
+    groups_tsv: list[dict],
+    conflicts: list[dict],
+    audit_tiers: dict[str, str],
+    previous: list[dict] | None,
+) -> PartitionResult:
     pc = cfg.partition
     group_of = {r["accession"]: r["group"] for r in groups_tsv}
 
@@ -78,10 +111,16 @@ def run_partition(cfg: Config, entries: list[dict], groups_tsv: list[dict], conf
     if pc.exclude_conflicts:
         for c in conflicts:
             for acc in filter(None, c.get("review_accessions", "").split(";")):
-                excluded.setdefault(acc, f"label conflict ({c['severity']}: {c['labels']})")
+                excluded.setdefault(
+                    acc, f"label conflict ({c['severity']}: {c['labels']})"
+                )
 
     # 2. eligible entries -> groups
-    eligible = [e for e in entries if e["scope"] == "conopeptide" and e["accession"] not in excluded]
+    eligible = [
+        e
+        for e in entries
+        if e["scope"] == "conopeptide" and e["accession"] not in excluded
+    ]
     by_gid: dict[str, list[dict]] = defaultdict(list)
     for e in eligible:
         by_gid[group_of[e["accession"]]].append(e)
@@ -91,14 +130,25 @@ def run_partition(cfg: Config, entries: list[dict], groups_tsv: list[dict], conf
         top = max(labels.values())
         sf = sorted(k for k, v in labels.items() if v == top)[0]
         dates = [m["first_public"] for m in members if m["first_public"]]
-        groups.append(Group(gid=gid, members=members, superfamily=sf, mixed=len(labels) > 1,
-                            key=min(m["accession"] for m in members), first_public=min(dates) if dates else ""))
+        groups.append(
+            Group(
+                gid=gid,
+                members=members,
+                superfamily=sf,
+                mixed=len(labels) > 1,
+                key=min(m["accession"] for m in members),
+                first_public=min(dates) if dates else "",
+            )
+        )
 
     # 3. tiers after exclusions
     n_groups = Counter(g.superfamily for g in groups)
     tiers = {sf: tier_of(n, cfg) for sf, n in n_groups.items()}
-    tier_changes = [{"superfamily": sf, "audit_tier": audit_tiers.get(sf, ""), "partition_tier": t}
-                    for sf, t in sorted(tiers.items()) if str(audit_tiers.get(sf, "")) != str(t)]
+    tier_changes = [
+        {"superfamily": sf, "audit_tier": audit_tiers.get(sf, ""), "partition_tier": t}
+        for sf, t in sorted(tiers.items())
+        if str(audit_tiers.get(sf, "")) != str(t)
+    ]
 
     # 4. inheritance from the previous release
     prev = {r["accession"]: r for r in previous or []}
@@ -107,17 +157,24 @@ def run_partition(cfg: Config, entries: list[dict], groups_tsv: list[dict], conf
     if previous and prev_k and not folds_ok:
         log.warning("partition.folds changed; training folds are reassigned")
     for g in groups:
-        roles = {prev[m["accession"]]["role"] for m in g.members if m["accession"] in prev}
+        roles = {
+            prev[m["accession"]]["role"] for m in g.members if m["accession"] in prev
+        }
         if "test" in roles:
             g.role, g.inherited = "test", True
         elif "temporal_test" in roles:
             g.role, g.inherited = "temporal_test", True
         elif "train" in roles:
             g.role, g.inherited = "train", True
-            folds = Counter(prev[m["accession"]]["fold"] for m in g.members
-                            if m["accession"] in prev and prev[m["accession"]]["fold"].isdigit())
+            folds = Counter(
+                prev[m["accession"]]["fold"]
+                for m in g.members
+                if m["accession"] in prev and prev[m["accession"]]["fold"].isdigit()
+            )
             if folds and folds_ok:
-                g.fold = sorted(folds.items(), key=lambda kv: (-kv[1], int(kv[0])))[0][0]
+                g.fold = sorted(folds.items(), key=lambda kv: (-kv[1], int(kv[0])))[0][
+                    0
+                ]
 
     # 5. roles by tier
     reassigned: list[str] = []
@@ -133,8 +190,15 @@ def run_partition(cfg: Config, entries: list[dict], groups_tsv: list[dict], conf
             continue
         if pc.temporal_cutoff:
             for g in gs:
-                if not g.inherited and g.first_public and g.first_public >= pc.temporal_cutoff:
-                    g.role, g.reason = "temporal_test", f"first public >= {pc.temporal_cutoff}"
+                if (
+                    not g.inherited
+                    and g.first_public
+                    and g.first_public >= pc.temporal_cutoff
+                ):
+                    g.role, g.reason = (
+                        "temporal_test",
+                        f"first public >= {pc.temporal_cutoff}",
+                    )
         if tier == 2:
             for g in gs:
                 if g.role != "temporal_test":
@@ -144,17 +208,21 @@ def run_partition(cfg: Config, entries: list[dict], groups_tsv: list[dict], conf
         pool = [g for g in gs if g.role != "temporal_test"]
         quota = max(1, round(pc.test_fraction * len(pool)))
         n_test = sum(g.role == "test" for g in pool)
-        for g in pool:                       # new groups first, in hash order
+        for g in pool:  # new groups first, in hash order
             if n_test >= quota:
                 break
             if not g.role:
                 g.role, g.reason = "test", "new group"
                 n_test += 1
-        for g in pool:                       # then, only if unavoidable, former training groups
+        for g in pool:  # then, only if unavoidable, former training groups
             if n_test >= quota:
                 break
             if g.role == "train":
-                g.role, g.fold, g.reason = "test", "", "moved from train to meet test quota"
+                g.role, g.fold, g.reason = (
+                    "test",
+                    "",
+                    "moved from train to meet test quota",
+                )
                 reassigned.append(f"{sf}: group {g.key} ({len(g.members)} entries)")
                 n_test += 1
         # training folds, balanced by group count
@@ -163,7 +231,9 @@ def run_partition(cfg: Config, entries: list[dict], groups_tsv: list[dict], conf
         for g in train:
             g.role = "train"
             if not g.fold:
-                g.fold = str(min(range(1, pc.folds + 1), key=lambda f: (sizes[str(f)], f)))
+                g.fold = str(
+                    min(range(1, pc.folds + 1), key=lambda f: (sizes[str(f)], f))
+                )
                 sizes[g.fold] += 1
 
     # 6. rows for every entry
@@ -171,17 +241,48 @@ def run_partition(cfg: Config, entries: list[dict], groups_tsv: list[dict], conf
     gmap = {m["accession"]: g for g in groups for m in g.members}
     for e in entries:
         acc = e["accession"]
-        base = {"accession": acc, "superfamily": e["superfamily"], "family": e["family"], "scope": e["scope"],
-                "group": group_of.get(acc, "")}
+        base = {
+            "accession": acc,
+            "superfamily": e["superfamily"],
+            "family": e["family"],
+            "scope": e["scope"],
+            "group": group_of.get(acc, ""),
+        }
         if acc in gmap:
             g = gmap[acc]
-            rows.append(base | {"tier": tiers[g.superfamily], "role": g.role, "fold": g.fold, "inherited": g.inherited,
-                                "reason": g.reason + (f"; group labelled {g.superfamily}" if g.mixed else "")})
+            rows.append(
+                base
+                | {
+                    "tier": tiers[g.superfamily],
+                    "role": g.role,
+                    "fold": g.fold,
+                    "inherited": g.inherited,
+                    "reason": g.reason
+                    + (f"; group labelled {g.superfamily}" if g.mixed else ""),
+                }
+            )
         elif acc in excluded:
-            rows.append(base | {"tier": "", "role": "excluded", "fold": "", "inherited": False, "reason": excluded[acc]})
+            rows.append(
+                base
+                | {
+                    "tier": "",
+                    "role": "excluded",
+                    "fold": "",
+                    "inherited": False,
+                    "reason": excluded[acc],
+                }
+            )
         else:
-            rows.append(base | {"tier": "", "role": _SCOPE_ROLE.get(e["scope"], e["scope"]), "fold": "",
-                                "inherited": False, "reason": f"scope {e['scope']}"})
+            rows.append(
+                base
+                | {
+                    "tier": "",
+                    "role": _SCOPE_ROLE.get(e["scope"], e["scope"]),
+                    "fold": "",
+                    "inherited": False,
+                    "reason": f"scope {e['scope']}",
+                }
+            )
     rows.sort(key=lambda r: r["accession"])
 
     # 7. integrity: a group never spans train and a test role
@@ -191,28 +292,54 @@ def run_partition(cfg: Config, entries: list[dict], groups_tsv: list[dict], conf
             split[r["group"]].add("train" if r["role"] == "train" else "test")
     leaks = [g for g, s in split.items() if len(s) > 1]
     if leaks:
-        raise RuntimeError(f"Partition leak: groups in both train and test: {leaks[:5]}")
+        raise RuntimeError(
+            f"Partition leak: groups in both train and test: {leaks[:5]}"
+        )
 
     # 8. summary
     summary = []
-    for sf, gs in sorted(by_sf.items(), key=lambda kv: (tiers[kv[0]], -len(kv[1]), kv[0])):
+    for sf, gs in sorted(
+        by_sf.items(), key=lambda kv: (tiers[kv[0]], -len(kv[1]), kv[0])
+    ):
+
         def cnt(role, what, gs=gs):
             sel = [g for g in gs if g.role == role]
             return len(sel) if what == "g" else sum(len(g.members) for g in sel)
-        fold_groups = Counter(g.fold for g in gs if g.role == "train" and g.fold.isdigit())
-        summary.append({
-            "superfamily": sf, "tier": tiers[sf], "groups": len(gs), "entries": sum(len(g.members) for g in gs),
-            "train_groups": cnt("train", "g"), "test_groups": cnt("test", "g"), "temporal_test_groups": cnt("temporal_test", "g"),
-            "train_entries": cnt("train", "e"), "test_entries": cnt("test", "e"), "temporal_test_entries": cnt("temporal_test", "e"),
-            "fold_groups": "/".join(str(fold_groups[str(f)]) for f in range(1, pc.folds + 1)) if tiers[sf] == 1
-            else ("logo" if tiers[sf] == 2 else ""),
-        })
+
+        fold_groups = Counter(
+            g.fold for g in gs if g.role == "train" and g.fold.isdigit()
+        )
+        summary.append(
+            {
+                "superfamily": sf,
+                "tier": tiers[sf],
+                "groups": len(gs),
+                "entries": sum(len(g.members) for g in gs),
+                "train_groups": cnt("train", "g"),
+                "test_groups": cnt("test", "g"),
+                "temporal_test_groups": cnt("temporal_test", "g"),
+                "train_entries": cnt("train", "e"),
+                "test_entries": cnt("test", "e"),
+                "temporal_test_entries": cnt("temporal_test", "e"),
+                "fold_groups": "/".join(
+                    str(fold_groups[str(f)]) for f in range(1, pc.folds + 1)
+                )
+                if tiers[sf] == 1
+                else ("logo" if tiers[sf] == 2 else ""),
+            }
+        )
     excl_rows = [{"accession": a, "reason": r} for a, r in sorted(excluded.items())]
-    mixed = [f"{g.key} ({', '.join(sorted({m['superfamily'] for m in g.members}))})" for g in groups if g.mixed]
+    mixed = [
+        f"{g.key} ({', '.join(sorted({m['superfamily'] for m in g.members}))})"
+        for g in groups
+        if g.mixed
+    ]
     return PartitionResult(rows, summary, excl_rows, reassigned, tier_changes, mixed)
 
 
-def render_partition(cfg: Config, release: str, res: PartitionResult, previous: str | None) -> str:
+def render_partition(
+    cfg: Config, release: str, res: PartitionResult, previous: str | None
+) -> str:
     from .audit import _table
 
     pc = cfg.partition
@@ -226,16 +353,36 @@ def render_partition(cfg: Config, release: str, res: PartitionResult, previous: 
         "Tier 2: leave-one-group-out. Tier 3: reference only.",
         f"- Temporal test: {'groups first public on/after ' + pc.temporal_cutoff if pc.temporal_cutoff else 'off'}.",
         f"- Seed: `{pc.seed}`. Previous release: {previous or 'none (fresh partition)'}"
-        + (f"; {inherited} entries kept their previous assignment." if previous else "."),
+        + (
+            f"; {inherited} entries kept their previous assignment."
+            if previous
+            else "."
+        ),
         "",
-        "Entries by role: " + ", ".join(f"{k} {v}" for k, v in sorted(roles.items(), key=lambda kv: -kv[1])),
+        "Entries by role: "
+        + ", ".join(
+            f"{k} {v}" for k, v in sorted(roles.items(), key=lambda kv: -kv[1])
+        ),
         "",
         "## Per superfamily",
         "",
         "`fold_groups`: training groups in each fold (tier 1).",
         "",
-        _table(res.summary, ["superfamily", "tier", "groups", "entries", "train_groups", "test_groups",
-                             "temporal_test_groups", "train_entries", "test_entries", "fold_groups"]),
+        _table(
+            res.summary,
+            [
+                "superfamily",
+                "tier",
+                "groups",
+                "entries",
+                "train_groups",
+                "test_groups",
+                "temporal_test_groups",
+                "train_entries",
+                "test_entries",
+                "fold_groups",
+            ],
+        ),
         f"## Excluded entries ({len(res.excluded)})",
         "",
         _table(res.excluded, ["accession", "reason"]),
@@ -244,9 +391,13 @@ def render_partition(cfg: Config, release: str, res: PartitionResult, previous: 
         _table(res.tier_changes, ["superfamily", "audit_tier", "partition_tier"]),
         "## Groups mixing superfamily labels",
         "",
-        ("\n".join(f"- {m}" for m in res.mixed_groups) + "\n") if res.mixed_groups else "_none_\n",
+        ("\n".join(f"- {m}" for m in res.mixed_groups) + "\n")
+        if res.mixed_groups
+        else "_none_\n",
         "## Groups moved from train to test",
         "",
-        ("\n".join(f"- {m}" for m in res.reassigned) + "\n") if res.reassigned else "_none_\n",
+        ("\n".join(f"- {m}" for m in res.reassigned) + "\n")
+        if res.reassigned
+        else "_none_\n",
     ]
     return "\n".join(lines) + "\n"
