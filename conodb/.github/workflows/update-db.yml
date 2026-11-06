@@ -1,0 +1,99 @@
+# Weekly check for a new UniProt release; rebuild and propose it as a PR.
+# Assumes this repository layout:
+#   conodb/            the conodb package (this folder)
+#   conodb/conodb.toml config, with [output] root = "db"  -> conodb/db/
+#   conodb/labels.tsv  curated labels
+# Copy this file to .github/workflows/ at the repository root.
+name: Update ConoDictor database
+
+on:
+  schedule:
+    - cron: "17 3 * * 1"   # Mondays 03:17 UTC; UniProt releases about every 8 weeks
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Rebuild even if the UniProt release is already built"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: conodb-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install conodb
+        run: pip install ./conodb
+
+      - name: Is a new UniProt release available?
+        id: check
+        run: |
+          set +e
+          conodb check -c conodb/conodb.toml
+          code=$?
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          [ $code -eq 0 ] || [ $code -eq 10 ] || exit $code
+
+      - name: Build (Bayesian fit off on CI, it takes hours on a hosted runner)
+        id: build
+        if: steps.check.outputs.code == '10' || inputs.force
+        run: |
+          set +e
+          sed -i 's/^bayes = .*/bayes = "false"/' conodb/conodb.toml
+          conodb run -c conodb/conodb.toml
+          code=$?
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          echo "release=$(cat conodb/db/LATEST 2>/dev/null)" >> "$GITHUB_OUTPUT"
+          [ $code -eq 0 ] || [ $code -eq 2 ] || exit $code
+
+      - name: Open a curation issue (new family labels)
+        if: steps.build.outputs.code == '2'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          title="conodb: new UniProt family labels need curation"
+          open=$(gh issue list --state open --search "in:title \"$title\"" --json number --jq length)
+          [ "$open" -gt 0 ] && { echo "Curation issue already open"; exit 0; }
+          f=$(ls -t conodb/db/releases/*/unmapped_labels.tsv | head -1)
+          {
+            echo "UniProt introduced family labels that no rule or override covers."
+            echo "Add them to \`conodb/labels.tsv\` (scope: conopeptide, other or exclude), then rerun this workflow."
+            echo
+            echo '```'
+            cat "$f"
+            echo '```'
+          } > body.md
+          gh issue create --title "$title" --body-file body.md
+
+      - name: Upload the full release (raw download, clusters, FASTA)
+        if: steps.build.outputs.code == '0'
+        uses: actions/upload-artifact@v4
+        with:
+          name: conodb-${{ steps.build.outputs.release }}
+          path: conodb/db/releases/${{ steps.build.outputs.release }}
+          include-hidden-files: true
+          retention-days: 90
+
+      - name: Open a pull request with the summary tables and report
+        if: steps.build.outputs.code == '0'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: conodb/update-${{ steps.build.outputs.release }}
+          title: "Database update: UniProt ${{ steps.build.outputs.release }}"
+          commit-message: "conodb: build UniProt ${{ steps.build.outputs.release }}"
+          body-path: conodb/db/releases/${{ steps.build.outputs.release }}/report.md
+          add-paths: conodb/db

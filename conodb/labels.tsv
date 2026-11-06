@@ -1,0 +1,28 @@
+raw_superfamily	raw_family	superfamily	family	scope	note
+# DRAFT for review (from the UniProt 2026_04 audit). scope: conopeptide = classifier class; other = kept, used later as hard negatives; exclude = dropped.
+# Bare codes such as "O2 superfamily" / "E superfamily" are now handled by a built-in rule and need no row.
+# --- Hormone-like and disulfide-poor conopeptides: real venom precursors with signal peptides -> classifier classes
+insulin family	*	Con-insulin		conopeptide	venom insulins
+vasopressin/oxytocin family	*	Conopressin		conopeptide	conopressins
+FARP (FMRFamide related peptide) family	*	Conorfamide		conopeptide	FMRFamide-related (conorfamides)
+elevenin family	*	Elevenin		conopeptide	hormone-like
+NPY family	*	NPY-like		conopeptide	hormone-like; check against M/Conopeptide Y entries
+ConoGAY family	*	ConoGAY		conopeptide
+conophan family	*	Conophan		conopeptide	disulfide-poor
+venom Kunitz-type family	*	Conkunitzin		conopeptide	ConoDictor 2 had a Conkunitzin profile
+# --- Conoidea outside Conidae: DECIDE. 'other' keeps v3.0 Conus-focused; switch to conopeptide for Conoidea scope (all tier 3 today)
+teretoxin A (TA) superfamily	*	Teretoxin-TA		other	Terebridae
+teretoxin C (TC) superfamily	*	Teretoxin-TC		other	Terebridae
+teretoxin H (TH) superfamily	*	Teretoxin-TH		other	Terebridae
+teretoxin J (TJ) superfamily	*	Teretoxin-TJ		other	Terebridae
+teretoxin M (TM) superfamily	*	Teretoxin-TM		other	Terebridae
+teretoxin N (TN) superfamily	*	Teretoxin-TN		other	Terebridae
+Pg turripeptide superfamily	*	Turripeptide-Pg		other	Turridae
+turripeptide family	*	Turripeptide		other	Turridae
+# --- Larger venom proteins: not conopeptide precursors; kept as hard negatives for the background class
+glycoprotein hormones subunit alpha family	*	GPH-alpha		other	hormone subunit, not a conopeptide precursor
+glycoprotein hormones subunit beta family	*	GPH-beta		other	hormone subunit, not a conopeptide precursor
+CRISP family	*	CRISP		other	enzyme-like venom protein
+actinoporin family	*	Actinoporin		other	pore-forming protein
+phospholipase A2 family	*	PLA2		other	enzyme
+glycosyl hydrolase 56 family	*	Hyaluronidase		other	enzyme
