@@ -1,0 +1,87 @@
+{
+  "anatomy": {
+    "cterm_trim": true,
+    "distance_penalty": 0.5,
+    "extension": "within",
+    "method": "transfer",
+    "min_occupancy": 0.5,
+    "min_run": 3,
+    "pseudocount": 0.5,
+    "search_radius": 6,
+    "short_peptide_length": 60,
+    "site_left": 5,
+    "site_right": 3,
+    "sites": [
+      "signal",
+      "mature_start"
+    ],
+    "terminal_overhang": 5
+  },
+  "build": {
+    "full_models": true,
+    "matrix": "blosum45.cmp",
+    "min_length": 5,
+    "min_unique": 2,
+    "pfmake": "pfmake",
+    "pfmake_options": [],
+    "pfw": "pfw",
+    "pfw_options": [],
+    "pssm": "auto",
+    "pwm": true,
+    "regions": [
+      "SIG",
+      "PRO",
+      "MAT",
+      "POST"
+    ],
+    "threads": 0,
+    "use_uncertain": true
+  },
+  "fit": {
+    "adapt_delta": 0.9,
+    "alpha_prior_sd": 2.5,
+    "balance_negative_sources": true,
+    "baseline_fpr": 0.01,
+    "bayes": "auto",
+    "beta_prior_sd": 2.5,
+    "chains": 4,
+    "cmdstan": "",
+    "cores": 0,
+    "grainsize": 0,
+    "hmm_floor": 0.0,
+    "iter_sampling": 1000,
+    "iter_warmup": 1000,
+    "methods": [
+      "hmm",
+      "pssm",
+      "pwm",
+      "framework"
+    ],
+    "regions": [
+      "SIG",
+      "PRO",
+      "MAT"
+    ],
+    "seed": 20261105,
+    "ship_all_data": true,
+    "tau_fixed": 0.5,
+    "tau_from_posterior": true,
+    "tau_prior_sd": 1.0,
+    "weight_by_group": true
+  },
+  "package": {
+    "archive": true,
+    "cutoff_fpr": 0.01
+  },
+  "score": {
+    "framework": true,
+    "framework_pseudocount": 0.5,
+    "hmm_min_bits": -1000.0,
+    "max_mode": true,
+    "pfsearch": "pfsearch",
+    "pfsearch_options": [],
+    "pssm": "auto",
+    "pwm": true,
+    "threads": 0
+  }
+}

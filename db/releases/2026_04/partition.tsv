@@ -1,0 +1,1494 @@
+accession	superfamily	family	scope	tier	group	role	fold	inherited	reason
+A0A068B0Z6	A		conopeptide	1	F5C3U4	test		false	new group
+A0A068B409	A		conopeptide	1	A0A068B409	train	4	false	
+A0A068B6Q6	A		conopeptide	1	Q86RB2	train	5	false	
+A0A0A0VBX4	D		conopeptide	2	A0A0A0VBX4	train	logo	false	
+A0A0B4J184			unlabelled		A1BQQ5	unlabelled		false	scope unlabelled
+A0A0B5A7M7	Con-insulin		conopeptide	2	A0A0B5A7M7	train	logo	false	
+A0A0B5A7N1	Con-insulin		conopeptide	2	A0A0B5ABE4	train	logo	false	
+A0A0B5A7N5	Con-insulin		conopeptide	2	A0A0B5ABE4	train	logo	false	
+A0A0B5A7N8	Con-insulin		conopeptide	2	A0A0B5A7N8	train	logo	false	
+A0A0B5A7P2	Con-insulin		conopeptide	2	A0A0B5ABD5	train	logo	false	
+A0A0B5A8P4	Con-insulin		conopeptide	2	A0A0B5ABD5	train	logo	false	
+A0A0B5A8P8	Con-insulin		conopeptide	2	A0A0B5A8P8	train	logo	false	
+A0A0B5A8Q2	Con-insulin		conopeptide	2	A0A0B5ABD5	train	logo	false	
+A0A0B5A8Q6	Con-insulin		conopeptide	2	A0A0B5ABE4	train	logo	false	
+A0A0B5ABD5	Con-insulin		conopeptide	2	A0A0B5ABD5	train	logo	false	
+A0A0B5ABD9	Con-insulin		conopeptide	2	A0A0B5ABD9	train	logo	false	
+A0A0B5ABE4	Con-insulin		conopeptide	2	A0A0B5ABE4	train	logo	false	
+A0A0B5ABE6	Con-insulin		conopeptide	2	A0A0B5ABE4	train	logo	false	
+A0A0B5AC86	Con-insulin		conopeptide	2	A0A0B5ABD5	train	logo	false	
+A0A0B5AC90	Con-insulin		conopeptide	2	A0A0B5ABD5	train	logo	false	
+A0A0B5AC95	Con-insulin		conopeptide	2	A0A0B5ABD5	train	logo	false	
+A0A0B5AC98	Con-insulin		conopeptide	2	A0A0B5ABE4	train	logo	false	
+A0A0B5ADT3	Con-insulin		conopeptide	2	A0A0B5ABD9	train	logo	false	
+A0A0B5ADT9	Con-insulin		conopeptide	2	A0A0B5ABE4	train	logo	false	
+A0A0B5ADU4	Con-insulin		conopeptide	2	A0A0B5ABD5	train	logo	false	
+A0A0B5ADV0	Con-insulin		conopeptide	2	A0A0B5ADV0	train	logo	false	
+A0A0E3SVB8	G2	1	conopeptide	3	A0A0E3SVB8	reference		false	tier 3
+A0A0E3SVE7	G2	1	conopeptide	3	A0A0E3SVB8	reference		false	tier 3
+A0A0F6QDA5	O1		conopeptide	1	M9PQ91	test		false	new group
+A0A0F7YYV0	Con-insulin		conopeptide	2	A0A0B5A7N8	train	logo	false	
+A0A0F7YYX3			unlabelled		A0A0F7YYX3	unlabelled		false	scope unlabelled
+A0A0F7YZI5	glycoprotein hormones subunit beta		unmapped		A0A0F7YZI5	unmapped		false	scope unmapped
+A0A0F7YZQ7	elevenin		unmapped		P0DQY9	unmapped		false	scope unmapped
+A0A0F7Z3J2	glycoprotein hormones subunit alpha		unmapped		A0A0F7Z3J2	unmapped		false	scope unmapped
+A0A0K8TU78	O2	Contryphan	conopeptide	1	A0A1P8NVR5	train	1	false	
+A0A0K8TUE2	C	Consomatin	conopeptide	2	P0DW24	train	logo	false	
+A0A0R4I952			unlabelled		A0A0R4I952	unlabelled		false	scope unlabelled
+A0A125S9D8	D		conopeptide	2	A0A125S9D8	train	logo	false	
+A0A125S9D9	E		conopeptide	3	A0A125S9D9	reference		false	tier 3
+A0A125S9E0	I1		conopeptide	1	A0A125S9E0	train	1	false	
+A0A125S9E1	I2		conopeptide	1	A0A125S9E1	train	4	false	
+A0A125S9E2	I2		conopeptide	1	C7DQX6	train	3	false	
+A0A125S9E4	K		conopeptide	3	D0PX85	reference		false	tier 3; group labelled K
+A0A125S9E5	K		conopeptide	3	D0PX85	reference		false	tier 3; group labelled K
+A0A125S9E6	M		conopeptide	1	A0A125S9E6	train	5	false	
+A0A125S9E9	M		conopeptide	1	A0A125S9E9	train	5	false	
+A0A125S9F0	N		conopeptide		A0A125S9F0	excluded		false	label conflict (PRO: N x1, O2 x1)
+A0A125S9F2	O2		conopeptide	1	A0A125S9F2	train	5	false	
+A0A125S9F3	O2		conopeptide	1	A0A125S9F3	test		false	new group
+A0A125S9F6	P		conopeptide	2	A0A125S9F6	train	logo	false	
+A0A125S9F9			unlabelled		A0A125S9F9	unlabelled		false	scope unlabelled
+A0A125S9G0			unlabelled		A0A125S9G0	unlabelled		false	scope unlabelled
+A0A125S9G2			unlabelled		A0A125S9G2	unlabelled		false	scope unlabelled
+A0A125S9G3			unlabelled		A0A125S9G3	unlabelled		false	scope unlabelled
+A0A141TBR6			unlabelled		A0A141TBR6	unlabelled		false	scope unlabelled
+A0A142C197	C	Consomatin	conopeptide	2	P0DW26	train	logo	false	
+A0A1P8NVR4	O2	Contryphan	conopeptide	1	A0A1P8NVR5	train	1	false	
+A0A1P8NVR5	O2	Contryphan	conopeptide	1	A0A1P8NVR5	train	1	false	
+A0A1P8NVS2	O2	Contryphan	conopeptide	1	A0A1P8NVR5	train	1	false	
+A0A1P8NVS3	O2	Contryphan	conopeptide	1	A0A1P8NVR5	train	1	false	
+A0A1P8NVS8	O2	Contryphan	conopeptide	1	A0A1P8NVR5	train	1	false	
+A0A1P8NVS9	O2	Contryphan	conopeptide	1	A0A1P8NVR5	train	1	false	
+A0A1P8NVT3	O2	Contryphan	conopeptide	1	A0A1P8NVR5	train	1	false	
+A0A1P8NVU0	O2	Contryphan	conopeptide	1	A0A1P8NVR5	train	1	false	
+A0A1P8NVU1	O2	Contryphan	conopeptide	1	A0A1P8NVR5	train	1	false	
+A0A291NVT7	vasopressin/oxytocin		unmapped		P05486	unmapped		false	scope unmapped
+A0A2D1P890	M		conopeptide	1	A0A2D1P890	train	5	false	
+A0A2I4QAG8	O1		conopeptide	1	A0A2I4QAG8	train	4	false	
+A0A2I6EDL2	M		conopeptide	1	A0A125S9E6	train	5	false	
+A0A2I6EDL3	M		conopeptide	1	A0A2I6EDL3	train	5	false	; group labelled M
+A0A2I6EDL4	M		conopeptide	1	A0A2I6EDL5	train	1	false	
+A0A2I6EDL5	M		conopeptide	1	A0A2I6EDL5	train	1	false	
+A0A2I6EDL6	M		conopeptide	1	A0A2I6EDN5	train	4	false	
+A0A2I6EDL7	M		conopeptide	1	A0A2I6EDN5	train	4	false	
+A0A2I6EDM1	M		conopeptide	1	Q9BPJ4	train	3	false	
+A0A2I6EDM2	M		conopeptide	1	A0A2I6EDM2	train	2	false	
+A0A2I6EDM5	M		conopeptide	1	Q9BPJ4	train	3	false	
+A0A2I6EDM8	M		conopeptide	1	Q9BPJ4	train	3	false	
+A0A2I6EDM9	M		conopeptide	1	A0A2I6EDM9	train	1	false	
+A0A2I6EDN0	M		conopeptide	1	A0A2I6EDN0	train	1	false	
+A0A2I6EDN1	M		conopeptide	1	Q9BPJ4	train	3	false	
+A0A2I6EDN2	M		conopeptide	1	A0A2I6EDN2	train	5	false	
+A0A2I6EDN3	M		conopeptide	1	A0A2I6EDN5	train	4	false	
+A0A2I6EDN5	M		conopeptide	1	A0A2I6EDN5	train	4	false	
+A0A2I6EDN8	M		conopeptide	1	A0A2I6EDN8	test		false	new group
+A0A2L2P6T1	O2		conopeptide	1	A0A2L2P6T1	test		false	new group
+A0A2L2P6T9	O1		conopeptide	1	A0A2L2P6T9	train	1	false	
+A0A346CED7	U		conopeptide	3	A0A346CED7	reference		false	tier 3
+A0A384E129	O1		conopeptide	1	A0A384E129	test		false	new group
+A0A3G1VU73	R		conopeptide	3	A0A3G1VU73	reference		false	tier 3
+A0A3G1VU77	R		conopeptide	3	A0A3G1VU73	reference		false	tier 3
+A0A3G1VU78	R		conopeptide	3	A0A3G1VU73	reference		false	tier 3
+A0A3G1VU81	R		conopeptide	3	A0A3G1VU73	reference		false	tier 3
+A0A3G1VU84	R		conopeptide	3	A0A3G1VU73	reference		false	tier 3
+A0A3G3C7R5	T		conopeptide	1	Q9BPF1	train	4	false	
+A0A3G3C7S0	A		conopeptide	1	F5C3U4	test		false	new group
+A0A3G3C7S2	T		conopeptide		A0A3G3C7S2	excluded		false	label conflict (PRO: T x1, A x1)
+A0A3G3C7S6	O1		conopeptide	1	Q9U660	train	4	false	
+A0A3G3C7S9	A		conopeptide	1	A0SE60	test		false	new group
+A0A3G3C7T2			unlabelled		A0A3G3C7T2	unlabelled		false	scope unlabelled
+A0A3G3C7T5	M		conopeptide	1	Q9BPJ4	train	3	false	
+A0A3G3C7T9			unlabelled		A0A3G3C7T9	unlabelled		false	scope unlabelled
+A0A3G3C7U1	A		conopeptide	1	F5C3U4	test		false	new group
+A0A3G3C7U2	M		conopeptide	1	Q9BPJ4	train	3	false	
+A0A3G3C7U4	A		conopeptide	1	A0SE60	test		false	new group
+A0A3G3C7U7	O1		conopeptide	1	Q9BPA1	train	4	false	
+A0A3G3C7U9	M		conopeptide	1	Q9BPJ4	train	3	false	
+A0A3G3C7V0	A		conopeptide	1	A0SE60	test		false	new group
+A0A3G3C7V6	O2		conopeptide	1	G1AS73	train	4	false	
+A0A3G3C7V7	M		conopeptide	1	Q9BPJ4	train	3	false	
+A0A3G3C7W0			unlabelled		A0A3G3C7W0	unlabelled		false	scope unlabelled
+A0A3G6IHA6	O1		conopeptide	1	A0A3G6IHA6	test		false	new group
+A0A3S9V8K6	Con-insulin		conopeptide	2	A0A3S9V8K6	train	logo	false	
+A0A3S9V8L7	Con-insulin		conopeptide	2	A0A3S9V8K6	train	logo	false	
+A0A3S9V8L9	Con-insulin		conopeptide	2	A0A0B5ABD5	train	logo	false	
+A0A4P8XV20	A		conopeptide	1	A0SE59	train	4	false	
+A0A4Y5X186	vasopressin/oxytocin		unmapped		A0A4Y5X186	unmapped		false	scope unmapped
+A0A4Y5X1A7	vasopressin/oxytocin		unmapped		A0A4Y5X1A7	unmapped		false	scope unmapped
+A0A5C1ZW08	phospholipase A2	Group IX	unmapped		A0A5C1ZW08	unmapped		false	scope unmapped
+A0A5C1ZXT8	phospholipase A2	Group IX	unmapped		A0A5C1ZW08	unmapped		false	scope unmapped
+A0A5C2A2T2	phospholipase A2	Group IX	unmapped		A0A5C1ZW08	unmapped		false	scope unmapped
+A0A679PF76	C	Consomatin	conopeptide	2	P0DW18	train	logo	false	
+A0A7M4DUE8	M		conopeptide	1	C1J5M7	test		false	new group; group labelled M
+A0SE59	A		conopeptide	1	A0SE59	train	4	false	
+A0SE60	A		conopeptide	1	A0SE60	test		false	new group
+A1BQQ5	CRISP		unmapped		A1BQQ5	unmapped		false	scope unmapped
+A1X8B6	A		conopeptide	1	F5C3U4	test		false	new group
+A1X8B8	A		conopeptide	1	A1X8B8	train	5	false	
+A1X8B9	A		conopeptide	1	A1X8B8	train	5	false	
+A1X8C2	A		conopeptide	1	A1X8C2	test		false	new group
+A1X8C3	A		conopeptide	1	A1X8C2	test		false	new group
+A1X8C6	A		conopeptide	1	Q6PPB3	test		false	new group
+A1X8D0	A		conopeptide	1	A0SE59	train	4	false	
+A1X8D1	A		conopeptide	1	A1X8D1	train	5	false	
+A1X8D6	A		conopeptide	1	P0C901	train	4	false	
+A1X8D8	A		conopeptide	1	A1X8D8	train	1	false	
+A1X8D9	A		conopeptide	1	A1X8D9	train	5	false	
+A3DT44	A		conopeptide	1	A3DT44	train	1	false	
+A6M934	A		conopeptide	1	A0SE59	train	4	false	
+A6M938	A		conopeptide	1	P0DY99	train	5	false	
+A6YR20	O1		conopeptide	1	A6YR20	train	1	false	; group labelled O1
+A6YR21	O1		conopeptide	1	A6YR20	train	1	false	; group labelled O1
+A6YR23			unlabelled		A6YR20	unlabelled		false	scope unlabelled
+A6YR24			unlabelled		A6YR20	unlabelled		false	scope unlabelled
+A6YR26			unlabelled		A6YR20	unlabelled		false	scope unlabelled
+A6YR28			unlabelled		A6YR20	unlabelled		false	scope unlabelled
+A6YR29			unlabelled		A6YR20	unlabelled		false	scope unlabelled
+A6YR30			unlabelled		A6YR20	unlabelled		false	scope unlabelled
+A6YR31			unlabelled		A6YR20	unlabelled		false	scope unlabelled
+A6YR33			unlabelled		A6YR20	unlabelled		false	scope unlabelled
+A6YR34			unlabelled		A6YR20	unlabelled		false	scope unlabelled
+A6YR36			unlabelled		A6YR20	unlabelled		false	scope unlabelled
+A6YR37			unlabelled		A6YR20	unlabelled		false	scope unlabelled
+A6YR40	O1		conopeptide	1	A6YR20	train	1	false	; group labelled O1
+A6YR41			unlabelled		A6YR20	unlabelled		false	scope unlabelled
+A6YR42	O1		conopeptide	1	A6YR42	train	2	false	
+A7LI90	O1		conopeptide	1	A6YR42	train	2	false	
+A7LI91			unlabelled		A6YR42	unlabelled		false	scope unlabelled
+A7LI92	O1		conopeptide	1	A6YR42	train	2	false	
+A9UH01			unlabelled		A6YR42	unlabelled		false	scope unlabelled
+B0KZ78	O2		conopeptide	1	B0KZ78	test		false	new group
+B0KZ79	O2		conopeptide	2	B0KZ79	train	logo	false	; group labelled B
+B0L0Y5	S		conopeptide	2	B1PZN6	train	logo	false	; group labelled S
+B0L0Y6			unlabelled		B0L0Y6	unlabelled		false	scope unlabelled
+B1PZN6	S		conopeptide	2	B1PZN6	train	logo	false	; group labelled S
+B2CI27	S		conopeptide	1	B2CI27	train	2	false	; group labelled A
+B2CI28	S		conopeptide	2	B2CI28	train	logo	false	
+B2CJ87	S		conopeptide	2	B1PZN6	train	logo	false	; group labelled S
+B2CS62			unlabelled		B2CS62	unlabelled		false	scope unlabelled
+B2KJ30	O1		conopeptide	1	P69753	train	5	false	
+B2KPN7	M		conopeptide		B2KPN7	excluded		false	label conflict (FULL: M x1, A x1)
+B3FIA5	V		conopeptide	3	B3FIA5	reference		false	tier 3
+B3FIA6	V		conopeptide	1	B3FIA6	test		false	new group; group labelled M
+B3SVF0	M	Conopeptide Y	conopeptide	1	B3SVF0	train	3	false	
+B3SVF1	M	Conopeptide Y	conopeptide	1	B3SVF0	train	3	false	
+B4YSU8	Y		conopeptide	3	B4YSU8	reference		false	tier 3
+B6V6L0	M		conopeptide	1	B6V6L0	train	5	false	; group labelled A
+C0HJA8	A		conopeptide	1	C0HJA8	train	2	false	
+C0HKF6	A		conopeptide	1	C0HKF6	train	2	false	
+C0HKK6			unlabelled		P0DQZ1	unlabelled		false	scope unlabelled
+C0HKM3	glycosyl hydrolase 56		unmapped		C0HKM3	unmapped		false	scope unmapped
+C0HKY2	T		conopeptide	1	P58808	train	5	false	
+C0HKY3	T		conopeptide	1	P58808	train	5	false	
+C0HKY4	T		conopeptide	1	P0DKP2	train	1	false	; group labelled M
+C0HKY5	T		conopeptide	1	Q3YEH4	train	4	false	
+C0HKY6	M		conopeptide	1	P0DKP1	train	5	false	; group labelled M
+C0HKY7	M		conopeptide	1	P0DTJ2	train	1	false	
+C0HKY8	M		conopeptide	1	P0DTJ3	test		false	new group
+C0HKY9	M		conopeptide	1	C0HKY9	train	2	false	
+C0HKZ0	M		conopeptide	1	C0HKY9	train	2	false	
+C0HKZ1	M		conopeptide	1	Q9BPJ4	train	3	false	
+C0HKZ3	M		conopeptide	1	P0DKP2	train	1	false	; group labelled M
+C0HLK1	A		conopeptide	1	P0CY78	train	1	false	; group labelled A
+C0HLM2	A		conopeptide	1	C0HKF6	train	2	false	
+C0HMG4	O1		conopeptide	1	C0HMG4	train	1	false	
+C0KYC3	T		conopeptide	1	C0KYC5	train	3	false	
+C0KYC4	T		conopeptide	1	C0KYC5	train	3	false	
+C0KYC5	T		conopeptide	1	C0KYC5	train	3	false	
+C0KYC6	T		conopeptide	1	C0KYC5	train	3	false	
+C1J5M5	M		conopeptide	1	C1J5M7	test		false	new group; group labelled M
+C1J5M6	M		conopeptide	1	C1J5M7	test		false	new group; group labelled M
+C1J5M7	M		conopeptide	1	C1J5M7	test		false	new group; group labelled M
+C3VVN5	D		conopeptide	2	P0C1W6	train	logo	false	
+C3VVN6	D		conopeptide	2	P0C1W6	train	logo	false	
+C4PWC3	D		conopeptide	2	P0C1W6	train	logo	false	
+C4PWC4	D		conopeptide	2	C4PWC4	train	logo	false	
+C6ZJQ2	A		conopeptide	1	C6ZJQ2	train	1	false	
+C7DQB7	I2		conopeptide	1	C7DQY0	train	3	false	
+C7DQB8	I2		conopeptide	1	C7DQB8	train	5	false	; group labelled I2
+C7DQB9	I2		conopeptide	1	C7DQB9	test		false	new group
+C7DQC0	I2		conopeptide	1	C7DQB8	train	5	false	; group labelled I2
+C7DQC1	I2		conopeptide	1	C7DQX7	train	2	false	
+C7DQC2	I2		conopeptide	1	C7DQC2	train	1	false	
+C7DQX6	I2		conopeptide	1	C7DQX6	train	3	false	
+C7DQX7	I2		conopeptide	1	C7DQX7	train	2	false	
+C7DQX8	I2		conopeptide	1	C7DQX8	train	5	false	
+C7DQX9	I2		conopeptide	1	C7DQX8	train	5	false	
+C7DQY0	I2		conopeptide	1	C7DQY0	train	3	false	
+C7T183	O1		conopeptide	1	P0C833	train	3	false	
+C7T184	O1		conopeptide	1	C7T184	train	3	false	
+C7T186	O1		conopeptide	1	C7T184	train	3	false	
+C7T187	O1		conopeptide	1	C7T184	train	3	false	
+C7T188	O1		conopeptide	1	P0C833	train	3	false	
+C7T1P1	O1		conopeptide	1	C7T184	train	3	false	
+C7T1P2	O1		conopeptide	1	C7T184	train	3	false	
+C7T1P3	O1		conopeptide	1	C7T184	train	3	false	
+C7T1P4	O1		conopeptide	1	C7T184	train	3	false	
+C7T1P5	O1		conopeptide	1	P0C833	train	3	false	
+C8CK74	O2		conopeptide		C8CK74	excluded		false	label conflict (PRO: N x1, O2 x1)
+C8CK75	O2		conopeptide	1	C8CK74	train	4	false	
+C8CK76	O2		conopeptide	1	B0KZ78	test		false	new group
+C8CK77	O2		conopeptide	1	C8CK74	train	4	false	
+C8CK78	O2		conopeptide	1	B0KZ78	test		false	new group
+C8CK79	O2		conopeptide	1	B0KZ78	test		false	new group
+D0PX84	K		conopeptide	3	D0PX85	reference		false	tier 3; group labelled K
+D0PX85	K		conopeptide	3	D0PX85	reference		false	tier 3; group labelled K
+D0PX86	K		conopeptide	3	D0PX85	reference		false	tier 3; group labelled K
+D2DGD3	I3		conopeptide	2	D2DGD3	train	logo	false	
+D2DGD4	I3		conopeptide	2	D2DGD3	train	logo	false	
+D2DGD5	I3		conopeptide	2	D2DGD3	train	logo	false	
+D2DGD6	I3		conopeptide	2	D2DGD3	train	logo	false	
+D2DGD7	I3		conopeptide	2	D2DGD7	train	logo	false	
+D2DGD8	I3		conopeptide	2	D2DGD8	train	logo	false	
+D2DGD9	I3		conopeptide	2	D2DGD9	train	logo	false	
+D2Y100			unlabelled		D2Y100	unlabelled		false	scope unlabelled
+D2Y101			unlabelled		D2Y100	unlabelled		false	scope unlabelled
+D2Y102			unlabelled		D2Y100	unlabelled		false	scope unlabelled
+D2Y168			unlabelled		D2Y168	unlabelled		false	scope unlabelled
+D2Y169	T		conopeptide	1	D2Y169	train	2	false	
+D2Y170	T		conopeptide	1	D2Y169	train	2	false	
+D2Y171			unlabelled		D2Y169	unlabelled		false	scope unlabelled
+D2Y172	T		conopeptide	1	D2Y172	test		false	new group
+D2Y173	T		conopeptide	1	D2Y173	train	2	false	
+D2Y174	T		conopeptide	1	D2Y173	train	2	false	
+D2Y3T1			unlabelled		D2Y3T1	unlabelled		false	scope unlabelled
+D2Y3T3			unlabelled		D6C4M2	unlabelled		false	scope unlabelled
+D2Y3T4			unlabelled		D6C4M2	unlabelled		false	scope unlabelled
+D2Y3T5			unlabelled		D6C4M2	unlabelled		false	scope unlabelled
+D2Y3T6			unlabelled		D6C4M2	unlabelled		false	scope unlabelled
+D2Y3T7			unlabelled		D6C4M2	unlabelled		false	scope unlabelled
+D2Y3T8			unlabelled		D6C4M2	unlabelled		false	scope unlabelled
+D2Y488	venom Kunitz-type		unmapped		D2Y488	unmapped		false	scope unmapped
+D2Y489	venom Kunitz-type		unmapped		D2Y488	unmapped		false	scope unmapped
+D2Y490	venom Kunitz-type		unmapped		D2Y488	unmapped		false	scope unmapped
+D2Y491	venom Kunitz-type		unmapped		D2Y488	unmapped		false	scope unmapped
+D2Y492	O1		conopeptide	1	D2Y492	train	4	false	
+D2Y493			unlabelled		D2Y493	unlabelled		false	scope unlabelled
+D2Y494			unlabelled		D2Y493	unlabelled		false	scope unlabelled
+D2Y495	O1		conopeptide	1	D2Y495	train	2	false	; group labelled O1
+D2Y496	O1		conopeptide	1	D2Y495	train	2	false	; group labelled O1
+D2Y497	O1		conopeptide	1	D2Y495	train	2	false	; group labelled O1
+D2Y498	O1		conopeptide	1	D2Y495	train	2	false	; group labelled O1
+D2Y499	O1		conopeptide	1	D2Y495	train	2	false	; group labelled O1
+D2Y4A0	O1		conopeptide	1	D2Y4A2	train	4	false	
+D2Y4A1	O1		conopeptide	1	D2Y4A2	train	4	false	
+D2Y4A2	O1		conopeptide	1	D2Y4A2	train	4	false	
+D3JWK2			unlabelled		D3JWK2	unlabelled		false	scope unlabelled
+D3JWK3			unlabelled		D3JWK2	unlabelled		false	scope unlabelled
+D3JWK4			unlabelled		D3JWK2	unlabelled		false	scope unlabelled
+D3JWK5			unlabelled		D3JWK2	unlabelled		false	scope unlabelled
+D3JWK6			unlabelled		D3JWK2	unlabelled		false	scope unlabelled
+D3JWK7			unlabelled		D3JWK2	unlabelled		false	scope unlabelled
+D3JYA5			unlabelled		D3JYA5	unlabelled		false	scope unlabelled
+D3JYA6			unlabelled		D3JYA5	unlabelled		false	scope unlabelled
+D4HPD6	A		conopeptide	1	P28879	train	2	false	
+D4HPF2	A		conopeptide	1	P28879	train	2	false	
+D4HRK4	A		conopeptide	1	C0HKF6	train	2	false	
+D4HRK7	A		conopeptide	1	P0CY86	train	3	false	
+D5KR59	O1		conopeptide	1	D5KR59	train	4	false	
+D5KXG5			unlabelled		D5KXG5	unlabelled		false	scope unlabelled
+D5KXG6			unlabelled		D5KXG6	unlabelled		false	scope unlabelled
+D5KXG7			unlabelled		D5KXH6	unlabelled		false	scope unlabelled
+D5KXG8			unlabelled		D5KXG8	unlabelled		false	scope unlabelled
+D5KXG9			unlabelled		D5KXG9	unlabelled		false	scope unlabelled
+D5KXH0	Pg turripeptide superfamily		unmapped		D5KXH0	unmapped		false	scope unmapped
+D5KXH1			unlabelled		D5KXH1	unlabelled		false	scope unlabelled
+D5KXH2			unlabelled		D5KXH6	unlabelled		false	scope unlabelled
+D5KXH3			unlabelled		D5KXH3	unlabelled		false	scope unlabelled
+D5KXH4			unlabelled		D5KXH4	unlabelled		false	scope unlabelled
+D5KXH6			unlabelled		D5KXH6	unlabelled		false	scope unlabelled
+D5L5Q7	M		conopeptide	1	D5L5Q7	train	2	false	
+D5L5Q8	M		conopeptide	1	D5L5Q7	train	2	false	
+D6C4H5	T		conopeptide	1	D6C4H5	train	3	false	
+D6C4H6			unlabelled		D6C4H6	unlabelled		false	scope unlabelled
+D6C4H8			unlabelled		D6C4H8	unlabelled		false	scope unlabelled
+D6C4H9	I1		conopeptide	1	D6C4H9	test		false	new group
+D6C4I0	I1		conopeptide	1	D6C4I0	train	5	false	
+D6C4I3	O1		conopeptide	1	A6YR20	train	1	false	; group labelled O1
+D6C4I4			unlabelled		D6C4I4	unlabelled		false	scope unlabelled
+D6C4I5			unlabelled		D6C4I5	unlabelled		false	scope unlabelled
+D6C4I6			unlabelled		D6C4I6	unlabelled		false	scope unlabelled
+D6C4I7	L		conopeptide	2	D6C4I7	train	logo	false	
+D6C4I8	L		conopeptide	2	D6C4I7	train	logo	false	
+D6C4I9	L		conopeptide	2	D6C4I7	train	logo	false	
+D6C4J0	L		conopeptide	2	D6C4I7	train	logo	false	
+D6C4J2			unlabelled		B0KZ79	unlabelled		false	scope unlabelled
+D6C4J3			unlabelled		D2Y168	unlabelled		false	scope unlabelled
+D6C4J4			unlabelled		D2Y168	unlabelled		false	scope unlabelled
+D6C4J6			unlabelled		D6C4J7	unlabelled		false	scope unlabelled
+D6C4J7	L		conopeptide	2	D6C4J7	train	logo	false	
+D6C4J8			unlabelled		D6C4J8	unlabelled		false	scope unlabelled
+D6C4J9	T		conopeptide	1	D6C4J9	test		false	new group
+D6C4K0	O1		conopeptide	1	D6C4K0	train	5	false	
+D6C4K2			unlabelled		D6C4K2	unlabelled		false	scope unlabelled
+D6C4K3			unlabelled		D6C4K3	unlabelled		false	scope unlabelled
+D6C4K4			unlabelled		D6C4K4	unlabelled		false	scope unlabelled
+D6C4K5	I1		conopeptide	1	D6C4K5	train	4	false	
+D6C4K6			unlabelled		D6C4K6	unlabelled		false	scope unlabelled
+D6C4K9	O1		conopeptide	1	D6C4L2	test		false	new group
+D6C4L1			unlabelled		D6C4L1	unlabelled		false	scope unlabelled
+D6C4L2	O1		conopeptide	1	D6C4L2	test		false	new group
+D6C4L3	O1		conopeptide	1	D6C4K0	train	5	false	
+D6C4L4	O1		conopeptide	1	D6C4K0	train	5	false	
+D6C4L5	O1		conopeptide	1	D6C4L5	train	2	false	
+D6C4L6	O1		conopeptide	1	D6C4L5	train	2	false	
+D6C4L7	O1		conopeptide	1	D6C4K0	train	5	false	
+D6C4L8	M		conopeptide	1	D6C4L8	train	2	false	
+D6C4L9			unlabelled		D6C4L9	unlabelled		false	scope unlabelled
+D6C4M0			unlabelled		D6C4M2	unlabelled		false	scope unlabelled
+D6C4M1			unlabelled		D6C4M2	unlabelled		false	scope unlabelled
+D6C4M2			unlabelled		D6C4M2	unlabelled		false	scope unlabelled
+D6C4M3			unlabelled		D6C4M3	unlabelled		false	scope unlabelled
+D9IWN6	A		conopeptide	1	D9IWN6	train	2	false	
+D9IWN7	A		conopeptide	1	D9IWN6	train	2	false	
+E2DIH5	A		conopeptide	1	P60274	train	4	false	
+E2DIH6	A		conopeptide	1	A0SE60	test		false	new group
+E3PQQ8			unlabelled		E3PQQ8	unlabelled		false	scope unlabelled
+F2XFS9	A		conopeptide	1	P60274	train	4	false	
+F5C0A0	A		conopeptide	1	F5C0A0	train	3	false	
+F5C3T9	O2	Contryphan	conopeptide	1	A0A1P8NVR5	train	1	false	
+F5C3U4	A		conopeptide	1	F5C3U4	test		false	new group
+F5CEP0			unlabelled		F5CEP0	unlabelled		false	scope unlabelled
+F6JWU7	D		conopeptide	2	A0A125S9D8	train	logo	false	
+F6JWU8	D		conopeptide	2	A0A125S9D8	train	logo	false	
+F6JWU9	D		conopeptide	2	A0A125S9D8	train	logo	false	
+F6JWV0	D		conopeptide	2	A0A125S9D8	train	logo	false	
+F6JWV1	D		conopeptide	2	A0A125S9D8	train	logo	false	
+F6JWV2	D		conopeptide	2	A0A125S9D8	train	logo	false	
+F6JWV3	D		conopeptide	2	A0A125S9D8	train	logo	false	
+G1AS73	O2		conopeptide	1	G1AS73	train	4	false	
+G1AS74	O2		conopeptide	1	G1AS75	train	1	false	
+G1AS75	O2		conopeptide	1	G1AS75	train	1	false	
+G1AS76	O2		conopeptide	1	G1AS76	train	3	false	
+G1AS77	O2		conopeptide	1	G1AS75	train	1	false	
+G1AS78	O2		conopeptide	1	G1AS83	train	2	false	
+G1AS79	O2		conopeptide	1	G1AS73	train	4	false	
+G1AS80	O2		conopeptide	1	G1AS80	train	2	false	
+G1AS81	O2		conopeptide	1	G1AS75	train	1	false	
+G1AS82	O2		conopeptide	1	G1AS83	train	2	false	
+G1AS83	O2		conopeptide	1	G1AS83	train	2	false	
+G1C1T0			unlabelled		F5CEP0	unlabelled		false	scope unlabelled
+G1C1T1			unlabelled		G1C1T1	unlabelled		false	scope unlabelled
+G1C1T2			unlabelled		A6YR20	unlabelled		false	scope unlabelled
+G1C1T3			unlabelled		A6YR20	unlabelled		false	scope unlabelled
+G8FZS4			unlabelled		G8FZS4	unlabelled		false	scope unlabelled
+H2BK78	M		conopeptide	1	H2BK78	train	4	false	
+H2BKJ0	M		conopeptide	1	H2BKJ0	test		false	new group; group labelled M
+H2BKS9	M		conopeptide	1	Q9BPJ4	train	3	false	
+H8Y1U0	T		conopeptide	1	H8Y1U0	train	2	false	
+H9N3R7	A		conopeptide	1	K8DWB5	test		false	new group
+I0CME7	glycosyl hydrolase 56		unmapped		C0HKM3	unmapped		false	scope unmapped
+I0CME8	glycosyl hydrolase 56		unmapped		C0HKM3	unmapped		false	scope unmapped
+I1SB07	M		conopeptide	2	B1PZN6	train	logo	false	; group labelled S
+J7GY56	O1		conopeptide	1	A0A2I4QAG8	train	4	false	
+J7JU64	B		conopeptide	2	J7JU64	train	logo	false	
+K4RNX9	A		conopeptide	1	K4RNX9	train	1	false	
+K8DWB5	A		conopeptide	1	K8DWB5	test		false	new group
+L8BU87	A		conopeptide	1	Q9XZK6	test		false	new group
+M9PQ91	O1		conopeptide	1	M9PQ91	test		false	new group
+O77256	A		conopeptide	1	O77256	train	3	false	
+P01520	A		conopeptide	1	P28879	train	2	false	
+P01521	A		conopeptide	1	P28879	train	2	false	
+P01522	O1		conopeptide	1	A0A384E129	test		false	new group
+P01523	M		conopeptide	1	C1J5M7	test		false	new group; group labelled M
+P01524	M		conopeptide	1	P01524	train	2	false	
+P05482	M		conopeptide	1	P01524	train	2	false	
+P05483			unlabelled		P05483	unlabelled		false	scope unlabelled
+P05484	O1		conopeptide	1	A0A384E129	test		false	new group
+P05485	O1		conopeptide	1	P0CY66	train	5	false	
+P05486	vasopressin/oxytocin		unmapped		P05486	unmapped		false	scope unmapped
+P05487	vasopressin/oxytocin		unmapped		A0A4Y5X186	unmapped		false	scope unmapped
+P07231	B		conopeptide	2	P58806	train	logo	false	
+P0C195	M		conopeptide	1	C1J5M7	test		false	new group; group labelled M
+P0C1C8	O1		conopeptide	1	P0C1C8	train	2	false	
+P0C1C9	O1		conopeptide	1	P0C1C9	train	4	false	
+P0C1D0	A		conopeptide	1	P0C1D0	train	5	false	
+P0C1M8	O2		conopeptide	1	P0C1M8	train	3	false	
+P0C1M9	M		conopeptide	1	Q9BPJ4	train	3	false	
+P0C1N0	M		conopeptide	1	Q9BPJ4	train	3	false	
+P0C1N1	M		conopeptide	1	Q9BPJ4	train	3	false	
+P0C1N2	M		conopeptide	1	Q9BPJ4	train	3	false	
+P0C1N3	M		conopeptide	1	Q9BPJ4	train	3	false	
+P0C1N4	M		conopeptide	1	Q9BPJ4	train	3	false	
+P0C1N5	M		conopeptide	1	Q9BPJ4	train	3	false	
+P0C1N6	M		conopeptide	1	A0A2I6EDM2	train	2	false	
+P0C1N7	M		conopeptide	1	C1J5M7	test		false	new group; group labelled M
+P0C1N8	M		conopeptide	1	Q9BPJ4	train	3	false	
+P0C1R7	A		conopeptide	1	A0SE59	train	4	false	
+P0C1T6			unlabelled		P0C1T6	unlabelled		false	scope unlabelled
+P0C1T7			unlabelled		P0C1T7	unlabelled		false	scope unlabelled
+P0C1T8			unlabelled		P0DN59	unlabelled		false	scope unlabelled
+P0C1T9	M		conopeptide	1	P0C1T9	test		false	new group
+P0C1U0	M		conopeptide	1	P0C1U0	train	1	false	
+P0C1U1	M		conopeptide	1	C1J5M7	test		false	new group; group labelled M
+P0C1U2	M		conopeptide	1	P0C1T9	test		false	new group
+P0C1V7	A		conopeptide	1	Q86RB2	train	5	false	
+P0C1V8	A		conopeptide	1	P0C1V8	train	4	false	
+P0C1V9	A		conopeptide	1	A0SE60	test		false	new group
+P0C1W0	A		conopeptide	1	A0SE59	train	4	false	
+P0C1W1	A		conopeptide	1	P0DRO2	train	1	false	
+P0C1W2	A		conopeptide	1	P28879	train	2	false	
+P0C1W3	S		conopeptide	2	P0C1W3	train	logo	false	
+P0C1W4	A		conopeptide	1	P28879	train	2	false	
+P0C1W5	D		conopeptide	2	C4PWC4	train	logo	false	
+P0C1W6	D		conopeptide	2	P0C1W6	train	logo	false	
+P0C1W7	D		conopeptide	2	P0C1W7	train	logo	false	
+P0C1W8	A		conopeptide	1	P05486	train	4	false	
+P0C1W9	A		conopeptide	1	B2CI27	train	2	false	; group labelled A
+P0C1X0	A		conopeptide	1	B2CI27	train	2	false	; group labelled A
+P0C1X1	A		conopeptide	1	P0C829	train	5	false	
+P0C1X2	venom Kunitz-type		unmapped		P0C1X2	unmapped		false	scope unmapped
+P0C1X3	turripeptide		unmapped		P0C1X3	unmapped		false	scope unmapped
+P0C1X4	turripeptide		unmapped		P0C1X4	unmapped		false	scope unmapped
+P0C1Y2	A		conopeptide	1	P0C1Y2	test		false	new group
+P0C248	O2	Contryphan	conopeptide	1	A0A1P8NVR5	train	1	false	
+P0C249	O2	Contryphan	conopeptide	1	Q9BPC2	train	3	false	
+P0C250	O2	Contryphan	conopeptide	1	A0A1P8NVR5	train	1	false	
+P0C251	I1		conopeptide	1	P0C251	train	1	false	
+P0C252	I2		conopeptide	1	C7DQY0	train	3	false	
+P0C253	I1		conopeptide	1	P0C253	train	2	false	
+P0C254	I2		conopeptide	1	P0C254	train	2	false	
+P0C255	I2		conopeptide	1	P0C255	train	1	false	
+P0C256	I1		conopeptide	1	Q7Z096	train	4	false	
+P0C257	I1		conopeptide	1	P0C257	test		false	new group
+P0C258	I2		conopeptide	1	C7DQC2	train	1	false	
+P0C259	I1		conopeptide	1	P0C257	test		false	new group
+P0C260			unlabelled		P0DUQ7	unlabelled		false	scope unlabelled
+P0C2B0	T		conopeptide	1	P0C2B0	train	4	false	
+P0C2B1	T		conopeptide	1	P0C2B0	train	4	false	
+P0C2C5	A		conopeptide	1	P0C2C5	train	2	false	
+P0C2C6	A		conopeptide	1	P0C2C5	train	2	false	
+P0C2F2	T		conopeptide	1	A0A2I6EDL3	train	5	false	; group labelled M
+P0C349	M		conopeptide	1	C1J5M7	test		false	new group; group labelled M
+P0C350	M		conopeptide	1	C1J5M7	test		false	new group; group labelled M
+P0C351	A		conopeptide	1	P0DKP3	test		false	new group; group labelled A
+P0C352			unlabelled		P0C352	unlabelled		false	scope unlabelled
+P0C424	M		conopeptide	1	P0C424	train	3	false	
+P0C425	M		conopeptide	1	Q9BPH9	test		false	new group
+P0C607	I1		conopeptide	1	P0C607	train	2	false	
+P0C608	I1		conopeptide	1	P0C608	train	1	false	
+P0C609	I1		conopeptide	1	P0C251	train	1	false	
+P0C610	I1		conopeptide	1	Q7Z096	train	4	false	
+P0C611	I1		conopeptide	1	Q7Z096	train	4	false	
+P0C612	I1		conopeptide	1	P0C612	test		false	new group
+P0C613	I1		conopeptide	1	P0C613	train	3	false	
+P0C614	I1		conopeptide	1	Q7Z096	train	4	false	
+P0C615	I2		conopeptide	1	P0C615	test		false	new group
+P0C636	T		conopeptide	1	P0C636	train	4	false	
+P0C637	T		conopeptide	1	P0C636	train	4	false	
+P0C638	T		conopeptide	1	Q6PN84	train	3	false	
+P0C639	T		conopeptide	1	Q6PN84	train	3	false	
+P0C640	T		conopeptide	1	P0C640	test		false	new group
+P0C641	T		conopeptide	1	P0C668	train	1	false	
+P0C642	T		conopeptide	1	P0C2B0	train	4	false	
+P0C666	T		conopeptide	1	P0C666	train	1	false	
+P0C667	T		conopeptide	1	P0C640	test		false	new group
+P0C668	T		conopeptide	1	P0C668	train	1	false	
+P0C669	T		conopeptide	1	Q3YEH4	train	4	false	
+P0C670	T		conopeptide	1	P0C670	test		false	new group
+P0C6S2	L		conopeptide		A0A3G1VU73	excluded		false	label conflict (FULL: L x1, R x1)
+P0C6S3	L		conopeptide		A0A3G1VU73	excluded		false	label conflict (MAT: R x2, L x1)
+P0C7I1	M		conopeptide	1	C1J5M7	test		false	new group; group labelled M
+P0C828	A		conopeptide	1	P0C829	train	5	false	
+P0C829	A		conopeptide	1	P0C829	train	5	false	
+P0C830	A		conopeptide	1	P0C829	train	5	false	
+P0C831	O1		conopeptide	1	P0C8V9	train	3	false	
+P0C832	O1		conopeptide	1	P0C832	train	2	false	
+P0C833	O1		conopeptide	1	P0C833	train	3	false	
+P0C834	O2		conopeptide	1	Q9BPC5	train	2	false	
+P0C837	O2	Contryphan	conopeptide	1	A0A1P8NVR5	train	1	false	
+P0C844	Pg turripeptide superfamily		unmapped		D5KXH0	unmapped		false	scope unmapped
+P0C845	Pg turripeptide superfamily		unmapped		D5KXH0	unmapped		false	scope unmapped
+P0C846	Pg turripeptide superfamily		unmapped		D5KXH0	unmapped		false	scope unmapped
+P0C847	Pg turripeptide superfamily		unmapped		D5KXH0	unmapped		false	scope unmapped
+P0C848	Pg turripeptide superfamily		unmapped		D5KXH0	unmapped		false	scope unmapped
+P0C849	Pg turripeptide superfamily		unmapped		D5KXH0	unmapped		false	scope unmapped
+P0C850	Pg turripeptide superfamily		unmapped		D5KXH0	unmapped		false	scope unmapped
+P0C8D9	B		conopeptide	2	P58806	train	logo	false	
+P0C8E0	B		conopeptide	2	P0C8E0	train	logo	false	
+P0C8E1	B		conopeptide	2	P0C8E0	train	logo	false	
+P0C8E2	B		conopeptide	2	B0KZ79	train	logo	false	; group labelled B
+P0C8E3	B		conopeptide	2	P58806	train	logo	false	
+P0C8R2	A		conopeptide	1	P60274	train	4	false	
+P0C8S5			unlabelled		P0C8S5	unlabelled		false	scope unlabelled
+P0C8S6			unlabelled		P0C8S6	unlabelled		false	scope unlabelled
+P0C8U3	A		conopeptide	1	P0C8U3	train	2	false	
+P0C8U4	A		conopeptide	1	P28879	train	2	false	
+P0C8U5	A		conopeptide	1	P0DRO2	train	1	false	
+P0C8U8	A		conopeptide	1	P0C8U8	train	1	false	
+P0C8U9	A		conopeptide	1	P0C8U8	train	1	false	
+P0C8V0	A		conopeptide	1	P0C8V0	train	3	false	
+P0C8V1	A		conopeptide	1	P28879	train	2	false	
+P0C8V2	M		conopeptide	1	P0C8V3	train	2	false	
+P0C8V3	M		conopeptide	1	P0C8V3	train	2	false	
+P0C8V4	A		conopeptide	1	A1X8D8	train	1	false	
+P0C8V5	O1		conopeptide	1	P69753	train	5	false	
+P0C8V6	O1		conopeptide	1	P69753	train	5	false	
+P0C8V7	O1		conopeptide	1	P69753	train	5	false	
+P0C8V8	O1		conopeptide		P0C8V9	excluded		false	label conflict (MAT: O1 x1, M x1)
+P0C8V9	O1		conopeptide	1	P0C8V9	train	3	false	
+P0C8W0			unlabelled		P0C8W0	unlabelled		false	scope unlabelled
+P0C901	A		conopeptide	1	P0C901	train	4	false	
+P0C902	O1		conopeptide	1	P0C902	train	3	false	
+P0C903	O1		conopeptide	1	P0C903	train	5	false	
+P0C904	O1		conopeptide	1	P0C904	train	1	false	; group labelled O1
+P0C905	O1		conopeptide	1	P0C902	train	3	false	
+P0C906	T		conopeptide	1	Q3YEH4	train	4	false	
+P0C907	T		conopeptide	1	Q3YEH3	train	2	false	
+P0CAQ2	A		conopeptide	1	P0C829	train	5	false	
+P0CAQ3	A		conopeptide	1	P0C829	train	5	false	
+P0CAQ4	A		conopeptide	1	P28879	train	2	false	
+P0CAQ5	A		conopeptide	1	P28879	train	2	false	
+P0CAQ6	A		conopeptide	1	P0CAQ6	train	4	false	
+P0CAQ7	A		conopeptide	1	P0CAQ6	train	4	false	
+P0CAQ8	A		conopeptide	1	Q6PPB3	test		false	new group
+P0CAQ9	A		conopeptide	1	Q6PPB3	test		false	new group
+P0CB07	A		conopeptide	1	Q9XZK6	test		false	new group
+P0CB08	A		conopeptide	1	Q9XZK6	test		false	new group
+P0CB09	O1		conopeptide	1	Q9U660	train	4	false	
+P0CB10	O1		conopeptide	1	P69753	train	5	false	
+P0CB11	O1		conopeptide	1	A0A2L2P6T9	train	1	false	
+P0CB12	A		conopeptide	1	Q9XZK6	test		false	new group
+P0CB20			unlabelled		P0CB20	unlabelled		false	scope unlabelled
+P0CC13	O1		conopeptide	1	P0CC13	train	3	false	
+P0CC14	O1		conopeptide	1	P0CC13	train	3	false	
+P0CC15	O1		conopeptide	1	P0CC13	train	3	false	
+P0CE24	D		conopeptide	2	C4PWC4	train	logo	false	
+P0CE25	D		conopeptide	2	P0C1W6	train	logo	false	
+P0CE26	D		conopeptide	2	P0C1W6	train	logo	false	
+P0CE27	D		conopeptide	2	P0C1W6	train	logo	false	
+P0CE28	D		conopeptide	2	P0C1W6	train	logo	false	
+P0CE29	D		conopeptide	2	P0C1W6	train	logo	false	
+P0CE30	D		conopeptide	2	P0C1W6	train	logo	false	
+P0CE31	D		conopeptide	2	C4PWC4	train	logo	false	
+P0CE32	D		conopeptide	2	C4PWC4	train	logo	false	
+P0CE33	D		conopeptide	2	C4PWC4	train	logo	false	
+P0CE34	D		conopeptide	2	C4PWC4	train	logo	false	
+P0CE35	D		conopeptide	2	C4PWC4	train	logo	false	
+P0CE36	D		conopeptide	2	P0C1W6	train	logo	false	
+P0CE73	A		conopeptide	1	A0SE59	train	4	false	
+P0CE74	A		conopeptide	1	F5C3U4	test		false	new group
+P0CE75	A		conopeptide	1	P0C829	train	5	false	
+P0CE76	A		conopeptide	1	P0C829	train	5	false	
+P0CE77	M		conopeptide	1	C1J5M7	test		false	new group; group labelled M
+P0CG45	M		conopeptide	1	P0CG45	train	4	false	
+P0CG46	B		conopeptide	2	P58806	train	logo	false	
+P0CH13			unlabelled		P0CH13	unlabelled		false	scope unlabelled
+P0CH14	M		conopeptide	1	A0A2I6EDM2	train	2	false	
+P0CH15	M		conopeptide	1	A0A4Y5X1A7	train	2	false	
+P0CH16	M		conopeptide	1	P0CB20	train	5	false	
+P0CH17			unlabelled		P0CH17	unlabelled		false	scope unlabelled
+P0CH18			unlabelled		P0CH18	unlabelled		false	scope unlabelled
+P0CH19			unlabelled		P0CH19	unlabelled		false	scope unlabelled
+P0CH20			unlabelled		P0CH20	unlabelled		false	scope unlabelled
+P0CH21	M		conopeptide	1	Q9BPH9	test		false	new group
+P0CH22	M		conopeptide	1	Q9BPJ4	train	3	false	
+P0CH23	M		conopeptide	1	Q9BPJ4	train	3	false	
+P0CH24	A		conopeptide	1	P0CH24	train	3	false	
+P0CH39	A		conopeptide		B2KPN7	excluded		false	label conflict (FULL: M x1, A x1)
+P0CI05	A		conopeptide	1	P0C1V8	train	4	false	
+P0CI06			unlabelled		P0DN57	unlabelled		false	scope unlabelled
+P0CI07			unlabelled		P0DN49	unlabelled		false	scope unlabelled
+P0CI08			unlabelled		P0DN58	unlabelled		false	scope unlabelled
+P0CI09			unlabelled		P0CI09	unlabelled		false	scope unlabelled
+P0CI10			unlabelled		P0CI10	unlabelled		false	scope unlabelled
+P0CI11			unlabelled		P0CI11	unlabelled		false	scope unlabelled
+P0CI12			unlabelled		P0CI11	unlabelled		false	scope unlabelled
+P0CI13	P-like		reference		P0CI13	reference		false	scope reference
+P0CI14			unlabelled		P0CI14	unlabelled		false	scope unlabelled
+P0CI15			unlabelled		P0CI15	unlabelled		false	scope unlabelled
+P0CI16			unlabelled		P0CI16	unlabelled		false	scope unlabelled
+P0CI17			unlabelled		P0CI17	unlabelled		false	scope unlabelled
+P0CI18			unlabelled		P0CI18	unlabelled		false	scope unlabelled
+P0CI19			unlabelled		P0CI19	unlabelled		false	scope unlabelled
+P0CI20			unlabelled		X5IWS1	unlabelled		false	scope unlabelled
+P0CI21			unlabelled		P0CI21	unlabelled		false	scope unlabelled
+P0CI22	T		conopeptide	1	P58808	train	5	false	
+P0CI23	T		conopeptide	1	P58808	train	5	false	
+P0CI24	M		conopeptide	1	Q9BPJ4	train	3	false	
+P0CI41			unlabelled		X5IWT5	unlabelled		false	scope unlabelled
+P0CJ21	O2		conopeptide	1	G1AS83	train	2	false	
+P0CJ22	NPY		unmapped		P0CJ22	unmapped		false	scope unmapped
+P0CJ23	NPY		unmapped		P0CJ22	unmapped		false	scope unmapped
+P0CY60	O1		conopeptide	1	A0A384E129	test		false	new group
+P0CY61	O1		conopeptide	1	P0CY61	train	3	false	
+P0CY62	O1		conopeptide	1	P0CY62	train	3	false	
+P0CY63	O1		conopeptide	1	P0CY62	train	3	false	
+P0CY64	O1		conopeptide	1	P0CY64	train	1	false	
+P0CY65	O1		conopeptide	1	P0CY65	test		false	new group
+P0CY66	O1		conopeptide	1	P0CY66	train	5	false	
+P0CY67	O1		conopeptide	1	Q5K0D7	test		false	new group
+P0CY68	O1		conopeptide	1	P0CY68	train	5	false	
+P0CY69	O1		conopeptide	1	P0C8V9	train	3	false	
+P0CY70	O1		conopeptide	1	P0CY70	train	1	false	
+P0CY71	O1		conopeptide	1	P0CY66	train	5	false	
+P0CY72	O1		conopeptide	1	P0CY72	train	1	false	
+P0CY73	M		conopeptide	1	P0CY73	train	1	false	
+P0CY74	M		conopeptide	1	P0CY74	train	2	false	
+P0CY75	A		conopeptide	1	A0SE59	train	4	false	
+P0CY76	A		conopeptide	1	P0CY76	test		false	new group
+P0CY77	A		conopeptide	1	P0CY77	train	1	false	
+P0CY78	A		conopeptide	1	P0CY78	train	1	false	; group labelled A
+P0CY79	A		conopeptide	1	P0CY78	train	1	false	; group labelled A
+P0CY80	A		conopeptide	1	P0CY78	train	1	false	; group labelled A
+P0CY81	A		conopeptide	1	P0CY81	train	5	false	
+P0CY82	A		conopeptide	1	P0C829	train	5	false	
+P0CY83	J		conopeptide	2	P0CY83	train	logo	false	
+P0CY84	O2	Contryphan	conopeptide	1	A0A1P8NVR5	train	1	false	
+P0CY85	venom Kunitz-type		unmapped		P0CY85	unmapped		false	scope unmapped
+P0CY86	A		conopeptide	1	P0CY86	train	3	false	
+P0CY87	A		conopeptide	1	P0CY86	train	3	false	
+P0CY88	A		conopeptide	1	P0CY88	test		false	new group
+P0DJB2			unlabelled		P0DJB2	unlabelled		false	scope unlabelled
+P0DJB3			unlabelled		A0A2L2P6T9	unlabelled		false	scope unlabelled
+P0DJB4			unlabelled		P0DJB4	unlabelled		false	scope unlabelled
+P0DJB5			unlabelled		P0DTX7	unlabelled		false	scope unlabelled
+P0DJB6			unlabelled		P0DJB6	unlabelled		false	scope unlabelled
+P0DJB7			unlabelled		D6C4M2	unlabelled		false	scope unlabelled
+P0DJB8			unlabelled		P0DJB2	unlabelled		false	scope unlabelled
+P0DJB9	O1		conopeptide	1	P0DRL1	train	3	false	
+P0DJC0			unlabelled		P0DTX9	unlabelled		false	scope unlabelled
+P0DJC3			unlabelled		P0DKN2	unlabelled		false	scope unlabelled
+P0DJC4	T		conopeptide	1	Q3YEH4	train	4	false	
+P0DJC5	T		conopeptide	1	Q3YEH4	train	4	false	
+P0DJC6	O1		conopeptide	1	P0DJC6	test		false	new group
+P0DJC7	O1		conopeptide	1	P0DJC7	train	2	false	
+P0DJL6	T		conopeptide	1	P0DJL6	train	3	false	
+P0DKM1	I2		conopeptide	1	P0DKM1	test		false	new group
+P0DKM2			unlabelled		P0DKM2	unlabelled		false	scope unlabelled
+P0DKM3			unlabelled		P0DKM3	unlabelled		false	scope unlabelled
+P0DKM4			unlabelled		P0DKM4	unlabelled		false	scope unlabelled
+P0DKM5			unlabelled		P0DKM5	unlabelled		false	scope unlabelled
+P0DKM6			unlabelled		P0DKM6	unlabelled		false	scope unlabelled
+P0DKM7	P-like		reference		P0DKM7	reference		false	scope reference
+P0DKM8	P-like		reference		P0DKM7	reference		false	scope reference
+P0DKM9	P-like		reference		P0DKT1	reference		false	scope reference
+P0DKN0	P-like		reference		P0DKN0	reference		false	scope reference
+P0DKN1	P-like		reference		P0DKN1	reference		false	scope reference
+P0DKN2	I2-like		reference		P0DKN2	reference		false	scope reference
+P0DKN3	I2-like		reference		P0DKN2	reference		false	scope reference
+P0DKN4			unlabelled		P0DKN4	unlabelled		false	scope unlabelled
+P0DKN5			unlabelled		P0DKN5	unlabelled		false	scope unlabelled
+P0DKN6			unlabelled		P0DKN6	unlabelled		false	scope unlabelled
+P0DKN7			unlabelled		P0DKN7	unlabelled		false	scope unlabelled
+P0DKN8			unlabelled		P0DKN8	unlabelled		false	scope unlabelled
+P0DKN9			unlabelled		P0DKN9	unlabelled		false	scope unlabelled
+P0DKP0			unlabelled		P0DKP0	unlabelled		false	scope unlabelled
+P0DKP1			unlabelled		P0DKP1	unlabelled		false	scope unlabelled
+P0DKP2			unlabelled		P0DKP2	unlabelled		false	scope unlabelled
+P0DKP3			unlabelled		P0DKP3	unlabelled		false	scope unlabelled
+P0DKP4			unlabelled		P0DKP4	unlabelled		false	scope unlabelled
+P0DKP5	A		conopeptide	1	P28879	train	2	false	
+P0DKP6	A		conopeptide	1	P28879	train	2	false	
+P0DKP7	A		conopeptide	1	P28879	train	2	false	
+P0DKP8	A		conopeptide	1	P28879	train	2	false	
+P0DKP9	M		conopeptide	1	C1J5M7	test		false	new group; group labelled M
+P0DKQ0	M		conopeptide	1	C1J5M7	test		false	new group; group labelled M
+P0DKQ1	M		conopeptide	1	C1J5M7	test		false	new group; group labelled M
+P0DKQ2	M		conopeptide	1	H2BKJ0	test		false	new group; group labelled M
+P0DKQ3	M		conopeptide		Q5K0D7	excluded		false	label conflict (FULL: M x1, O1 x1)
+P0DKQ4	M		conopeptide		P0C8V9	excluded		false	label conflict (FULL: O1 x4, M x2)
+P0DKQ5	M		conopeptide		P0C8V9	excluded		false	label conflict (FULL: O1 x4, M x2)
+P0DKQ6	O1		conopeptide	1	P0C8V9	train	3	false	
+P0DKQ7			unlabelled		P0DKQ7	unlabelled		false	scope unlabelled
+P0DKQ8	actinoporin	Conoidea	unmapped		P0DKQ8	unmapped		false	scope unmapped
+P0DKQ9	M		conopeptide	1	C1J5M7	test		false	new group; group labelled M
+P0DKT1	P-like		reference		P0DKT1	reference		false	scope reference
+P0DKT2	P-like		reference		P0DKT1	reference		false	scope reference
+P0DKT3	P-like		reference		P0DKT1	reference		false	scope reference
+P0DKT4	P-like		reference		P0DKT1	reference		false	scope reference
+P0DKT5	P-like		reference		P0DKT1	reference		false	scope reference
+P0DKY9	B		conopeptide	2	P58806	train	logo	false	
+P0DKZ0	B		conopeptide	2	P58806	train	logo	false	
+P0DKZ1	B		conopeptide	2	P58806	train	logo	false	
+P0DL31			unlabelled		P0DL31	unlabelled		false	scope unlabelled
+P0DL39	A		conopeptide	1	P0DL39	test		false	new group
+P0DL66	O1		conopeptide	1	M9PQ91	test		false	new group
+P0DL67	O1		conopeptide	1	M9PQ91	test		false	new group
+P0DL68	A		conopeptide	1	P60274	train	4	false	
+P0DL71	NPY		unmapped		P0CJ22	unmapped		false	scope unmapped
+P0DL76	vasopressin/oxytocin		unmapped		P0DL76	unmapped		false	scope unmapped
+P0DL85	M		conopeptide	1	C7DQB8	train	5	false	; group labelled I2
+P0DM15			unlabelled		P0DM15	unlabelled		false	scope unlabelled
+P0DM16	E		conopeptide	3	P0DM16	reference		false	tier 3
+P0DM17	F		conopeptide	3	P0DM17	reference		false	tier 3
+P0DM18	N		conopeptide	3	P0DM18	reference		false	tier 3
+P0DM19	N		conopeptide	3	P0DM18	reference		false	tier 3
+P0DM20	N		conopeptide	3	P0DM18	reference		false	tier 3
+P0DM21	A		conopeptide	1	A0SE60	test		false	new group
+P0DM23	A		conopeptide	1	A0SE60	test		false	new group
+P0DM26	FARP (FMRFamide related peptide)		unmapped		P0DM27	unmapped		false	scope unmapped
+P0DM27	FARP (FMRFamide related peptide)		unmapped		P0DM27	unmapped		false	scope unmapped
+P0DM28	FARP (FMRFamide related peptide)		unmapped		P0DM28	unmapped		false	scope unmapped
+P0DM34	G		conopeptide	3	P0DM34	reference		false	tier 3; group labelled G
+P0DM45			unlabelled		P0DM45	unlabelled		false	scope unlabelled
+P0DM98			unlabelled		P0DM18	unlabelled		false	scope unlabelled
+P0DM99			unlabelled		P0DM99	unlabelled		false	scope unlabelled
+P0DMA0			unlabelled		P0DM99	unlabelled		false	scope unlabelled
+P0DMA1	M		conopeptide	1	P0DMA1	train	4	false	
+P0DMA2	O1		conopeptide	1	P0DMA2	train	5	false	
+P0DMA3	O1		conopeptide	1	P0DMA2	train	5	false	
+P0DMA4			unlabelled		Q9GU57	unlabelled		false	scope unlabelled
+P0DMB3	M		conopeptide		A1BQQ5	excluded		false	label conflict (MAT: T x2, M x1)
+P0DN42	vasopressin/oxytocin		unmapped		A0A4Y5X186	unmapped		false	scope unmapped
+P0DN43	vasopressin/oxytocin		unmapped		A0A4Y5X186	unmapped		false	scope unmapped
+P0DN44	teretoxin C (TC) superfamily		unmapped		P0DN44	unmapped		false	scope unmapped
+P0DN45	teretoxin C (TC) superfamily		unmapped		P0DN45	unmapped		false	scope unmapped
+P0DN46	teretoxin A (TA) superfamily		unmapped		P0DN46	unmapped		false	scope unmapped
+P0DN47	teretoxin A (TA) superfamily		unmapped		P0DN46	unmapped		false	scope unmapped
+P0DN48			unlabelled		A0A141TBR6	unlabelled		false	scope unlabelled
+P0DN49	teretoxin M (TM) superfamily		unmapped		P0DN49	unmapped		false	scope unmapped
+P0DN50	teretoxin M (TM) superfamily		unmapped		P0DN50	unmapped		false	scope unmapped
+P0DN51	teretoxin M (TM) superfamily		unmapped		P0DN51	unmapped		false	scope unmapped
+P0DN52	teretoxin M (TM) superfamily		unmapped		P0DN52	unmapped		false	scope unmapped
+P0DN53			unlabelled		P0DN53	unlabelled		false	scope unlabelled
+P0DN54	teretoxin M (TM) superfamily		unmapped		P0DN54	unmapped		false	scope unmapped
+P0DN55			unlabelled		P0DN53	unlabelled		false	scope unlabelled
+P0DN56	teretoxin M (TM) superfamily		unmapped		P0DN56	unmapped		false	scope unmapped
+P0DN57			unlabelled		P0DN57	unlabelled		false	scope unlabelled
+P0DN58	teretoxin H (TH) superfamily		unmapped		P0DN58	unmapped		false	scope unmapped
+P0DN59	teretoxin H (TH) superfamily		unmapped		P0DN59	unmapped		false	scope unmapped
+P0DN60	teretoxin N (TN) superfamily		unmapped		P0DN60	unmapped		false	scope unmapped
+P0DN61			unlabelled		P0DN61	unlabelled		false	scope unlabelled
+P0DN62			unlabelled		P0DN62	unlabelled		false	scope unlabelled
+P0DN63	teretoxin C (TC) superfamily		unmapped		P0DN63	unmapped		false	scope unmapped
+P0DN64	teretoxin C (TC) superfamily		unmapped		P0DN64	unmapped		false	scope unmapped
+P0DN65	teretoxin J (TJ) superfamily		unmapped		P0DN65	unmapped		false	scope unmapped
+P0DN66	actinoporin	Conoidea	unmapped		P0DN66	unmapped		false	scope unmapped
+P0DN67	actinoporin	Conoidea	unmapped		P0DN67	unmapped		false	scope unmapped
+P0DOW6	O2		conopeptide	1	P0DOW6	test		false	new group
+P0DOZ0			unlabelled		P0CH19	unlabelled		false	scope unlabelled
+P0DOZ1			unlabelled		P0DOZ1	unlabelled		false	scope unlabelled
+P0DOZ2	ConoGAY		unmapped		P0DKP0	unmapped		false	scope unmapped
+P0DOZ3			unlabelled		P0DOZ3	unlabelled		false	scope unlabelled
+P0DOZ4			unlabelled		P0DOZ4	unlabelled		false	scope unlabelled
+P0DOZ5			unlabelled		P0DOZ4	unlabelled		false	scope unlabelled
+P0DOZ6			unlabelled		P0DOZ6	unlabelled		false	scope unlabelled
+P0DOZ7	FARP (FMRFamide related peptide)		unmapped		P0DM27	unmapped		false	scope unmapped
+P0DOZ8	M		conopeptide	1	A0A0F7Z3J2	train	4	false	
+P0DOZ9			unlabelled		P0DKP1	unlabelled		false	scope unlabelled
+P0DP00			unlabelled		P0DP00	unlabelled		false	scope unlabelled
+P0DP10	M		conopeptide	1	Q9BPI9	train	3	false	
+P0DP11	M		conopeptide	1	X5IWT5	test		false	new group; group labelled M
+P0DP12	T		conopeptide	1	D3JWK2	test		false	new group
+P0DP13	O2	Contryphan	conopeptide	1	Q9BPC2	train	3	false	
+P0DP14	O2	Contryphan	conopeptide	1	A0A1P8NVR5	train	1	false	
+P0DP16	O2	Contryphan	conopeptide	1	A0A1P8NVR5	train	1	false	
+P0DP17	O2	Contryphan	conopeptide	1	A0A1P8NVR5	train	1	false	
+P0DP18	O2	Contryphan	conopeptide	1	Q9BPC2	train	3	false	
+P0DP19	O2	Contryphan	conopeptide	1	Q9BPC2	train	3	false	
+P0DP20	O2	Contryphan	conopeptide	1	Q9BPC2	train	3	false	
+P0DPG6	B2		conopeptide	3	P0DPG6	reference		false	tier 3
+P0DPJ2	M		conopeptide	1	P0DTJ2	train	1	false	
+P0DPJ3	M		conopeptide	1	A0A2I6EDN5	train	4	false	
+P0DPJ5	M		conopeptide	1	P85021	train	3	false	
+P0DPJ6	M		conopeptide	1	P0DPJ6	train	3	false	
+P0DPJ7	M		conopeptide	1	A0A2I6EDL5	train	1	false	
+P0DPJ8	M		conopeptide	1	P0DPJ8	train	3	false	
+P0DPK7			unlabelled		D2DGD3	unlabelled		false	scope unlabelled
+P0DPK8	M		conopeptide	1	Q9BPJ4	train	3	false	
+P0DPK9	M		conopeptide	1	C7DQB8	train	5	false	; group labelled I2
+P0DPL0	M		conopeptide	1	Q9BPJ4	train	3	false	
+P0DPL1	M		conopeptide	1	P0DPL1	train	1	false	
+P0DPL2	M		conopeptide	1	Q9BPJ4	train	3	false	
+P0DPL3	M		conopeptide	1	Q9BPJ4	train	3	false	
+P0DPL4	T		conopeptide	1	P0DN53	train	2	false	; group labelled A
+P0DPL5	T		conopeptide	1	H2BKJ0	test		false	new group; group labelled M
+P0DPL6	T		conopeptide	1	A0A3G3C7S2	test		false	new group
+P0DPL7	T		conopeptide	1	P0DPL7	train	3	false	
+P0DPL8	A		conopeptide		A0A3G3C7S2	excluded		false	label conflict (SIG: T x2, A x1)
+P0DPL9	A		conopeptide	1	Q9XZK6	test		false	new group
+P0DPM0	A		conopeptide	1	P0CY88	test		false	new group
+P0DPM1	A		conopeptide	1	A0SE59	train	4	false	
+P0DPM2	A		conopeptide	1	P58916	train	1	false	; group labelled A
+P0DPM3	U		conopeptide	3	A0A346CED7	reference		false	tier 3
+P0DPM4	O1		conopeptide	1	Q9U657	test		false	new group
+P0DPQ0	O2	Contryphan	conopeptide	2	Q2I2P1	train	logo	false	; group labelled C
+P0DPQ1	O2	Contryphan	conopeptide	1	A0A1P8NVR5	train	1	false	
+P0DPQ2	O2	Contryphan	conopeptide	1	Q9BPC2	train	3	false	
+P0DPT2	A		conopeptide	1	P0DPT2	train	3	false	
+P0DQD4	O1		conopeptide	1	P0CY66	train	5	false	
+P0DQH7	FARP (FMRFamide related peptide)		unmapped		P0DQH7	unmapped		false	scope unmapped
+P0DQH8	FARP (FMRFamide related peptide)		unmapped		P0DQH7	unmapped		false	scope unmapped
+P0DQM6	vasopressin/oxytocin		unmapped		D2Y492	unmapped		false	scope unmapped
+P0DQM7	vasopressin/oxytocin		unmapped		P0DTJ3	unmapped		false	scope unmapped
+P0DQM8	M		conopeptide	1	P0DQM8	train	5	false	
+P0DQM9			unlabelled		A0A0F7YYX3	unlabelled		false	scope unlabelled
+P0DQN0			unlabelled		P0DQN0	unlabelled		false	scope unlabelled
+P0DQO8	M		conopeptide	1	A0A2I6EDL5	train	1	false	
+P0DQQ5	A		conopeptide	1	A1BQQ5	train	1	false	; group labelled A
+P0DQQ6	A		conopeptide	1	Q86RB2	train	5	false	
+P0DQQ7	T		conopeptide	3	P0DM34	reference		false	tier 3; group labelled G
+P0DQR7	A		conopeptide	1	P28879	train	2	false	
+P0DQT5	C	Consomatin	conopeptide	2	P0DW24	train	logo	false	
+P0DQV5	M		conopeptide	1	P85021	train	3	false	
+P0DQX0	D		conopeptide	2	P0DQX2	train	logo	false	
+P0DQX1	D		conopeptide	2	P0DQX2	train	logo	false	
+P0DQX2	D		conopeptide	2	P0DQX2	train	logo	false	
+P0DQY0	A		conopeptide	1	P0DQY0	train	3	false	
+P0DQY1	A		conopeptide	1	P28879	train	2	false	
+P0DQY2			unlabelled		P0DQY2	unlabelled		false	scope unlabelled
+P0DQY3			unlabelled		P0DQY3	unlabelled		false	scope unlabelled
+P0DQY4			unlabelled		P0DQY4	unlabelled		false	scope unlabelled
+P0DQY5			unlabelled		A0A0B5A7N8	unlabelled		false	scope unlabelled
+P0DQY6			unlabelled		P0DQY6	unlabelled		false	scope unlabelled
+P0DQY7	A		conopeptide	1	A3DT44	train	1	false	
+P0DQY8	elevenin		unmapped		P0DQY9	unmapped		false	scope unmapped
+P0DQY9	elevenin		unmapped		P0DQY9	unmapped		false	scope unmapped
+P0DQZ0			unlabelled		A6YR42	unlabelled		false	scope unlabelled
+P0DQZ1			unlabelled		P0DQZ1	unlabelled		false	scope unlabelled
+P0DRC4			unlabelled		P0DRC4	unlabelled		false	scope unlabelled
+P0DRL1	O1		conopeptide	1	P0DRL1	train	3	false	
+P0DRL2	O1		conopeptide	1	P0DRL1	train	3	false	
+P0DRL3	O1		conopeptide	1	P0DRL1	train	3	false	
+P0DRL4	A		conopeptide	1	F5C3U4	test		false	new group
+P0DRO1	A		conopeptide	1	P0DRO2	train	1	false	
+P0DRO2	A		conopeptide	1	P0DRO2	train	1	false	
+P0DRO3	A		conopeptide	1	P0DRO2	train	1	false	
+P0DRO4	A		conopeptide	1	P0DRO2	train	1	false	
+P0DRO5			unlabelled		P0DX20	unlabelled		false	scope unlabelled
+P0DTJ2	vasopressin/oxytocin		unmapped		P0DTJ2	unmapped		false	scope unmapped
+P0DTJ3	vasopressin/oxytocin		unmapped		P0DTJ3	unmapped		false	scope unmapped
+P0DTJ4	M		conopeptide	1	P0DTJ4	test		false	new group
+P0DTJ5	T		conopeptide	1	P0DTJ5	train	3	false	
+P0DTJ6	P		conopeptide	2	P0DTJ6	train	logo	false	
+P0DTJ7	L		conopeptide	2	P0DTJ7	train	logo	false	
+P0DTJ8	U		conopeptide	3	P0DTJ8	reference		false	tier 3
+P0DTJ9	H		conopeptide	2	P0DTJ9	train	logo	false	
+P0DTX2	O1		conopeptide	1	A6YR42	train	2	false	
+P0DTX3	O1		conopeptide	1	A6YR42	train	2	false	
+P0DTX4	O1		conopeptide	1	P0DTX4	test		false	new group
+P0DTX5			unlabelled		P0DTX5	unlabelled		false	scope unlabelled
+P0DTX6			unlabelled		P0DTX6	unlabelled		false	scope unlabelled
+P0DTX7	O1		conopeptide	1	P0DTX7	test		false	new group
+P0DTX8			unlabelled		P0DTX8	unlabelled		false	scope unlabelled
+P0DTX9			unlabelled		P0DTX9	unlabelled		false	scope unlabelled
+P0DTY0	O1		conopeptide	1	P0DTY0	train	5	false	
+P0DTY1			unlabelled		P0DTY1	unlabelled		false	scope unlabelled
+P0DTY2	O1		conopeptide	1	P0DTZ7	test		false	new group
+P0DTY3			unlabelled		P0DTY3	unlabelled		false	scope unlabelled
+P0DTY4	O1		conopeptide	1	P0DTZ7	test		false	new group
+P0DTY5	O1		conopeptide	1	D6C4L5	train	2	false	
+P0DTY6			unlabelled		P0DTY6	unlabelled		false	scope unlabelled
+P0DTY7			unlabelled		P0DTY7	unlabelled		false	scope unlabelled
+P0DTY8			unlabelled		P0DTY6	unlabelled		false	scope unlabelled
+P0DTY9	O1		conopeptide	1	D6C4K0	train	5	false	
+P0DTZ0	O1		conopeptide	1	P0DTZ7	test		false	new group
+P0DTZ1	O1		conopeptide	1	D6C4L2	test		false	new group
+P0DTZ2			unlabelled		P0DTZ2	unlabelled		false	scope unlabelled
+P0DTZ3	O1		conopeptide	1	D6C4K0	train	5	false	
+P0DTZ4	O1		conopeptide	1	P0DTZ4	train	2	false	
+P0DTZ5	O1		conopeptide	1	P0DTZ5	train	2	false	
+P0DTZ6	O1		conopeptide	1	P0DTZ7	test		false	new group
+P0DTZ7	O1		conopeptide	1	P0DTZ7	test		false	new group
+P0DTZ8			unlabelled		P0DTZ2	unlabelled		false	scope unlabelled
+P0DTZ9			unlabelled		P0DTY6	unlabelled		false	scope unlabelled
+P0DUA0	O1		conopeptide	1	P0DUA0	train	5	false	
+P0DUA1			unlabelled		P0DUA1	unlabelled		false	scope unlabelled
+P0DUA2			unlabelled		P0DUA2	unlabelled		false	scope unlabelled
+P0DUA3			unlabelled		P0DUA3	unlabelled		false	scope unlabelled
+P0DUA4			unlabelled		P0DUA3	unlabelled		false	scope unlabelled
+P0DUA5			unlabelled		P0DUA3	unlabelled		false	scope unlabelled
+P0DUA6			unlabelled		P0DUA6	unlabelled		false	scope unlabelled
+P0DUA7			unlabelled		P0DUA6	unlabelled		false	scope unlabelled
+P0DUA8			unlabelled		P0DUA6	unlabelled		false	scope unlabelled
+P0DUA9			unlabelled		P0DUA6	unlabelled		false	scope unlabelled
+P0DUB0			unlabelled		P0DUB0	unlabelled		false	scope unlabelled
+P0DUC3	O2	Contryphan	conopeptide	1	A1BQQ5	train	1	false	; group labelled A
+P0DUC4	O2	Contryphan	conopeptide	1	P0C904	train	1	false	; group labelled O1
+P0DUC5	O2	Contryphan	conopeptide	1	P0DKP1	train	5	false	; group labelled M
+P0DUC6	O2	Contryphan	conopeptide	1	P0DKP3	test		false	new group; group labelled A
+P0DUC7	O2	Contryphan	conopeptide	3	D0PX85	reference		false	tier 3; group labelled K
+P0DUC8	O2	Contryphan	conopeptide	1	D5KXH3	test		false	new group
+P0DUQ4	FARP (FMRFamide related peptide)		unmapped		P0DM27	unmapped		false	scope unmapped
+P0DUQ5	L		conopeptide	2	D6C4I7	train	logo	false	
+P0DUQ6	A		conopeptide	1	P0DUQ6	train	2	false	
+P0DUQ7	NSf-1		conopeptide	3	P0DUQ7	reference		false	tier 3
+P0DUQ8	NSf-1		conopeptide	3	P0DUQ7	reference		false	tier 3
+P0DUQ9	O2	Contryphan	conopeptide	1	G1AS83	train	2	false	
+P0DUR0	A		conopeptide	1	P60274	train	4	false	
+P0DUR1	A		conopeptide	1	P60274	train	4	false	
+P0DUR2	A		conopeptide	1	A0SE59	train	4	false	
+P0DUR3	M		conopeptide	1	A0A0F7Z3J2	train	4	false	
+P0DUR4	M		conopeptide	1	A0A0F7Z3J2	train	4	false	
+P0DUU1			unlabelled		Q1A3Q7	unlabelled		false	scope unlabelled
+P0DUU2			unlabelled		Q3YED8	unlabelled		false	scope unlabelled
+P0DUU3			unlabelled		P0CI10	unlabelled		false	scope unlabelled
+P0DUU4			unlabelled		P0DTJ8	unlabelled		false	scope unlabelled
+P0DW17	C	Consomatin	conopeptide	2	P0DW24	train	logo	false	
+P0DW18	C	Consomatin	conopeptide	2	P0DW18	train	logo	false	
+P0DW19	C	Consomatin	conopeptide	2	P0DW26	train	logo	false	
+P0DW20	C	Consomatin	conopeptide	2	P0DW26	train	logo	false	
+P0DW21	C	Consomatin	conopeptide	2	P0DW26	train	logo	false	
+P0DW22	C	Consomatin	conopeptide	2	P0DW24	train	logo	false	
+P0DW23	C	Consomatin	conopeptide	2	P0DW23	train	logo	false	
+P0DW24	C	Consomatin	conopeptide	2	P0DW24	train	logo	false	
+P0DW25	C	Consomatin	conopeptide	2	P0DW26	train	logo	false	
+P0DW26	C	Consomatin	conopeptide	2	P0DW26	train	logo	false	
+P0DW72	I1		conopeptide	1	P0DW72	train	3	false	
+P0DW73	O1		conopeptide	1	P0DW74	train	1	false	
+P0DW74	O1		conopeptide	1	P0DW74	train	1	false	
+P0DW75	O1		conopeptide	1	P0DW74	train	1	false	
+P0DW76	O1		conopeptide	1	P0DW74	train	1	false	
+P0DW77	O1		conopeptide	1	P0DW74	train	1	false	
+P0DW78	O1		conopeptide	1	P0DW74	train	1	false	
+P0DW83	O1		conopeptide	1	P0DW83	train	5	false	
+P0DX20	A		conopeptide	1	P0DX20	train	3	false	
+P0DY99	A		conopeptide	1	P0DY99	train	5	false	
+P15471	A		conopeptide	1	P28879	train	2	false	
+P15472			unlabelled		P15472	unlabelled		false	scope unlabelled
+P17684	B		conopeptide	2	P17684	train	logo	false	
+P18511	O1		conopeptide	1	Q9U660	train	4	false	
+P18512	O1		conopeptide	1	Q9U660	train	4	false	
+P18513	O1		conopeptide	1	Q9BPA0	train	2	false	
+P24159	O1		conopeptide	1	P24159	test		false	new group
+P24160	O2		conopeptide	1	A0A2L2P6T1	test		false	new group
+P28878	A		conopeptide	1	P86500	train	3	false	
+P28879	A		conopeptide	1	P28879	train	2	false	
+P28880	O1		conopeptide	1	P28880	train	1	false	
+P28881	O1		conopeptide	1	P0C8V9	train	3	false	
+P37300	O1		conopeptide	1	P0C8V9	train	3	false	
+P50982	A		conopeptide	1	F5C3U4	test		false	new group
+P50983	A		conopeptide	1	Q9XZK6	test		false	new group
+P50984	A		conopeptide	1	F5C0A0	train	3	false	
+P50985	A		conopeptide	1	A0SE60	test		false	new group
+P55963	A		conopeptide	1	P55963	train	4	false	
+P56529	M		conopeptide	1	P56529	train	4	false	
+P56633	O1		conopeptide	1	A0A384E129	test		false	new group
+P56636	A		conopeptide	1	A0SE59	train	4	false	
+P56638	A		conopeptide	1	P56638	train	4	false	
+P56639	A		conopeptide	1	P55963	train	4	false	
+P56640	A		conopeptide	1	P55963	train	4	false	
+P56641	A		conopeptide	1	P0DN53	train	2	false	; group labelled A
+P56708	O1		conopeptide	1	Q9U657	test		false	new group
+P56710	O1		conopeptide	1	P0CC13	train	3	false	
+P56711	O2		conopeptide	1	G1AS73	train	4	false	
+P56712	O1		conopeptide	1	Q9BPA1	train	4	false	
+P56713	O1		conopeptide	1	A0A2L2P6T9	train	1	false	
+P56714	O1		conopeptide	1	Q9U660	train	4	false	
+P56973	A		conopeptide	1	P28879	train	2	false	
+P58623	M		conopeptide	1	P58623	test		false	new group
+P58624	M		conopeptide	1	A6YR20	train	1	false	; group labelled O1
+P58625			unlabelled		A1BQQ5	unlabelled		false	scope unlabelled
+P58782	A		conopeptide	1	P55963	train	4	false	
+P58783	A		conopeptide	1	P55963	train	4	false	
+P58784	O2	Contryphan	conopeptide	1	A0A1P8NVR5	train	1	false	
+P58785	O2	Contryphan	conopeptide	1	Q9BPC2	train	3	false	
+P58786	O2	Contryphan	conopeptide	1	A0A1P8NVR5	train	1	false	
+P58787	O2	Contryphan	conopeptide	1	A0A1P8NVR5	train	1	false	
+P58803			unlabelled		A1BQQ5	unlabelled		false	scope unlabelled
+P58804			unlabelled		P58804	unlabelled		false	scope unlabelled
+P58805	FARP (FMRFamide related peptide)		unmapped		P0DM28	unmapped		false	scope unmapped
+P58806	B		conopeptide	2	P58806	train	logo	false	
+P58807	T		conopeptide	1	P58808	train	5	false	
+P58808	T		conopeptide	1	P58808	train	5	false	
+P58809	T		conopeptide	1	P58808	train	5	false	
+P58810	T		conopeptide	1	P58808	train	5	false	
+P58811	A		conopeptide	1	P58811	train	3	false	
+P58841	M		conopeptide	1	Q9BPI9	train	3	false	
+P58842	M		conopeptide	1	P0CY78	train	1	false	; group labelled A
+P58843			unlabelled		P58843	unlabelled		false	scope unlabelled
+P58844	J		conopeptide	2	P58844	train	logo	false	
+P58845			unlabelled		A0A346CED7	unlabelled		false	scope unlabelled
+P58846	M		conopeptide	1	Q9BPJ4	train	3	false	
+P58848	T		conopeptide	1	Q9XZL3	train	2	false	; group labelled T
+P58849	T		conopeptide	1	Q9XZL3	train	2	false	; group labelled T
+P58913	O1		conopeptide	1	P69753	train	5	false	
+P58914	O1		conopeptide	1	P58914	train	3	false	
+P58915	O1		conopeptide	1	P58915	train	4	false	
+P58916	O1		conopeptide	1	P58916	train	1	false	; group labelled A
+P58917	O1		conopeptide	1	A0A384E129	test		false	new group
+P58918	O1		conopeptide	1	Q26350	train	1	false	
+P58919	O1		conopeptide	1	P0DL31	train	2	false	
+P58920	O1		conopeptide	1	A0A384E129	test		false	new group
+P58922	O2		conopeptide	1	P58922	train	1	false	
+P58923			unlabelled		P15472	unlabelled		false	scope unlabelled
+P58924	S		conopeptide	2	P58924	train	logo	false	
+P58925	M		conopeptide	1	C1J5M7	test		false	new group; group labelled M
+P58926	M		conopeptide	1	Q9BPJ4	train	3	false	
+P58927	M		conopeptide	1	Q9BPJ4	train	3	false	
+P58928			unlabelled		P0C829	unlabelled		false	scope unlabelled
+P58990	vasopressin/oxytocin		unmapped		P05486	unmapped		false	scope unmapped
+P60179	O1		conopeptide	1	P60179	train	4	false	
+P60207	M		conopeptide	1	C1J5M7	test		false	new group; group labelled M
+P60245	M		conopeptide	1	P60245	train	3	false	
+P60274	A		conopeptide	1	P60274	train	4	false	
+P60513	O1		conopeptide	1	P60513	train	2	false	
+P62903	O2	Contryphan	conopeptide	1	A0A1P8NVR5	train	1	false	
+P69494	I2		conopeptide	1	C7DQB8	train	5	false	; group labelled I2
+P69495	I2		conopeptide	1	C7DQX6	train	3	false	
+P69496	I2		conopeptide	1	P0C254	train	2	false	
+P69497	I2		conopeptide	1	P69497	train	1	false	
+P69498	I2		conopeptide	1	C7DQB8	train	5	false	; group labelled I2
+P69499	I2		conopeptide	1	C7DQB8	train	5	false	; group labelled I2
+P69500	I2		conopeptide	1	C7DQY0	train	3	false	
+P69501	I2		conopeptide	1	C7DQY0	train	3	false	
+P69657	A		conopeptide	1	C6ZJQ2	train	1	false	
+P69658	A		conopeptide	1	P69658	test		false	new group
+P69745	B		conopeptide	2	P58806	train	logo	false	
+P69746	A		conopeptide	1	P55963	train	4	false	
+P69747	A		conopeptide	1	Q9XZK6	test		false	new group
+P69748	O1		conopeptide	1	P69753	train	5	false	
+P69749	O1		conopeptide	1	P69753	train	5	false	
+P69750	O1		conopeptide	1	P69753	train	5	false	
+P69751	O1		conopeptide	1	P69753	train	5	false	
+P69752	O1		conopeptide	1	P69752	train	4	false	
+P69753	O1		conopeptide	1	P69753	train	5	false	
+P69754	O1		conopeptide	1	P69753	train	5	false	
+P69755	O1		conopeptide	1	P69753	train	5	false	
+P69756	O1		conopeptide	1	P69753	train	5	false	
+P69757	O1		conopeptide	1	P69753	train	5	false	
+P69758	O1		conopeptide	1	P69760	train	4	false	
+P69759	O1		conopeptide	1	P69759	train	3	false	
+P69760	O1		conopeptide	1	P69760	train	4	false	
+P69761	O1		conopeptide	1	A0A2L2P6T9	train	1	false	
+P69762	O1		conopeptide	1	Q9BPA0	train	2	false	
+P69763	O1		conopeptide	1	A0A2L2P6T9	train	1	false	
+P69764	T		conopeptide	1	Q6PN84	train	3	false	
+P69765	T		conopeptide	1	P69765	train	5	false	
+P69766	T		conopeptide	1	Q9BPG7	train	1	false	
+P69767	T		conopeptide	1	A0A3G3C7S2	test		false	new group
+P69768	T		conopeptide	1	Q3YEE9	train	5	false	
+P69769	M		conopeptide	1	P69769	train	3	false	
+P69770	I2		conopeptide	1	P69770	train	4	false	
+P81727	P		conopeptide	2	P81727	train	logo	false	
+P81755	T		conopeptide	1	P81755	test		false	new group
+P83047	O2	Contryphan	conopeptide	1	Q9BPC2	train	3	false	
+P83301			unlabelled		P83301	unlabelled		false	scope unlabelled
+P83390	P		conopeptide	2	P83390	train	logo	false	
+P84197	I1		conopeptide	1	P84197	train	2	false	
+P84698	G		conopeptide	3	P0DM34	reference		false	tier 3; group labelled G
+P84700	conophan		unmapped		P0DTJ8	unmapped		false	scope unmapped
+P84701	conophan		unmapped		P0DKN9	unmapped		false	scope unmapped
+P84704	R		conopeptide		A0A3G1VU73	excluded		false	label conflict (FULL: L x1, R x1)
+P84705	R		conopeptide	3	A0A3G1VU73	reference		false	tier 3
+P84706	R		conopeptide	3	A0A3G1VU73	reference		false	tier 3
+P84707	R		conopeptide	3	A0A3G1VU73	reference		false	tier 3
+P84713			unlabelled		A1BQQ5	unlabelled		false	scope unlabelled
+P84845	T		conopeptide	1	C0KYC5	train	3	false	
+P85009	A		conopeptide	1	A1X8B8	train	5	false	
+P85010	A		conopeptide	1	Q9XZK6	test		false	new group
+P85011	A		conopeptide	1	P0C1D0	train	5	false	
+P85012	A		conopeptide	1	B6V6L0	train	5	false	; group labelled A
+P85013	A		conopeptide	1	A0SE59	train	4	false	
+P85014	conophan		unmapped		H8Y1U0	unmapped		false	scope unmapped
+P85015	conophan		unmapped		H8Y1U0	unmapped		false	scope unmapped
+P85016	M		conopeptide	1	A0A2I6EDN5	train	4	false	
+P85017	M		conopeptide	1	A0A125S9E6	train	5	false	
+P85018	M		conopeptide	1	A0A2I6EDL5	train	1	false	
+P85019	M		conopeptide	1	A0A125S9E6	train	5	false	
+P85020	M		conopeptide	1	A0A2I6EDL5	train	1	false	
+P85021	M		conopeptide	1	P85021	train	3	false	
+P85022	M		conopeptide	1	A0A125S9E6	train	5	false	
+P85023	M		conopeptide	1	A0A2I6EDN5	train	4	false	
+P85141	vasopressin/oxytocin		unmapped		P85141	unmapped		false	scope unmapped
+P85871	FARP (FMRFamide related peptide)		unmapped		P85871	unmapped		false	scope unmapped
+P85886	A		conopeptide	1	F5C3U4	test		false	new group
+P86166			unlabelled		P86166	unlabelled		false	scope unlabelled
+P86255	vasopressin/oxytocin		unmapped		A1BQQ5	unmapped		false	scope unmapped
+P86256	T		conopeptide	1	A0A3G3C7S2	test		false	new group
+P86257	T		conopeptide	1	A0A3G3C7S2	test		false	new group
+P86258	T		conopeptide	1	D2Y495	train	2	false	; group labelled O1
+P86259	T		conopeptide	1	Q9BPF1	train	4	false	
+P86260	M		conopeptide	2	B1PZN6	train	logo	false	; group labelled S
+P86261	A		conopeptide	1	A1X8D8	train	1	false	
+P86262	M		conopeptide	1	Q9BPJ4	train	3	false	
+P86263	M		conopeptide	1	Q9BPJ4	train	3	false	
+P86264	T		conopeptide	1	P0DPL7	train	3	false	
+P86362	A		conopeptide	1	C6ZJQ2	train	1	false	
+P86500			unlabelled		P86500	unlabelled		false	scope unlabelled
+P86942			unlabelled		P0C8V3	unlabelled		false	scope unlabelled
+Q0N4U3	J		conopeptide	2	Q0N4U3	train	logo	false	
+Q0N4U4	J		conopeptide	2	Q0N4U3	train	logo	false	
+Q0N4U5	J		conopeptide	2	Q0N4U3	train	logo	false	
+Q0N4U6	J		conopeptide	2	Q0N4U3	train	logo	false	
+Q0N4U7	J		conopeptide	2	Q0N4U3	train	logo	false	
+Q0N4U8	J		conopeptide	2	Q0N4U3	train	logo	false	
+Q1A3Q1	T		conopeptide	1	Q9BHA6	train	5	false	
+Q1A3Q2	T		conopeptide	1	Q9BHA6	train	5	false	
+Q1A3Q5	T		conopeptide	1	Q1A3Q5	train	5	false	
+Q1A3Q6	T		conopeptide	1	Q9BHA6	train	5	false	
+Q1A3Q7	T		conopeptide	1	Q1A3Q7	train	5	false	
+Q1A3Q8	T		conopeptide	1	Q9BHA6	train	5	false	
+Q1A3Q9	T		conopeptide	1	Q9BHA6	train	5	false	
+Q1A3R0	T		conopeptide	1	Q3YEH4	train	4	false	
+Q1A3R1	T		conopeptide	1	Q3YEH4	train	4	false	
+Q1A3R3	T		conopeptide	1	Q3YEH4	train	4	false	
+Q1L777	A		conopeptide	1	A0SE59	train	4	false	
+Q26350	O1		conopeptide	1	Q26350	train	1	false	
+Q26443	O1		conopeptide	1	Q9U657	test		false	new group
+Q2I2P1	C		conopeptide	2	Q2I2P1	train	logo	false	; group labelled C
+Q2I2P2	C		conopeptide	2	Q2I2P1	train	logo	false	; group labelled C
+Q2I2P3	O2	Contryphan	conopeptide	1	A0A1P8NVR5	train	1	false	
+Q2I2P4	P		conopeptide	2	Q2I2P4	train	logo	false	
+Q2I2P8	M		conopeptide	1	Q2I2P8	train	4	false	
+Q2I2Q1	M		conopeptide	1	Q9BPI9	train	3	false	
+Q2I2Q2	M		conopeptide	1	Q9BPH9	test		false	new group
+Q2I2Q3	M		conopeptide	1	P0CY73	train	1	false	
+Q2I2Q4	M		conopeptide	1	P0CY73	train	1	false	
+Q2I2Q5	M		conopeptide	1	Q9BPH9	test		false	new group
+Q2I2Q6	O2		conopeptide	1	B0KZ78	test		false	new group
+Q2I2Q9	O2		conopeptide	1	G1AS80	train	2	false	
+Q2I2R0	O1		conopeptide	1	Q2I2R0	test		false	new group
+Q2I2R1	O1		conopeptide	1	Q2I2R0	test		false	new group
+Q2I2R2	O1		conopeptide	1	Q2I2R2	train	1	false	
+Q2I2R3	O1		conopeptide	1	Q2I2R3	test		false	new group
+Q2I2R4	O1		conopeptide	1	Q2I2R4	test		false	new group
+Q2I2R5	L		conopeptide	2	Q2I2R5	train	logo	false	
+Q2I2R6	A		conopeptide	1	A1X8C2	test		false	new group
+Q2I2R7	A		conopeptide	1	Q2I2R7	train	2	false	
+Q2I2R8	A		conopeptide	1	Q2I2R7	train	2	false	
+Q3YED1	O1		conopeptide	1	Q3YED1	train	5	false	
+Q3YED3	O3		conopeptide	2	Q3YED3	train	logo	false	
+Q3YED5	O1		conopeptide	1	P69753	train	5	false	
+Q3YED6	O1		conopeptide	1	A0A2L2P6T9	train	1	false	
+Q3YED8	O1		conopeptide	1	Q3YED8	train	3	false	
+Q3YEE1	O1		conopeptide	1	Q3YEE1	train	2	false	
+Q3YEE2	O1		conopeptide	1	Q3YEE2	train	1	false	
+Q3YEE3	O1		conopeptide	1	Q3YEE3	train	1	false	
+Q3YEE4	O1		conopeptide	1	Q3YEE4	train	3	false	
+Q3YEE5	O1		conopeptide	1	Q3YEE2	train	1	false	
+Q3YEE6	O1		conopeptide	1	Q3YEE6	train	5	false	
+Q3YEE8	T		conopeptide	1	A0A3G3C7S2	test		false	new group
+Q3YEE9	T		conopeptide	1	Q3YEE9	train	5	false	
+Q3YEF0	O3		conopeptide	2	Q9BP63	train	logo	false	
+Q3YEF1	O1		conopeptide	1	Q9BPA1	train	4	false	
+Q3YEF3	O1		conopeptide	1	Q9U660	train	4	false	
+Q3YEF4	O2		conopeptide	1	Q3YEF4	train	3	false	
+Q3YEF7	O2		conopeptide	1	P58922	train	1	false	
+Q3YEF8	O2		conopeptide	1	Q3YEF8	train	5	false	
+Q3YEF9	O2		conopeptide	1	Q9BPC5	train	2	false	
+Q3YEG0	O2		conopeptide	1	G1AS73	train	4	false	
+Q3YEG3	O1		conopeptide	1	Q3YEG3	train	1	false	
+Q3YEG4	O1		conopeptide	1	A0A2I4QAG8	train	4	false	
+Q3YEG6	O1		conopeptide	1	P0DW74	train	1	false	
+Q3YEG7	O1		conopeptide	1	Q3YEG7	train	2	false	
+Q3YEG9	T		conopeptide	1	Q3YEH4	train	4	false	
+Q3YEH0	T		conopeptide	1	Q9BPF1	train	4	false	
+Q3YEH1	T		conopeptide	1	P81755	test		false	new group
+Q3YEH2	T		conopeptide	1	Q9BPF1	train	4	false	
+Q3YEH3	T		conopeptide	1	Q3YEH3	train	2	false	
+Q3YEH4	T		conopeptide	1	Q3YEH4	train	4	false	
+Q3YEH5	T		conopeptide	1	Q3YEH4	train	4	false	
+Q3YEH6	T		conopeptide	1	Q9BPF1	train	4	false	
+Q3YEH7	T		conopeptide	1	Q9BPG7	train	1	false	
+Q45RU7	S		conopeptide	2	B2CI28	train	logo	false	
+Q45RU8			unlabelled		Q45RU8	unlabelled		false	scope unlabelled
+Q5EHP1	M		conopeptide	1	Q9BPH9	test		false	new group
+Q5EHP2	M		conopeptide	1	Q9BPH9	test		false	new group
+Q5EHP3	M		conopeptide	1	Q9BPH9	test		false	new group
+Q5EHP4	M		conopeptide	1	P0CY73	train	1	false	
+Q5I2P0	M		conopeptide	1	Q9BPH9	test		false	new group
+Q5I4E5	I2		conopeptide	1	P0C254	train	2	false	
+Q5I4E6	I2		conopeptide	1	P69770	train	4	false	
+Q5K0B8	O1		conopeptide	1	Q5K0C0	train	4	false	
+Q5K0B9	O1		conopeptide	1	Q5K0C0	train	4	false	
+Q5K0C0	O1		conopeptide	1	Q5K0C0	train	4	false	
+Q5K0C1	O1		conopeptide	1	Q5K0C0	train	4	false	
+Q5K0C2	O1		conopeptide	1	Q5K0C0	train	4	false	
+Q5K0C4	O1		conopeptide	1	Q5K0C4	train	4	false	
+Q5K0C5	O1		conopeptide	1	P0DW74	train	1	false	
+Q5K0C7	O1		conopeptide	1	P0DW74	train	1	false	
+Q5K0C8	O1		conopeptide	1	P0DW74	train	1	false	
+Q5K0C9	O1		conopeptide	1	P0DW74	train	1	false	
+Q5K0D0	O1		conopeptide	1	P0DW74	train	1	false	
+Q5K0D1	O1		conopeptide	1	P0DW74	train	1	false	
+Q5K0D2	O1		conopeptide	1	P69753	train	5	false	
+Q5K0D3	O1		conopeptide	1	P0C8V9	train	3	false	
+Q5K0D5	O1		conopeptide	1	P28880	train	1	false	
+Q5K0D6	O1		conopeptide	1	P0C8V9	train	3	false	
+Q5K0D7	O1		conopeptide	1	Q5K0D7	test		false	new group
+Q5K0D8	O1		conopeptide	1	P0C8V9	train	3	false	
+Q68IP5	T		conopeptide	1	Q6PN84	train	3	false	
+Q6PN80	T		conopeptide	1	Q9BHA6	train	5	false	
+Q6PN81	T		conopeptide	1	Q3YEH4	train	4	false	
+Q6PN82	T		conopeptide	1	Q6PN84	train	3	false	
+Q6PN83	T		conopeptide	1	Q6PN84	train	3	false	
+Q6PN84	T		conopeptide	1	Q6PN84	train	3	false	
+Q6PN85	T		conopeptide	1	Q6PN84	train	3	false	
+Q6PN86	T		conopeptide	1	Q6PN84	train	3	false	
+Q6PPB3	A		conopeptide	1	Q6PPB3	test		false	new group
+Q6PTD0	T		conopeptide	1	Q3YEH4	train	4	false	
+Q6PTD1	A		conopeptide	1	A0SE59	train	4	false	
+Q6PTD4	A		conopeptide	1	F5C3U4	test		false	new group
+Q6PTD5	A		conopeptide	1	Q2I2R7	train	2	false	
+Q6PTD6	A		conopeptide	1	A0SE60	test		false	new group
+Q6PTD7	A		conopeptide	1	Q6PPB3	test		false	new group
+Q7M4K5	I1		conopeptide	1	Q7M4K5	train	5	false	
+Q7YT83	CRISP		unmapped		Q7YT83	unmapped		false	scope unmapped
+Q7YZS9	I2		conopeptide	1	C7DQY0	train	3	false	
+Q7Z027	O1		conopeptide	1	A0A2L2P6T9	train	1	false	
+Q7Z028	O1		conopeptide	1	A0A2L2P6T9	train	1	false	
+Q7Z090	I1		conopeptide	1	Q7Z090	train	3	false	
+Q7Z091	I1		conopeptide	1	Q7Z096	train	4	false	
+Q7Z092	I1		conopeptide	1	Q7Z096	train	4	false	
+Q7Z093	I1		conopeptide	1	Q7Z096	train	4	false	
+Q7Z094	I1		conopeptide	1	Q7Z096	train	4	false	
+Q7Z095	I1		conopeptide	1	Q7Z096	train	4	false	
+Q7Z096	I1		conopeptide	1	Q7Z096	train	4	false	
+Q7Z097	I1		conopeptide	1	P0C257	test		false	new group
+Q7Z098	I1		conopeptide	1	P0C257	test		false	new group
+Q7Z099	I1		conopeptide	1	P0C257	test		false	new group
+Q7Z0A0	I1		conopeptide	1	Q7Z096	train	4	false	
+Q7Z0A1	I1		conopeptide	1	Q7Z096	train	4	false	
+Q7Z0A2	I1		conopeptide	1	Q7Z096	train	4	false	
+Q7Z0A3	I1		conopeptide	1	Q7Z096	train	4	false	
+Q7Z0A4	I1		conopeptide	1	Q7Z096	train	4	false	
+Q7Z0A5	I1		conopeptide	1	Q7Z096	train	4	false	
+Q7Z0A6	I1		conopeptide	1	Q7Z096	train	4	false	
+Q86DU6	M		conopeptide	1	C1J5M7	test		false	new group; group labelled M
+Q86RA3	O1		conopeptide	1	Q3YEE4	train	3	false	
+Q86RB2	A		conopeptide	1	Q86RB2	train	5	false	
+Q8I6R2	M		conopeptide	1	Q8I6R2	test		false	new group
+Q8I6R5	A		conopeptide	1	C1J5M7	test		false	new group; group labelled M
+Q8I6V7	P		conopeptide	2	Q8I6V7	train	logo	false	
+Q8IS41	O1		conopeptide	1	Q8IS41	train	2	false	
+Q9BH21	T		conopeptide	1	Q9BPF1	train	4	false	
+Q9BH51	M		conopeptide	1	Q9BPH9	test		false	new group
+Q9BH73	M		conopeptide	1	Q9BPH9	test		false	new group
+Q9BH75	T		conopeptide	1	P0C636	train	4	false	
+Q9BH79	T		conopeptide	1	P0C666	train	1	false	
+Q9BH81	T		conopeptide	1	P0C666	train	1	false	
+Q9BH84	O1		conopeptide	1	A0A2L2P6T9	train	1	false	
+Q9BH86	T		conopeptide	1	Q9BPF1	train	4	false	
+Q9BHA0	O2		conopeptide	1	G1AS73	train	4	false	
+Q9BHA6	T		conopeptide	1	Q9BHA6	train	5	false	
+Q9BHB7	O2		conopeptide	1	Q9BHB7	train	5	false	
+Q9BP43	M		conopeptide	1	Q9BP43	train	2	false	
+Q9BP44	M		conopeptide	1	Q9BP44	train	1	false	
+Q9BP45	M		conopeptide	1	B3FIA6	test		false	new group; group labelled M
+Q9BP46	T		conopeptide	1	Q9BP46	train	1	false	
+Q9BP47	T		conopeptide	1	Q9BHA6	train	5	false	
+Q9BP49			unlabelled		Q9BP49	unlabelled		false	scope unlabelled
+Q9BP50	O3		conopeptide	2	Q9BP50	train	logo	false	
+Q9BP51	T		conopeptide	1	Q9BHA6	train	5	false	
+Q9BP53	T		conopeptide	1	Q9BP53	train	2	false	
+Q9BP55	M		conopeptide	1	Q9BPJ4	train	3	false	
+Q9BP56	A		conopeptide	1	A0SE60	test		false	new group
+Q9BP58	O3		conopeptide	2	Q9BP59	train	logo	false	
+Q9BP59	O3		conopeptide	2	Q9BP59	train	logo	false	
+Q9BP60	O3		conopeptide	2	Q9BP59	train	logo	false	
+Q9BP61	O3		conopeptide	2	Q9BP59	train	logo	false	
+Q9BP62	O3		conopeptide	2	Q9BP59	train	logo	false	
+Q9BP63	O3		conopeptide	2	Q9BP63	train	logo	false	
+Q9BP64	O3		conopeptide	2	Q9BP63	train	logo	false	
+Q9BP65	O3		conopeptide	2	Q9BP63	train	logo	false	
+Q9BP66	O3		conopeptide	2	Q9BP63	train	logo	false	
+Q9BP67	O3		conopeptide	2	Q9BP63	train	logo	false	
+Q9BP68	O3		conopeptide	2	Q9BP59	train	logo	false	
+Q9BP69	O3		conopeptide	2	Q9BP63	train	logo	false	
+Q9BP70	O3		conopeptide	2	Q9BP63	train	logo	false	
+Q9BP71	O3		conopeptide	2	Q9BP63	train	logo	false	
+Q9BP72	O3		conopeptide	2	Q9BP63	train	logo	false	
+Q9BP73	O3		conopeptide	2	Q9BP63	train	logo	false	
+Q9BP74	O3		conopeptide	2	Q9BP59	train	logo	false	
+Q9BP75	O3		conopeptide	2	Q9BP59	train	logo	false	
+Q9BP76	O3		conopeptide	2	Q9BP59	train	logo	false	
+Q9BP77	O1		conopeptide	1	Q8IS41	train	2	false	
+Q9BP78	O1		conopeptide	1	Q3YEG7	train	2	false	
+Q9BP79	O1		conopeptide	1	Q3YEG7	train	2	false	
+Q9BP80	O1		conopeptide	1	P0C833	train	3	false	
+Q9BP81	O1		conopeptide	1	P0C833	train	3	false	
+Q9BP82	O1		conopeptide	1	P0C833	train	3	false	
+Q9BP83	O1		conopeptide	1	Q9BP83	test		false	new group
+Q9BP84	O1		conopeptide	1	Q9BP85	train	5	false	
+Q9BP85	O1		conopeptide	1	Q9BP85	train	5	false	
+Q9BP86	O1		conopeptide	1	Q9BP86	test		false	new group
+Q9BP87	O1		conopeptide	1	Q9BP86	test		false	new group
+Q9BP88	O1		conopeptide	1	Q9BP90	test		false	new group
+Q9BP89	O1		conopeptide	1	Q9BP90	test		false	new group
+Q9BP90	O1		conopeptide	1	Q9BP90	test		false	new group
+Q9BP91	O1		conopeptide	1	Q9BP90	test		false	new group
+Q9BP92	O1		conopeptide	1	Q9BP90	test		false	new group
+Q9BP93	O1		conopeptide	1	Q9BP93	train	5	false	
+Q9BP94	O1		conopeptide	1	Q9BP93	train	5	false	
+Q9BP95	O1		conopeptide	1	Q9BP93	train	5	false	
+Q9BP96	O1		conopeptide	1	Q9BP96	train	4	false	
+Q9BP97	O1		conopeptide	1	Q9BP96	train	4	false	
+Q9BP98	O1		conopeptide	1	Q9BP96	train	4	false	
+Q9BP99	O1		conopeptide	1	Q9BP99	train	3	false	
+Q9BPA0	O1		conopeptide	1	Q9BPA0	train	2	false	
+Q9BPA1	O1		conopeptide	1	Q9BPA1	train	4	false	
+Q9BPA2	O1		conopeptide	1	A0A2L2P6T9	train	1	false	
+Q9BPA3	O1		conopeptide	1	Q3YED1	train	5	false	
+Q9BPA4	O1		conopeptide	1	A0A2L2P6T9	train	1	false	
+Q9BPA5	O1		conopeptide	1	A0A2L2P6T9	train	1	false	
+Q9BPA6	O2		conopeptide	1	Q9BHB7	train	5	false	
+Q9BPA7	O2		conopeptide	1	G1AS83	train	2	false	
+Q9BPA9	O2		conopeptide	1	G1AS76	train	3	false	
+Q9BPB0	O2		conopeptide	1	G1AS73	train	4	false	
+Q9BPB1	O2		conopeptide	1	G1AS83	train	2	false	
+Q9BPB2	O2		conopeptide	1	G1AS83	train	2	false	
+Q9BPB3			unlabelled		Q9BPB3	unlabelled		false	scope unlabelled
+Q9BPB4	O2		conopeptide	1	G1AS83	train	2	false	
+Q9BPB7	O2		conopeptide	1	P58922	train	1	false	
+Q9BPB9	O2		conopeptide	1	Q9BPB9	train	1	false	
+Q9BPC0	O2		conopeptide	1	Q9BPC0	train	2	false	
+Q9BPC1	O2		conopeptide	1	Q9BPC5	train	2	false	
+Q9BPC2	O2		conopeptide	1	Q9BPC2	train	3	false	
+Q9BPC3	O2		conopeptide	1	Q9BPC2	train	3	false	
+Q9BPC4	O2		conopeptide	1	Q9BPC2	train	3	false	
+Q9BPC5	O2		conopeptide	1	Q9BPC5	train	2	false	
+Q9BPC6	O2		conopeptide	1	Q9BHB7	train	5	false	
+Q9BPC7	O2		conopeptide	1	G1AS80	train	2	false	
+Q9BPC8	O2		conopeptide	1	G1AS80	train	2	false	
+Q9BPC9	O2		conopeptide	1	G1AS80	train	2	false	
+Q9BPD0	O2		conopeptide	1	G1AS80	train	2	false	
+Q9BPD1	T		conopeptide	1	Q9BP53	train	2	false	
+Q9BPD2	T		conopeptide	1	Q9BHA6	train	5	false	
+Q9BPD3	T		conopeptide	1	Q9BP53	train	2	false	
+Q9BPD4	T		conopeptide	1	Q9BP53	train	2	false	
+Q9BPD5	T		conopeptide	1	Q9BP53	train	2	false	
+Q9BPD6	T		conopeptide	1	Q9BP53	train	2	false	
+Q9BPD7	T		conopeptide	1	Q9BHA6	train	5	false	
+Q9BPD9	T		conopeptide	1	Q9BHA6	train	5	false	
+Q9BPE0	T		conopeptide	1	Q9BHA6	train	5	false	
+Q9BPE1	T		conopeptide	1	Q9BHA6	train	5	false	
+Q9BPE2	T		conopeptide	1	P0C666	train	1	false	
+Q9BPE3	T		conopeptide	1	Q9BHA6	train	5	false	
+Q9BPE4	T		conopeptide	1	P0C636	train	4	false	
+Q9BPE5	T		conopeptide	1	P0C636	train	4	false	
+Q9BPE6	T		conopeptide	1	P0C636	train	4	false	
+Q9BPE7	T		conopeptide	1	P81755	test		false	new group
+Q9BPE9	T		conopeptide	1	A0A3G3C7S2	test		false	new group
+Q9BPF1	T		conopeptide	1	Q9BPF1	train	4	false	
+Q9BPF2	T		conopeptide	1	Q9BPF2	train	1	false	
+Q9BPF3	T		conopeptide	1	Q9BPF1	train	4	false	
+Q9BPF4	T		conopeptide	1	Q9BPF4	train	4	false	
+Q9BPF5	T		conopeptide	1	Q9BPF5	train	1	false	
+Q9BPF6	T		conopeptide	1	Q9BPF5	train	1	false	
+Q9BPF7	T		conopeptide	1	Q3YEH4	train	4	false	
+Q9BPF8	T		conopeptide	1	Q9BPF4	train	4	false	
+Q9BPF9	T		conopeptide	1	Q6PN84	train	3	false	
+Q9BPG0	T		conopeptide	1	Q6PN84	train	3	false	
+Q9BPG1	T		conopeptide	1	Q9BPG1	train	4	false	
+Q9BPG2	T		conopeptide	1	Q9BPG1	train	4	false	
+Q9BPG3	T		conopeptide	1	Q9BPG1	train	4	false	
+Q9BPG5	T		conopeptide	1	Q9BPG1	train	4	false	
+Q9BPG6	T		conopeptide	1	P81755	test		false	new group
+Q9BPG7	T		conopeptide	1	Q9BPG7	train	1	false	
+Q9BPG8	T		conopeptide	1	P81755	test		false	new group
+Q9BPH0	T		conopeptide	1	Q9BPG7	train	1	false	
+Q9BPH1	T		conopeptide	1	Q9BPG7	train	1	false	
+Q9BPH2	T		conopeptide	1	Q9BPF1	train	4	false	
+Q9BPH3	M		conopeptide	1	Q9BPH3	train	4	false	
+Q9BPH4	M		conopeptide	1	Q9BPH9	test		false	new group
+Q9BPH5	M		conopeptide	1	P0CY73	train	1	false	
+Q9BPH6	M		conopeptide	1	Q9BPH9	test		false	new group
+Q9BPH7	M		conopeptide	1	Q9BPH9	test		false	new group
+Q9BPH8	M		conopeptide	1	Q9BPH9	test		false	new group
+Q9BPH9	M		conopeptide	1	Q9BPH9	test		false	new group
+Q9BPI0	M		conopeptide	1	A0A2I6EDM2	train	2	false	
+Q9BPI1	M		conopeptide	1	Q9BPH9	test		false	new group
+Q9BPI3	M		conopeptide	1	Q9BPI9	train	3	false	
+Q9BPI4	M		conopeptide	1	Q9BPI9	train	3	false	
+Q9BPI5	M		conopeptide	1	Q9BPI9	train	3	false	
+Q9BPI6	M		conopeptide	1	Q9BPI9	train	3	false	
+Q9BPI7	M		conopeptide	1	Q9BPI9	train	3	false	
+Q9BPI8	M		conopeptide	1	Q9BPI9	train	3	false	
+Q9BPI9	M		conopeptide	1	Q9BPI9	train	3	false	
+Q9BPJ0	M		conopeptide	1	Q9BPI9	train	3	false	
+Q9BPJ1	M		conopeptide	1	Q9BPJ4	train	3	false	
+Q9BPJ2	M		conopeptide	1	C1J5M7	test		false	new group; group labelled M
+Q9BPJ3	M		conopeptide	1	Q9BPJ4	train	3	false	
+Q9BPJ4	M		conopeptide	1	Q9BPJ4	train	3	false	
+Q9BPJ5	M		conopeptide	1	Q9BPJ4	train	3	false	
+Q9BPJ6	M		conopeptide	1	Q9BPJ4	train	3	false	
+Q9BPJ7	M		conopeptide	1	Q9BPJ4	train	3	false	
+Q9BPJ8	M		conopeptide	1	Q9BPJ4	train	3	false	
+Q9BPJ9	M		conopeptide	1	Q9BPJ4	train	3	false	
+Q9BPK0	M		conopeptide	1	Q9BPJ4	train	3	false	
+Q9GU57	P		conopeptide	2	Q9GU57	train	logo	false	
+Q9GU58	P		conopeptide	2	Q9GU57	train	logo	false	
+Q9N633	O1		conopeptide	1	A0A384E129	test		false	new group
+Q9N669	O1		conopeptide	1	C7T184	train	3	false	
+Q9N6A4	O1		conopeptide	1	P0C833	train	3	false	
+Q9NDA5	O2	Contryphan	conopeptide	1	A0A1P8NVR5	train	1	false	
+Q9NDA6	O2	Contryphan	conopeptide	1	A0A1P8NVR5	train	1	false	
+Q9NDA7	O2	Contryphan	conopeptide	1	A0A1P8NVR5	train	1	false	
+Q9TVF6	O1		conopeptide	1	C7T184	train	3	false	
+Q9TVF7	O1		conopeptide	1	C7T184	train	3	false	
+Q9TVK3	O1		conopeptide	1	Q9TVR4	train	3	false	
+Q9TVN1	O1		conopeptide	1	Q9TVN1	train	2	false	
+Q9TVQ6	O1		conopeptide	1	Q9BP96	train	4	false	
+Q9TVQ7	O1		conopeptide	1	Q9BP96	train	4	false	
+Q9TVR4	O1		conopeptide	1	Q9TVR4	train	3	false	
+Q9TVU1	O1		conopeptide	1	Q9TVR4	train	3	false	
+Q9TVX4	O1		conopeptide	1	Q9TVR4	train	3	false	
+Q9TVY1	O1		conopeptide	1	Q9TVY1	train	1	false	
+Q9TW08	O1		conopeptide	1	Q9TVN1	train	2	false	
+Q9TWL8			unlabelled		Q9TWL8	unlabelled		false	scope unlabelled
+Q9TWL9	phospholipase A2	Group IX	unmapped		Q9TWL9	unmapped		false	scope unmapped
+Q9TWM7	O1		conopeptide	1	P69759	train	3	false	
+Q9U3Z3	I2		conopeptide	1	C7DQC2	train	1	false	
+Q9U619	A		conopeptide	1	P0C1Y2	test		false	new group
+Q9U644	O1		conopeptide	1	Q9U657	test		false	new group
+Q9U645	O1		conopeptide	1	A0A2L2P6T9	train	1	false	
+Q9U647	O1		conopeptide	1	A0A2L2P6T9	train	1	false	
+Q9U648	O1		conopeptide	1	A0A2L2P6T9	train	1	false	
+Q9U650	O1		conopeptide	1	Q9U660	train	4	false	
+Q9U651	O1		conopeptide	1	Q9U660	train	4	false	
+Q9U654	O1		conopeptide	1	Q9U660	train	4	false	
+Q9U655	O1		conopeptide	1	Q9U660	train	4	false	
+Q9U656	O1		conopeptide	1	Q9U660	train	4	false	
+Q9U657	O1		conopeptide	1	Q9U657	test		false	new group
+Q9U659	O1		conopeptide	1	Q9U660	train	4	false	
+Q9U660	O1		conopeptide	1	Q9U660	train	4	false	
+Q9U662	O1		conopeptide	1	A0A2L2P6T9	train	1	false	
+Q9U6Z5	T		conopeptide	1	Q9U6Z5	test		false	new group
+Q9U6Z6	T		conopeptide	1	Q3YEH4	train	4	false	
+Q9U6Z8	T		conopeptide	1	Q3YEE9	train	5	false	
+Q9U6Z9	T		conopeptide	1	Q9BPG7	train	1	false	
+Q9U700	T		conopeptide	1	Q3YEE9	train	5	false	
+Q9UA71	O1		conopeptide	1	Q9TVR4	train	3	false	
+Q9UA72	O1		conopeptide	1	Q9BP96	train	4	false	
+Q9UA83	O1		conopeptide	1	Q9TVR4	train	3	false	
+Q9UA85	O1		conopeptide	1	Q9TVR4	train	3	false	
+Q9UA86	O1		conopeptide	1	Q9TVR4	train	3	false	
+Q9UA91	O1		conopeptide	1	Q9TVR4	train	3	false	
+Q9UA93	O1		conopeptide	1	Q9TVR4	train	3	false	
+Q9UA95	O1		conopeptide	1	Q9TVR4	train	3	false	
+Q9UAB2	O1		conopeptide	1	Q9TVN1	train	2	false	
+Q9XYR5	C		conopeptide	2	Q9XYR5	train	logo	false	
+Q9XYZ0	O1		conopeptide	1	Q9BP99	train	3	false	
+Q9XYZ1	O1		conopeptide	1	Q9XYZ1	train	3	false	
+Q9XZK2	O1		conopeptide		Q5K0D7	excluded		false	label conflict (FULL: M x1, O1 x1)
+Q9XZK3	O1		conopeptide	1	P0C8V9	train	3	false	
+Q9XZK4	O1		conopeptide	1	P0C8V9	train	3	false	
+Q9XZK5	O1		conopeptide	1	P69753	train	5	false	
+Q9XZK6	A		conopeptide	1	Q9XZK6	test		false	new group
+Q9XZK7	A		conopeptide	1	Q9XZK6	test		false	new group
+Q9XZK8	O1		conopeptide	1	P69760	train	4	false	
+Q9XZK9	O1		conopeptide	1	A0A2L2P6T9	train	1	false	
+Q9XZL0	O1		conopeptide	1	A0A2L2P6T9	train	1	false	
+Q9XZL1	O1		conopeptide	1	A0A2L2P6T9	train	1	false	
+Q9XZL2	O1		conopeptide	1	Q9U660	train	4	false	
+Q9XZL3	O1		conopeptide	1	Q9XZL3	train	2	false	; group labelled T
+Q9XZL4	O1		conopeptide	1	P28880	train	1	false	
+Q9XZL5	O1		conopeptide	1	P28880	train	1	false	
+S4UJV1	A		conopeptide	1	A1X8B8	train	5	false	
+S4UJW3	A		conopeptide	1	S4UJW3	train	4	false	
+S4UKA9	I1		conopeptide	1	P0C253	train	2	false	
+V5V893	Q		conopeptide	3	V5V893	reference		false	tier 3
+V5V9Y7	Q		conopeptide	3	V5V9Y7	reference		false	tier 3
+W4VS16	H		conopeptide	2	W4VSB6	train	logo	false	
+W4VS70	E		conopeptide	3	P0DM16	reference		false	tier 3
+W4VS82	U		conopeptide	3	A0A346CED7	reference		false	tier 3
+W4VSA0	O2	Contryphan	conopeptide	1	A0A1P8NVR5	train	1	false	
+W4VSB6	H		conopeptide	2	W4VSB6	train	logo	false	
+W4VSE7	U		conopeptide	3	A0A346CED7	reference		false	tier 3
+W4VSF6	O2		conopeptide	1	W4VSF6	train	4	false	
+W4VSG7	H		conopeptide	2	W4VSG7	train	logo	false	
+W4VSM1	F		conopeptide	3	W4VSM1	reference		false	tier 3
+X1WB75	A		conopeptide	1	P60274	train	4	false	
+X5I9Y2	A		conopeptide	1	P28879	train	2	false	
+X5I9Z2	A		conopeptide	1	F5C3U4	test		false	new group
+X5IFY8	O2	Contryphan	conopeptide	1	A0A1P8NVR5	train	1	false	
+X5IFZ1	A		conopeptide	1	X5IFZ1	train	5	false	
+X5IGW1	A		conopeptide	1	P28879	train	2	false	
+X5IWS1	O1		conopeptide	1	X5IWS1	train	5	false	
+X5IWT5	S		conopeptide	1	X5IWT5	test		false	new group; group labelled M
+X5IXY8	C	Consomatin	conopeptide	2	P0DW18	train	logo	false	
+X5IY26	I3		conopeptide	2	X5IY26	train	logo	false	

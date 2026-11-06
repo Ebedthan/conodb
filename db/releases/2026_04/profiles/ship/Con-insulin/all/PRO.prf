@@ -1,0 +1,22 @@
+ID   CONOPEP_Con-insulin_PRO; MATRIX.
+AC   CONOPEP_Con-insulin_PRO;
+DT   built by conodb.
+DE   ConoDictor Con-insulin PRO region; 10 sequences.
+MA   /GENERAL_SPEC: ALPHABET='ABCDEFGHIKLMNPQRSTVWYZ'; LENGTH=8;
+MA   /DISJOINT: DEFINITION=PROTECT; N1=1; N2=8;
+MA   /NORMALIZATION: MODE=1; FUNCTION=LINEAR; R1=0.0000000; R2=0.0100000; TEXT='No_units';
+MA   /CUT_OFF: LEVEL=0; SCORE=850; N_SCORE=8.50000000; MODE=1; TEXT='!';
+MA   /CUT_OFF: LEVEL=-1; SCORE=650; N_SCORE=6.50000000; MODE=1; TEXT='?';
+MA   /DEFAULT: M0=-7; D=-20; I=-20; B1=*; E1=*; MI=-105; MD=-105; IM=-105; DM=-105;
+MA   /I: B1=0; BI=-105; BD=-105;
+MA   /M: SY='S'; M=10,0,-10,0,0,-20,0,-10,-20,-10,-30,-20,10,-10,0,-10,40,20,-10,-40,-20,0;
+MA   /M: SY='F'; M=-20,-30,-20,-40,-30,80,-30,-20,0,-30,10,0,-20,-30,-40,-20,-20,-10,0,10,30,-30;
+MA   /M: SY='G'; M=0,-10,-30,-10,-20,-30,70,-20,-40,-20,-30,-20,0,-20,-20,-20,0,-20,-30,-20,-30,-20;
+MA   /M: SY='N'; M=-10,40,-20,20,0,-20,0,10,-20,0,-30,-20,60,-20,0,0,10,0,-30,-40,-20,0;
+MA   /M: SY='P'; M=-10,-9,-35,-5,11,-35,-20,-4,-20,1,-25,-9,-9,37,27,-4,-5,-10,-30,-25,-19,17;
+MA   /M: SY='H'; M=-20,0,-30,0,0,-20,-20,100,-30,-10,-20,0,10,-20,10,0,-10,-20,-30,-30,20,0;
+MA   /M: SY='T'; M=0,0,-10,-10,-10,-10,-20,-20,-10,-10,-10,-10,0,-10,-10,-10,20,50,0,-30,-10,-10;
+MA   /M: SY='R'; M=-20,-10,-30,-10,0,-20,-20,0,-30,30,-20,-10,0,-20,10,70,-10,-10,-20,-20,-10,0;
+MA   /I: E1=0; IE=-105; DE=-105;
+CC   /GENERATED_BY="conodb: pfw -m | pfmake -m";
+//

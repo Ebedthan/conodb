@@ -1,0 +1,126 @@
+# conodb configuration: one file fully describes a database build.
+# Run with:  conodb run -c conodb.toml
+
+[source]
+query = "taxonomy_id:37797 AND (cc_tissue_specificity:venom OR cc_scl_term:SL-0177) AND reviewed:true"
+page_size = 500
+
+[labels]
+# Curated mapping of raw UniProt family text -> superfamily/family/scope.
+overrides = "labels.tsv"
+# Per-accession corrections (accession, superfamily, family, scope, note).
+# entry_overrides = "entry_labels.tsv"
+# Only these taxonomic families provide classifier classes (others: reference).
+taxon_scope = ["Conidae"]
+# true = stop when UniProt introduces a family no rule or override covers.
+strict = false
+
+[regions]
+allow_uncertain = true    # keep non-EXACT boundaries, flagged exact=false
+min_length = 1            # record everything; filter when building profiles
+
+[cluster]
+identities = [0.9, 0.7, 0.5]
+group_identity = 0.7      # defines independent entry groups (splits, tiers)
+threads = 0               # 0 = all cores
+
+[tiers]
+tier1_min_groups = 10     # full profiles + k-fold calibration
+tier2_min_groups = 3      # signal-first profiles, strong shrinkage
+
+[audit]
+conflict_kinds = ["FULL", "SIG", "MAT", "PRO"]
+conflict_min_length = 10
+
+[partition]
+test_fraction = 0.2       # share of tier-1 entry groups held out as test
+folds = 5                 # grouped cross-validation folds (tier 1)
+seed = "conodictor-v3"    # changing it draws a new benchmark
+exclude_conflicts = true  # leave out entries under review in label_conflicts.tsv
+temporal_cutoff = ""      # e.g. "2024-01-01" for a time-split test set
+
+[negatives]
+# Real non-conopeptides: non-venom Conus + small secreted metazoan proteins, toxins excluded.
+query = "(taxonomy_id:6490 OR (taxonomy_id:33208 AND cc_scl_term:SL-0243 AND length:[30 TO 300])) AND reviewed:true NOT cc_tissue_specificity:venom NOT keyword:KW-0800"
+enabled = true
+include_venom_other = true  # CRISP, PLA2, actinoporin... from the main set (scope 'other')
+shuffles = 1                # shuffled copies per precursor, cysteines kept in place
+min_length = 30
+max_length = 1000
+max_identity = 0.9          # real negatives this identical to a conopeptide are removed
+max_entries = 5000          # cap on real UniProt negatives (stable choice by accession hash)
+
+[build]
+regions = ["SIG", "PRO", "MAT", "POST"]
+min_length = 5            # shorter regions (e.g. 'GKR') are not profiled
+min_unique = 2            # distinct sequences needed for a profile
+use_uncertain = true      # use regions with non-EXACT UniProt boundaries
+pssm = "auto"             # "auto": PSSMs if pftools is installed; "true": required; "false": HMMs only
+matrix = "blosum45.cmp"   # pftools score matrix (file name searched in pftools data dirs, or a path)
+pfw_options = []
+pfmake_options = []
+full_models = true        # full-precursor HMMs with region labels (region prediction)
+pwm = true                # lightmotif matrices from each region alignment
+threads = 0
+
+[score]
+hmm_min_bits = -1000.0    # store HMM scores uncensored; the fit sets the floor
+max_mode = true           # no HMMER acceleration filters (short profiles)
+pssm = "auto"             # PSSM scores with pftools pfsearch when PSSMs were built
+pfsearch = "pfsearch"
+pwm = true                # lightmotif ungapped matrices (comparison with pftools)
+framework = true          # cysteine framework of the predicted mature region
+threads = 0
+
+[fit]
+methods = ["hmm", "pssm", "pwm", "framework"]   # feature types used by the classifiers
+regions = ["SIG", "PRO", "MAT"]           # POST profiles add nothing to classification
+hmm_floor = 0.0             # HMM scores below this are set to it (0 = censored; -20 keeps weak evidence)
+baseline_fpr = 0.01         # baseline HMM cutoffs: false-positive rate per sequence
+balance_negative_sources = true  # shuffled and real negatives weigh the same in total
+tau_fixed = 0.5             # shrinkage of the fast penalised fit when no posterior exists
+tau_from_posterior = true   # per-feature shrinkage from the Bayesian posterior
+ship_all_data = true        # shipped model refitted on train + test after evaluation
+beta_prior_sd = 2.5
+tau_prior_sd = 1.0
+alpha_prior_sd = 2.5
+bayes = "auto"              # hierarchical Stan fit if CmdStan is installed ("true" = required)
+cmdstan = ""                # CmdStan path if not the cmdstanpy default
+chains = 4
+iter_warmup = 1000
+iter_sampling = 1000
+adapt_delta = 0.9
+seed = 20261105
+cores = 0                   # 0 = all cores: parallel chains, then threads within each chain
+grainsize = 0               # 0 = automatic
+
+[evaluate]
+identity_bands = [0.5, 0.6, 0.7, 0.8, 0.9]  # positives by highest identity to a training conopeptide
+calibration_bins = [0.5, 0.7, 0.9, 0.99]
+ablations = true            # test-set results of every variant of the grid (penalised fits)
+select = true               # grouped CV on training rows: variant comparison + recommended settings
+bootstrap = 1000            # resamples of entry groups for intervals
+select_taus = [0.25, 0.5, 1.0]  # shrinkage values for the tau sensitivity check
+seed = 20261106
+
+[anatomy]
+method = "transfer"         # region prediction: "transfer" (full-precursor HMM) or "envelope"
+sites = ["signal", "mature_start"]  # boundaries refined with lightmotif site matrices (true = all, false = none)
+cterm_trim = true          # drop a trailing G[KR](0, 3) from a C-terminal mature peptide (amidation)
+extension = "within"        # label transfer: extend unaligned ends within the region ("within") or across ("cross")
+min_occupancy = 0.5
+min_run = 3
+terminal_overhang = 5       # residues past where the extension stops that keep its label
+site_left = 5
+site_right = 3
+search_radius = 6
+distance_penalty = 0.5
+pseudocount = 0.5
+short_peptide_length = 60
+
+[package]
+cutoff_fpr = 0.01           # calibrated cutoffs written into the shipped profiles
+archive = true
+
+[output]
+root = "db"

@@ -1,0 +1,29 @@
+{
+  "anatomy": {
+    "cterm_trim": true,
+    "extension": "within",
+    "method": "transfer",
+    "sites": [
+      "signal",
+      "mature_start"
+    ],
+    "terminal_overhang": 5
+  },
+  "changes": [],
+  "classifier_variant": "censored \u00b7 HMM+PSSM+PWM+FW",
+  "fit": {
+    "hmm_floor": 0.0,
+    "methods": [
+      "hmm",
+      "pssm",
+      "pwm",
+      "framework"
+    ],
+    "regions": [
+      "SIG",
+      "PRO",
+      "MAT"
+    ]
+  },
+  "region_variant": "transfer/within/oh5 + sites S+MS + Cterm"
+}

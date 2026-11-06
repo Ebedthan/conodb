@@ -1,0 +1,13 @@
+{
+  "diagnostics": {
+    "divergences": 0,
+    "draws": 4000,
+    "max_rhat": 1.00745,
+    "min_ess_bulk": 907.27,
+    "parallel_chains": 4,
+    "seconds": 4522.8,
+    "threads_per_chain": 2
+  },
+  "key": "767ade92d189bd1d797ae5b5ffccab82b1d885c24a5c5905167eb05b4bb1beef",
+  "status": "sampled"
+}

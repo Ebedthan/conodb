@@ -1,0 +1,458 @@
+{
+  "config": {
+    "anatomy": {
+      "cterm_trim": true,
+      "distance_penalty": 0.5,
+      "extension": "within",
+      "method": "transfer",
+      "min_occupancy": 0.5,
+      "min_run": 3,
+      "pseudocount": 0.5,
+      "search_radius": 6,
+      "short_peptide_length": 60,
+      "site_left": 5,
+      "site_right": 3,
+      "sites": [
+        "signal",
+        "mature_start"
+      ],
+      "terminal_overhang": 5
+    },
+    "audit": {
+      "conflict_kinds": [
+        "FULL",
+        "SIG",
+        "MAT",
+        "PRO"
+      ],
+      "conflict_min_length": 10
+    },
+    "build": {
+      "full_models": true,
+      "matrix": "blosum45.cmp",
+      "min_length": 5,
+      "min_unique": 2,
+      "pfmake": "pfmake",
+      "pfmake_options": [],
+      "pfw": "pfw",
+      "pfw_options": [],
+      "pssm": "auto",
+      "pwm": true,
+      "regions": [
+        "SIG",
+        "PRO",
+        "MAT",
+        "POST"
+      ],
+      "threads": 0,
+      "use_uncertain": true
+    },
+    "cluster": {
+      "group_identity": 0.7,
+      "identities": [
+        0.9,
+        0.7,
+        0.5
+      ],
+      "threads": 0
+    },
+    "evaluate": {
+      "ablations": true,
+      "bootstrap": 1000,
+      "calibration_bins": [
+        0.5,
+        0.7,
+        0.9,
+        0.99
+      ],
+      "identity_bands": [
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9
+      ],
+      "seed": 20261106,
+      "select": true,
+      "select_taus": [
+        0.25,
+        0.5,
+        1.0
+      ]
+    },
+    "fit": {
+      "adapt_delta": 0.9,
+      "alpha_prior_sd": 2.5,
+      "balance_negative_sources": true,
+      "baseline_fpr": 0.01,
+      "bayes": "auto",
+      "beta_prior_sd": 2.5,
+      "chains": 4,
+      "cmdstan": "",
+      "cores": 0,
+      "grainsize": 0,
+      "hmm_floor": 0.0,
+      "iter_sampling": 1000,
+      "iter_warmup": 1000,
+      "methods": [
+        "hmm",
+        "pssm",
+        "pwm",
+        "framework"
+      ],
+      "regions": [
+        "SIG",
+        "PRO",
+        "MAT"
+      ],
+      "seed": 20261105,
+      "ship_all_data": true,
+      "tau_fixed": 0.5,
+      "tau_from_posterior": true,
+      "tau_prior_sd": 1.0,
+      "weight_by_group": true
+    },
+    "labels": {
+      "entry_overrides": null,
+      "overrides": "/home/ediman/Documents/conodictor/labels.tsv",
+      "strict": false,
+      "taxon_scope": [
+        "Conidae"
+      ]
+    },
+    "negatives": {
+      "enabled": true,
+      "include_venom_other": true,
+      "max_entries": 5000,
+      "max_identity": 0.9,
+      "max_length": 1000,
+      "min_length": 30,
+      "query": "(taxonomy_id:6490 OR (taxonomy_id:33208 AND cc_scl_term:SL-0243 AND length:[30 TO 300])) AND reviewed:true NOT cc_tissue_specificity:venom NOT keyword:KW-0800",
+      "shuffles": 1
+    },
+    "package": {
+      "archive": true,
+      "cutoff_fpr": 0.01
+    },
+    "partition": {
+      "exclude_conflicts": true,
+      "folds": 5,
+      "seed": "conodictor-v3",
+      "temporal_cutoff": "",
+      "test_fraction": 0.2
+    },
+    "regions": {
+      "allow_uncertain": true,
+      "min_length": 1
+    },
+    "score": {
+      "framework": true,
+      "framework_pseudocount": 0.5,
+      "hmm_min_bits": -1000.0,
+      "max_mode": true,
+      "pfsearch": "pfsearch",
+      "pfsearch_options": [],
+      "pssm": "auto",
+      "pwm": true,
+      "threads": 0
+    },
+    "source": {
+      "base_url": "https://rest.uniprot.org/uniprotkb/search",
+      "page_size": 500,
+      "query": "taxonomy_id:37797 AND (cc_tissue_specificity:venom OR cc_scl_term:SL-0177) AND reviewed:true",
+      "retries": 6,
+      "timeout": 60.0
+    },
+    "tiers": {
+      "tier1_min_groups": 10,
+      "tier2_min_groups": 3
+    }
+  },
+  "conodb_version": "0.1.0",
+  "entry_overrides_sha256": null,
+  "files": {
+    "anatomy.md": "c61b52d3166f310235e287accc0da3124cd2ddd115de54416dcd681cccfae923",
+    "anatomy_errors.tsv": "ff7dac15d47de1ab996367d4058b82fecc36fa275e30e242a2fe6fa364c1c191",
+    "anatomy_metrics.tsv": "1d12d9c8e09464427c1fb0f921dab533edbe3127559b3268f689a91b5014a032",
+    "anatomy_predictions.tsv": "be5da7277f43d868d3e9b213e0848158e459ebf45a494b726c41be916709b35c",
+    "anatomy_sequences.tsv": "efa04ea43b753f6894cad26cfa9e47ff81c360690daa8503827b879894f8e1de",
+    "clusters.tsv": "8fd29f5a3ed1143d0b4f8789ca953edd473c80bbf4219901f350c88c7da2a418",
+    "cutoffs.tsv": "cd6ec14b168641a93324bc5968fcf9706805e2bfc88fd6f5c27fac84db6d7edf",
+    "diff_entries.tsv": "d723413f5e5370c1129106d590279e103d7613816bb5e9c390437301778a8d10",
+    "diff_tiers.tsv": "b7407da29427e1a9f7c0605a4add65143b050840a489c8f9766683c787dbaa32",
+    "entries.tsv": "7e3f9bd24cda038b1725ab0c4f71ebd99567db94c24ca5dfd1c30cf8602defea",
+    "entry_groups.tsv": "a8d4dac44325f4c4b22060e81db9725f619622d40080c2efe18087d0d18ab35e",
+    "evaluation.md": "9559100487dd4ee9d06c3e757b03aaedaccda3af7e27d74739cf7b9d9e9d391f",
+    "evaluation_ablations.tsv": "1e676ae10f5c5c79f21da3bc243168327086460ad8ae512e12351edddc85d79f",
+    "evaluation_calibration.tsv": "84cfcf5ae1a5e2e8d4135a81fb70482f983ccac5711c19a1e8a689e527f4807d",
+    "evaluation_metrics.tsv": "863c6cd60fb04db76099e5cf6e4132a551e24a34e4e6e909b69117f3afe9f13e",
+    "evaluation_misses.tsv": "4c3329b4f2fff0078bb2a8273f245206a6410039870cd82cadc2f249afb999b2",
+    "families.tsv": "896bf389831db4159ec425fa47d5e45b2fab7b29edf40abc5854acea4e1ef0cf",
+    "features.tsv": "c82f45d0f37aba30d45514bba9c06ce2fb2d11e2a4e36de6fd86748a51e39a9a",
+    "fit.md": "4d3076e51a6b2edc9ea443de5a65c9f1874063378ad628947ad0995f41a7d2fd",
+    "fit/bayes_status.json": "6887dc4a3c8a01d9ae172d78d8671f9c58b917740d9e9b90cb4226261fbcf6bb",
+    "fit/model_map.json": "c790bf230aa162c73f338235a10d186400ffe3a442a7c22d45d206f05f130b74",
+    "fit/model_ship.json": "18d9dc21fecf2b60920ae476785252e1fd9f98ac08bd590553e0a08d1b3e23c7",
+    "label_conflicts.tsv": "ba6ec1ce000b00a3a44a878fa186d4fff1cd2948b9660b34ef023f34d89fee6d",
+    "negatives.fasta": "7701fc9f390941fd64b787289ded69d1c40003f7660c5416e7fd8341585b3f38",
+    "negatives.tsv": "a96a291d7556b23878b4556134fd1720420bb81e34adfe8ef1995ac8b70cccd6",
+    "package.json": "279ab8a0dc15e5c398876aaf253fc6154f71efd5ef534c5f16e23c301d213faa",
+    "parse_warnings.tsv": "7eb0c6d10897e2c33b4340bde707fd17e106c4685a6e5ce14a651e601f5fafdf",
+    "partition.md": "37fe0daacfec86065f9b372d2d0ccb4f57fd750fc4c06b56ac8b3b77a80c630b",
+    "partition.tsv": "7555c0d844183f0a09940687a465c8be35ad621b4f59214db63ddb2d39d92ceb",
+    "partition_summary.tsv": "3bf3637044d6db7bf051e9428d818dc67496464685db00c63269d458deb66ba9",
+    "predictions.tsv": "1a57b9f015ef7a667518d991c9cf948a316b581d17ade1b802e54fb5a74deb68",
+    "profiles.tsv": "49ccdc6028cb75adbb0122e756e5a79775bedeeedb2fbba182c24752e2e6b496",
+    "profiles/final.hmm": "49d82a968199f7fb0b424f50653da226ecbb48d4994fe2467675d657bd3694ab",
+    "profiles/final.sites.json": "4a85e6b15b9538d782af75e6e89f2053cab116bb80c42ee3c9c105d30ae54b7c",
+    "profiles/ship.sites.json": "38952791050187fe3088b256da27025c246b4807f41f321188da3a6b005c4b3e",
+    "raw/uniprot.jsonl.gz": "0919cb9fb2eb8c3a6c0f3bd70c0e7c874cd04834a4c3f497e2e43922002ce619",
+    "region_support.tsv": "242c4e79ff44ac3f1ba2f73e66692140b067febd95022191d600fb9baf482872",
+    "regions.tsv": "958abe98e1733f39848e4812f89d9558bb7105fc0b459b2b586046d79e2d2d88",
+    "regions/MAT.fasta": "3729155b13a7bd8b8c1d1a2a6d14852a854553112109cba8e868707e846d16e2",
+    "regions/POST.fasta": "880d6fa38e921b4b7e5eaa85e49ed1fa2fb9774327cf7e1ef8d9db14b4498549",
+    "regions/PRO.fasta": "d6b8f33c8fc8a9972a3cf974289431189ee267aadd27b468cc0d7433f9b5091c",
+    "regions/SIG.fasta": "df8a808c291e7ce9bf6290a7b315422e5e1bd76881ed95cebe3566f06e8cc0ac",
+    "report.md": "6bc73b063c2b1d6f9d83f08cd866093ef4536a634b1ff90cce10b8f6709aa2e2",
+    "scores.tsv": "ad5e76bbb12f408e39900522ae2d5959f20d4c506a4c7dc5db70bc4a2de8e502",
+    "selection.md": "fdca8732bcfc9df0e65b26eefeb61565bf7e2c4532821d6298bac95d77d72067",
+    "selection_classification.tsv": "bbf1d4c3b76e2f211f4a827d7ae8b2f828bf7dfac92dcecc25f53ed151cd0c46",
+    "selection_recommended.json": "0028cd6845e9bf1d3aa6b960897a5d318dd4fc521c1b6d0567e529a92a6b6ac9",
+    "selection_region_errors.tsv": "ba788c4fe6da2ccaadcfb790a3218c64a2168393cfbcbe691eb4e4aa42c7914c",
+    "selection_regions.tsv": "07bf4def3fec99b7bfeb77b125af03fb62ac70856e64273dc2dc572afcd43f53",
+    "unmapped_labels.tsv": "8993bc698602b2ac1a828bd57ab057ca6f72a58d1d610ba8d70f64ba7fcf600b"
+  },
+  "finished": "2026-11-06T11:12:56+00:00",
+  "labels_sha256": "67764125d1dbdde9bd78ffa47760e0fcef290f1eba8a7d0e7eb97ead8a26a100",
+  "packages": {
+    "pyfamsa": "0.7.0",
+    "pyhmmer": "0.12.3",
+    "pyopal": "0.7.4"
+  },
+  "platform": "Linux-7.0.0-42-generic-x86_64-with-glibc2.43",
+  "previous_release": null,
+  "python": "3.15.2",
+  "stages": {
+    "anatomy": {
+      "finished": "2026-11-06T11:10:39.540037+00:00",
+      "stats": {
+        "predictions": 16192,
+        "sequences": 185
+      }
+    },
+    "audit": {
+      "finished": "2026-11-05T11:36:27.421025+00:00",
+      "stats": {
+        "changes": null,
+        "label_conflicts": 15,
+        "tiers": {
+          "1": 7,
+          "2": 11,
+          "3": 13
+        }
+      }
+    },
+    "bayes": {
+      "finished": "2026-11-06T10:59:43.216278+00:00",
+      "stats": {
+        "diagnostics": {
+          "divergences": 0,
+          "draws": 4000,
+          "max_rhat": 1.00745,
+          "min_ess_bulk": 907.27,
+          "parallel_chains": 4,
+          "seconds": 4522.8,
+          "threads_per_chain": 2
+        },
+        "status": "sampled"
+      }
+    },
+    "build": {
+      "finished": "2026-11-06T11:06:24.665633+00:00",
+      "stats": {
+        "final": 76,
+        "full_models": 119,
+        "holdout": 350,
+        "notes": [
+          "POST shorter than 5 aa: 37 regions not used",
+          "PRO shorter than 5 aa: 12 regions not used",
+          "SIG shorter than 5 aa: 7 regions not used"
+        ],
+        "profiles": 503,
+        "pssm": true,
+        "pwm": true,
+        "reused": 503,
+        "ship": 77,
+        "skipped": 33
+      }
+    },
+    "cluster": {
+      "finished": "2026-11-05T11:36:27.338000+00:00",
+      "stats": {
+        "clusters": {
+          "FULL": {
+            "0.5": 126,
+            "0.7": 538,
+            "0.9": 1082
+          },
+          "MAT": {
+            "0.5": 62,
+            "0.7": 645,
+            "0.9": 1123
+          },
+          "POST": {
+            "0.5": 12,
+            "0.7": 32,
+            "0.9": 56
+          },
+          "PRO": {
+            "0.5": 68,
+            "0.7": 293,
+            "0.9": 586
+          },
+          "SIG": {
+            "0.5": 30,
+            "0.7": 131,
+            "0.9": 319
+          }
+        }
+      }
+    },
+    "evaluate": {
+      "finished": "2026-11-06T11:12:24.588573+00:00",
+      "stats": {
+        "ablations": 57,
+        "methods": [
+          "baseline",
+          "map",
+          "bayes"
+        ],
+        "misses": 8
+      }
+    },
+    "fetch": {
+      "finished": "2026-11-05T09:42:22.521047+00:00",
+      "stats": {
+        "entries": 1493
+      }
+    },
+    "fit": {
+      "finished": "2026-11-06T11:00:02.494156+00:00",
+      "stats": {
+        "results": {
+          "test": {
+            "baseline": {
+              "accuracy": 0.966,
+              "balanced_accuracy": 0.8952,
+              "macro_f1": 0.9114,
+              "negatives_called_family": 0.0171,
+              "positives_called_none": 0.1359,
+              "positives_wrong_family": 0.0
+            },
+            "bayes": {
+              "accuracy": 0.9969,
+              "balanced_accuracy": 0.9724,
+              "macro_f1": 0.9818,
+              "negatives_called_family": 0.0,
+              "positives_called_none": 0.0054,
+              "positives_wrong_family": 0.0163
+            },
+            "map": {
+              "accuracy": 0.9969,
+              "balanced_accuracy": 0.9724,
+              "macro_f1": 0.9818,
+              "negatives_called_family": 0.0,
+              "positives_called_none": 0.0054,
+              "positives_wrong_family": 0.0163
+            }
+          }
+        }
+      }
+    },
+    "negatives": {
+      "finished": "2026-11-05T17:16:31.145386+00:00",
+      "stats": {
+        "by_source_role": {
+          "shuffled:test": 131,
+          "shuffled:train": 642,
+          "uniprot:removed": 3507,
+          "uniprot:test": 978,
+          "uniprot:train": 4022
+        },
+        "fetch": {
+          "downloaded": true,
+          "entries": 8507
+        },
+        "removed_similar_to_conopeptide": 0
+      }
+    },
+    "package": {
+      "finished": "2026-11-06T11:12:56.005718+00:00",
+      "stats": {
+        "archive": "package/conodictor-db-2026_04.tar.gz",
+        "files": 45,
+        "package": "package/conodictor-db-2026_04",
+        "profiles_calibrated": 118
+      }
+    },
+    "parse": {
+      "finished": "2026-11-06T09:40:20.291047+00:00",
+      "stats": {
+        "entries": 1493,
+        "regions": 3780,
+        "scopes": {
+          "conopeptide": 1179,
+          "reference": 13,
+          "unlabelled": 220,
+          "unmapped": 81
+        },
+        "unmapped_labels": 21,
+        "warnings": 2
+      }
+    },
+    "partition": {
+      "finished": "2026-11-05T11:36:27.447373+00:00",
+      "stats": {
+        "excluded": 15,
+        "moved_to_test": 0,
+        "roles": {
+          "excluded": 15,
+          "reference": 52,
+          "test": 185,
+          "train": 940,
+          "unlabelled": 220,
+          "unmapped": 81
+        }
+      }
+    },
+    "score": {
+      "finished": "2026-11-06T11:07:40.363002+00:00",
+      "stats": {
+        "features": 192,
+        "framework": true,
+        "negatives": 5773,
+        "no_profile_cells": 510,
+        "positives": 1125,
+        "pssm": true,
+        "pwm": true,
+        "scores": 1204978,
+        "sequences": 6898
+      }
+    },
+    "select": {
+      "finished": "2026-11-06T11:10:32.584708+00:00",
+      "stats": {
+        "changes": [],
+        "classifier": "censored \u00b7 HMM+PSSM+PWM+FW",
+        "regions": "transfer/within/oh5 + sites S+MS + Cterm"
+      }
+    }
+  },
+  "started": "2026-11-06T11:06:24+00:00",
+  "uniprot": {
+    "entries": 1493,
+    "query": "taxonomy_id:37797 AND (cc_tissue_specificity:venom OR cc_scl_term:SL-0177) AND reviewed:true",
+    "release": "2026_04",
+    "release_date": "04-November-2026"
+  }
+}

@@ -1,0 +1,4 @@
+raw_superfamily	raw_family	superfamily	family	scope	note
+# Rows override the built-in rules. raw_family '*' matches any family text.
+# scope: conopeptide (used to build the classifier) | other (kept in audit) | exclude (dropped)
+insulin family	*	Con-insulin		conopeptide	cone snail venom insulins

@@ -1,0 +1,291 @@
+variant	boundary	direction	residues	n
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	G	30
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	extra	R	14
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	8 residues	12
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	10 residues	10
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	7 residues	10
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	9 residues	10
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	L	9
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	S	9
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	11 residues	7
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	54 residues	7
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	A	7
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	shorter	AP	7
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	shorter	G	7
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	shorter	QLDA	7
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	R	6
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	extra	62 residues	5
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	extra	GKR	5
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	extra	K	5
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	extra	L	5
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	A	5
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	FFKI	5
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	FP	5
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	W	5
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	NGR	5
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	RR	5
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	SR	5
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	longer	RR	5
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	longer	SR	5
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	longer	VDA	5
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	shorter	10 residues	5
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	DW	4
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	EES	4
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	KN	4
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	P	4
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	SN	4
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	extra	E	4
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	extra	R	4
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	17 residues	4
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	19 residues	4
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	T	4
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	TR	4
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	longer	A	4
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	longer	LDG	4
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	longer	QAVQG	4
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	longer	SFG	4
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	longer	VQL	4
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	shorter	7 residues	4
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	shorter	GDL	4
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	shorter	GG	4
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	shorter	HQDA	4
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	shorter	QVMVQG	4
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	shorter	TPSVDA	4
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	shorter	VVS	4
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	extra	63 residues	3
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	extra	RR	3
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	14 residues	3
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	D	3
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	QL	3
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	QP	3
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	extra	10 residues	3
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	extra	AADR	3
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	extra	DR	3
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	G	3
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	IIN	3
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	Q	3
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	SEH	3
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	TEH	3
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	W	3
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	longer	7 residues	3
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	longer	ATA	3
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	longer	DA	3
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	longer	ITT	3
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	10 residues	2
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	GK	2
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	LE	2
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	N	2
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	PKN	2
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	PKRKP	2
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	QQ	2
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	T	2
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	TGKC	2
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	extra	11 residues	2
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	extra	7 residues	2
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	extra	C	2
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	extra	DVR	2
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	extra	LLGPK	2
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	extra	SA	2
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	extra	TR	2
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	14 residues	2
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	52 residues	2
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	DAR	2
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	DVR	2
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	GR	2
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	IR	2
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	QTP	2
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	VR	2
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	YWT	2
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	longer	DT	2
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	longer	LP	2
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	longer	QAAEG	2
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	shorter	APS	2
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	shorter	C	2
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	shorter	E	2
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	shorter	ET	2
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	shorter	NA	2
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	shorter	QA	2
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	shorter	SA	2
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	extra	10 residues	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	extra	51 residues	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	extra	65 residues	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	extra	7 residues	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	extra	AP	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	extra	FPS	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	extra	GK	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	extra	GL	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	extra	GSGLH	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	extra	GV	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	extra	KK	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	extra	KR	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	extra	LHGDNY	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	extra	PRGY	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	extra	PRPYP	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	extra	RK	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	extra	RRK	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	extra	RRSFY	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	extra	RRT	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	extra	SG	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	extra	SLRD	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	extra	WRPYP	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	13 residues	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	15 residues	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	7 residues	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	9 residues	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	AQTGN	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	DN	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	EEA	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	EEY	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	EQS	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	ERD	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	FFRI	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	FT	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	GR	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	GTSCS	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	GW	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	GWEP	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	KG	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	KKKKP	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	KKSGK	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	KP	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	LA	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	LPFFFF	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	LT	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	PDER	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	PKPKKS	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	PKR	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	PN	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	PQK	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	PSN	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	PYN	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	Q	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	QN	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	QPQ	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	R	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	RGQV	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	RRR	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	SGG	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	TQSC	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	TQTC	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	V	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	WDKN	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	YCGQ	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_end	missing	YP	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	extra	21 residues	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	extra	29 residues	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	extra	9 residues	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	extra	AFCGQ	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	extra	DG	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	extra	ERSF	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	extra	FDSR	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	extra	FT	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	extra	G	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	extra	GDRR	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	extra	GR	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	extra	GVN	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	extra	K	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	extra	N	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	extra	NA	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	extra	NL	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	extra	PR	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	extra	Q	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	extra	QSFS	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	extra	QSFST	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	extra	RFDGR	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	extra	S	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	extra	SITR	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	extra	TAR	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	extra	W	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	extra	WP	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	20 residues	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	29 residues	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	32 residues	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	44 residues	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	APG	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	ASGADT	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	AVKK	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	C	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	CQGR	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	D	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	DS	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	E	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	EG	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	FLHEH	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	FNWR	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	GDWGT	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	GQP	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	HECCKK	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	IMA	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	K	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	KCCMR	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	KF	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	LPS	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	LR	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	LWQNT	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	N	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	NG	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	PP	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	QDGA	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	QG	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	QKCCSG	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	QQ	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	QSEE	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	SDNG	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	SFGGEH	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	SKQ	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	SPF	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	STD	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	TS	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	TTEE	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	TWEEC	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	VALL	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	VK	1
+transfer/within/oh5 + sites S+MS + Cterm	mature_start	missing	WWRW	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	longer	11 residues	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	longer	8 residues	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	longer	AA	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	longer	FLHEH	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	longer	G	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	longer	HPIADA	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	longer	IDA	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	longer	LIQE	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	longer	LIQS	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	longer	MDG	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	longer	MPVDL	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	longer	NPHTR	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	longer	NT	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	longer	QA	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	longer	QP	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	longer	QVVQG	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	longer	TE	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	longer	TS	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	longer	VGP	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	longer	VVE	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	longer	VVQG	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	shorter	A	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	shorter	APC	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	shorter	CHA	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	shorter	D	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	shorter	ETSHQ	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	shorter	HLDA	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	shorter	IPSDT	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	shorter	ITLA	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	shorter	LFTG	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	shorter	LG	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	shorter	LIQG	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	shorter	LPEG	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	shorter	LQLNA	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	shorter	LQNG	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	shorter	MA	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	shorter	MVQG	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	shorter	NT	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	shorter	QSFS	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	shorter	QSFST	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	shorter	TPSIDA	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	shorter	TPSVNA	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	shorter	TT	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	shorter	V	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	shorter	VFMEA	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	shorter	VGS	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	shorter	VIS	1
+transfer/within/oh5 + sites S+MS + Cterm	signal_end	shorter	VVFS	1

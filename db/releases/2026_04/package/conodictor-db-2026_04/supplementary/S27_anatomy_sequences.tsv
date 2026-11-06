@@ -1,0 +1,1057 @@
+family_source	variant	subset	n	boundary_exact	boundary_n	signal_end_exact	mature_start_exact	mature_end_exact	mature_exact	mature_exact_n	residue_accuracy
+predicted	envelope	all	184	0.3811	488	0.6077	0.1397	0.4581	0.1173	179	0.7848
+predicted	envelope	family: A	51	0.3551	138	0.8611	0.0588	0.2941	0.0588	51	0.7533
+predicted	envelope	family: I1	7	0.6	5	1	0	1	0	2	0.8984
+predicted	envelope	family: I2	3	0.25	8	0.5	0.3333	0	0	3	0.7654
+predicted	envelope	family: M	47	0.3571	126	0.4062	0.234	0.4468	0.1702	47	0.8233
+predicted	envelope	family: O1	45	0.4922	128	0.8158	0.0667	0.6444	0.0667	45	0.8005
+predicted	envelope	family: O2	11	0.3	30	0	0.1818	0.6364	0.1818	11	0.7343
+predicted	envelope	family: S	1	0	3	0	0	0	0	1	0.9545
+predicted	envelope	family: T	19	0.3	50	0.1667	0.2632	0.4211	0.2632	19	0.7183
+predicted	envelope	type: complete precursor	130	0.341	390	0.6077	0.0154	0.4	0	130	0.7641
+predicted	envelope	type: no signal peptide	50	0.5556	90		0.5111	0.6	0.4667	45	0.8413
+predicted	envelope	type: signal, incomplete	4	0.375	8		0	0.75	0	4	0.7506
+predicted	envelope + sites S+MS+ME	all	184	0.4283	488	0.7	0.2011	0.4581	0.1564	179	0.7747
+predicted	envelope + sites S+MS+ME	family: A	51	0.3768	138	0.7778	0.1373	0.3333	0.0784	51	0.7573
+predicted	envelope + sites S+MS+ME	family: I1	7	0.6	5	1	0	1	0	2	0.7952
+predicted	envelope + sites S+MS+ME	family: I2	3	0.625	8	1	0.6667	0.3333	0.3333	3	0.7618
+predicted	envelope + sites S+MS+ME	family: M	47	0.3968	126	0.4688	0.2979	0.4468	0.234	47	0.8165
+predicted	envelope + sites S+MS+ME	family: O1	45	0.5	128	0.8421	0.1111	0.6	0.0889	45	0.7916
+predicted	envelope + sites S+MS+ME	family: O2	11	0.5333	30	0.75	0.2727	0.6364	0.2727	11	0.7309
+predicted	envelope + sites S+MS+ME	family: S	1	0.3333	3	1	0	0	0	1	0.9659
+predicted	envelope + sites S+MS+ME	family: T	19	0.36	50	0.5	0.2632	0.3684	0.2632	19	0.6877
+predicted	envelope + sites S+MS+ME	type: complete precursor	130	0.3949	390	0.7	0.1	0.3846	0.0538	130	0.7576
+predicted	envelope + sites S+MS+ME	type: no signal peptide	50	0.5778	90		0.5111	0.6444	0.4667	45	0.8216
+predicted	envelope + sites S+MS+ME	type: signal, incomplete	4	0.375	8		0	0.75	0	4	0.7467
+predicted	transfer/within/oh0	all	184	0.502	488	0.6231	0.3855	0.5307	0.2235	179	0.9078
+predicted	transfer/within/oh0	family: A	51	0.6449	138	0.8611	0.6078	0.5294	0.3529	51	0.9458
+predicted	transfer/within/oh0	family: I1	7	0.6	5	1	0	1	0	2	0.8168
+predicted	transfer/within/oh0	family: I2	3	0.25	8	0	0.3333	0.3333	0	3	0.8642
+predicted	transfer/within/oh0	family: M	47	0.4206	126	0.4062	0.2128	0.6383	0.1489	47	0.8915
+predicted	transfer/within/oh0	family: O1	45	0.5	128	0.8684	0.2667	0.4222	0.1111	45	0.8929
+predicted	transfer/within/oh0	family: O2	11	0.4667	30	0.375	0.7273	0.2727	0.2727	11	0.9223
+predicted	transfer/within/oh0	family: S	1	0	3	0	0	0	0	1	0.9318
+predicted	transfer/within/oh0	family: T	19	0.4	50	0	0.3684	0.6842	0.3684	19	0.9125
+predicted	transfer/within/oh0	type: complete precursor	130	0.4667	390	0.6231	0.3231	0.4538	0.1462	130	0.9159
+predicted	transfer/within/oh0	type: no signal peptide	50	0.6556	90		0.5556	0.7556	0.4222	45	0.8838
+predicted	transfer/within/oh0	type: signal, incomplete	4	0.5	8		0.5	0.5	0.5	4	0.9456
+predicted	transfer/within/oh0 + sites S	all	184	0.5348	488	0.7308	0.3966	0.5307	0.2291	179	0.9098
+predicted	transfer/within/oh0 + sites S	family: A	51	0.6232	138	0.7778	0.6078	0.5294	0.3529	51	0.9428
+predicted	transfer/within/oh0 + sites S	family: I1	7	0.6	5	1	0	1	0	2	0.8168
+predicted	transfer/within/oh0 + sites S	family: I2	3	0.75	8	1	1	0.3333	0.3333	3	0.8855
+predicted	transfer/within/oh0 + sites S	family: M	47	0.4365	126	0.4688	0.2128	0.6383	0.1489	47	0.8943
+predicted	transfer/within/oh0 + sites S	family: O1	45	0.5	128	0.8684	0.2667	0.4222	0.1111	45	0.8926
+predicted	transfer/within/oh0 + sites S	family: O2	11	0.6333	30	1	0.7273	0.2727	0.2727	11	0.9435
+predicted	transfer/within/oh0 + sites S	family: S	1	0.3333	3	1	0	0	0	1	0.9432
+predicted	transfer/within/oh0 + sites S	family: T	19	0.54	50	0.5833	0.3684	0.6842	0.3684	19	0.9168
+predicted	transfer/within/oh0 + sites S	type: complete precursor	130	0.5077	390	0.7308	0.3385	0.4538	0.1538	130	0.9184
+predicted	transfer/within/oh0 + sites S	type: no signal peptide	50	0.6556	90		0.5556	0.7556	0.4222	45	0.8838
+predicted	transfer/within/oh0 + sites S	type: signal, incomplete	4	0.5	8		0.5	0.5	0.5	4	0.9547
+predicted	transfer/within/oh0 + sites MS	all	184	0.584	488	0.6308	0.6034	0.5307	0.3184	179	0.8941
+predicted	transfer/within/oh0 + sites MS	family: A	51	0.6667	138	0.8611	0.6667	0.5294	0.3922	51	0.9372
+predicted	transfer/within/oh0 + sites MS	family: I1	7	0.6	5	1	0	1	0	2	0.7414
+predicted	transfer/within/oh0 + sites MS	family: I2	3	0.5	8	0.5	0.6667	0.3333	0.3333	3	0.8732
+predicted	transfer/within/oh0 + sites MS	family: M	47	0.5	126	0.4062	0.4255	0.6383	0.2766	47	0.875
+predicted	transfer/within/oh0 + sites MS	family: O1	45	0.6484	128	0.8684	0.6889	0.4222	0.2889	45	0.8962
+predicted	transfer/within/oh0 + sites MS	family: O2	11	0.5333	30	0.375	0.9091	0.2727	0.2727	11	0.9234
+predicted	transfer/within/oh0 + sites MS	family: S	1	0	3	0	0	0	0	1	0.9205
+predicted	transfer/within/oh0 + sites MS	family: T	19	0.48	50	0	0.5789	0.6842	0.3684	19	0.8615
+predicted	transfer/within/oh0 + sites MS	type: complete precursor	130	0.5718	390	0.6308	0.6308	0.4538	0.2846	130	0.9205
+predicted	transfer/within/oh0 + sites MS	type: no signal peptide	50	0.6333	90		0.5111	0.7556	0.4222	45	0.8207
+predicted	transfer/within/oh0 + sites MS	type: signal, incomplete	4	0.625	8		0.75	0.5	0.25	4	0.9534
+predicted	transfer/within/oh0 + sites S+MS	all	184	0.6086	488	0.7231	0.6034	0.5307	0.3184	179	0.8957
+predicted	transfer/within/oh0 + sites S+MS	family: A	51	0.6449	138	0.7778	0.6667	0.5294	0.3922	51	0.9343
+predicted	transfer/within/oh0 + sites S+MS	family: I1	7	0.6	5	1	0	1	0	2	0.7414
+predicted	transfer/within/oh0 + sites S+MS	family: I2	3	0.5	8	0.5	0.6667	0.3333	0.3333	3	0.8732
+predicted	transfer/within/oh0 + sites S+MS	family: M	47	0.5159	126	0.4688	0.4255	0.6383	0.2766	47	0.8778
+predicted	transfer/within/oh0 + sites S+MS	family: O1	45	0.6484	128	0.8684	0.6889	0.4222	0.2889	45	0.896
+predicted	transfer/within/oh0 + sites S+MS	family: O2	11	0.7	30	1	0.9091	0.2727	0.2727	11	0.9446
+predicted	transfer/within/oh0 + sites S+MS	family: S	1	0.3333	3	1	0	0	0	1	0.9318
+predicted	transfer/within/oh0 + sites S+MS	family: T	19	0.62	50	0.5833	0.5789	0.6842	0.3684	19	0.8657
+predicted	transfer/within/oh0 + sites S+MS	type: complete precursor	130	0.6026	390	0.7231	0.6308	0.4538	0.2846	130	0.9225
+predicted	transfer/within/oh0 + sites S+MS	type: no signal peptide	50	0.6333	90		0.5111	0.7556	0.4222	45	0.8207
+predicted	transfer/within/oh0 + sites S+MS	type: signal, incomplete	4	0.625	8		0.75	0.5	0.25	4	0.9624
+predicted	transfer/within/oh0 + sites S+MS+ME	all	184	0.5615	488	0.7231	0.6034	0.4022	0.2123	179	0.8765
+predicted	transfer/within/oh0 + sites S+MS+ME	family: A	51	0.5217	138	0.7778	0.6667	0.1961	0.098	51	0.8952
+predicted	transfer/within/oh0 + sites S+MS+ME	family: I1	7	0.6	5	1	0	1	0	2	0.7447
+predicted	transfer/within/oh0 + sites S+MS+ME	family: I2	3	0.5	8	0.5	0.6667	0.3333	0.3333	3	0.8729
+predicted	transfer/within/oh0 + sites S+MS+ME	family: M	47	0.5079	126	0.4688	0.4255	0.617	0.234	47	0.8692
+predicted	transfer/within/oh0 + sites S+MS+ME	family: O1	45	0.6484	128	0.8684	0.6889	0.4222	0.2889	45	0.8819
+predicted	transfer/within/oh0 + sites S+MS+ME	family: O2	11	0.7	30	1	0.9091	0.2727	0.2727	11	0.9473
+predicted	transfer/within/oh0 + sites S+MS+ME	family: S	1	0.3333	3	1	0	0	0	1	0.9318
+predicted	transfer/within/oh0 + sites S+MS+ME	family: T	19	0.52	50	0.5833	0.5789	0.4211	0.2632	19	0.8365
+predicted	transfer/within/oh0 + sites S+MS+ME	type: complete precursor	130	0.559	390	0.7231	0.6308	0.3231	0.1692	130	0.9063
+predicted	transfer/within/oh0 + sites S+MS+ME	type: no signal peptide	50	0.5667	90		0.5111	0.6222	0.3333	45	0.7933
+predicted	transfer/within/oh0 + sites S+MS+ME	type: signal, incomplete	4	0.625	8		0.75	0.5	0.25	4	0.9465
+predicted	transfer/within/oh5	all	184	0.5471	488	0.6231	0.419	0.6201	0.3296	179	0.9249
+predicted	transfer/within/oh5	family: A	51	0.6812	138	0.8611	0.6078	0.6275	0.4314	51	0.949
+predicted	transfer/within/oh5	family: I1	7	0.8	5	1	0.5	1	0.5	2	0.9279
+predicted	transfer/within/oh5	family: I2	3	0.375	8	0	0.3333	0.6667	0.3333	3	0.9087
+predicted	transfer/within/oh5	family: M	47	0.4286	126	0.4062	0.2766	0.5957	0.234	47	0.9079
+predicted	transfer/within/oh5	family: O1	45	0.6094	128	0.8684	0.2667	0.7333	0.2444	45	0.9091
+predicted	transfer/within/oh5	family: O2	11	0.6	30	0.375	0.7273	0.6364	0.5455	11	0.9544
+predicted	transfer/within/oh5	family: S	1	0	3	0	0	0	0	1	0.9432
+predicted	transfer/within/oh5	family: T	19	0.32	50	0	0.4737	0.3684	0.3684	19	0.9232
+predicted	transfer/within/oh5	type: complete precursor	130	0.4974	390	0.6231	0.3231	0.5462	0.2308	130	0.9254
+predicted	transfer/within/oh5	type: no signal peptide	50	0.7556	90		0.6889	0.8222	0.6	45	0.9214
+predicted	transfer/within/oh5	type: signal, incomplete	4	0.625	8		0.5	0.75	0.5	4	0.9536
+predicted	transfer/within/oh5 + sites S	all	184	0.5799	488	0.7308	0.4302	0.6201	0.3352	179	0.9269
+predicted	transfer/within/oh5 + sites S	family: A	51	0.6594	138	0.7778	0.6078	0.6275	0.4314	51	0.9461
+predicted	transfer/within/oh5 + sites S	family: I1	7	0.8	5	1	0.5	1	0.5	2	0.9279
+predicted	transfer/within/oh5 + sites S	family: I2	3	0.875	8	1	1	0.6667	0.6667	3	0.93
+predicted	transfer/within/oh5 + sites S	family: M	47	0.4444	126	0.4688	0.2766	0.5957	0.234	47	0.9106
+predicted	transfer/within/oh5 + sites S	family: O1	45	0.6094	128	0.8684	0.2667	0.7333	0.2444	45	0.9088
+predicted	transfer/within/oh5 + sites S	family: O2	11	0.7667	30	1	0.7273	0.6364	0.5455	11	0.9756
+predicted	transfer/within/oh5 + sites S	family: S	1	0.3333	3	1	0	0	0	1	0.9545
+predicted	transfer/within/oh5 + sites S	family: T	19	0.46	50	0.5833	0.4737	0.3684	0.3684	19	0.9275
+predicted	transfer/within/oh5 + sites S	type: complete precursor	130	0.5385	390	0.7308	0.3385	0.5462	0.2385	130	0.9278
+predicted	transfer/within/oh5 + sites S	type: no signal peptide	50	0.7556	90		0.6889	0.8222	0.6	45	0.9214
+predicted	transfer/within/oh5 + sites S	type: signal, incomplete	4	0.625	8		0.5	0.75	0.5	4	0.9626
+predicted	transfer/within/oh5 + sites MS	all	184	0.6291	488	0.6308	0.6369	0.6201	0.4469	179	0.9215
+predicted	transfer/within/oh5 + sites MS	family: A	51	0.7029	138	0.8611	0.6667	0.6275	0.4706	51	0.9405
+predicted	transfer/within/oh5 + sites MS	family: I1	7	0.8	5	1	0.5	1	0.5	2	0.9334
+predicted	transfer/within/oh5 + sites MS	family: I2	3	0.625	8	0.5	0.6667	0.6667	0.6667	3	0.9177
+predicted	transfer/within/oh5 + sites MS	family: M	47	0.5079	126	0.4062	0.4894	0.5957	0.3404	47	0.8985
+predicted	transfer/within/oh5 + sites MS	family: O1	45	0.7578	128	0.8684	0.6889	0.7333	0.5333	45	0.9125
+predicted	transfer/within/oh5 + sites MS	family: O2	11	0.6667	30	0.375	0.9091	0.6364	0.5455	11	0.9554
+predicted	transfer/within/oh5 + sites MS	family: S	1	0	3	0	0	0	0	1	0.9318
+predicted	transfer/within/oh5 + sites MS	family: T	19	0.4	50	0	0.6842	0.3684	0.3684	19	0.9248
+predicted	transfer/within/oh5 + sites MS	type: complete precursor	130	0.6026	390	0.6308	0.6308	0.5462	0.3923	130	0.9299
+predicted	transfer/within/oh5 + sites MS	type: no signal peptide	50	0.7333	90		0.6444	0.8222	0.6	45	0.8964
+predicted	transfer/within/oh5 + sites MS	type: signal, incomplete	4	0.75	8		0.75	0.75	0.5	4	0.9613
+predicted	transfer/within/oh5 + sites S+MS	all	184	0.6537	488	0.7231	0.6369	0.6201	0.4469	179	0.9231
+predicted	transfer/within/oh5 + sites S+MS	family: A	51	0.6812	138	0.7778	0.6667	0.6275	0.4706	51	0.9375
+predicted	transfer/within/oh5 + sites S+MS	family: I1	7	0.8	5	1	0.5	1	0.5	2	0.9334
+predicted	transfer/within/oh5 + sites S+MS	family: I2	3	0.625	8	0.5	0.6667	0.6667	0.6667	3	0.9177
+predicted	transfer/within/oh5 + sites S+MS	family: M	47	0.5238	126	0.4688	0.4894	0.5957	0.3404	47	0.9013
+predicted	transfer/within/oh5 + sites S+MS	family: O1	45	0.7578	128	0.8684	0.6889	0.7333	0.5333	45	0.9122
+predicted	transfer/within/oh5 + sites S+MS	family: O2	11	0.8333	30	1	0.9091	0.6364	0.5455	11	0.9767
+predicted	transfer/within/oh5 + sites S+MS	family: S	1	0.3333	3	1	0	0	0	1	0.9432
+predicted	transfer/within/oh5 + sites S+MS	family: T	19	0.54	50	0.5833	0.6842	0.3684	0.3684	19	0.9291
+predicted	transfer/within/oh5 + sites S+MS	type: complete precursor	130	0.6333	390	0.7231	0.6308	0.5462	0.3923	130	0.9319
+predicted	transfer/within/oh5 + sites S+MS	type: no signal peptide	50	0.7333	90		0.6444	0.8222	0.6	45	0.8964
+predicted	transfer/within/oh5 + sites S+MS	type: signal, incomplete	4	0.75	8		0.75	0.75	0.5	4	0.9704
+predicted	transfer/within/oh5 + sites S+MS+ME	all	184	0.6168	488	0.7231	0.6369	0.5196	0.3575	179	0.9142
+predicted	transfer/within/oh5 + sites S+MS+ME	family: A	51	0.5507	138	0.7778	0.6667	0.2745	0.1765	51	0.9111
+predicted	transfer/within/oh5 + sites S+MS+ME	family: I1	7	0.8	5	1	0.5	1	0.5	2	0.918
+predicted	transfer/within/oh5 + sites S+MS+ME	family: I2	3	0.625	8	0.5	0.6667	0.6667	0.6667	3	0.9383
+predicted	transfer/within/oh5 + sites S+MS+ME	family: M	47	0.5317	126	0.4688	0.4894	0.617	0.3404	47	0.9016
+predicted	transfer/within/oh5 + sites S+MS+ME	family: O1	45	0.75	128	0.8684	0.6889	0.7111	0.5111	45	0.9097
+predicted	transfer/within/oh5 + sites S+MS+ME	family: O2	11	0.8333	30	1	0.9091	0.6364	0.5455	11	0.9682
+predicted	transfer/within/oh5 + sites S+MS+ME	family: S	1	0.3333	3	1	0	0	0	1	0.9432
+predicted	transfer/within/oh5 + sites S+MS+ME	family: T	19	0.54	50	0.5833	0.6842	0.3684	0.3684	19	0.926
+predicted	transfer/within/oh5 + sites S+MS+ME	type: complete precursor	130	0.6026	390	0.7231	0.6308	0.4538	0.3	130	0.9249
+predicted	transfer/within/oh5 + sites S+MS+ME	type: no signal peptide	50	0.6667	90		0.6444	0.6889	0.5111	45	0.8818
+predicted	transfer/within/oh5 + sites S+MS+ME	type: signal, incomplete	4	0.75	8		0.75	0.75	0.5	4	0.9704
+predicted	transfer/cross/oh0	all	184	0.5082	488	0.6231	0.3855	0.5475	0.2235	179	0.9115
+predicted	transfer/cross/oh0	family: A	51	0.6449	138	0.8611	0.6078	0.5294	0.3529	51	0.9458
+predicted	transfer/cross/oh0	family: I1	7	0.6	5	1	0	1	0	2	0.8168
+predicted	transfer/cross/oh0	family: I2	3	0.25	8	0	0.3333	0.3333	0	3	0.8642
+predicted	transfer/cross/oh0	family: M	47	0.4206	126	0.4062	0.2128	0.6383	0.1489	47	0.8934
+predicted	transfer/cross/oh0	family: O1	45	0.5234	128	0.8684	0.2667	0.4889	0.1111	45	0.906
+predicted	transfer/cross/oh0	family: O2	11	0.4667	30	0.375	0.7273	0.2727	0.2727	11	0.9223
+predicted	transfer/cross/oh0	family: S	1	0	3	0	0	0	0	1	0.9318
+predicted	transfer/cross/oh0	family: T	19	0.4	50	0	0.3684	0.6842	0.3684	19	0.9125
+predicted	transfer/cross/oh0	type: complete precursor	130	0.4744	390	0.6231	0.3231	0.4769	0.1462	130	0.9204
+predicted	transfer/cross/oh0	type: no signal peptide	50	0.6556	90		0.5556	0.7556	0.4222	45	0.8856
+predicted	transfer/cross/oh0	type: signal, incomplete	4	0.5	8		0.5	0.5	0.5	4	0.9456
+predicted	transfer/cross/oh0 + sites S	all	184	0.541	488	0.7308	0.3966	0.5475	0.2291	179	0.9135
+predicted	transfer/cross/oh0 + sites S	family: A	51	0.6232	138	0.7778	0.6078	0.5294	0.3529	51	0.9428
+predicted	transfer/cross/oh0 + sites S	family: I1	7	0.6	5	1	0	1	0	2	0.8168
+predicted	transfer/cross/oh0 + sites S	family: I2	3	0.75	8	1	1	0.3333	0.3333	3	0.8855
+predicted	transfer/cross/oh0 + sites S	family: M	47	0.4365	126	0.4688	0.2128	0.6383	0.1489	47	0.8962
+predicted	transfer/cross/oh0 + sites S	family: O1	45	0.5234	128	0.8684	0.2667	0.4889	0.1111	45	0.9057
+predicted	transfer/cross/oh0 + sites S	family: O2	11	0.6333	30	1	0.7273	0.2727	0.2727	11	0.9435
+predicted	transfer/cross/oh0 + sites S	family: S	1	0.3333	3	1	0	0	0	1	0.9432
+predicted	transfer/cross/oh0 + sites S	family: T	19	0.54	50	0.5833	0.3684	0.6842	0.3684	19	0.9168
+predicted	transfer/cross/oh0 + sites S	type: complete precursor	130	0.5154	390	0.7308	0.3385	0.4769	0.1538	130	0.9229
+predicted	transfer/cross/oh0 + sites S	type: no signal peptide	50	0.6556	90		0.5556	0.7556	0.4222	45	0.8856
+predicted	transfer/cross/oh0 + sites S	type: signal, incomplete	4	0.5	8		0.5	0.5	0.5	4	0.9547
+predicted	transfer/cross/oh0 + sites MS	all	184	0.5902	488	0.6308	0.6034	0.5475	0.3184	179	0.8973
+predicted	transfer/cross/oh0 + sites MS	family: A	51	0.6667	138	0.8611	0.6667	0.5294	0.3922	51	0.9372
+predicted	transfer/cross/oh0 + sites MS	family: I1	7	0.6	5	1	0	1	0	2	0.7414
+predicted	transfer/cross/oh0 + sites MS	family: I2	3	0.5	8	0.5	0.6667	0.3333	0.3333	3	0.8732
+predicted	transfer/cross/oh0 + sites MS	family: M	47	0.5	126	0.4062	0.4255	0.6383	0.2766	47	0.877
+predicted	transfer/cross/oh0 + sites MS	family: O1	45	0.6719	128	0.8684	0.6889	0.4889	0.2889	45	0.9076
+predicted	transfer/cross/oh0 + sites MS	family: O2	11	0.5333	30	0.375	0.9091	0.2727	0.2727	11	0.9234
+predicted	transfer/cross/oh0 + sites MS	family: S	1	0	3	0	0	0	0	1	0.9205
+predicted	transfer/cross/oh0 + sites MS	family: T	19	0.48	50	0	0.5789	0.6842	0.3684	19	0.8615
+predicted	transfer/cross/oh0 + sites MS	type: complete precursor	130	0.5795	390	0.6308	0.6308	0.4769	0.2846	130	0.9244
+predicted	transfer/cross/oh0 + sites MS	type: no signal peptide	50	0.6333	90		0.5111	0.7556	0.4222	45	0.8225
+predicted	transfer/cross/oh0 + sites MS	type: signal, incomplete	4	0.625	8		0.75	0.5	0.25	4	0.9534
+predicted	transfer/cross/oh0 + sites S+MS	all	184	0.6148	488	0.7231	0.6034	0.5475	0.3184	179	0.8989
+predicted	transfer/cross/oh0 + sites S+MS	family: A	51	0.6449	138	0.7778	0.6667	0.5294	0.3922	51	0.9343
+predicted	transfer/cross/oh0 + sites S+MS	family: I1	7	0.6	5	1	0	1	0	2	0.7414
+predicted	transfer/cross/oh0 + sites S+MS	family: I2	3	0.5	8	0.5	0.6667	0.3333	0.3333	3	0.8732
+predicted	transfer/cross/oh0 + sites S+MS	family: M	47	0.5159	126	0.4688	0.4255	0.6383	0.2766	47	0.8798
+predicted	transfer/cross/oh0 + sites S+MS	family: O1	45	0.6719	128	0.8684	0.6889	0.4889	0.2889	45	0.9073
+predicted	transfer/cross/oh0 + sites S+MS	family: O2	11	0.7	30	1	0.9091	0.2727	0.2727	11	0.9446
+predicted	transfer/cross/oh0 + sites S+MS	family: S	1	0.3333	3	1	0	0	0	1	0.9318
+predicted	transfer/cross/oh0 + sites S+MS	family: T	19	0.62	50	0.5833	0.5789	0.6842	0.3684	19	0.8657
+predicted	transfer/cross/oh0 + sites S+MS	type: complete precursor	130	0.6103	390	0.7231	0.6308	0.4769	0.2846	130	0.9264
+predicted	transfer/cross/oh0 + sites S+MS	type: no signal peptide	50	0.6333	90		0.5111	0.7556	0.4222	45	0.8225
+predicted	transfer/cross/oh0 + sites S+MS	type: signal, incomplete	4	0.625	8		0.75	0.5	0.25	4	0.9624
+predicted	transfer/cross/oh0 + sites S+MS+ME	all	184	0.5676	488	0.7231	0.6034	0.419	0.2123	179	0.8797
+predicted	transfer/cross/oh0 + sites S+MS+ME	family: A	51	0.5217	138	0.7778	0.6667	0.1961	0.098	51	0.8952
+predicted	transfer/cross/oh0 + sites S+MS+ME	family: I1	7	0.6	5	1	0	1	0	2	0.7447
+predicted	transfer/cross/oh0 + sites S+MS+ME	family: I2	3	0.5	8	0.5	0.6667	0.3333	0.3333	3	0.8729
+predicted	transfer/cross/oh0 + sites S+MS+ME	family: M	47	0.5079	126	0.4688	0.4255	0.617	0.234	47	0.8712
+predicted	transfer/cross/oh0 + sites S+MS+ME	family: O1	45	0.6719	128	0.8684	0.6889	0.4889	0.2889	45	0.8933
+predicted	transfer/cross/oh0 + sites S+MS+ME	family: O2	11	0.7	30	1	0.9091	0.2727	0.2727	11	0.9473
+predicted	transfer/cross/oh0 + sites S+MS+ME	family: S	1	0.3333	3	1	0	0	0	1	0.9318
+predicted	transfer/cross/oh0 + sites S+MS+ME	family: T	19	0.52	50	0.5833	0.5789	0.4211	0.2632	19	0.8365
+predicted	transfer/cross/oh0 + sites S+MS+ME	type: complete precursor	130	0.5667	390	0.7231	0.6308	0.3462	0.1692	130	0.9102
+predicted	transfer/cross/oh0 + sites S+MS+ME	type: no signal peptide	50	0.5667	90		0.5111	0.6222	0.3333	45	0.7951
+predicted	transfer/cross/oh0 + sites S+MS+ME	type: signal, incomplete	4	0.625	8		0.75	0.5	0.25	4	0.9465
+predicted	transfer/cross/oh5	all	184	0.541	488	0.6231	0.3855	0.6369	0.2793	179	0.9204
+predicted	transfer/cross/oh5	family: A	51	0.6449	138	0.8611	0.6078	0.5294	0.3529	51	0.9464
+predicted	transfer/cross/oh5	family: I1	7	0.6	5	1	0	1	0	2	0.8955
+predicted	transfer/cross/oh5	family: I2	3	0.25	8	0	0.3333	0.3333	0	3	0.8983
+predicted	transfer/cross/oh5	family: M	47	0.4048	126	0.4062	0.2128	0.5957	0.1702	47	0.8903
+predicted	transfer/cross/oh5	family: O1	45	0.6328	128	0.8684	0.2667	0.8	0.2444	45	0.9222
+predicted	transfer/cross/oh5	family: O2	11	0.6	30	0.375	0.7273	0.6364	0.5455	11	0.9544
+predicted	transfer/cross/oh5	family: S	1	0	3	0	0	0	0	1	0.9318
+predicted	transfer/cross/oh5	family: T	19	0.4	50	0	0.3684	0.6842	0.3684	19	0.9133
+predicted	transfer/cross/oh5	type: complete precursor	130	0.5128	390	0.6231	0.3231	0.5923	0.2231	130	0.9295
+predicted	transfer/cross/oh5	type: no signal peptide	50	0.6556	90		0.5556	0.7556	0.4222	45	0.894
+predicted	transfer/cross/oh5	type: signal, incomplete	4	0.625	8		0.5	0.75	0.5	4	0.9536
+predicted	transfer/cross/oh5 + sites S	all	184	0.5738	488	0.7308	0.3966	0.6369	0.2849	179	0.9223
+predicted	transfer/cross/oh5 + sites S	family: A	51	0.6232	138	0.7778	0.6078	0.5294	0.3529	51	0.9434
+predicted	transfer/cross/oh5 + sites S	family: I1	7	0.6	5	1	0	1	0	2	0.8955
+predicted	transfer/cross/oh5 + sites S	family: I2	3	0.75	8	1	1	0.3333	0.3333	3	0.9196
+predicted	transfer/cross/oh5 + sites S	family: M	47	0.4206	126	0.4688	0.2128	0.5957	0.1702	47	0.893
+predicted	transfer/cross/oh5 + sites S	family: O1	45	0.6328	128	0.8684	0.2667	0.8	0.2444	45	0.9219
+predicted	transfer/cross/oh5 + sites S	family: O2	11	0.7667	30	1	0.7273	0.6364	0.5455	11	0.9756
+predicted	transfer/cross/oh5 + sites S	family: S	1	0.3333	3	1	0	0	0	1	0.9432
+predicted	transfer/cross/oh5 + sites S	family: T	19	0.54	50	0.5833	0.3684	0.6842	0.3684	19	0.9176
+predicted	transfer/cross/oh5 + sites S	type: complete precursor	130	0.5538	390	0.7308	0.3385	0.5923	0.2308	130	0.932
+predicted	transfer/cross/oh5 + sites S	type: no signal peptide	50	0.6556	90		0.5556	0.7556	0.4222	45	0.894
+predicted	transfer/cross/oh5 + sites S	type: signal, incomplete	4	0.625	8		0.5	0.75	0.5	4	0.9626
+predicted	transfer/cross/oh5 + sites MS	all	184	0.623	488	0.6308	0.6034	0.6369	0.3966	179	0.9062
+predicted	transfer/cross/oh5 + sites MS	family: A	51	0.6667	138	0.8611	0.6667	0.5294	0.3922	51	0.9378
+predicted	transfer/cross/oh5 + sites MS	family: I1	7	0.6	5	1	0	1	0	2	0.8201
+predicted	transfer/cross/oh5 + sites MS	family: I2	3	0.5	8	0.5	0.6667	0.3333	0.3333	3	0.9073
+predicted	transfer/cross/oh5 + sites MS	family: M	47	0.4841	126	0.4062	0.4255	0.5957	0.2766	47	0.8738
+predicted	transfer/cross/oh5 + sites MS	family: O1	45	0.7812	128	0.8684	0.6889	0.8	0.5333	45	0.9238
+predicted	transfer/cross/oh5 + sites MS	family: O2	11	0.6667	30	0.375	0.9091	0.6364	0.5455	11	0.9554
+predicted	transfer/cross/oh5 + sites MS	family: S	1	0	3	0	0	0	0	1	0.9205
+predicted	transfer/cross/oh5 + sites MS	family: T	19	0.48	50	0	0.5789	0.6842	0.3684	19	0.8623
+predicted	transfer/cross/oh5 + sites MS	type: complete precursor	130	0.6179	390	0.6308	0.6308	0.5923	0.3846	130	0.9335
+predicted	transfer/cross/oh5 + sites MS	type: no signal peptide	50	0.6333	90		0.5111	0.7556	0.4222	45	0.8309
+predicted	transfer/cross/oh5 + sites MS	type: signal, incomplete	4	0.75	8		0.75	0.75	0.5	4	0.9613
+predicted	transfer/cross/oh5 + sites S+MS	all	184	0.6475	488	0.7231	0.6034	0.6369	0.3966	179	0.9078
+predicted	transfer/cross/oh5 + sites S+MS	family: A	51	0.6449	138	0.7778	0.6667	0.5294	0.3922	51	0.9349
+predicted	transfer/cross/oh5 + sites S+MS	family: I1	7	0.6	5	1	0	1	0	2	0.8201
+predicted	transfer/cross/oh5 + sites S+MS	family: I2	3	0.5	8	0.5	0.6667	0.3333	0.3333	3	0.9073
+predicted	transfer/cross/oh5 + sites S+MS	family: M	47	0.5	126	0.4688	0.4255	0.5957	0.2766	47	0.8766
+predicted	transfer/cross/oh5 + sites S+MS	family: O1	45	0.7812	128	0.8684	0.6889	0.8	0.5333	45	0.9235
+predicted	transfer/cross/oh5 + sites S+MS	family: O2	11	0.8333	30	1	0.9091	0.6364	0.5455	11	0.9767
+predicted	transfer/cross/oh5 + sites S+MS	family: S	1	0.3333	3	1	0	0	0	1	0.9318
+predicted	transfer/cross/oh5 + sites S+MS	family: T	19	0.62	50	0.5833	0.5789	0.6842	0.3684	19	0.8665
+predicted	transfer/cross/oh5 + sites S+MS	type: complete precursor	130	0.6487	390	0.7231	0.6308	0.5923	0.3846	130	0.9355
+predicted	transfer/cross/oh5 + sites S+MS	type: no signal peptide	50	0.6333	90		0.5111	0.7556	0.4222	45	0.8309
+predicted	transfer/cross/oh5 + sites S+MS	type: signal, incomplete	4	0.75	8		0.75	0.75	0.5	4	0.9704
+predicted	transfer/cross/oh5 + sites S+MS+ME	all	184	0.6025	488	0.7231	0.6034	0.514	0.2961	179	0.8923
+predicted	transfer/cross/oh5 + sites S+MS+ME	family: A	51	0.5217	138	0.7778	0.6667	0.1961	0.098	51	0.8958
+predicted	transfer/cross/oh5 + sites S+MS+ME	family: I1	7	0.6	5	1	0	1	0	2	0.8048
+predicted	transfer/cross/oh5 + sites S+MS+ME	family: I2	3	0.5	8	0.5	0.6667	0.3333	0.3333	3	0.907
+predicted	transfer/cross/oh5 + sites S+MS+ME	family: M	47	0.5079	126	0.4688	0.4255	0.617	0.2766	47	0.8768
+predicted	transfer/cross/oh5 + sites S+MS+ME	family: O1	45	0.7734	128	0.8684	0.6889	0.7778	0.5111	45	0.9211
+predicted	transfer/cross/oh5 + sites S+MS+ME	family: O2	11	0.8333	30	1	0.9091	0.6364	0.5455	11	0.9682
+predicted	transfer/cross/oh5 + sites S+MS+ME	family: S	1	0.3333	3	1	0	0	0	1	0.9318
+predicted	transfer/cross/oh5 + sites S+MS+ME	family: T	19	0.52	50	0.5833	0.5789	0.4211	0.2632	19	0.8373
+predicted	transfer/cross/oh5 + sites S+MS+ME	type: complete precursor	130	0.6077	390	0.7231	0.6308	0.4692	0.2769	130	0.9227
+predicted	transfer/cross/oh5 + sites S+MS+ME	type: no signal peptide	50	0.5667	90		0.5111	0.6222	0.3333	45	0.8071
+predicted	transfer/cross/oh5 + sites S+MS+ME	type: signal, incomplete	4	0.75	8		0.75	0.75	0.5	4	0.9704
+predicted	envelope + Cterm	all	184	0.4877	488	0.6077	0.1397	0.7486	0.1341	179	0.793
+predicted	envelope + Cterm	family: A	51	0.558	138	0.8611	0.0588	0.8431	0.0588	51	0.7704
+predicted	envelope + Cterm	family: I1	7	0.6	5	1	0	1	0	2	0.8984
+predicted	envelope + Cterm	family: I2	3	0.25	8	0.5	0.3333	0	0	3	0.755
+predicted	envelope + Cterm	family: M	47	0.4444	126	0.4062	0.234	0.6809	0.234	47	0.8316
+predicted	envelope + Cterm	family: O1	45	0.5312	128	0.8158	0.0667	0.7556	0.0667	45	0.8024
+predicted	envelope + Cterm	family: O2	11	0.3333	30	0	0.1818	0.7273	0.1818	11	0.7355
+predicted	envelope + Cterm	family: S	1	0	3	0	0	0	0	1	0.9545
+predicted	envelope + Cterm	family: T	19	0.44	50	0.1667	0.2632	0.7895	0.2632	19	0.7273
+predicted	envelope + Cterm	type: complete precursor	130	0.4462	390	0.6077	0.0154	0.7154	0.0154	130	0.7718
+predicted	envelope + Cterm	type: no signal peptide	50	0.6667	90		0.5111	0.8222	0.4889	45	0.8511
+predicted	envelope + Cterm	type: signal, incomplete	4	0.5	8		0	1	0	4	0.7544
+predicted	envelope + sites S+MS+ME + Cterm	all	184	0.5328	488	0.7	0.2011	0.743	0.1788	179	0.783
+predicted	envelope + sites S+MS+ME + Cterm	family: A	51	0.5797	138	0.7778	0.1373	0.8824	0.098	51	0.7745
+predicted	envelope + sites S+MS+ME + Cterm	family: I1	7	0.6	5	1	0	1	0	2	0.7952
+predicted	envelope + sites S+MS+ME + Cterm	family: I2	3	0.625	8	1	0.6667	0.3333	0.3333	3	0.7618
+predicted	envelope + sites S+MS+ME + Cterm	family: M	47	0.4762	126	0.4688	0.2979	0.6596	0.2979	47	0.8246
+predicted	envelope + sites S+MS+ME + Cterm	family: O1	45	0.5391	128	0.8421	0.1111	0.7111	0.0889	45	0.7935
+predicted	envelope + sites S+MS+ME + Cterm	family: O2	11	0.5667	30	0.75	0.2727	0.7273	0.2727	11	0.7321
+predicted	envelope + sites S+MS+ME + Cterm	family: S	1	0.3333	3	1	0	0	0	1	0.9659
+predicted	envelope + sites S+MS+ME + Cterm	family: T	19	0.5	50	0.5	0.2632	0.7368	0.2632	19	0.6968
+predicted	envelope + sites S+MS+ME + Cterm	type: complete precursor	130	0.4974	390	0.7	0.1	0.6923	0.0769	130	0.7652
+predicted	envelope + sites S+MS+ME + Cterm	type: no signal peptide	50	0.6889	90		0.5111	0.8667	0.4889	45	0.832
+predicted	envelope + sites S+MS+ME + Cterm	type: signal, incomplete	4	0.5	8		0	1	0	4	0.7504
+predicted	transfer/within/oh0 + Cterm	all	184	0.5389	488	0.6231	0.3855	0.6313	0.2458	179	0.909
+predicted	transfer/within/oh0 + Cterm	family: A	51	0.6739	138	0.8611	0.6078	0.6078	0.4314	51	0.9487
+predicted	transfer/within/oh0 + Cterm	family: I1	7	0.6	5	1	0	1	0	2	0.801
+predicted	transfer/within/oh0 + Cterm	family: I2	3	0.25	8	0	0.3333	0.3333	0	3	0.8538
+predicted	transfer/within/oh0 + Cterm	family: M	47	0.5079	126	0.4062	0.2128	0.8723	0.1489	47	0.8955
+predicted	transfer/within/oh0 + Cterm	family: O1	45	0.5234	128	0.8684	0.2667	0.4889	0.1111	45	0.8932
+predicted	transfer/within/oh0 + Cterm	family: O2	11	0.4667	30	0.375	0.7273	0.2727	0.2727	11	0.9223
+predicted	transfer/within/oh0 + Cterm	family: S	1	0	3	0	0	0	0	1	0.9318
+predicted	transfer/within/oh0 + Cterm	family: T	19	0.4	50	0	0.3684	0.6842	0.3684	19	0.9125
+predicted	transfer/within/oh0 + Cterm	type: complete precursor	130	0.5	390	0.6231	0.3231	0.5538	0.1615	130	0.917
+predicted	transfer/within/oh0 + Cterm	type: no signal peptide	50	0.7	90		0.5556	0.8444	0.4667	45	0.8849
+predicted	transfer/within/oh0 + Cterm	type: signal, incomplete	4	0.625	8		0.5	0.75	0.5	4	0.9494
+predicted	transfer/within/oh0 + sites S + Cterm	all	184	0.5717	488	0.7308	0.3966	0.6313	0.2514	179	0.9109
+predicted	transfer/within/oh0 + sites S + Cterm	family: A	51	0.6522	138	0.7778	0.6078	0.6078	0.4314	51	0.9457
+predicted	transfer/within/oh0 + sites S + Cterm	family: I1	7	0.6	5	1	0	1	0	2	0.801
+predicted	transfer/within/oh0 + sites S + Cterm	family: I2	3	0.75	8	1	1	0.3333	0.3333	3	0.8751
+predicted	transfer/within/oh0 + sites S + Cterm	family: M	47	0.5238	126	0.4688	0.2128	0.8723	0.1489	47	0.8983
+predicted	transfer/within/oh0 + sites S + Cterm	family: O1	45	0.5234	128	0.8684	0.2667	0.4889	0.1111	45	0.893
+predicted	transfer/within/oh0 + sites S + Cterm	family: O2	11	0.6333	30	1	0.7273	0.2727	0.2727	11	0.9435
+predicted	transfer/within/oh0 + sites S + Cterm	family: S	1	0.3333	3	1	0	0	0	1	0.9432
+predicted	transfer/within/oh0 + sites S + Cterm	family: T	19	0.54	50	0.5833	0.3684	0.6842	0.3684	19	0.9168
+predicted	transfer/within/oh0 + sites S + Cterm	type: complete precursor	130	0.541	390	0.7308	0.3385	0.5538	0.1692	130	0.9195
+predicted	transfer/within/oh0 + sites S + Cterm	type: no signal peptide	50	0.7	90		0.5556	0.8444	0.4667	45	0.8849
+predicted	transfer/within/oh0 + sites S + Cterm	type: signal, incomplete	4	0.625	8		0.5	0.75	0.5	4	0.9584
+predicted	transfer/within/oh0 + sites MS + Cterm	all	184	0.6209	488	0.6308	0.6034	0.6313	0.3631	179	0.8952
+predicted	transfer/within/oh0 + sites MS + Cterm	family: A	51	0.6957	138	0.8611	0.6667	0.6078	0.4314	51	0.9402
+predicted	transfer/within/oh0 + sites MS + Cterm	family: I1	7	0.6	5	1	0	1	0	2	0.7256
+predicted	transfer/within/oh0 + sites MS + Cterm	family: I2	3	0.5	8	0.5	0.6667	0.3333	0.3333	3	0.8628
+predicted	transfer/within/oh0 + sites MS + Cterm	family: M	47	0.5873	126	0.4062	0.4255	0.8723	0.3404	47	0.879
+predicted	transfer/within/oh0 + sites MS + Cterm	family: O1	45	0.6719	128	0.8684	0.6889	0.4889	0.3556	45	0.8966
+predicted	transfer/within/oh0 + sites MS + Cterm	family: O2	11	0.5333	30	0.375	0.9091	0.2727	0.2727	11	0.9234
+predicted	transfer/within/oh0 + sites MS + Cterm	family: S	1	0	3	0	0	0	0	1	0.9205
+predicted	transfer/within/oh0 + sites MS + Cterm	family: T	19	0.48	50	0	0.5789	0.6842	0.3684	19	0.8615
+predicted	transfer/within/oh0 + sites MS + Cterm	type: complete precursor	130	0.6051	390	0.6308	0.6308	0.5538	0.3385	130	0.9216
+predicted	transfer/within/oh0 + sites MS + Cterm	type: no signal peptide	50	0.6778	90		0.5111	0.8444	0.4222	45	0.8218
+predicted	transfer/within/oh0 + sites MS + Cterm	type: signal, incomplete	4	0.75	8		0.75	0.75	0.5	4	0.9572
+predicted	transfer/within/oh0 + sites S+MS + Cterm	all	184	0.6455	488	0.7231	0.6034	0.6313	0.3631	179	0.8968
+predicted	transfer/within/oh0 + sites S+MS + Cterm	family: A	51	0.6739	138	0.7778	0.6667	0.6078	0.4314	51	0.9372
+predicted	transfer/within/oh0 + sites S+MS + Cterm	family: I1	7	0.6	5	1	0	1	0	2	0.7256
+predicted	transfer/within/oh0 + sites S+MS + Cterm	family: I2	3	0.5	8	0.5	0.6667	0.3333	0.3333	3	0.8628
+predicted	transfer/within/oh0 + sites S+MS + Cterm	family: M	47	0.6032	126	0.4688	0.4255	0.8723	0.3404	47	0.8818
+predicted	transfer/within/oh0 + sites S+MS + Cterm	family: O1	45	0.6719	128	0.8684	0.6889	0.4889	0.3556	45	0.8963
+predicted	transfer/within/oh0 + sites S+MS + Cterm	family: O2	11	0.7	30	1	0.9091	0.2727	0.2727	11	0.9446
+predicted	transfer/within/oh0 + sites S+MS + Cterm	family: S	1	0.3333	3	1	0	0	0	1	0.9318
+predicted	transfer/within/oh0 + sites S+MS + Cterm	family: T	19	0.62	50	0.5833	0.5789	0.6842	0.3684	19	0.8657
+predicted	transfer/within/oh0 + sites S+MS + Cterm	type: complete precursor	130	0.6359	390	0.7231	0.6308	0.5538	0.3385	130	0.9236
+predicted	transfer/within/oh0 + sites S+MS + Cterm	type: no signal peptide	50	0.6778	90		0.5111	0.8444	0.4222	45	0.8218
+predicted	transfer/within/oh0 + sites S+MS + Cterm	type: signal, incomplete	4	0.75	8		0.75	0.75	0.5	4	0.9662
+predicted	transfer/within/oh0 + sites S+MS+ME + Cterm	all	184	0.582	488	0.7231	0.6034	0.4581	0.2626	179	0.8776
+predicted	transfer/within/oh0 + sites S+MS+ME + Cterm	family: A	51	0.5507	138	0.7778	0.6667	0.2745	0.1961	51	0.8975
+predicted	transfer/within/oh0 + sites S+MS+ME + Cterm	family: I1	7	0.6	5	1	0	1	0	2	0.7447
+predicted	transfer/within/oh0 + sites S+MS+ME + Cterm	family: I2	3	0.5	8	0.5	0.6667	0.3333	0.3333	3	0.8729
+predicted	transfer/within/oh0 + sites S+MS+ME + Cterm	family: M	47	0.5317	126	0.4688	0.4255	0.6809	0.2553	47	0.8702
+predicted	transfer/within/oh0 + sites S+MS+ME + Cterm	family: O1	45	0.6719	128	0.8684	0.6889	0.4889	0.3556	45	0.8829
+predicted	transfer/within/oh0 + sites S+MS+ME + Cterm	family: O2	11	0.7	30	1	0.9091	0.2727	0.2727	11	0.9473
+predicted	transfer/within/oh0 + sites S+MS+ME + Cterm	family: S	1	0.3333	3	1	0	0	0	1	0.9318
+predicted	transfer/within/oh0 + sites S+MS+ME + Cterm	family: T	19	0.52	50	0.5833	0.5789	0.4211	0.2632	19	0.8365
+predicted	transfer/within/oh0 + sites S+MS+ME + Cterm	type: complete precursor	130	0.5744	390	0.7231	0.6308	0.3692	0.2231	130	0.9069
+predicted	transfer/within/oh0 + sites S+MS+ME + Cterm	type: no signal peptide	50	0.6	90		0.5111	0.6889	0.3556	45	0.7956
+predicted	transfer/within/oh0 + sites S+MS+ME + Cterm	type: signal, incomplete	4	0.75	8		0.75	0.75	0.5	4	0.9503
+predicted	transfer/within/oh5 + Cterm	all	184	0.623	488	0.6231	0.419	0.8268	0.3743	179	0.9306
+predicted	transfer/within/oh5 + Cterm	family: A	51	0.7174	138	0.8611	0.6078	0.7255	0.5098	51	0.9529
+predicted	transfer/within/oh5 + Cterm	family: I1	7	0.8	5	1	0.5	1	0.5	2	0.9279
+predicted	transfer/within/oh5 + Cterm	family: I2	3	0.375	8	0	0.3333	0.6667	0.3333	3	0.9087
+predicted	transfer/within/oh5 + Cterm	family: M	47	0.5635	126	0.4062	0.2766	0.9574	0.2553	47	0.9199
+predicted	transfer/within/oh5 + Cterm	family: O1	45	0.6484	128	0.8684	0.2667	0.8444	0.2667	45	0.911
+predicted	transfer/within/oh5 + Cterm	family: O2	11	0.6333	30	0.375	0.7273	0.7273	0.5455	11	0.9545
+predicted	transfer/within/oh5 + Cterm	family: S	1	0.3333	3	0	0	1	0	1	0.9545
+predicted	transfer/within/oh5 + Cterm	family: T	19	0.48	50	0	0.4737	0.7895	0.4737	19	0.933
+predicted	transfer/within/oh5 + Cterm	type: complete precursor	130	0.5769	390	0.6231	0.3231	0.7846	0.2692	130	0.9306
+predicted	transfer/within/oh5 + Cterm	type: no signal peptide	50	0.8111	90		0.6889	0.9333	0.6667	45	0.9285
+predicted	transfer/within/oh5 + Cterm	type: signal, incomplete	4	0.75	8		0.5	1	0.5	4	0.9574
+predicted	transfer/within/oh5 + sites S + Cterm	all	184	0.6557	488	0.7308	0.4302	0.8268	0.3799	179	0.9325
+predicted	transfer/within/oh5 + sites S + Cterm	family: A	51	0.6957	138	0.7778	0.6078	0.7255	0.5098	51	0.9499
+predicted	transfer/within/oh5 + sites S + Cterm	family: I1	7	0.8	5	1	0.5	1	0.5	2	0.9279
+predicted	transfer/within/oh5 + sites S + Cterm	family: I2	3	0.875	8	1	1	0.6667	0.6667	3	0.93
+predicted	transfer/within/oh5 + sites S + Cterm	family: M	47	0.5794	126	0.4688	0.2766	0.9574	0.2553	47	0.9227
+predicted	transfer/within/oh5 + sites S + Cterm	family: O1	45	0.6484	128	0.8684	0.2667	0.8444	0.2667	45	0.9107
+predicted	transfer/within/oh5 + sites S + Cterm	family: O2	11	0.8	30	1	0.7273	0.7273	0.5455	11	0.9757
+predicted	transfer/within/oh5 + sites S + Cterm	family: S	1	0.6667	3	1	0	1	0	1	0.9659
+predicted	transfer/within/oh5 + sites S + Cterm	family: T	19	0.62	50	0.5833	0.4737	0.7895	0.4737	19	0.9373
+predicted	transfer/within/oh5 + sites S + Cterm	type: complete precursor	130	0.6179	390	0.7308	0.3385	0.7846	0.2769	130	0.933
+predicted	transfer/within/oh5 + sites S + Cterm	type: no signal peptide	50	0.8111	90		0.6889	0.9333	0.6667	45	0.9285
+predicted	transfer/within/oh5 + sites S + Cterm	type: signal, incomplete	4	0.75	8		0.5	1	0.5	4	0.9664
+predicted	transfer/within/oh5 + sites MS + Cterm	all	184	0.7049	488	0.6308	0.6369	0.8268	0.5419	179	0.9272
+predicted	transfer/within/oh5 + sites MS + Cterm	family: A	51	0.7391	138	0.8611	0.6667	0.7255	0.5098	51	0.9443
+predicted	transfer/within/oh5 + sites MS + Cterm	family: I1	7	0.8	5	1	0.5	1	0.5	2	0.9334
+predicted	transfer/within/oh5 + sites MS + Cterm	family: I2	3	0.625	8	0.5	0.6667	0.6667	0.6667	3	0.9177
+predicted	transfer/within/oh5 + sites MS + Cterm	family: M	47	0.6429	126	0.4062	0.4894	0.9574	0.4681	47	0.9106
+predicted	transfer/within/oh5 + sites MS + Cterm	family: O1	45	0.7969	128	0.8684	0.6889	0.8444	0.6444	45	0.9143
+predicted	transfer/within/oh5 + sites MS + Cterm	family: O2	11	0.7	30	0.375	0.9091	0.7273	0.6364	11	0.9556
+predicted	transfer/within/oh5 + sites MS + Cterm	family: S	1	0.3333	3	0	0	1	0	1	0.9432
+predicted	transfer/within/oh5 + sites MS + Cterm	family: T	19	0.56	50	0	0.6842	0.7895	0.5263	19	0.9346
+predicted	transfer/within/oh5 + sites MS + Cterm	type: complete precursor	130	0.6821	390	0.6308	0.6308	0.7846	0.5154	130	0.9351
+predicted	transfer/within/oh5 + sites MS + Cterm	type: no signal peptide	50	0.7889	90		0.6444	0.9333	0.6	45	0.9035
+predicted	transfer/within/oh5 + sites MS + Cterm	type: signal, incomplete	4	0.875	8		0.75	1	0.75	4	0.9651
+predicted	transfer/within/oh5 + sites S+MS + Cterm	all	184	0.7295	488	0.7231	0.6369	0.8268	0.5419	179	0.9288
+predicted	transfer/within/oh5 + sites S+MS + Cterm	family: A	51	0.7174	138	0.7778	0.6667	0.7255	0.5098	51	0.9414
+predicted	transfer/within/oh5 + sites S+MS + Cterm	family: I1	7	0.8	5	1	0.5	1	0.5	2	0.9334
+predicted	transfer/within/oh5 + sites S+MS + Cterm	family: I2	3	0.625	8	0.5	0.6667	0.6667	0.6667	3	0.9177
+predicted	transfer/within/oh5 + sites S+MS + Cterm	family: M	47	0.6587	126	0.4688	0.4894	0.9574	0.4681	47	0.9134
+predicted	transfer/within/oh5 + sites S+MS + Cterm	family: O1	45	0.7969	128	0.8684	0.6889	0.8444	0.6444	45	0.9141
+predicted	transfer/within/oh5 + sites S+MS + Cterm	family: O2	11	0.8667	30	1	0.9091	0.7273	0.6364	11	0.9768
+predicted	transfer/within/oh5 + sites S+MS + Cterm	family: S	1	0.6667	3	1	0	1	0	1	0.9545
+predicted	transfer/within/oh5 + sites S+MS + Cterm	family: T	19	0.7	50	0.5833	0.6842	0.7895	0.5263	19	0.9389
+predicted	transfer/within/oh5 + sites S+MS + Cterm	type: complete precursor	130	0.7128	390	0.7231	0.6308	0.7846	0.5154	130	0.9371
+predicted	transfer/within/oh5 + sites S+MS + Cterm	type: no signal peptide	50	0.7889	90		0.6444	0.9333	0.6	45	0.9035
+predicted	transfer/within/oh5 + sites S+MS + Cterm	type: signal, incomplete	4	0.875	8		0.75	1	0.75	4	0.9741
+predicted	transfer/within/oh5 + sites S+MS+ME + Cterm	all	184	0.6906	488	0.7231	0.6369	0.7207	0.4637	179	0.9197
+predicted	transfer/within/oh5 + sites S+MS+ME + Cterm	family: A	51	0.587	138	0.7778	0.6667	0.3725	0.2745	51	0.9144
+predicted	transfer/within/oh5 + sites S+MS+ME + Cterm	family: I1	7	0.8	5	1	0.5	1	0.5	2	0.918
+predicted	transfer/within/oh5 + sites S+MS+ME + Cterm	family: I2	3	0.625	8	0.5	0.6667	0.6667	0.6667	3	0.9383
+predicted	transfer/within/oh5 + sites S+MS+ME + Cterm	family: M	47	0.6667	126	0.4688	0.4894	0.9787	0.4681	47	0.9136
+predicted	transfer/within/oh5 + sites S+MS+ME + Cterm	family: O1	45	0.7891	128	0.8684	0.6889	0.8222	0.6222	45	0.9116
+predicted	transfer/within/oh5 + sites S+MS+ME + Cterm	family: O2	11	0.8667	30	1	0.9091	0.7273	0.6364	11	0.9694
+predicted	transfer/within/oh5 + sites S+MS+ME + Cterm	family: S	1	0.6667	3	1	0	1	0	1	0.9545
+predicted	transfer/within/oh5 + sites S+MS+ME + Cterm	family: T	19	0.68	50	0.5833	0.6842	0.7368	0.4737	19	0.935
+predicted	transfer/within/oh5 + sites S+MS+ME + Cterm	type: complete precursor	130	0.6769	390	0.7231	0.6308	0.6769	0.4308	130	0.9298
+predicted	transfer/within/oh5 + sites S+MS+ME + Cterm	type: no signal peptide	50	0.7333	90		0.6444	0.8222	0.5333	45	0.8889
+predicted	transfer/within/oh5 + sites S+MS+ME + Cterm	type: signal, incomplete	4	0.875	8		0.75	1	0.75	4	0.9741
+predicted	transfer/cross/oh0 + Cterm	all	184	0.5451	488	0.6231	0.3855	0.648	0.2458	179	0.9127
+predicted	transfer/cross/oh0 + Cterm	family: A	51	0.6739	138	0.8611	0.6078	0.6078	0.4314	51	0.9487
+predicted	transfer/cross/oh0 + Cterm	family: I1	7	0.6	5	1	0	1	0	2	0.801
+predicted	transfer/cross/oh0 + Cterm	family: I2	3	0.25	8	0	0.3333	0.3333	0	3	0.8538
+predicted	transfer/cross/oh0 + Cterm	family: M	47	0.5079	126	0.4062	0.2128	0.8723	0.1489	47	0.8975
+predicted	transfer/cross/oh0 + Cterm	family: O1	45	0.5469	128	0.8684	0.2667	0.5556	0.1111	45	0.9064
+predicted	transfer/cross/oh0 + Cterm	family: O2	11	0.4667	30	0.375	0.7273	0.2727	0.2727	11	0.9223
+predicted	transfer/cross/oh0 + Cterm	family: S	1	0	3	0	0	0	0	1	0.9318
+predicted	transfer/cross/oh0 + Cterm	family: T	19	0.4	50	0	0.3684	0.6842	0.3684	19	0.9125
+predicted	transfer/cross/oh0 + Cterm	type: complete precursor	130	0.5077	390	0.6231	0.3231	0.5769	0.1615	130	0.9215
+predicted	transfer/cross/oh0 + Cterm	type: no signal peptide	50	0.7	90		0.5556	0.8444	0.4667	45	0.8867
+predicted	transfer/cross/oh0 + Cterm	type: signal, incomplete	4	0.625	8		0.5	0.75	0.5	4	0.9494
+predicted	transfer/cross/oh0 + sites S + Cterm	all	184	0.5779	488	0.7308	0.3966	0.648	0.2514	179	0.9146
+predicted	transfer/cross/oh0 + sites S + Cterm	family: A	51	0.6522	138	0.7778	0.6078	0.6078	0.4314	51	0.9457
+predicted	transfer/cross/oh0 + sites S + Cterm	family: I1	7	0.6	5	1	0	1	0	2	0.801
+predicted	transfer/cross/oh0 + sites S + Cterm	family: I2	3	0.75	8	1	1	0.3333	0.3333	3	0.8751
+predicted	transfer/cross/oh0 + sites S + Cterm	family: M	47	0.5238	126	0.4688	0.2128	0.8723	0.1489	47	0.9002
+predicted	transfer/cross/oh0 + sites S + Cterm	family: O1	45	0.5469	128	0.8684	0.2667	0.5556	0.1111	45	0.9061
+predicted	transfer/cross/oh0 + sites S + Cterm	family: O2	11	0.6333	30	1	0.7273	0.2727	0.2727	11	0.9435
+predicted	transfer/cross/oh0 + sites S + Cterm	family: S	1	0.3333	3	1	0	0	0	1	0.9432
+predicted	transfer/cross/oh0 + sites S + Cterm	family: T	19	0.54	50	0.5833	0.3684	0.6842	0.3684	19	0.9168
+predicted	transfer/cross/oh0 + sites S + Cterm	type: complete precursor	130	0.5487	390	0.7308	0.3385	0.5769	0.1692	130	0.924
+predicted	transfer/cross/oh0 + sites S + Cterm	type: no signal peptide	50	0.7	90		0.5556	0.8444	0.4667	45	0.8867
+predicted	transfer/cross/oh0 + sites S + Cterm	type: signal, incomplete	4	0.625	8		0.5	0.75	0.5	4	0.9584
+predicted	transfer/cross/oh0 + sites MS + Cterm	all	184	0.627	488	0.6308	0.6034	0.648	0.3631	179	0.8985
+predicted	transfer/cross/oh0 + sites MS + Cterm	family: A	51	0.6957	138	0.8611	0.6667	0.6078	0.4314	51	0.9402
+predicted	transfer/cross/oh0 + sites MS + Cterm	family: I1	7	0.6	5	1	0	1	0	2	0.7256
+predicted	transfer/cross/oh0 + sites MS + Cterm	family: I2	3	0.5	8	0.5	0.6667	0.3333	0.3333	3	0.8628
+predicted	transfer/cross/oh0 + sites MS + Cterm	family: M	47	0.5873	126	0.4062	0.4255	0.8723	0.3404	47	0.881
+predicted	transfer/cross/oh0 + sites MS + Cterm	family: O1	45	0.6953	128	0.8684	0.6889	0.5556	0.3556	45	0.9079
+predicted	transfer/cross/oh0 + sites MS + Cterm	family: O2	11	0.5333	30	0.375	0.9091	0.2727	0.2727	11	0.9234
+predicted	transfer/cross/oh0 + sites MS + Cterm	family: S	1	0	3	0	0	0	0	1	0.9205
+predicted	transfer/cross/oh0 + sites MS + Cterm	family: T	19	0.48	50	0	0.5789	0.6842	0.3684	19	0.8615
+predicted	transfer/cross/oh0 + sites MS + Cterm	type: complete precursor	130	0.6128	390	0.6308	0.6308	0.5769	0.3385	130	0.9255
+predicted	transfer/cross/oh0 + sites MS + Cterm	type: no signal peptide	50	0.6778	90		0.5111	0.8444	0.4222	45	0.8236
+predicted	transfer/cross/oh0 + sites MS + Cterm	type: signal, incomplete	4	0.75	8		0.75	0.75	0.5	4	0.9572
+predicted	transfer/cross/oh0 + sites S+MS + Cterm	all	184	0.6516	488	0.7231	0.6034	0.648	0.3631	179	0.9001
+predicted	transfer/cross/oh0 + sites S+MS + Cterm	family: A	51	0.6739	138	0.7778	0.6667	0.6078	0.4314	51	0.9372
+predicted	transfer/cross/oh0 + sites S+MS + Cterm	family: I1	7	0.6	5	1	0	1	0	2	0.7256
+predicted	transfer/cross/oh0 + sites S+MS + Cterm	family: I2	3	0.5	8	0.5	0.6667	0.3333	0.3333	3	0.8628
+predicted	transfer/cross/oh0 + sites S+MS + Cterm	family: M	47	0.6032	126	0.4688	0.4255	0.8723	0.3404	47	0.8838
+predicted	transfer/cross/oh0 + sites S+MS + Cterm	family: O1	45	0.6953	128	0.8684	0.6889	0.5556	0.3556	45	0.9077
+predicted	transfer/cross/oh0 + sites S+MS + Cterm	family: O2	11	0.7	30	1	0.9091	0.2727	0.2727	11	0.9446
+predicted	transfer/cross/oh0 + sites S+MS + Cterm	family: S	1	0.3333	3	1	0	0	0	1	0.9318
+predicted	transfer/cross/oh0 + sites S+MS + Cterm	family: T	19	0.62	50	0.5833	0.5789	0.6842	0.3684	19	0.8657
+predicted	transfer/cross/oh0 + sites S+MS + Cterm	type: complete precursor	130	0.6436	390	0.7231	0.6308	0.5769	0.3385	130	0.9275
+predicted	transfer/cross/oh0 + sites S+MS + Cterm	type: no signal peptide	50	0.6778	90		0.5111	0.8444	0.4222	45	0.8236
+predicted	transfer/cross/oh0 + sites S+MS + Cterm	type: signal, incomplete	4	0.75	8		0.75	0.75	0.5	4	0.9662
+predicted	transfer/cross/oh0 + sites S+MS+ME + Cterm	all	184	0.5881	488	0.7231	0.6034	0.4749	0.2626	179	0.8809
+predicted	transfer/cross/oh0 + sites S+MS+ME + Cterm	family: A	51	0.5507	138	0.7778	0.6667	0.2745	0.1961	51	0.8975
+predicted	transfer/cross/oh0 + sites S+MS+ME + Cterm	family: I1	7	0.6	5	1	0	1	0	2	0.7447
+predicted	transfer/cross/oh0 + sites S+MS+ME + Cterm	family: I2	3	0.5	8	0.5	0.6667	0.3333	0.3333	3	0.8729
+predicted	transfer/cross/oh0 + sites S+MS+ME + Cterm	family: M	47	0.5317	126	0.4688	0.4255	0.6809	0.2553	47	0.8721
+predicted	transfer/cross/oh0 + sites S+MS+ME + Cterm	family: O1	45	0.6953	128	0.8684	0.6889	0.5556	0.3556	45	0.8942
+predicted	transfer/cross/oh0 + sites S+MS+ME + Cterm	family: O2	11	0.7	30	1	0.9091	0.2727	0.2727	11	0.9473
+predicted	transfer/cross/oh0 + sites S+MS+ME + Cterm	family: S	1	0.3333	3	1	0	0	0	1	0.9318
+predicted	transfer/cross/oh0 + sites S+MS+ME + Cterm	family: T	19	0.52	50	0.5833	0.5789	0.4211	0.2632	19	0.8365
+predicted	transfer/cross/oh0 + sites S+MS+ME + Cterm	type: complete precursor	130	0.5821	390	0.7231	0.6308	0.3923	0.2231	130	0.9108
+predicted	transfer/cross/oh0 + sites S+MS+ME + Cterm	type: no signal peptide	50	0.6	90		0.5111	0.6889	0.3556	45	0.7975
+predicted	transfer/cross/oh0 + sites S+MS+ME + Cterm	type: signal, incomplete	4	0.75	8		0.75	0.75	0.5	4	0.9503
+predicted	transfer/cross/oh5 + Cterm	all	184	0.5963	488	0.6231	0.3855	0.7877	0.3128	179	0.9246
+predicted	transfer/cross/oh5 + Cterm	family: A	51	0.6739	138	0.8611	0.6078	0.6078	0.4314	51	0.9493
+predicted	transfer/cross/oh5 + Cterm	family: I1	7	0.6	5	1	0	1	0	2	0.8955
+predicted	transfer/cross/oh5 + Cterm	family: I2	3	0.25	8	0	0.3333	0.3333	0	3	0.8879
+predicted	transfer/cross/oh5 + Cterm	family: M	47	0.5397	126	0.4062	0.2128	0.9574	0.1915	47	0.9023
+predicted	transfer/cross/oh5 + Cterm	family: O1	45	0.6719	128	0.8684	0.2667	0.9111	0.2667	45	0.9241
+predicted	transfer/cross/oh5 + Cterm	family: O2	11	0.6333	30	0.375	0.7273	0.7273	0.5455	11	0.9545
+predicted	transfer/cross/oh5 + Cterm	family: S	1	0	3	0	0	0	0	1	0.9318
+predicted	transfer/cross/oh5 + Cterm	family: T	19	0.4	50	0	0.3684	0.6842	0.3684	19	0.9133
+predicted	transfer/cross/oh5 + Cterm	type: complete precursor	130	0.5667	390	0.6231	0.3231	0.7538	0.2462	130	0.9328
+predicted	transfer/cross/oh5 + Cterm	type: no signal peptide	50	0.7111	90		0.5556	0.8667	0.4889	45	0.9005
+predicted	transfer/cross/oh5 + Cterm	type: signal, incomplete	4	0.75	8		0.5	1	0.5	4	0.9574
+predicted	transfer/cross/oh5 + sites S + Cterm	all	184	0.6291	488	0.7308	0.3966	0.7877	0.3184	179	0.9265
+predicted	transfer/cross/oh5 + sites S + Cterm	family: A	51	0.6522	138	0.7778	0.6078	0.6078	0.4314	51	0.9463
+predicted	transfer/cross/oh5 + sites S + Cterm	family: I1	7	0.6	5	1	0	1	0	2	0.8955
+predicted	transfer/cross/oh5 + sites S + Cterm	family: I2	3	0.75	8	1	1	0.3333	0.3333	3	0.9092
+predicted	transfer/cross/oh5 + sites S + Cterm	family: M	47	0.5556	126	0.4688	0.2128	0.9574	0.1915	47	0.9051
+predicted	transfer/cross/oh5 + sites S + Cterm	family: O1	45	0.6719	128	0.8684	0.2667	0.9111	0.2667	45	0.9238
+predicted	transfer/cross/oh5 + sites S + Cterm	family: O2	11	0.8	30	1	0.7273	0.7273	0.5455	11	0.9757
+predicted	transfer/cross/oh5 + sites S + Cterm	family: S	1	0.3333	3	1	0	0	0	1	0.9432
+predicted	transfer/cross/oh5 + sites S + Cterm	family: T	19	0.54	50	0.5833	0.3684	0.6842	0.3684	19	0.9176
+predicted	transfer/cross/oh5 + sites S + Cterm	type: complete precursor	130	0.6077	390	0.7308	0.3385	0.7538	0.2538	130	0.9353
+predicted	transfer/cross/oh5 + sites S + Cterm	type: no signal peptide	50	0.7111	90		0.5556	0.8667	0.4889	45	0.9005
+predicted	transfer/cross/oh5 + sites S + Cterm	type: signal, incomplete	4	0.75	8		0.5	1	0.5	4	0.9664
+predicted	transfer/cross/oh5 + sites MS + Cterm	all	184	0.6783	488	0.6308	0.6034	0.7877	0.4749	179	0.9104
+predicted	transfer/cross/oh5 + sites MS + Cterm	family: A	51	0.6957	138	0.8611	0.6667	0.6078	0.4314	51	0.9407
+predicted	transfer/cross/oh5 + sites MS + Cterm	family: I1	7	0.6	5	1	0	1	0	2	0.8201
+predicted	transfer/cross/oh5 + sites MS + Cterm	family: I2	3	0.5	8	0.5	0.6667	0.3333	0.3333	3	0.8969
+predicted	transfer/cross/oh5 + sites MS + Cterm	family: M	47	0.619	126	0.4062	0.4255	0.9574	0.4043	47	0.8858
+predicted	transfer/cross/oh5 + sites MS + Cterm	family: O1	45	0.8203	128	0.8684	0.6889	0.9111	0.6444	45	0.9257
+predicted	transfer/cross/oh5 + sites MS + Cterm	family: O2	11	0.7	30	0.375	0.9091	0.7273	0.6364	11	0.9556
+predicted	transfer/cross/oh5 + sites MS + Cterm	family: S	1	0	3	0	0	0	0	1	0.9205
+predicted	transfer/cross/oh5 + sites MS + Cterm	family: T	19	0.48	50	0	0.5789	0.6842	0.3684	19	0.8623
+predicted	transfer/cross/oh5 + sites MS + Cterm	type: complete precursor	130	0.6718	390	0.6308	0.6308	0.7538	0.4846	130	0.9368
+predicted	transfer/cross/oh5 + sites MS + Cterm	type: no signal peptide	50	0.6889	90		0.5111	0.8667	0.4222	45	0.8374
+predicted	transfer/cross/oh5 + sites MS + Cterm	type: signal, incomplete	4	0.875	8		0.75	1	0.75	4	0.9651
+predicted	transfer/cross/oh5 + sites S+MS + Cterm	all	184	0.7029	488	0.7231	0.6034	0.7877	0.4749	179	0.912
+predicted	transfer/cross/oh5 + sites S+MS + Cterm	family: A	51	0.6739	138	0.7778	0.6667	0.6078	0.4314	51	0.9378
+predicted	transfer/cross/oh5 + sites S+MS + Cterm	family: I1	7	0.6	5	1	0	1	0	2	0.8201
+predicted	transfer/cross/oh5 + sites S+MS + Cterm	family: I2	3	0.5	8	0.5	0.6667	0.3333	0.3333	3	0.8969
+predicted	transfer/cross/oh5 + sites S+MS + Cterm	family: M	47	0.6349	126	0.4688	0.4255	0.9574	0.4043	47	0.8886
+predicted	transfer/cross/oh5 + sites S+MS + Cterm	family: O1	45	0.8203	128	0.8684	0.6889	0.9111	0.6444	45	0.9254
+predicted	transfer/cross/oh5 + sites S+MS + Cterm	family: O2	11	0.8667	30	1	0.9091	0.7273	0.6364	11	0.9768
+predicted	transfer/cross/oh5 + sites S+MS + Cterm	family: S	1	0.3333	3	1	0	0	0	1	0.9318
+predicted	transfer/cross/oh5 + sites S+MS + Cterm	family: T	19	0.62	50	0.5833	0.5789	0.6842	0.3684	19	0.8665
+predicted	transfer/cross/oh5 + sites S+MS + Cterm	type: complete precursor	130	0.7026	390	0.7231	0.6308	0.7538	0.4846	130	0.9388
+predicted	transfer/cross/oh5 + sites S+MS + Cterm	type: no signal peptide	50	0.6889	90		0.5111	0.8667	0.4222	45	0.8374
+predicted	transfer/cross/oh5 + sites S+MS + Cterm	type: signal, incomplete	4	0.875	8		0.75	1	0.75	4	0.9741
+predicted	transfer/cross/oh5 + sites S+MS+ME + Cterm	all	184	0.6578	488	0.7231	0.6034	0.6648	0.3911	179	0.8966
+predicted	transfer/cross/oh5 + sites S+MS+ME + Cterm	family: A	51	0.5507	138	0.7778	0.6667	0.2745	0.1961	51	0.8981
+predicted	transfer/cross/oh5 + sites S+MS+ME + Cterm	family: I1	7	0.6	5	1	0	1	0	2	0.8048
+predicted	transfer/cross/oh5 + sites S+MS+ME + Cterm	family: I2	3	0.5	8	0.5	0.6667	0.3333	0.3333	3	0.907
+predicted	transfer/cross/oh5 + sites S+MS+ME + Cterm	family: M	47	0.6429	126	0.4688	0.4255	0.9787	0.4043	47	0.8889
+predicted	transfer/cross/oh5 + sites S+MS+ME + Cterm	family: O1	45	0.8125	128	0.8684	0.6889	0.8889	0.6222	45	0.9229
+predicted	transfer/cross/oh5 + sites S+MS+ME + Cterm	family: O2	11	0.8667	30	1	0.9091	0.7273	0.6364	11	0.9694
+predicted	transfer/cross/oh5 + sites S+MS+ME + Cterm	family: S	1	0.3333	3	1	0	0	0	1	0.9318
+predicted	transfer/cross/oh5 + sites S+MS+ME + Cterm	family: T	19	0.52	50	0.5833	0.5789	0.4211	0.2632	19	0.8373
+predicted	transfer/cross/oh5 + sites S+MS+ME + Cterm	type: complete precursor	130	0.659	390	0.7231	0.6308	0.6231	0.3923	130	0.9259
+predicted	transfer/cross/oh5 + sites S+MS+ME + Cterm	type: no signal peptide	50	0.6333	90		0.5111	0.7556	0.3556	45	0.8142
+predicted	transfer/cross/oh5 + sites S+MS+ME + Cterm	type: signal, incomplete	4	0.875	8		0.75	1	0.75	4	0.9741
+true	envelope	all	184	0.3811	488	0.6077	0.1397	0.4581	0.1173	179	0.786
+true	envelope	family: A	51	0.3551	138	0.8611	0.0588	0.2941	0.0588	51	0.7533
+true	envelope	family: I1	7	0.6	5	1	0	1	0	2	0.8984
+true	envelope	family: I2	3	0.25	8	0.5	0.3333	0	0	3	0.7654
+true	envelope	family: M	47	0.3571	126	0.4062	0.234	0.4468	0.1702	47	0.8233
+true	envelope	family: O1	45	0.4922	128	0.8158	0.0667	0.6444	0.0667	45	0.8005
+true	envelope	family: O2	11	0.3	30	0	0.1818	0.6364	0.1818	11	0.7343
+true	envelope	family: S	1	0	3	0	0	0	0	1	0.9545
+true	envelope	family: T	19	0.3	50	0.1667	0.2632	0.4211	0.2632	19	0.7296
+true	envelope	type: complete precursor	130	0.341	390	0.6077	0.0154	0.4	0	130	0.7641
+true	envelope	type: no signal peptide	50	0.5556	90		0.5111	0.6	0.4667	45	0.8455
+true	envelope	type: signal, incomplete	4	0.375	8		0	0.75	0	4	0.7506
+true	envelope + sites S+MS+ME	all	184	0.4283	488	0.7	0.2011	0.4581	0.1564	179	0.7767
+true	envelope + sites S+MS+ME	family: A	51	0.3768	138	0.7778	0.1373	0.3333	0.0784	51	0.7573
+true	envelope + sites S+MS+ME	family: I1	7	0.6	5	1	0	1	0	2	0.7952
+true	envelope + sites S+MS+ME	family: I2	3	0.625	8	1	0.6667	0.3333	0.3333	3	0.7618
+true	envelope + sites S+MS+ME	family: M	47	0.3968	126	0.4688	0.2979	0.4468	0.234	47	0.8165
+true	envelope + sites S+MS+ME	family: O1	45	0.5	128	0.8421	0.1111	0.6	0.0889	45	0.7916
+true	envelope + sites S+MS+ME	family: O2	11	0.5333	30	0.75	0.2727	0.6364	0.2727	11	0.7309
+true	envelope + sites S+MS+ME	family: S	1	0.3333	3	1	0	0	0	1	0.9659
+true	envelope + sites S+MS+ME	family: T	19	0.36	50	0.5	0.2632	0.3684	0.2632	19	0.7065
+true	envelope + sites S+MS+ME	type: complete precursor	130	0.3949	390	0.7	0.1	0.3846	0.0538	130	0.7576
+true	envelope + sites S+MS+ME	type: no signal peptide	50	0.5778	90		0.5111	0.6444	0.4667	45	0.8287
+true	envelope + sites S+MS+ME	type: signal, incomplete	4	0.375	8		0	0.75	0	4	0.7467
+true	transfer/within/oh0	all	184	0.5061	488	0.6231	0.3966	0.5307	0.2346	179	0.9091
+true	transfer/within/oh0	family: A	51	0.6449	138	0.8611	0.6078	0.5294	0.3529	51	0.9458
+true	transfer/within/oh0	family: I1	7	0.6	5	1	0	1	0	2	0.8168
+true	transfer/within/oh0	family: I2	3	0.25	8	0	0.3333	0.3333	0	3	0.8642
+true	transfer/within/oh0	family: M	47	0.4206	126	0.4062	0.2128	0.6383	0.1489	47	0.8915
+true	transfer/within/oh0	family: O1	45	0.5	128	0.8684	0.2667	0.4222	0.1111	45	0.8929
+true	transfer/within/oh0	family: O2	11	0.4667	30	0.375	0.7273	0.2727	0.2727	11	0.9223
+true	transfer/within/oh0	family: S	1	0	3	0	0	0	0	1	0.9318
+true	transfer/within/oh0	family: T	19	0.44	50	0	0.4737	0.6842	0.4737	19	0.9251
+true	transfer/within/oh0	type: complete precursor	130	0.4667	390	0.6231	0.3231	0.4538	0.1462	130	0.9159
+true	transfer/within/oh0	type: no signal peptide	50	0.6778	90		0.6	0.7556	0.4667	45	0.8886
+true	transfer/within/oh0	type: signal, incomplete	4	0.5	8		0.5	0.5	0.5	4	0.9456
+true	transfer/within/oh0 + sites S	all	184	0.5389	488	0.7308	0.4078	0.5307	0.2402	179	0.9111
+true	transfer/within/oh0 + sites S	family: A	51	0.6232	138	0.7778	0.6078	0.5294	0.3529	51	0.9428
+true	transfer/within/oh0 + sites S	family: I1	7	0.6	5	1	0	1	0	2	0.8168
+true	transfer/within/oh0 + sites S	family: I2	3	0.75	8	1	1	0.3333	0.3333	3	0.8855
+true	transfer/within/oh0 + sites S	family: M	47	0.4365	126	0.4688	0.2128	0.6383	0.1489	47	0.8943
+true	transfer/within/oh0 + sites S	family: O1	45	0.5	128	0.8684	0.2667	0.4222	0.1111	45	0.8926
+true	transfer/within/oh0 + sites S	family: O2	11	0.6333	30	1	0.7273	0.2727	0.2727	11	0.9435
+true	transfer/within/oh0 + sites S	family: S	1	0.3333	3	1	0	0	0	1	0.9432
+true	transfer/within/oh0 + sites S	family: T	19	0.58	50	0.5833	0.4737	0.6842	0.4737	19	0.9293
+true	transfer/within/oh0 + sites S	type: complete precursor	130	0.5077	390	0.7308	0.3385	0.4538	0.1538	130	0.9184
+true	transfer/within/oh0 + sites S	type: no signal peptide	50	0.6778	90		0.6	0.7556	0.4667	45	0.8886
+true	transfer/within/oh0 + sites S	type: signal, incomplete	4	0.5	8		0.5	0.5	0.5	4	0.9547
+true	transfer/within/oh0 + sites MS	all	184	0.5881	488	0.6308	0.6145	0.5307	0.3296	179	0.9006
+true	transfer/within/oh0 + sites MS	family: A	51	0.6667	138	0.8611	0.6667	0.5294	0.3922	51	0.9372
+true	transfer/within/oh0 + sites MS	family: I1	7	0.6	5	1	0	1	0	2	0.7414
+true	transfer/within/oh0 + sites MS	family: I2	3	0.5	8	0.5	0.6667	0.3333	0.3333	3	0.8732
+true	transfer/within/oh0 + sites MS	family: M	47	0.5	126	0.4062	0.4255	0.6383	0.2766	47	0.875
+true	transfer/within/oh0 + sites MS	family: O1	45	0.6484	128	0.8684	0.6889	0.4222	0.2889	45	0.8962
+true	transfer/within/oh0 + sites MS	family: O2	11	0.5333	30	0.375	0.9091	0.2727	0.2727	11	0.9234
+true	transfer/within/oh0 + sites MS	family: S	1	0	3	0	0	0	0	1	0.9205
+true	transfer/within/oh0 + sites MS	family: T	19	0.52	50	0	0.6842	0.6842	0.4737	19	0.9247
+true	transfer/within/oh0 + sites MS	type: complete precursor	130	0.5718	390	0.6308	0.6308	0.4538	0.2846	130	0.9205
+true	transfer/within/oh0 + sites MS	type: no signal peptide	50	0.6556	90		0.5556	0.7556	0.4667	45	0.8448
+true	transfer/within/oh0 + sites MS	type: signal, incomplete	4	0.625	8		0.75	0.5	0.25	4	0.9534
+true	transfer/within/oh0 + sites S+MS	all	184	0.6127	488	0.7231	0.6145	0.5307	0.3296	179	0.9022
+true	transfer/within/oh0 + sites S+MS	family: A	51	0.6449	138	0.7778	0.6667	0.5294	0.3922	51	0.9343
+true	transfer/within/oh0 + sites S+MS	family: I1	7	0.6	5	1	0	1	0	2	0.7414
+true	transfer/within/oh0 + sites S+MS	family: I2	3	0.5	8	0.5	0.6667	0.3333	0.3333	3	0.8732
+true	transfer/within/oh0 + sites S+MS	family: M	47	0.5159	126	0.4688	0.4255	0.6383	0.2766	47	0.8778
+true	transfer/within/oh0 + sites S+MS	family: O1	45	0.6484	128	0.8684	0.6889	0.4222	0.2889	45	0.896
+true	transfer/within/oh0 + sites S+MS	family: O2	11	0.7	30	1	0.9091	0.2727	0.2727	11	0.9446
+true	transfer/within/oh0 + sites S+MS	family: S	1	0.3333	3	1	0	0	0	1	0.9318
+true	transfer/within/oh0 + sites S+MS	family: T	19	0.66	50	0.5833	0.6842	0.6842	0.4737	19	0.929
+true	transfer/within/oh0 + sites S+MS	type: complete precursor	130	0.6026	390	0.7231	0.6308	0.4538	0.2846	130	0.9225
+true	transfer/within/oh0 + sites S+MS	type: no signal peptide	50	0.6556	90		0.5556	0.7556	0.4667	45	0.8448
+true	transfer/within/oh0 + sites S+MS	type: signal, incomplete	4	0.625	8		0.75	0.5	0.25	4	0.9624
+true	transfer/within/oh0 + sites S+MS+ME	all	184	0.5656	488	0.7231	0.6145	0.4022	0.2235	179	0.883
+true	transfer/within/oh0 + sites S+MS+ME	family: A	51	0.5217	138	0.7778	0.6667	0.1961	0.098	51	0.8952
+true	transfer/within/oh0 + sites S+MS+ME	family: I1	7	0.6	5	1	0	1	0	2	0.7447
+true	transfer/within/oh0 + sites S+MS+ME	family: I2	3	0.5	8	0.5	0.6667	0.3333	0.3333	3	0.8729
+true	transfer/within/oh0 + sites S+MS+ME	family: M	47	0.5079	126	0.4688	0.4255	0.617	0.234	47	0.8692
+true	transfer/within/oh0 + sites S+MS+ME	family: O1	45	0.6484	128	0.8684	0.6889	0.4222	0.2889	45	0.8819
+true	transfer/within/oh0 + sites S+MS+ME	family: O2	11	0.7	30	1	0.9091	0.2727	0.2727	11	0.9473
+true	transfer/within/oh0 + sites S+MS+ME	family: S	1	0.3333	3	1	0	0	0	1	0.9318
+true	transfer/within/oh0 + sites S+MS+ME	family: T	19	0.56	50	0.5833	0.6842	0.4211	0.3684	19	0.8998
+true	transfer/within/oh0 + sites S+MS+ME	type: complete precursor	130	0.559	390	0.7231	0.6308	0.3231	0.1692	130	0.9063
+true	transfer/within/oh0 + sites S+MS+ME	type: no signal peptide	50	0.5889	90		0.5556	0.6222	0.3778	45	0.8173
+true	transfer/within/oh0 + sites S+MS+ME	type: signal, incomplete	4	0.625	8		0.75	0.5	0.25	4	0.9465
+true	transfer/within/oh5	all	184	0.5471	488	0.6231	0.419	0.6201	0.3296	179	0.9263
+true	transfer/within/oh5	family: A	51	0.6812	138	0.8611	0.6078	0.6275	0.4314	51	0.949
+true	transfer/within/oh5	family: I1	7	0.8	5	1	0.5	1	0.5	2	0.9279
+true	transfer/within/oh5	family: I2	3	0.375	8	0	0.3333	0.6667	0.3333	3	0.9087
+true	transfer/within/oh5	family: M	47	0.4286	126	0.4062	0.2766	0.5957	0.234	47	0.9079
+true	transfer/within/oh5	family: O1	45	0.6094	128	0.8684	0.2667	0.7333	0.2444	45	0.9091
+true	transfer/within/oh5	family: O2	11	0.6	30	0.375	0.7273	0.6364	0.5455	11	0.9544
+true	transfer/within/oh5	family: S	1	0	3	0	0	0	0	1	0.9432
+true	transfer/within/oh5	family: T	19	0.32	50	0	0.4737	0.3684	0.3684	19	0.9364
+true	transfer/within/oh5	type: complete precursor	130	0.4974	390	0.6231	0.3231	0.5462	0.2308	130	0.9254
+true	transfer/within/oh5	type: no signal peptide	50	0.7556	90		0.6889	0.8222	0.6	45	0.9264
+true	transfer/within/oh5	type: signal, incomplete	4	0.625	8		0.5	0.75	0.5	4	0.9536
+true	transfer/within/oh5 + sites S	all	184	0.5799	488	0.7308	0.4302	0.6201	0.3352	179	0.9282
+true	transfer/within/oh5 + sites S	family: A	51	0.6594	138	0.7778	0.6078	0.6275	0.4314	51	0.9461
+true	transfer/within/oh5 + sites S	family: I1	7	0.8	5	1	0.5	1	0.5	2	0.9279
+true	transfer/within/oh5 + sites S	family: I2	3	0.875	8	1	1	0.6667	0.6667	3	0.93
+true	transfer/within/oh5 + sites S	family: M	47	0.4444	126	0.4688	0.2766	0.5957	0.234	47	0.9106
+true	transfer/within/oh5 + sites S	family: O1	45	0.6094	128	0.8684	0.2667	0.7333	0.2444	45	0.9088
+true	transfer/within/oh5 + sites S	family: O2	11	0.7667	30	1	0.7273	0.6364	0.5455	11	0.9756
+true	transfer/within/oh5 + sites S	family: S	1	0.3333	3	1	0	0	0	1	0.9545
+true	transfer/within/oh5 + sites S	family: T	19	0.46	50	0.5833	0.4737	0.3684	0.3684	19	0.9407
+true	transfer/within/oh5 + sites S	type: complete precursor	130	0.5385	390	0.7308	0.3385	0.5462	0.2385	130	0.9278
+true	transfer/within/oh5 + sites S	type: no signal peptide	50	0.7556	90		0.6889	0.8222	0.6	45	0.9264
+true	transfer/within/oh5 + sites S	type: signal, incomplete	4	0.625	8		0.5	0.75	0.5	4	0.9626
+true	transfer/within/oh5 + sites MS	all	184	0.6291	488	0.6308	0.6369	0.6201	0.4469	179	0.9217
+true	transfer/within/oh5 + sites MS	family: A	51	0.7029	138	0.8611	0.6667	0.6275	0.4706	51	0.9405
+true	transfer/within/oh5 + sites MS	family: I1	7	0.8	5	1	0.5	1	0.5	2	0.9334
+true	transfer/within/oh5 + sites MS	family: I2	3	0.625	8	0.5	0.6667	0.6667	0.6667	3	0.9177
+true	transfer/within/oh5 + sites MS	family: M	47	0.5079	126	0.4062	0.4894	0.5957	0.3404	47	0.8985
+true	transfer/within/oh5 + sites MS	family: O1	45	0.7578	128	0.8684	0.6889	0.7333	0.5333	45	0.9125
+true	transfer/within/oh5 + sites MS	family: O2	11	0.6667	30	0.375	0.9091	0.6364	0.5455	11	0.9554
+true	transfer/within/oh5 + sites MS	family: S	1	0	3	0	0	0	0	1	0.9318
+true	transfer/within/oh5 + sites MS	family: T	19	0.4	50	0	0.6842	0.3684	0.3684	19	0.9267
+true	transfer/within/oh5 + sites MS	type: complete precursor	130	0.6026	390	0.6308	0.6308	0.5462	0.3923	130	0.9299
+true	transfer/within/oh5 + sites MS	type: no signal peptide	50	0.7333	90		0.6444	0.8222	0.6	45	0.8971
+true	transfer/within/oh5 + sites MS	type: signal, incomplete	4	0.75	8		0.75	0.75	0.5	4	0.9613
+true	transfer/within/oh5 + sites S+MS	all	184	0.6537	488	0.7231	0.6369	0.6201	0.4469	179	0.9233
+true	transfer/within/oh5 + sites S+MS	family: A	51	0.6812	138	0.7778	0.6667	0.6275	0.4706	51	0.9375
+true	transfer/within/oh5 + sites S+MS	family: I1	7	0.8	5	1	0.5	1	0.5	2	0.9334
+true	transfer/within/oh5 + sites S+MS	family: I2	3	0.625	8	0.5	0.6667	0.6667	0.6667	3	0.9177
+true	transfer/within/oh5 + sites S+MS	family: M	47	0.5238	126	0.4688	0.4894	0.5957	0.3404	47	0.9013
+true	transfer/within/oh5 + sites S+MS	family: O1	45	0.7578	128	0.8684	0.6889	0.7333	0.5333	45	0.9122
+true	transfer/within/oh5 + sites S+MS	family: O2	11	0.8333	30	1	0.9091	0.6364	0.5455	11	0.9767
+true	transfer/within/oh5 + sites S+MS	family: S	1	0.3333	3	1	0	0	0	1	0.9432
+true	transfer/within/oh5 + sites S+MS	family: T	19	0.54	50	0.5833	0.6842	0.3684	0.3684	19	0.931
+true	transfer/within/oh5 + sites S+MS	type: complete precursor	130	0.6333	390	0.7231	0.6308	0.5462	0.3923	130	0.9319
+true	transfer/within/oh5 + sites S+MS	type: no signal peptide	50	0.7333	90		0.6444	0.8222	0.6	45	0.8971
+true	transfer/within/oh5 + sites S+MS	type: signal, incomplete	4	0.75	8		0.75	0.75	0.5	4	0.9704
+true	transfer/within/oh5 + sites S+MS+ME	all	184	0.6168	488	0.7231	0.6369	0.5196	0.3575	179	0.9144
+true	transfer/within/oh5 + sites S+MS+ME	family: A	51	0.5507	138	0.7778	0.6667	0.2745	0.1765	51	0.9111
+true	transfer/within/oh5 + sites S+MS+ME	family: I1	7	0.8	5	1	0.5	1	0.5	2	0.918
+true	transfer/within/oh5 + sites S+MS+ME	family: I2	3	0.625	8	0.5	0.6667	0.6667	0.6667	3	0.9383
+true	transfer/within/oh5 + sites S+MS+ME	family: M	47	0.5317	126	0.4688	0.4894	0.617	0.3404	47	0.9016
+true	transfer/within/oh5 + sites S+MS+ME	family: O1	45	0.75	128	0.8684	0.6889	0.7111	0.5111	45	0.9097
+true	transfer/within/oh5 + sites S+MS+ME	family: O2	11	0.8333	30	1	0.9091	0.6364	0.5455	11	0.9682
+true	transfer/within/oh5 + sites S+MS+ME	family: S	1	0.3333	3	1	0	0	0	1	0.9432
+true	transfer/within/oh5 + sites S+MS+ME	family: T	19	0.54	50	0.5833	0.6842	0.3684	0.3684	19	0.9279
+true	transfer/within/oh5 + sites S+MS+ME	type: complete precursor	130	0.6026	390	0.7231	0.6308	0.4538	0.3	130	0.9249
+true	transfer/within/oh5 + sites S+MS+ME	type: no signal peptide	50	0.6667	90		0.6444	0.6889	0.5111	45	0.8825
+true	transfer/within/oh5 + sites S+MS+ME	type: signal, incomplete	4	0.75	8		0.75	0.75	0.5	4	0.9704
+true	transfer/cross/oh0	all	184	0.5123	488	0.6231	0.3966	0.5475	0.2346	179	0.9128
+true	transfer/cross/oh0	family: A	51	0.6449	138	0.8611	0.6078	0.5294	0.3529	51	0.9458
+true	transfer/cross/oh0	family: I1	7	0.6	5	1	0	1	0	2	0.8168
+true	transfer/cross/oh0	family: I2	3	0.25	8	0	0.3333	0.3333	0	3	0.8642
+true	transfer/cross/oh0	family: M	47	0.4206	126	0.4062	0.2128	0.6383	0.1489	47	0.8934
+true	transfer/cross/oh0	family: O1	45	0.5234	128	0.8684	0.2667	0.4889	0.1111	45	0.906
+true	transfer/cross/oh0	family: O2	11	0.4667	30	0.375	0.7273	0.2727	0.2727	11	0.9223
+true	transfer/cross/oh0	family: S	1	0	3	0	0	0	0	1	0.9318
+true	transfer/cross/oh0	family: T	19	0.44	50	0	0.4737	0.6842	0.4737	19	0.9251
+true	transfer/cross/oh0	type: complete precursor	130	0.4744	390	0.6231	0.3231	0.4769	0.1462	130	0.9204
+true	transfer/cross/oh0	type: no signal peptide	50	0.6778	90		0.6	0.7556	0.4667	45	0.8904
+true	transfer/cross/oh0	type: signal, incomplete	4	0.5	8		0.5	0.5	0.5	4	0.9456
+true	transfer/cross/oh0 + sites S	all	184	0.5451	488	0.7308	0.4078	0.5475	0.2402	179	0.9148
+true	transfer/cross/oh0 + sites S	family: A	51	0.6232	138	0.7778	0.6078	0.5294	0.3529	51	0.9428
+true	transfer/cross/oh0 + sites S	family: I1	7	0.6	5	1	0	1	0	2	0.8168
+true	transfer/cross/oh0 + sites S	family: I2	3	0.75	8	1	1	0.3333	0.3333	3	0.8855
+true	transfer/cross/oh0 + sites S	family: M	47	0.4365	126	0.4688	0.2128	0.6383	0.1489	47	0.8962
+true	transfer/cross/oh0 + sites S	family: O1	45	0.5234	128	0.8684	0.2667	0.4889	0.1111	45	0.9057
+true	transfer/cross/oh0 + sites S	family: O2	11	0.6333	30	1	0.7273	0.2727	0.2727	11	0.9435
+true	transfer/cross/oh0 + sites S	family: S	1	0.3333	3	1	0	0	0	1	0.9432
+true	transfer/cross/oh0 + sites S	family: T	19	0.58	50	0.5833	0.4737	0.6842	0.4737	19	0.9293
+true	transfer/cross/oh0 + sites S	type: complete precursor	130	0.5154	390	0.7308	0.3385	0.4769	0.1538	130	0.9229
+true	transfer/cross/oh0 + sites S	type: no signal peptide	50	0.6778	90		0.6	0.7556	0.4667	45	0.8904
+true	transfer/cross/oh0 + sites S	type: signal, incomplete	4	0.5	8		0.5	0.5	0.5	4	0.9547
+true	transfer/cross/oh0 + sites MS	all	184	0.5943	488	0.6308	0.6145	0.5475	0.3296	179	0.9039
+true	transfer/cross/oh0 + sites MS	family: A	51	0.6667	138	0.8611	0.6667	0.5294	0.3922	51	0.9372
+true	transfer/cross/oh0 + sites MS	family: I1	7	0.6	5	1	0	1	0	2	0.7414
+true	transfer/cross/oh0 + sites MS	family: I2	3	0.5	8	0.5	0.6667	0.3333	0.3333	3	0.8732
+true	transfer/cross/oh0 + sites MS	family: M	47	0.5	126	0.4062	0.4255	0.6383	0.2766	47	0.877
+true	transfer/cross/oh0 + sites MS	family: O1	45	0.6719	128	0.8684	0.6889	0.4889	0.2889	45	0.9076
+true	transfer/cross/oh0 + sites MS	family: O2	11	0.5333	30	0.375	0.9091	0.2727	0.2727	11	0.9234
+true	transfer/cross/oh0 + sites MS	family: S	1	0	3	0	0	0	0	1	0.9205
+true	transfer/cross/oh0 + sites MS	family: T	19	0.52	50	0	0.6842	0.6842	0.4737	19	0.9247
+true	transfer/cross/oh0 + sites MS	type: complete precursor	130	0.5795	390	0.6308	0.6308	0.4769	0.2846	130	0.9244
+true	transfer/cross/oh0 + sites MS	type: no signal peptide	50	0.6556	90		0.5556	0.7556	0.4667	45	0.8466
+true	transfer/cross/oh0 + sites MS	type: signal, incomplete	4	0.625	8		0.75	0.5	0.25	4	0.9534
+true	transfer/cross/oh0 + sites S+MS	all	184	0.6189	488	0.7231	0.6145	0.5475	0.3296	179	0.9055
+true	transfer/cross/oh0 + sites S+MS	family: A	51	0.6449	138	0.7778	0.6667	0.5294	0.3922	51	0.9343
+true	transfer/cross/oh0 + sites S+MS	family: I1	7	0.6	5	1	0	1	0	2	0.7414
+true	transfer/cross/oh0 + sites S+MS	family: I2	3	0.5	8	0.5	0.6667	0.3333	0.3333	3	0.8732
+true	transfer/cross/oh0 + sites S+MS	family: M	47	0.5159	126	0.4688	0.4255	0.6383	0.2766	47	0.8798
+true	transfer/cross/oh0 + sites S+MS	family: O1	45	0.6719	128	0.8684	0.6889	0.4889	0.2889	45	0.9073
+true	transfer/cross/oh0 + sites S+MS	family: O2	11	0.7	30	1	0.9091	0.2727	0.2727	11	0.9446
+true	transfer/cross/oh0 + sites S+MS	family: S	1	0.3333	3	1	0	0	0	1	0.9318
+true	transfer/cross/oh0 + sites S+MS	family: T	19	0.66	50	0.5833	0.6842	0.6842	0.4737	19	0.929
+true	transfer/cross/oh0 + sites S+MS	type: complete precursor	130	0.6103	390	0.7231	0.6308	0.4769	0.2846	130	0.9264
+true	transfer/cross/oh0 + sites S+MS	type: no signal peptide	50	0.6556	90		0.5556	0.7556	0.4667	45	0.8466
+true	transfer/cross/oh0 + sites S+MS	type: signal, incomplete	4	0.625	8		0.75	0.5	0.25	4	0.9624
+true	transfer/cross/oh0 + sites S+MS+ME	all	184	0.5717	488	0.7231	0.6145	0.419	0.2235	179	0.8863
+true	transfer/cross/oh0 + sites S+MS+ME	family: A	51	0.5217	138	0.7778	0.6667	0.1961	0.098	51	0.8952
+true	transfer/cross/oh0 + sites S+MS+ME	family: I1	7	0.6	5	1	0	1	0	2	0.7447
+true	transfer/cross/oh0 + sites S+MS+ME	family: I2	3	0.5	8	0.5	0.6667	0.3333	0.3333	3	0.8729
+true	transfer/cross/oh0 + sites S+MS+ME	family: M	47	0.5079	126	0.4688	0.4255	0.617	0.234	47	0.8712
+true	transfer/cross/oh0 + sites S+MS+ME	family: O1	45	0.6719	128	0.8684	0.6889	0.4889	0.2889	45	0.8933
+true	transfer/cross/oh0 + sites S+MS+ME	family: O2	11	0.7	30	1	0.9091	0.2727	0.2727	11	0.9473
+true	transfer/cross/oh0 + sites S+MS+ME	family: S	1	0.3333	3	1	0	0	0	1	0.9318
+true	transfer/cross/oh0 + sites S+MS+ME	family: T	19	0.56	50	0.5833	0.6842	0.4211	0.3684	19	0.8998
+true	transfer/cross/oh0 + sites S+MS+ME	type: complete precursor	130	0.5667	390	0.7231	0.6308	0.3462	0.1692	130	0.9102
+true	transfer/cross/oh0 + sites S+MS+ME	type: no signal peptide	50	0.5889	90		0.5556	0.6222	0.3778	45	0.8192
+true	transfer/cross/oh0 + sites S+MS+ME	type: signal, incomplete	4	0.625	8		0.75	0.5	0.25	4	0.9465
+true	transfer/cross/oh5	all	184	0.5451	488	0.6231	0.3966	0.6369	0.2905	179	0.9217
+true	transfer/cross/oh5	family: A	51	0.6449	138	0.8611	0.6078	0.5294	0.3529	51	0.9464
+true	transfer/cross/oh5	family: I1	7	0.6	5	1	0	1	0	2	0.8955
+true	transfer/cross/oh5	family: I2	3	0.25	8	0	0.3333	0.3333	0	3	0.8983
+true	transfer/cross/oh5	family: M	47	0.4048	126	0.4062	0.2128	0.5957	0.1702	47	0.8903
+true	transfer/cross/oh5	family: O1	45	0.6328	128	0.8684	0.2667	0.8	0.2444	45	0.9222
+true	transfer/cross/oh5	family: O2	11	0.6	30	0.375	0.7273	0.6364	0.5455	11	0.9544
+true	transfer/cross/oh5	family: S	1	0	3	0	0	0	0	1	0.9318
+true	transfer/cross/oh5	family: T	19	0.44	50	0	0.4737	0.6842	0.4737	19	0.9259
+true	transfer/cross/oh5	type: complete precursor	130	0.5128	390	0.6231	0.3231	0.5923	0.2231	130	0.9295
+true	transfer/cross/oh5	type: no signal peptide	50	0.6778	90		0.6	0.7556	0.4667	45	0.8988
+true	transfer/cross/oh5	type: signal, incomplete	4	0.625	8		0.5	0.75	0.5	4	0.9536
+true	transfer/cross/oh5 + sites S	all	184	0.5779	488	0.7308	0.4078	0.6369	0.2961	179	0.9236
+true	transfer/cross/oh5 + sites S	family: A	51	0.6232	138	0.7778	0.6078	0.5294	0.3529	51	0.9434
+true	transfer/cross/oh5 + sites S	family: I1	7	0.6	5	1	0	1	0	2	0.8955
+true	transfer/cross/oh5 + sites S	family: I2	3	0.75	8	1	1	0.3333	0.3333	3	0.9196
+true	transfer/cross/oh5 + sites S	family: M	47	0.4206	126	0.4688	0.2128	0.5957	0.1702	47	0.893
+true	transfer/cross/oh5 + sites S	family: O1	45	0.6328	128	0.8684	0.2667	0.8	0.2444	45	0.9219
+true	transfer/cross/oh5 + sites S	family: O2	11	0.7667	30	1	0.7273	0.6364	0.5455	11	0.9756
+true	transfer/cross/oh5 + sites S	family: S	1	0.3333	3	1	0	0	0	1	0.9432
+true	transfer/cross/oh5 + sites S	family: T	19	0.58	50	0.5833	0.4737	0.6842	0.4737	19	0.9301
+true	transfer/cross/oh5 + sites S	type: complete precursor	130	0.5538	390	0.7308	0.3385	0.5923	0.2308	130	0.932
+true	transfer/cross/oh5 + sites S	type: no signal peptide	50	0.6778	90		0.6	0.7556	0.4667	45	0.8988
+true	transfer/cross/oh5 + sites S	type: signal, incomplete	4	0.625	8		0.5	0.75	0.5	4	0.9626
+true	transfer/cross/oh5 + sites MS	all	184	0.627	488	0.6308	0.6145	0.6369	0.4078	179	0.9127
+true	transfer/cross/oh5 + sites MS	family: A	51	0.6667	138	0.8611	0.6667	0.5294	0.3922	51	0.9378
+true	transfer/cross/oh5 + sites MS	family: I1	7	0.6	5	1	0	1	0	2	0.8201
+true	transfer/cross/oh5 + sites MS	family: I2	3	0.5	8	0.5	0.6667	0.3333	0.3333	3	0.9073
+true	transfer/cross/oh5 + sites MS	family: M	47	0.4841	126	0.4062	0.4255	0.5957	0.2766	47	0.8738
+true	transfer/cross/oh5 + sites MS	family: O1	45	0.7812	128	0.8684	0.6889	0.8	0.5333	45	0.9238
+true	transfer/cross/oh5 + sites MS	family: O2	11	0.6667	30	0.375	0.9091	0.6364	0.5455	11	0.9554
+true	transfer/cross/oh5 + sites MS	family: S	1	0	3	0	0	0	0	1	0.9205
+true	transfer/cross/oh5 + sites MS	family: T	19	0.52	50	0	0.6842	0.6842	0.4737	19	0.9255
+true	transfer/cross/oh5 + sites MS	type: complete precursor	130	0.6179	390	0.6308	0.6308	0.5923	0.3846	130	0.9335
+true	transfer/cross/oh5 + sites MS	type: no signal peptide	50	0.6556	90		0.5556	0.7556	0.4667	45	0.855
+true	transfer/cross/oh5 + sites MS	type: signal, incomplete	4	0.75	8		0.75	0.75	0.5	4	0.9613
+true	transfer/cross/oh5 + sites S+MS	all	184	0.6516	488	0.7231	0.6145	0.6369	0.4078	179	0.9143
+true	transfer/cross/oh5 + sites S+MS	family: A	51	0.6449	138	0.7778	0.6667	0.5294	0.3922	51	0.9349
+true	transfer/cross/oh5 + sites S+MS	family: I1	7	0.6	5	1	0	1	0	2	0.8201
+true	transfer/cross/oh5 + sites S+MS	family: I2	3	0.5	8	0.5	0.6667	0.3333	0.3333	3	0.9073
+true	transfer/cross/oh5 + sites S+MS	family: M	47	0.5	126	0.4688	0.4255	0.5957	0.2766	47	0.8766
+true	transfer/cross/oh5 + sites S+MS	family: O1	45	0.7812	128	0.8684	0.6889	0.8	0.5333	45	0.9235
+true	transfer/cross/oh5 + sites S+MS	family: O2	11	0.8333	30	1	0.9091	0.6364	0.5455	11	0.9767
+true	transfer/cross/oh5 + sites S+MS	family: S	1	0.3333	3	1	0	0	0	1	0.9318
+true	transfer/cross/oh5 + sites S+MS	family: T	19	0.66	50	0.5833	0.6842	0.6842	0.4737	19	0.9298
+true	transfer/cross/oh5 + sites S+MS	type: complete precursor	130	0.6487	390	0.7231	0.6308	0.5923	0.3846	130	0.9355
+true	transfer/cross/oh5 + sites S+MS	type: no signal peptide	50	0.6556	90		0.5556	0.7556	0.4667	45	0.855
+true	transfer/cross/oh5 + sites S+MS	type: signal, incomplete	4	0.75	8		0.75	0.75	0.5	4	0.9704
+true	transfer/cross/oh5 + sites S+MS+ME	all	184	0.6066	488	0.7231	0.6145	0.514	0.3073	179	0.8989
+true	transfer/cross/oh5 + sites S+MS+ME	family: A	51	0.5217	138	0.7778	0.6667	0.1961	0.098	51	0.8958
+true	transfer/cross/oh5 + sites S+MS+ME	family: I1	7	0.6	5	1	0	1	0	2	0.8048
+true	transfer/cross/oh5 + sites S+MS+ME	family: I2	3	0.5	8	0.5	0.6667	0.3333	0.3333	3	0.907
+true	transfer/cross/oh5 + sites S+MS+ME	family: M	47	0.5079	126	0.4688	0.4255	0.617	0.2766	47	0.8768
+true	transfer/cross/oh5 + sites S+MS+ME	family: O1	45	0.7734	128	0.8684	0.6889	0.7778	0.5111	45	0.9211
+true	transfer/cross/oh5 + sites S+MS+ME	family: O2	11	0.8333	30	1	0.9091	0.6364	0.5455	11	0.9682
+true	transfer/cross/oh5 + sites S+MS+ME	family: S	1	0.3333	3	1	0	0	0	1	0.9318
+true	transfer/cross/oh5 + sites S+MS+ME	family: T	19	0.56	50	0.5833	0.6842	0.4211	0.3684	19	0.9006
+true	transfer/cross/oh5 + sites S+MS+ME	type: complete precursor	130	0.6077	390	0.7231	0.6308	0.4692	0.2769	130	0.9227
+true	transfer/cross/oh5 + sites S+MS+ME	type: no signal peptide	50	0.5889	90		0.5556	0.6222	0.3778	45	0.8311
+true	transfer/cross/oh5 + sites S+MS+ME	type: signal, incomplete	4	0.75	8		0.75	0.75	0.5	4	0.9704
+true	envelope + Cterm	all	184	0.4877	488	0.6077	0.1397	0.7486	0.1341	179	0.7941
+true	envelope + Cterm	family: A	51	0.558	138	0.8611	0.0588	0.8431	0.0588	51	0.7704
+true	envelope + Cterm	family: I1	7	0.6	5	1	0	1	0	2	0.8984
+true	envelope + Cterm	family: I2	3	0.25	8	0.5	0.3333	0	0	3	0.755
+true	envelope + Cterm	family: M	47	0.4444	126	0.4062	0.234	0.6809	0.234	47	0.8316
+true	envelope + Cterm	family: O1	45	0.5312	128	0.8158	0.0667	0.7556	0.0667	45	0.8024
+true	envelope + Cterm	family: O2	11	0.3333	30	0	0.1818	0.7273	0.1818	11	0.7355
+true	envelope + Cterm	family: S	1	0	3	0	0	0	0	1	0.9545
+true	envelope + Cterm	family: T	19	0.44	50	0.1667	0.2632	0.7895	0.2632	19	0.7386
+true	envelope + Cterm	type: complete precursor	130	0.4462	390	0.6077	0.0154	0.7154	0.0154	130	0.7718
+true	envelope + Cterm	type: no signal peptide	50	0.6667	90		0.5111	0.8222	0.4889	45	0.8554
+true	envelope + Cterm	type: signal, incomplete	4	0.5	8		0	1	0	4	0.7544
+true	envelope + sites S+MS+ME + Cterm	all	184	0.5328	488	0.7	0.2011	0.743	0.1788	179	0.7849
+true	envelope + sites S+MS+ME + Cterm	family: A	51	0.5797	138	0.7778	0.1373	0.8824	0.098	51	0.7745
+true	envelope + sites S+MS+ME + Cterm	family: I1	7	0.6	5	1	0	1	0	2	0.7952
+true	envelope + sites S+MS+ME + Cterm	family: I2	3	0.625	8	1	0.6667	0.3333	0.3333	3	0.7618
+true	envelope + sites S+MS+ME + Cterm	family: M	47	0.4762	126	0.4688	0.2979	0.6596	0.2979	47	0.8246
+true	envelope + sites S+MS+ME + Cterm	family: O1	45	0.5391	128	0.8421	0.1111	0.7111	0.0889	45	0.7935
+true	envelope + sites S+MS+ME + Cterm	family: O2	11	0.5667	30	0.75	0.2727	0.7273	0.2727	11	0.7321
+true	envelope + sites S+MS+ME + Cterm	family: S	1	0.3333	3	1	0	0	0	1	0.9659
+true	envelope + sites S+MS+ME + Cterm	family: T	19	0.5	50	0.5	0.2632	0.7368	0.2632	19	0.7156
+true	envelope + sites S+MS+ME + Cterm	type: complete precursor	130	0.4974	390	0.7	0.1	0.6923	0.0769	130	0.7652
+true	envelope + sites S+MS+ME + Cterm	type: no signal peptide	50	0.6889	90		0.5111	0.8667	0.4889	45	0.8392
+true	envelope + sites S+MS+ME + Cterm	type: signal, incomplete	4	0.5	8		0	1	0	4	0.7504
+true	transfer/within/oh0 + Cterm	all	184	0.543	488	0.6231	0.3966	0.6313	0.257	179	0.9103
+true	transfer/within/oh0 + Cterm	family: A	51	0.6739	138	0.8611	0.6078	0.6078	0.4314	51	0.9487
+true	transfer/within/oh0 + Cterm	family: I1	7	0.6	5	1	0	1	0	2	0.801
+true	transfer/within/oh0 + Cterm	family: I2	3	0.25	8	0	0.3333	0.3333	0	3	0.8538
+true	transfer/within/oh0 + Cterm	family: M	47	0.5079	126	0.4062	0.2128	0.8723	0.1489	47	0.8955
+true	transfer/within/oh0 + Cterm	family: O1	45	0.5234	128	0.8684	0.2667	0.4889	0.1111	45	0.8932
+true	transfer/within/oh0 + Cterm	family: O2	11	0.4667	30	0.375	0.7273	0.2727	0.2727	11	0.9223
+true	transfer/within/oh0 + Cterm	family: S	1	0	3	0	0	0	0	1	0.9318
+true	transfer/within/oh0 + Cterm	family: T	19	0.44	50	0	0.4737	0.6842	0.4737	19	0.9251
+true	transfer/within/oh0 + Cterm	type: complete precursor	130	0.5	390	0.6231	0.3231	0.5538	0.1615	130	0.917
+true	transfer/within/oh0 + Cterm	type: no signal peptide	50	0.7222	90		0.6	0.8444	0.5111	45	0.8896
+true	transfer/within/oh0 + Cterm	type: signal, incomplete	4	0.625	8		0.5	0.75	0.5	4	0.9494
+true	transfer/within/oh0 + sites S + Cterm	all	184	0.5758	488	0.7308	0.4078	0.6313	0.2626	179	0.9122
+true	transfer/within/oh0 + sites S + Cterm	family: A	51	0.6522	138	0.7778	0.6078	0.6078	0.4314	51	0.9457
+true	transfer/within/oh0 + sites S + Cterm	family: I1	7	0.6	5	1	0	1	0	2	0.801
+true	transfer/within/oh0 + sites S + Cterm	family: I2	3	0.75	8	1	1	0.3333	0.3333	3	0.8751
+true	transfer/within/oh0 + sites S + Cterm	family: M	47	0.5238	126	0.4688	0.2128	0.8723	0.1489	47	0.8983
+true	transfer/within/oh0 + sites S + Cterm	family: O1	45	0.5234	128	0.8684	0.2667	0.4889	0.1111	45	0.893
+true	transfer/within/oh0 + sites S + Cterm	family: O2	11	0.6333	30	1	0.7273	0.2727	0.2727	11	0.9435
+true	transfer/within/oh0 + sites S + Cterm	family: S	1	0.3333	3	1	0	0	0	1	0.9432
+true	transfer/within/oh0 + sites S + Cterm	family: T	19	0.58	50	0.5833	0.4737	0.6842	0.4737	19	0.9293
+true	transfer/within/oh0 + sites S + Cterm	type: complete precursor	130	0.541	390	0.7308	0.3385	0.5538	0.1692	130	0.9195
+true	transfer/within/oh0 + sites S + Cterm	type: no signal peptide	50	0.7222	90		0.6	0.8444	0.5111	45	0.8896
+true	transfer/within/oh0 + sites S + Cterm	type: signal, incomplete	4	0.625	8		0.5	0.75	0.5	4	0.9584
+true	transfer/within/oh0 + sites MS + Cterm	all	184	0.625	488	0.6308	0.6145	0.6313	0.3743	179	0.9018
+true	transfer/within/oh0 + sites MS + Cterm	family: A	51	0.6957	138	0.8611	0.6667	0.6078	0.4314	51	0.9402
+true	transfer/within/oh0 + sites MS + Cterm	family: I1	7	0.6	5	1	0	1	0	2	0.7256
+true	transfer/within/oh0 + sites MS + Cterm	family: I2	3	0.5	8	0.5	0.6667	0.3333	0.3333	3	0.8628
+true	transfer/within/oh0 + sites MS + Cterm	family: M	47	0.5873	126	0.4062	0.4255	0.8723	0.3404	47	0.879
+true	transfer/within/oh0 + sites MS + Cterm	family: O1	45	0.6719	128	0.8684	0.6889	0.4889	0.3556	45	0.8966
+true	transfer/within/oh0 + sites MS + Cterm	family: O2	11	0.5333	30	0.375	0.9091	0.2727	0.2727	11	0.9234
+true	transfer/within/oh0 + sites MS + Cterm	family: S	1	0	3	0	0	0	0	1	0.9205
+true	transfer/within/oh0 + sites MS + Cterm	family: T	19	0.52	50	0	0.6842	0.6842	0.4737	19	0.9247
+true	transfer/within/oh0 + sites MS + Cterm	type: complete precursor	130	0.6051	390	0.6308	0.6308	0.5538	0.3385	130	0.9216
+true	transfer/within/oh0 + sites MS + Cterm	type: no signal peptide	50	0.7	90		0.5556	0.8444	0.4667	45	0.8458
+true	transfer/within/oh0 + sites MS + Cterm	type: signal, incomplete	4	0.75	8		0.75	0.75	0.5	4	0.9572
+true	transfer/within/oh0 + sites S+MS + Cterm	all	184	0.6496	488	0.7231	0.6145	0.6313	0.3743	179	0.9034
+true	transfer/within/oh0 + sites S+MS + Cterm	family: A	51	0.6739	138	0.7778	0.6667	0.6078	0.4314	51	0.9372
+true	transfer/within/oh0 + sites S+MS + Cterm	family: I1	7	0.6	5	1	0	1	0	2	0.7256
+true	transfer/within/oh0 + sites S+MS + Cterm	family: I2	3	0.5	8	0.5	0.6667	0.3333	0.3333	3	0.8628
+true	transfer/within/oh0 + sites S+MS + Cterm	family: M	47	0.6032	126	0.4688	0.4255	0.8723	0.3404	47	0.8818
+true	transfer/within/oh0 + sites S+MS + Cterm	family: O1	45	0.6719	128	0.8684	0.6889	0.4889	0.3556	45	0.8963
+true	transfer/within/oh0 + sites S+MS + Cterm	family: O2	11	0.7	30	1	0.9091	0.2727	0.2727	11	0.9446
+true	transfer/within/oh0 + sites S+MS + Cterm	family: S	1	0.3333	3	1	0	0	0	1	0.9318
+true	transfer/within/oh0 + sites S+MS + Cterm	family: T	19	0.66	50	0.5833	0.6842	0.6842	0.4737	19	0.929
+true	transfer/within/oh0 + sites S+MS + Cterm	type: complete precursor	130	0.6359	390	0.7231	0.6308	0.5538	0.3385	130	0.9236
+true	transfer/within/oh0 + sites S+MS + Cterm	type: no signal peptide	50	0.7	90		0.5556	0.8444	0.4667	45	0.8458
+true	transfer/within/oh0 + sites S+MS + Cterm	type: signal, incomplete	4	0.75	8		0.75	0.75	0.5	4	0.9662
+true	transfer/within/oh0 + sites S+MS+ME + Cterm	all	184	0.5861	488	0.7231	0.6145	0.4581	0.2737	179	0.8841
+true	transfer/within/oh0 + sites S+MS+ME + Cterm	family: A	51	0.5507	138	0.7778	0.6667	0.2745	0.1961	51	0.8975
+true	transfer/within/oh0 + sites S+MS+ME + Cterm	family: I1	7	0.6	5	1	0	1	0	2	0.7447
+true	transfer/within/oh0 + sites S+MS+ME + Cterm	family: I2	3	0.5	8	0.5	0.6667	0.3333	0.3333	3	0.8729
+true	transfer/within/oh0 + sites S+MS+ME + Cterm	family: M	47	0.5317	126	0.4688	0.4255	0.6809	0.2553	47	0.8702
+true	transfer/within/oh0 + sites S+MS+ME + Cterm	family: O1	45	0.6719	128	0.8684	0.6889	0.4889	0.3556	45	0.8829
+true	transfer/within/oh0 + sites S+MS+ME + Cterm	family: O2	11	0.7	30	1	0.9091	0.2727	0.2727	11	0.9473
+true	transfer/within/oh0 + sites S+MS+ME + Cterm	family: S	1	0.3333	3	1	0	0	0	1	0.9318
+true	transfer/within/oh0 + sites S+MS+ME + Cterm	family: T	19	0.56	50	0.5833	0.6842	0.4211	0.3684	19	0.8998
+true	transfer/within/oh0 + sites S+MS+ME + Cterm	type: complete precursor	130	0.5744	390	0.7231	0.6308	0.3692	0.2231	130	0.9069
+true	transfer/within/oh0 + sites S+MS+ME + Cterm	type: no signal peptide	50	0.6222	90		0.5556	0.6889	0.4	45	0.8197
+true	transfer/within/oh0 + sites S+MS+ME + Cterm	type: signal, incomplete	4	0.75	8		0.75	0.75	0.5	4	0.9503
+true	transfer/within/oh5 + Cterm	all	184	0.623	488	0.6231	0.419	0.8268	0.3743	179	0.9319
+true	transfer/within/oh5 + Cterm	family: A	51	0.7174	138	0.8611	0.6078	0.7255	0.5098	51	0.9529
+true	transfer/within/oh5 + Cterm	family: I1	7	0.8	5	1	0.5	1	0.5	2	0.9279
+true	transfer/within/oh5 + Cterm	family: I2	3	0.375	8	0	0.3333	0.6667	0.3333	3	0.9087
+true	transfer/within/oh5 + Cterm	family: M	47	0.5635	126	0.4062	0.2766	0.9574	0.2553	47	0.9199
+true	transfer/within/oh5 + Cterm	family: O1	45	0.6484	128	0.8684	0.2667	0.8444	0.2667	45	0.911
+true	transfer/within/oh5 + Cterm	family: O2	11	0.6333	30	0.375	0.7273	0.7273	0.5455	11	0.9545
+true	transfer/within/oh5 + Cterm	family: S	1	0.3333	3	0	0	1	0	1	0.9545
+true	transfer/within/oh5 + Cterm	family: T	19	0.48	50	0	0.4737	0.7895	0.4737	19	0.9462
+true	transfer/within/oh5 + Cterm	type: complete precursor	130	0.5769	390	0.6231	0.3231	0.7846	0.2692	130	0.9306
+true	transfer/within/oh5 + Cterm	type: no signal peptide	50	0.8111	90		0.6889	0.9333	0.6667	45	0.9335
+true	transfer/within/oh5 + Cterm	type: signal, incomplete	4	0.75	8		0.5	1	0.5	4	0.9574
+true	transfer/within/oh5 + sites S + Cterm	all	184	0.6557	488	0.7308	0.4302	0.8268	0.3799	179	0.9339
+true	transfer/within/oh5 + sites S + Cterm	family: A	51	0.6957	138	0.7778	0.6078	0.7255	0.5098	51	0.9499
+true	transfer/within/oh5 + sites S + Cterm	family: I1	7	0.8	5	1	0.5	1	0.5	2	0.9279
+true	transfer/within/oh5 + sites S + Cterm	family: I2	3	0.875	8	1	1	0.6667	0.6667	3	0.93
+true	transfer/within/oh5 + sites S + Cterm	family: M	47	0.5794	126	0.4688	0.2766	0.9574	0.2553	47	0.9227
+true	transfer/within/oh5 + sites S + Cterm	family: O1	45	0.6484	128	0.8684	0.2667	0.8444	0.2667	45	0.9107
+true	transfer/within/oh5 + sites S + Cterm	family: O2	11	0.8	30	1	0.7273	0.7273	0.5455	11	0.9757
+true	transfer/within/oh5 + sites S + Cterm	family: S	1	0.6667	3	1	0	1	0	1	0.9659
+true	transfer/within/oh5 + sites S + Cterm	family: T	19	0.62	50	0.5833	0.4737	0.7895	0.4737	19	0.9505
+true	transfer/within/oh5 + sites S + Cterm	type: complete precursor	130	0.6179	390	0.7308	0.3385	0.7846	0.2769	130	0.933
+true	transfer/within/oh5 + sites S + Cterm	type: no signal peptide	50	0.8111	90		0.6889	0.9333	0.6667	45	0.9335
+true	transfer/within/oh5 + sites S + Cterm	type: signal, incomplete	4	0.75	8		0.5	1	0.5	4	0.9664
+true	transfer/within/oh5 + sites MS + Cterm	all	184	0.7049	488	0.6308	0.6369	0.8268	0.5419	179	0.9274
+true	transfer/within/oh5 + sites MS + Cterm	family: A	51	0.7391	138	0.8611	0.6667	0.7255	0.5098	51	0.9443
+true	transfer/within/oh5 + sites MS + Cterm	family: I1	7	0.8	5	1	0.5	1	0.5	2	0.9334
+true	transfer/within/oh5 + sites MS + Cterm	family: I2	3	0.625	8	0.5	0.6667	0.6667	0.6667	3	0.9177
+true	transfer/within/oh5 + sites MS + Cterm	family: M	47	0.6429	126	0.4062	0.4894	0.9574	0.4681	47	0.9106
+true	transfer/within/oh5 + sites MS + Cterm	family: O1	45	0.7969	128	0.8684	0.6889	0.8444	0.6444	45	0.9143
+true	transfer/within/oh5 + sites MS + Cterm	family: O2	11	0.7	30	0.375	0.9091	0.7273	0.6364	11	0.9556
+true	transfer/within/oh5 + sites MS + Cterm	family: S	1	0.3333	3	0	0	1	0	1	0.9432
+true	transfer/within/oh5 + sites MS + Cterm	family: T	19	0.56	50	0	0.6842	0.7895	0.5263	19	0.9365
+true	transfer/within/oh5 + sites MS + Cterm	type: complete precursor	130	0.6821	390	0.6308	0.6308	0.7846	0.5154	130	0.9351
+true	transfer/within/oh5 + sites MS + Cterm	type: no signal peptide	50	0.7889	90		0.6444	0.9333	0.6	45	0.9042
+true	transfer/within/oh5 + sites MS + Cterm	type: signal, incomplete	4	0.875	8		0.75	1	0.75	4	0.9651
+true	transfer/within/oh5 + sites S+MS + Cterm	all	184	0.7295	488	0.7231	0.6369	0.8268	0.5419	179	0.929
+true	transfer/within/oh5 + sites S+MS + Cterm	family: A	51	0.7174	138	0.7778	0.6667	0.7255	0.5098	51	0.9414
+true	transfer/within/oh5 + sites S+MS + Cterm	family: I1	7	0.8	5	1	0.5	1	0.5	2	0.9334
+true	transfer/within/oh5 + sites S+MS + Cterm	family: I2	3	0.625	8	0.5	0.6667	0.6667	0.6667	3	0.9177
+true	transfer/within/oh5 + sites S+MS + Cterm	family: M	47	0.6587	126	0.4688	0.4894	0.9574	0.4681	47	0.9134
+true	transfer/within/oh5 + sites S+MS + Cterm	family: O1	45	0.7969	128	0.8684	0.6889	0.8444	0.6444	45	0.9141
+true	transfer/within/oh5 + sites S+MS + Cterm	family: O2	11	0.8667	30	1	0.9091	0.7273	0.6364	11	0.9768
+true	transfer/within/oh5 + sites S+MS + Cterm	family: S	1	0.6667	3	1	0	1	0	1	0.9545
+true	transfer/within/oh5 + sites S+MS + Cterm	family: T	19	0.7	50	0.5833	0.6842	0.7895	0.5263	19	0.9408
+true	transfer/within/oh5 + sites S+MS + Cterm	type: complete precursor	130	0.7128	390	0.7231	0.6308	0.7846	0.5154	130	0.9371
+true	transfer/within/oh5 + sites S+MS + Cterm	type: no signal peptide	50	0.7889	90		0.6444	0.9333	0.6	45	0.9042
+true	transfer/within/oh5 + sites S+MS + Cterm	type: signal, incomplete	4	0.875	8		0.75	1	0.75	4	0.9741
+true	transfer/within/oh5 + sites S+MS+ME + Cterm	all	184	0.6906	488	0.7231	0.6369	0.7207	0.4637	179	0.9199
+true	transfer/within/oh5 + sites S+MS+ME + Cterm	family: A	51	0.587	138	0.7778	0.6667	0.3725	0.2745	51	0.9144
+true	transfer/within/oh5 + sites S+MS+ME + Cterm	family: I1	7	0.8	5	1	0.5	1	0.5	2	0.918
+true	transfer/within/oh5 + sites S+MS+ME + Cterm	family: I2	3	0.625	8	0.5	0.6667	0.6667	0.6667	3	0.9383
+true	transfer/within/oh5 + sites S+MS+ME + Cterm	family: M	47	0.6667	126	0.4688	0.4894	0.9787	0.4681	47	0.9136
+true	transfer/within/oh5 + sites S+MS+ME + Cterm	family: O1	45	0.7891	128	0.8684	0.6889	0.8222	0.6222	45	0.9116
+true	transfer/within/oh5 + sites S+MS+ME + Cterm	family: O2	11	0.8667	30	1	0.9091	0.7273	0.6364	11	0.9694
+true	transfer/within/oh5 + sites S+MS+ME + Cterm	family: S	1	0.6667	3	1	0	1	0	1	0.9545
+true	transfer/within/oh5 + sites S+MS+ME + Cterm	family: T	19	0.68	50	0.5833	0.6842	0.7368	0.4737	19	0.9369
+true	transfer/within/oh5 + sites S+MS+ME + Cterm	type: complete precursor	130	0.6769	390	0.7231	0.6308	0.6769	0.4308	130	0.9298
+true	transfer/within/oh5 + sites S+MS+ME + Cterm	type: no signal peptide	50	0.7333	90		0.6444	0.8222	0.5333	45	0.8896
+true	transfer/within/oh5 + sites S+MS+ME + Cterm	type: signal, incomplete	4	0.875	8		0.75	1	0.75	4	0.9741
+true	transfer/cross/oh0 + Cterm	all	184	0.5492	488	0.6231	0.3966	0.648	0.257	179	0.914
+true	transfer/cross/oh0 + Cterm	family: A	51	0.6739	138	0.8611	0.6078	0.6078	0.4314	51	0.9487
+true	transfer/cross/oh0 + Cterm	family: I1	7	0.6	5	1	0	1	0	2	0.801
+true	transfer/cross/oh0 + Cterm	family: I2	3	0.25	8	0	0.3333	0.3333	0	3	0.8538
+true	transfer/cross/oh0 + Cterm	family: M	47	0.5079	126	0.4062	0.2128	0.8723	0.1489	47	0.8975
+true	transfer/cross/oh0 + Cterm	family: O1	45	0.5469	128	0.8684	0.2667	0.5556	0.1111	45	0.9064
+true	transfer/cross/oh0 + Cterm	family: O2	11	0.4667	30	0.375	0.7273	0.2727	0.2727	11	0.9223
+true	transfer/cross/oh0 + Cterm	family: S	1	0	3	0	0	0	0	1	0.9318
+true	transfer/cross/oh0 + Cterm	family: T	19	0.44	50	0	0.4737	0.6842	0.4737	19	0.9251
+true	transfer/cross/oh0 + Cterm	type: complete precursor	130	0.5077	390	0.6231	0.3231	0.5769	0.1615	130	0.9215
+true	transfer/cross/oh0 + Cterm	type: no signal peptide	50	0.7222	90		0.6	0.8444	0.5111	45	0.8915
+true	transfer/cross/oh0 + Cterm	type: signal, incomplete	4	0.625	8		0.5	0.75	0.5	4	0.9494
+true	transfer/cross/oh0 + sites S + Cterm	all	184	0.582	488	0.7308	0.4078	0.648	0.2626	179	0.9159
+true	transfer/cross/oh0 + sites S + Cterm	family: A	51	0.6522	138	0.7778	0.6078	0.6078	0.4314	51	0.9457
+true	transfer/cross/oh0 + sites S + Cterm	family: I1	7	0.6	5	1	0	1	0	2	0.801
+true	transfer/cross/oh0 + sites S + Cterm	family: I2	3	0.75	8	1	1	0.3333	0.3333	3	0.8751
+true	transfer/cross/oh0 + sites S + Cterm	family: M	47	0.5238	126	0.4688	0.2128	0.8723	0.1489	47	0.9002
+true	transfer/cross/oh0 + sites S + Cterm	family: O1	45	0.5469	128	0.8684	0.2667	0.5556	0.1111	45	0.9061
+true	transfer/cross/oh0 + sites S + Cterm	family: O2	11	0.6333	30	1	0.7273	0.2727	0.2727	11	0.9435
+true	transfer/cross/oh0 + sites S + Cterm	family: S	1	0.3333	3	1	0	0	0	1	0.9432
+true	transfer/cross/oh0 + sites S + Cterm	family: T	19	0.58	50	0.5833	0.4737	0.6842	0.4737	19	0.9293
+true	transfer/cross/oh0 + sites S + Cterm	type: complete precursor	130	0.5487	390	0.7308	0.3385	0.5769	0.1692	130	0.924
+true	transfer/cross/oh0 + sites S + Cterm	type: no signal peptide	50	0.7222	90		0.6	0.8444	0.5111	45	0.8915
+true	transfer/cross/oh0 + sites S + Cterm	type: signal, incomplete	4	0.625	8		0.5	0.75	0.5	4	0.9584
+true	transfer/cross/oh0 + sites MS + Cterm	all	184	0.6311	488	0.6308	0.6145	0.648	0.3743	179	0.905
+true	transfer/cross/oh0 + sites MS + Cterm	family: A	51	0.6957	138	0.8611	0.6667	0.6078	0.4314	51	0.9402
+true	transfer/cross/oh0 + sites MS + Cterm	family: I1	7	0.6	5	1	0	1	0	2	0.7256
+true	transfer/cross/oh0 + sites MS + Cterm	family: I2	3	0.5	8	0.5	0.6667	0.3333	0.3333	3	0.8628
+true	transfer/cross/oh0 + sites MS + Cterm	family: M	47	0.5873	126	0.4062	0.4255	0.8723	0.3404	47	0.881
+true	transfer/cross/oh0 + sites MS + Cterm	family: O1	45	0.6953	128	0.8684	0.6889	0.5556	0.3556	45	0.9079
+true	transfer/cross/oh0 + sites MS + Cterm	family: O2	11	0.5333	30	0.375	0.9091	0.2727	0.2727	11	0.9234
+true	transfer/cross/oh0 + sites MS + Cterm	family: S	1	0	3	0	0	0	0	1	0.9205
+true	transfer/cross/oh0 + sites MS + Cterm	family: T	19	0.52	50	0	0.6842	0.6842	0.4737	19	0.9247
+true	transfer/cross/oh0 + sites MS + Cterm	type: complete precursor	130	0.6128	390	0.6308	0.6308	0.5769	0.3385	130	0.9255
+true	transfer/cross/oh0 + sites MS + Cterm	type: no signal peptide	50	0.7	90		0.5556	0.8444	0.4667	45	0.8477
+true	transfer/cross/oh0 + sites MS + Cterm	type: signal, incomplete	4	0.75	8		0.75	0.75	0.5	4	0.9572
+true	transfer/cross/oh0 + sites S+MS + Cterm	all	184	0.6557	488	0.7231	0.6145	0.648	0.3743	179	0.9066
+true	transfer/cross/oh0 + sites S+MS + Cterm	family: A	51	0.6739	138	0.7778	0.6667	0.6078	0.4314	51	0.9372
+true	transfer/cross/oh0 + sites S+MS + Cterm	family: I1	7	0.6	5	1	0	1	0	2	0.7256
+true	transfer/cross/oh0 + sites S+MS + Cterm	family: I2	3	0.5	8	0.5	0.6667	0.3333	0.3333	3	0.8628
+true	transfer/cross/oh0 + sites S+MS + Cterm	family: M	47	0.6032	126	0.4688	0.4255	0.8723	0.3404	47	0.8838
+true	transfer/cross/oh0 + sites S+MS + Cterm	family: O1	45	0.6953	128	0.8684	0.6889	0.5556	0.3556	45	0.9077
+true	transfer/cross/oh0 + sites S+MS + Cterm	family: O2	11	0.7	30	1	0.9091	0.2727	0.2727	11	0.9446
+true	transfer/cross/oh0 + sites S+MS + Cterm	family: S	1	0.3333	3	1	0	0	0	1	0.9318
+true	transfer/cross/oh0 + sites S+MS + Cterm	family: T	19	0.66	50	0.5833	0.6842	0.6842	0.4737	19	0.929
+true	transfer/cross/oh0 + sites S+MS + Cterm	type: complete precursor	130	0.6436	390	0.7231	0.6308	0.5769	0.3385	130	0.9275
+true	transfer/cross/oh0 + sites S+MS + Cterm	type: no signal peptide	50	0.7	90		0.5556	0.8444	0.4667	45	0.8477
+true	transfer/cross/oh0 + sites S+MS + Cterm	type: signal, incomplete	4	0.75	8		0.75	0.75	0.5	4	0.9662
+true	transfer/cross/oh0 + sites S+MS+ME + Cterm	all	184	0.5922	488	0.7231	0.6145	0.4749	0.2737	179	0.8874
+true	transfer/cross/oh0 + sites S+MS+ME + Cterm	family: A	51	0.5507	138	0.7778	0.6667	0.2745	0.1961	51	0.8975
+true	transfer/cross/oh0 + sites S+MS+ME + Cterm	family: I1	7	0.6	5	1	0	1	0	2	0.7447
+true	transfer/cross/oh0 + sites S+MS+ME + Cterm	family: I2	3	0.5	8	0.5	0.6667	0.3333	0.3333	3	0.8729
+true	transfer/cross/oh0 + sites S+MS+ME + Cterm	family: M	47	0.5317	126	0.4688	0.4255	0.6809	0.2553	47	0.8721
+true	transfer/cross/oh0 + sites S+MS+ME + Cterm	family: O1	45	0.6953	128	0.8684	0.6889	0.5556	0.3556	45	0.8942
+true	transfer/cross/oh0 + sites S+MS+ME + Cterm	family: O2	11	0.7	30	1	0.9091	0.2727	0.2727	11	0.9473
+true	transfer/cross/oh0 + sites S+MS+ME + Cterm	family: S	1	0.3333	3	1	0	0	0	1	0.9318
+true	transfer/cross/oh0 + sites S+MS+ME + Cterm	family: T	19	0.56	50	0.5833	0.6842	0.4211	0.3684	19	0.8998
+true	transfer/cross/oh0 + sites S+MS+ME + Cterm	type: complete precursor	130	0.5821	390	0.7231	0.6308	0.3923	0.2231	130	0.9108
+true	transfer/cross/oh0 + sites S+MS+ME + Cterm	type: no signal peptide	50	0.6222	90		0.5556	0.6889	0.4	45	0.8215
+true	transfer/cross/oh0 + sites S+MS+ME + Cterm	type: signal, incomplete	4	0.75	8		0.75	0.75	0.5	4	0.9503
+true	transfer/cross/oh5 + Cterm	all	184	0.6004	488	0.6231	0.3966	0.7877	0.324	179	0.9259
+true	transfer/cross/oh5 + Cterm	family: A	51	0.6739	138	0.8611	0.6078	0.6078	0.4314	51	0.9493
+true	transfer/cross/oh5 + Cterm	family: I1	7	0.6	5	1	0	1	0	2	0.8955
+true	transfer/cross/oh5 + Cterm	family: I2	3	0.25	8	0	0.3333	0.3333	0	3	0.8879
+true	transfer/cross/oh5 + Cterm	family: M	47	0.5397	126	0.4062	0.2128	0.9574	0.1915	47	0.9023
+true	transfer/cross/oh5 + Cterm	family: O1	45	0.6719	128	0.8684	0.2667	0.9111	0.2667	45	0.9241
+true	transfer/cross/oh5 + Cterm	family: O2	11	0.6333	30	0.375	0.7273	0.7273	0.5455	11	0.9545
+true	transfer/cross/oh5 + Cterm	family: S	1	0	3	0	0	0	0	1	0.9318
+true	transfer/cross/oh5 + Cterm	family: T	19	0.44	50	0	0.4737	0.6842	0.4737	19	0.9259
+true	transfer/cross/oh5 + Cterm	type: complete precursor	130	0.5667	390	0.6231	0.3231	0.7538	0.2462	130	0.9328
+true	transfer/cross/oh5 + Cterm	type: no signal peptide	50	0.7333	90		0.6	0.8667	0.5333	45	0.9053
+true	transfer/cross/oh5 + Cterm	type: signal, incomplete	4	0.75	8		0.5	1	0.5	4	0.9574
+true	transfer/cross/oh5 + sites S + Cterm	all	184	0.6332	488	0.7308	0.4078	0.7877	0.3296	179	0.9278
+true	transfer/cross/oh5 + sites S + Cterm	family: A	51	0.6522	138	0.7778	0.6078	0.6078	0.4314	51	0.9463
+true	transfer/cross/oh5 + sites S + Cterm	family: I1	7	0.6	5	1	0	1	0	2	0.8955
+true	transfer/cross/oh5 + sites S + Cterm	family: I2	3	0.75	8	1	1	0.3333	0.3333	3	0.9092
+true	transfer/cross/oh5 + sites S + Cterm	family: M	47	0.5556	126	0.4688	0.2128	0.9574	0.1915	47	0.9051
+true	transfer/cross/oh5 + sites S + Cterm	family: O1	45	0.6719	128	0.8684	0.2667	0.9111	0.2667	45	0.9238
+true	transfer/cross/oh5 + sites S + Cterm	family: O2	11	0.8	30	1	0.7273	0.7273	0.5455	11	0.9757
+true	transfer/cross/oh5 + sites S + Cterm	family: S	1	0.3333	3	1	0	0	0	1	0.9432
+true	transfer/cross/oh5 + sites S + Cterm	family: T	19	0.58	50	0.5833	0.4737	0.6842	0.4737	19	0.9301
+true	transfer/cross/oh5 + sites S + Cterm	type: complete precursor	130	0.6077	390	0.7308	0.3385	0.7538	0.2538	130	0.9353
+true	transfer/cross/oh5 + sites S + Cterm	type: no signal peptide	50	0.7333	90		0.6	0.8667	0.5333	45	0.9053
+true	transfer/cross/oh5 + sites S + Cterm	type: signal, incomplete	4	0.75	8		0.5	1	0.5	4	0.9664
+true	transfer/cross/oh5 + sites MS + Cterm	all	184	0.6824	488	0.6308	0.6145	0.7877	0.486	179	0.9169
+true	transfer/cross/oh5 + sites MS + Cterm	family: A	51	0.6957	138	0.8611	0.6667	0.6078	0.4314	51	0.9407
+true	transfer/cross/oh5 + sites MS + Cterm	family: I1	7	0.6	5	1	0	1	0	2	0.8201
+true	transfer/cross/oh5 + sites MS + Cterm	family: I2	3	0.5	8	0.5	0.6667	0.3333	0.3333	3	0.8969
+true	transfer/cross/oh5 + sites MS + Cterm	family: M	47	0.619	126	0.4062	0.4255	0.9574	0.4043	47	0.8858
+true	transfer/cross/oh5 + sites MS + Cterm	family: O1	45	0.8203	128	0.8684	0.6889	0.9111	0.6444	45	0.9257
+true	transfer/cross/oh5 + sites MS + Cterm	family: O2	11	0.7	30	0.375	0.9091	0.7273	0.6364	11	0.9556
+true	transfer/cross/oh5 + sites MS + Cterm	family: S	1	0	3	0	0	0	0	1	0.9205
+true	transfer/cross/oh5 + sites MS + Cterm	family: T	19	0.52	50	0	0.6842	0.6842	0.4737	19	0.9255
+true	transfer/cross/oh5 + sites MS + Cterm	type: complete precursor	130	0.6718	390	0.6308	0.6308	0.7538	0.4846	130	0.9368
+true	transfer/cross/oh5 + sites MS + Cterm	type: no signal peptide	50	0.7111	90		0.5556	0.8667	0.4667	45	0.8615
+true	transfer/cross/oh5 + sites MS + Cterm	type: signal, incomplete	4	0.875	8		0.75	1	0.75	4	0.9651
+true	transfer/cross/oh5 + sites S+MS + Cterm	all	184	0.707	488	0.7231	0.6145	0.7877	0.486	179	0.9185
+true	transfer/cross/oh5 + sites S+MS + Cterm	family: A	51	0.6739	138	0.7778	0.6667	0.6078	0.4314	51	0.9378
+true	transfer/cross/oh5 + sites S+MS + Cterm	family: I1	7	0.6	5	1	0	1	0	2	0.8201
+true	transfer/cross/oh5 + sites S+MS + Cterm	family: I2	3	0.5	8	0.5	0.6667	0.3333	0.3333	3	0.8969
+true	transfer/cross/oh5 + sites S+MS + Cterm	family: M	47	0.6349	126	0.4688	0.4255	0.9574	0.4043	47	0.8886
+true	transfer/cross/oh5 + sites S+MS + Cterm	family: O1	45	0.8203	128	0.8684	0.6889	0.9111	0.6444	45	0.9254
+true	transfer/cross/oh5 + sites S+MS + Cterm	family: O2	11	0.8667	30	1	0.9091	0.7273	0.6364	11	0.9768
+true	transfer/cross/oh5 + sites S+MS + Cterm	family: S	1	0.3333	3	1	0	0	0	1	0.9318
+true	transfer/cross/oh5 + sites S+MS + Cterm	family: T	19	0.66	50	0.5833	0.6842	0.6842	0.4737	19	0.9298
+true	transfer/cross/oh5 + sites S+MS + Cterm	type: complete precursor	130	0.7026	390	0.7231	0.6308	0.7538	0.4846	130	0.9388
+true	transfer/cross/oh5 + sites S+MS + Cterm	type: no signal peptide	50	0.7111	90		0.5556	0.8667	0.4667	45	0.8615
+true	transfer/cross/oh5 + sites S+MS + Cterm	type: signal, incomplete	4	0.875	8		0.75	1	0.75	4	0.9741
+true	transfer/cross/oh5 + sites S+MS+ME + Cterm	all	184	0.6619	488	0.7231	0.6145	0.6648	0.4022	179	0.9031
+true	transfer/cross/oh5 + sites S+MS+ME + Cterm	family: A	51	0.5507	138	0.7778	0.6667	0.2745	0.1961	51	0.8981
+true	transfer/cross/oh5 + sites S+MS+ME + Cterm	family: I1	7	0.6	5	1	0	1	0	2	0.8048
+true	transfer/cross/oh5 + sites S+MS+ME + Cterm	family: I2	3	0.5	8	0.5	0.6667	0.3333	0.3333	3	0.907
+true	transfer/cross/oh5 + sites S+MS+ME + Cterm	family: M	47	0.6429	126	0.4688	0.4255	0.9787	0.4043	47	0.8889
+true	transfer/cross/oh5 + sites S+MS+ME + Cterm	family: O1	45	0.8125	128	0.8684	0.6889	0.8889	0.6222	45	0.9229
+true	transfer/cross/oh5 + sites S+MS+ME + Cterm	family: O2	11	0.8667	30	1	0.9091	0.7273	0.6364	11	0.9694
+true	transfer/cross/oh5 + sites S+MS+ME + Cterm	family: S	1	0.3333	3	1	0	0	0	1	0.9318
+true	transfer/cross/oh5 + sites S+MS+ME + Cterm	family: T	19	0.56	50	0.5833	0.6842	0.4211	0.3684	19	0.9006
+true	transfer/cross/oh5 + sites S+MS+ME + Cterm	type: complete precursor	130	0.659	390	0.7231	0.6308	0.6231	0.3923	130	0.9259
+true	transfer/cross/oh5 + sites S+MS+ME + Cterm	type: no signal peptide	50	0.6556	90		0.5556	0.7556	0.4	45	0.8382
+true	transfer/cross/oh5 + sites S+MS+ME + Cterm	type: signal, incomplete	4	0.875	8		0.75	1	0.75	4	0.9741

@@ -1,0 +1,9 @@
+id	split	label	method	predicted	p_true	best_family	best_family_share	type	length	regions	max_identity	nearest_training	own_SIG_hmm	own_MAT_hmm
+D6C4J9	test	T	map	NONE	0.0926	M	0.687	no signal peptide	28	MAT	0.571	Q9BPJ8	-5.11	8.12
+P0DOW6	test	O2	map	O1	0.1162	O1	0.866	no signal peptide	25	MAT	0.64	P0C1M8	-6.91	14.09
+P86256	test	T	map	A	0.154	A	0.533	no signal peptide	12	MAT	0.727	P0CI23	-1.87	2.18
+P86257	test	T	map	A	0.0498	A	0.692	no signal peptide	12	MAT	0.75	P0C828	-1.87	1.93
+D6C4J9	test	T	bayes	NONE	0.1017	M	0.687	no signal peptide	28	MAT	0.571	Q9BPJ8	-5.11	8.12
+P0DOW6	test	O2	bayes	O1	0.2422	O1	0.703	no signal peptide	25	MAT	0.64	P0C1M8	-6.91	14.09
+P86256	test	T	bayes	A	0.1322	A	0.523	no signal peptide	12	MAT	0.727	P0CI23	-1.87	2.18
+P86257	test	T	bayes	A	0.0424	A	0.68	no signal peptide	12	MAT	0.75	P0C828	-1.87	1.93

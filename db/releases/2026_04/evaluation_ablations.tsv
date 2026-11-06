@@ -1,0 +1,58 @@
+variant	note	recommended	features	hmm_floor	split	subset	n	accuracy	positives_correct	positives_correct_lo	positives_correct_hi	family_if_known	negatives_called_family	macro_recall	log_loss	log_loss_lo	log_loss_hi
+censored · HMM		false	SIG:hmm, PRO:hmm, MAT:hmm	0	test	all	1293	0.9799	0.8696	0.7852	0.9444	0.9511	0.001803	0.8994	0.08817	0.04554	0.1432
+censored · HMM		false	SIG:hmm, PRO:hmm, MAT:hmm	0	test	complete precursor	130	1	1	1	1	1		1	0.0001551	1.008e-05	0.0004709
+censored · HMM		false	SIG:hmm, PRO:hmm, MAT:hmm	0	test	no signal peptide	50	0.52	0.52	0.3146	0.7448	0.82		0.5449	1.864	1.034	2.711
+censored · HMM+FW		false	SIG:hmm, PRO:hmm, MAT:hmm, FW:framework	0	test	all	1293	0.9791	0.875	0.8038	0.9393	0.9728	0.003607	0.9016	0.07244	0.03814	0.1141
+censored · HMM+FW		false	SIG:hmm, PRO:hmm, MAT:hmm, FW:framework	0	test	complete precursor	130	1	1	1	1	1		1	0.0001443	9.45e-06	0.0004186
+censored · HMM+FW		false	SIG:hmm, PRO:hmm, MAT:hmm, FW:framework	0	test	no signal peptide	50	0.54	0.54	0.36	0.7333	0.9		0.5551	1.499	0.8403	2.231
+censored · HMM+PSSM		false	SIG:hmm, SIG:pssm, PRO:hmm, PRO:pssm, MAT:hmm, MAT:pssm	0	test	all	1293	0.9907	0.9348	0.8833	0.9767	0.9728	0	0.9277	0.04004	0.02139	0.06286
+censored · HMM+PSSM		false	SIG:hmm, SIG:pssm, PRO:hmm, PRO:pssm, MAT:hmm, MAT:pssm	0	test	complete precursor	130	1	1	1	1	1		1	0.0001526	3.328e-06	0.0004048
+censored · HMM+PSSM		false	SIG:hmm, SIG:pssm, PRO:hmm, PRO:pssm, MAT:hmm, MAT:pssm	0	test	no signal peptide	50	0.76	0.76	0.6102	0.8889	0.9		0.6844	0.7618	0.355	1.306
+censored · HMM+PSSM+FW		false	SIG:hmm, SIG:pssm, PRO:hmm, PRO:pssm, MAT:hmm, MAT:pssm, FW:framework	0	test	all	1293	0.9907	0.9457	0.8902	0.9819	0.9891	0.001803	0.9322	0.03029	0.01632	0.04963
+censored · HMM+PSSM+FW		false	SIG:hmm, SIG:pssm, PRO:hmm, PRO:pssm, MAT:hmm, MAT:pssm, FW:framework	0	test	complete precursor	130	1	1	1	1	1		1	7.592e-05	7.901e-06	0.0001914
+censored · HMM+PSSM+FW		false	SIG:hmm, SIG:pssm, PRO:hmm, PRO:pssm, MAT:hmm, MAT:pssm, FW:framework	0	test	no signal peptide	50	0.8	0.8	0.6249	0.9311	0.96		0.7048	0.5491	0.2267	1.011
+censored · HMM+PWM		false	SIG:hmm, SIG:pwm, PRO:hmm, PRO:pwm, MAT:hmm, MAT:pwm	0	test	all	1293	0.993	0.9565	0.9206	0.9859	0.9565	0.0009017	0.9438	0.02827	0.01408	0.04624
+censored · HMM+PWM		false	SIG:hmm, SIG:pwm, PRO:hmm, PRO:pwm, MAT:hmm, MAT:pwm	0	test	complete precursor	130	1	1	1	1	1		1	0.0002053	5.939e-07	0.0007848
+censored · HMM+PWM		false	SIG:hmm, SIG:pwm, PRO:hmm, PRO:pwm, MAT:hmm, MAT:pwm	0	test	no signal peptide	50	0.84	0.84	0.7193	0.94	0.84		0.7517	0.5721	0.2575	0.9695
+censored · HMM+PWM+FW		false	SIG:hmm, SIG:pwm, PRO:hmm, PRO:pwm, MAT:hmm, MAT:pwm, FW:framework	0	test	all	1293	0.9961	0.9728	0.9371	0.9953	0.9728	0	0.9623	0.01878	0.009506	0.03208
+censored · HMM+PWM+FW		false	SIG:hmm, SIG:pwm, PRO:hmm, PRO:pwm, MAT:hmm, MAT:pwm, FW:framework	0	test	complete precursor	130	1	1	1	1	1		1	0.0002268	2.564e-06	0.0008525
+censored · HMM+PWM+FW		false	SIG:hmm, SIG:pwm, PRO:hmm, PRO:pwm, MAT:hmm, MAT:pwm, FW:framework	0	test	no signal peptide	50	0.9	0.9	0.7805	0.9822	0.9		0.8333	0.3551	0.1281	0.6701
+censored · HMM+PSSM+PWM		false	SIG:hmm, SIG:pssm, SIG:pwm, PRO:hmm, PRO:pssm, PRO:pwm, MAT:hmm, MAT:pssm, MAT:pwm	0	test	all	1293	0.9954	0.9728	0.9415	0.9952	0.9728	0.0009017	0.9622	0.01787	0.008802	0.02954
+censored · HMM+PSSM+PWM		false	SIG:hmm, SIG:pssm, SIG:pwm, PRO:hmm, PRO:pssm, PRO:pwm, MAT:hmm, MAT:pssm, MAT:pwm	0	test	complete precursor	130	1	1	1	1	1		1	2.302e-05	1.571e-06	7.874e-05
+censored · HMM+PSSM+PWM		false	SIG:hmm, SIG:pssm, SIG:pwm, PRO:hmm, PRO:pssm, PRO:pwm, MAT:hmm, MAT:pssm, MAT:pwm	0	test	no signal peptide	50	0.9	0.9	0.7872	0.9828	0.9		0.8333	0.3394	0.1278	0.6159
+censored · HMM+PSSM+PWM+FW	current settings	true	SIG:hmm, SIG:pssm, SIG:pwm, PRO:hmm, PRO:pssm, PRO:pwm, MAT:hmm, MAT:pssm, MAT:pwm, FW:framework	0	test	all	1293	0.9969	0.9783	0.9469	1	0.9783	0	0.9724	0.01342	0.006086	0.02467
+censored · HMM+PSSM+PWM+FW	current settings	true	SIG:hmm, SIG:pssm, SIG:pwm, PRO:hmm, PRO:pssm, PRO:pwm, MAT:hmm, MAT:pssm, MAT:pwm, FW:framework	0	test	complete precursor	130	1	1	1	1	1		1	3.405e-05	3.745e-06	0.0001013
+censored · HMM+PSSM+PWM+FW	current settings	true	SIG:hmm, SIG:pssm, SIG:pwm, PRO:hmm, PRO:pssm, PRO:pwm, MAT:hmm, MAT:pssm, MAT:pwm, FW:framework	0	test	no signal peptide	50	0.92	0.92	0.8113	1	0.92		0.881	0.2503	0.06075	0.5175
+floor -20 · HMM		false	SIG:hmm, PRO:hmm, MAT:hmm	-20	test	all	1293	0.9722	0.8152	0.7147	0.8966	0.962	0.001803	0.8407	0.1207	0.07089	0.1849
+floor -20 · HMM		false	SIG:hmm, PRO:hmm, MAT:hmm	-20	test	complete precursor	130	0.9538	0.9538	0.8815	1	1		0.9211	0.1479	0.02511	0.3322
+floor -20 · HMM		false	SIG:hmm, PRO:hmm, MAT:hmm	-20	test	no signal peptide	50	0.44	0.44	0.2363	0.661	0.86		0.5048	2.231	1.321	3.168
+floor -20 · HMM+FW		false	SIG:hmm, PRO:hmm, MAT:hmm, FW:framework	-20	test	all	1293	0.9698	0.8098	0.7097	0.8927	0.962	0.003607	0.8386	0.1077	0.06394	0.1627
+floor -20 · HMM+FW		false	SIG:hmm, PRO:hmm, MAT:hmm, FW:framework	-20	test	complete precursor	130	0.9538	0.9538	0.8815	1	1		0.9211	0.1491	0.02448	0.3299
+floor -20 · HMM+FW		false	SIG:hmm, PRO:hmm, MAT:hmm, FW:framework	-20	test	no signal peptide	50	0.42	0.42	0.2195	0.6401	0.86		0.4959	1.901	1.124	2.73
+floor -20 · HMM+PSSM		false	SIG:hmm, SIG:pssm, PRO:hmm, PRO:pssm, MAT:hmm, MAT:pssm	-20	test	all	1293	0.976	0.8478	0.7665	0.9104	0.9728	0.002705	0.8201	0.08423	0.05117	0.1223
+floor -20 · HMM+PSSM		false	SIG:hmm, SIG:pssm, PRO:hmm, PRO:pssm, MAT:hmm, MAT:pssm	-20	test	complete precursor	130	0.9615	0.9615	0.9056	1	1		0.9243	0.09922	0.01401	0.2287
+floor -20 · HMM+PSSM		false	SIG:hmm, SIG:pssm, PRO:hmm, PRO:pssm, MAT:hmm, MAT:pssm	-20	test	no signal peptide	50	0.54	0.54	0.3673	0.7214	0.9		0.4224	1.481	0.8464	2.347
+floor -20 · HMM+PSSM+FW		false	SIG:hmm, SIG:pssm, PRO:hmm, PRO:pssm, MAT:hmm, MAT:pssm, FW:framework	-20	test	all	1293	0.9753	0.8478	0.7636	0.9124	0.9783	0.003607	0.8202	0.08131	0.04838	0.1203
+floor -20 · HMM+PSSM+FW		false	SIG:hmm, SIG:pssm, PRO:hmm, PRO:pssm, MAT:hmm, MAT:pssm, FW:framework	-20	test	complete precursor	130	0.9615	0.9615	0.9056	1	1		0.9243	0.1017	0.01176	0.2369
+floor -20 · HMM+PSSM+FW		false	SIG:hmm, SIG:pssm, PRO:hmm, PRO:pssm, MAT:hmm, MAT:pssm, FW:framework	-20	test	no signal peptide	50	0.54	0.54	0.359	0.7143	0.92		0.4231	1.402	0.7588	2.268
+floor -20 · HMM+PWM		false	SIG:hmm, SIG:pwm, PRO:hmm, PRO:pwm, MAT:hmm, MAT:pwm	-20	test	all	1293	0.9776	0.8478	0.7518	0.9255	0.9511	0.0009017	0.8581	0.07129	0.04151	0.1104
+floor -20 · HMM+PWM		false	SIG:hmm, SIG:pwm, PRO:hmm, PRO:pwm, MAT:hmm, MAT:pwm	-20	test	complete precursor	130	0.9462	0.9462	0.8706	0.9932	1		0.9054	0.1255	0.03353	0.2648
+floor -20 · HMM+PWM		false	SIG:hmm, SIG:pwm, PRO:hmm, PRO:pwm, MAT:hmm, MAT:pwm	-20	test	no signal peptide	50	0.58	0.58	0.3703	0.7955	0.82		0.6435	1.197	0.608	1.887
+floor -20 · HMM+PWM+FW		false	SIG:hmm, SIG:pwm, PRO:hmm, PRO:pwm, MAT:hmm, MAT:pwm, FW:framework	-20	test	all	1293	0.9861	0.9022	0.8254	0.9524	0.9511	0	0.8817	0.06152	0.0364	0.09607
+floor -20 · HMM+PWM+FW		false	SIG:hmm, SIG:pwm, PRO:hmm, PRO:pwm, MAT:hmm, MAT:pwm, FW:framework	-20	test	complete precursor	130	0.9538	0.9538	0.8952	0.9932	1		0.9087	0.1275	0.03517	0.2621
+floor -20 · HMM+PWM+FW		false	SIG:hmm, SIG:pwm, PRO:hmm, PRO:pwm, MAT:hmm, MAT:pwm, FW:framework	-20	test	no signal peptide	50	0.76	0.76	0.5909	0.8889	0.82		0.7347	0.9565	0.4604	1.636
+floor -20 · HMM+PSSM+PWM		false	SIG:hmm, SIG:pssm, SIG:pwm, PRO:hmm, PRO:pssm, PRO:pwm, MAT:hmm, MAT:pssm, MAT:pwm	-20	test	all	1293	0.9923	0.9457	0.9	0.9776	0.962	0	0.9079	0.03477	0.02028	0.05564
+floor -20 · HMM+PSSM+PWM		false	SIG:hmm, SIG:pssm, SIG:pwm, PRO:hmm, PRO:pssm, PRO:pwm, MAT:hmm, MAT:pssm, MAT:pwm	-20	test	complete precursor	130	0.9846	0.9846	0.9562	1	1		0.9342	0.05827	0.00922	0.1405
+floor -20 · HMM+PSSM+PWM		false	SIG:hmm, SIG:pssm, SIG:pwm, PRO:hmm, PRO:pssm, PRO:pwm, MAT:hmm, MAT:pssm, MAT:pwm	-20	test	no signal peptide	50	0.84	0.84	0.6943	0.9403	0.86		0.7653	0.5613	0.2416	1.038
+floor -20 · HMM+PSSM+PWM+FW		false	SIG:hmm, SIG:pssm, SIG:pwm, PRO:hmm, PRO:pssm, PRO:pwm, MAT:hmm, MAT:pssm, MAT:pwm, FW:framework	-20	test	all	1293	0.993	0.9511	0.8995	0.9825	0.9728	0	0.918	0.03233	0.01836	0.05483
+floor -20 · HMM+PSSM+PWM+FW		false	SIG:hmm, SIG:pssm, SIG:pwm, PRO:hmm, PRO:pssm, PRO:pwm, MAT:hmm, MAT:pssm, MAT:pwm, FW:framework	-20	test	complete precursor	130	0.9846	0.9846	0.9562	1	1		0.9342	0.06755	0.01053	0.1622
+floor -20 · HMM+PSSM+PWM+FW		false	SIG:hmm, SIG:pssm, SIG:pwm, PRO:hmm, PRO:pssm, PRO:pwm, MAT:hmm, MAT:pssm, MAT:pwm, FW:framework	-20	test	no signal peptide	50	0.86	0.86	0.7166	0.9637	0.9		0.8129	0.4854	0.162	0.9697
+censored · HMM+PSSM · SIG/PRO/MAT/POST	previous ConoDictor database	false	SIG:hmm, SIG:pssm, PRO:hmm, PRO:pssm, MAT:hmm, MAT:pssm, POST:hmm, POST:pssm	0	test	all	1293	0.9899	0.9348	0.8833	0.9767	0.9674	0.0009017	0.9276	0.03996	0.02103	0.06298
+censored · HMM+PSSM · SIG/PRO/MAT/POST	previous ConoDictor database	false	SIG:hmm, SIG:pssm, PRO:hmm, PRO:pssm, MAT:hmm, MAT:pssm, POST:hmm, POST:pssm	0	test	complete precursor	130	1	1	1	1	1		1	0.0001602	3.505e-06	0.0004217
+censored · HMM+PSSM · SIG/PRO/MAT/POST	previous ConoDictor database	false	SIG:hmm, SIG:pssm, PRO:hmm, PRO:pssm, MAT:hmm, MAT:pssm, POST:hmm, POST:pssm	0	test	no signal peptide	50	0.76	0.76	0.6102	0.8889	0.88		0.6844	0.7701	0.3528	1.317
+censored · HMM+PSSM+PWM+FW · SIG	signal only	false	SIG:hmm, SIG:pssm, SIG:pwm, FW:framework	0	test	all	1293	0.9753	0.8315	0.7297	0.8986	0.9348	0.0009017	0.8075	0.07131	0.0454	0.1041
+censored · HMM+PSSM+PWM+FW · SIG	signal only	false	SIG:hmm, SIG:pssm, SIG:pwm, FW:framework	0	test	complete precursor	130	1	1	1	1	1		1	0.0008313	0.0001734	0.002048
+censored · HMM+PSSM+PWM+FW · SIG	signal only	false	SIG:hmm, SIG:pssm, SIG:pwm, FW:framework	0	test	no signal peptide	50	0.4	0.4	0.2142	0.5833	0.76		0.3299	1.389	0.9934	1.825
+censored · HMM+PSSM+PWM+FW · PRO/MAT	without signal	false	PRO:hmm, PRO:pssm, PRO:pwm, MAT:hmm, MAT:pssm, MAT:pwm, FW:framework	0	test	all	1293	0.9838	0.8859	0.7831	0.957	0.9457	0	0.8738	0.08237	0.03862	0.1473
+censored · HMM+PSSM+PWM+FW · PRO/MAT	without signal	false	PRO:hmm, PRO:pssm, PRO:pwm, MAT:hmm, MAT:pssm, MAT:pwm, FW:framework	0	test	complete precursor	130	0.8769	0.8769	0.75	0.9692	0.9538		0.8616	0.5695	0.1358	1.149
+censored · HMM+PSSM+PWM+FW · PRO/MAT	without signal	false	PRO:hmm, PRO:pssm, PRO:pwm, MAT:hmm, MAT:pssm, MAT:pwm, FW:framework	0	test	no signal peptide	50	0.9	0.9	0.7796	0.9804	0.92		0.8333	0.3423	0.1171	0.7076

@@ -1,0 +1,21 @@
+archspec==0.2.7
+cmdstanpy @ file:///home/conda/feedstock_root/build_artifacts/cmdstanpy_1793803661754/work
+conodb @ file:///home/ediman/Documents/conodb
+lightmotif @ git+https://github.com/althonos/lightmotif@9df9a1596e07e168649f9f81184549e8bd63f549
+numpy @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_numpy_1791675319/work/dist/numpy-2.5.4-cp315-cp315-linux_x86_64.whl#sha256=2550e6ccc5c9d7533dc83237ba787e0a66d873174bc7ca39394bd7f21b100bd8
+pandas @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_pandas_h105398f_1793811638/work
+psutil==7.2.2
+pyfamsa==0.7.0
+pyhmmer==0.12.3
+pyopal==0.7.4
+python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_python-dateutil_h5ded981_1793535232/work
+scipy==1.18.1
+scoring-matrices==0.3.5
+stanio @ file:///home/conda/feedstock_root/build_artifacts/stanio_1734581598953/work
+tqdm @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_tqdm_1789187326/work
+tzdata @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_python-tzdata_h5ded981_1793205938/work
+CmdStan (2, 40)
+
+pfsearch 2.3 revision 5.d
+
+Linux ediman-ThinkPad-X380-Yoga 7.0.0-42-generic #42-Ubuntu SMP PREEMPT_DYNAMIC Thu Oct 15 08:06:44 UTC 2026 x86_64 GNU/Linux

@@ -1,0 +1,5 @@
+accession	superfamily	family	scope	note
+# Per-entry corrections; they win over UniProt and labels.tsv. One row per accession, with the reason.
+# Typical use: an entry whose signal peptide or full sequence is near-identical to another superfamily (see label_conflicts.tsv).
+# Example (not active until the leading '#' is removed):
+# P0DKQ3	O1		conopeptide	signal >= 0.9 identical to O1 signals; UniProt says M
