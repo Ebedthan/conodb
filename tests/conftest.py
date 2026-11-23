@@ -1,3 +1,6 @@
+# SPDX-License-Identifier: GPL-3.0-only
+# Copyright (C) 2026 Anicet Ebou and Dominique Koua
+# Dual-licensed: see LICENSING.md for commercial licensing.
 """Synthetic UniProt-shaped entries and a local mock of the UniProt REST API."""
 
 from __future__ import annotations
@@ -286,11 +289,28 @@ PRF
 """
 
 
+FAKE_PFSEARCH = """#!/usr/bin/env python3
+# fake pfsearch -f -k -a -r PRF FASTA: one xPSA header per sequence, score = length
+import sys
+fa = sys.argv[-1]
+name, n = None, 0
+for line in open(fa):
+    if line.startswith(">"):
+        if name:
+            print(f">{name} motif=X|X raw_score={n}")
+        name, n = line[1:].split()[0], 0
+    else:
+        n += len(line.strip())
+if name:
+    print(f">{name} motif=X|X raw_score={n}")
+"""
+
+
 @pytest.fixture
 def fake_pftools(tmp_path, monkeypatch):
     bindir = tmp_path / "bin"
     bindir.mkdir()
-    for name, body in (("pfw", FAKE_PFW), ("pfmake", FAKE_PFMAKE)):
+    for name, body in (("pfw", FAKE_PFW), ("pfmake", FAKE_PFMAKE), ("pfsearch", FAKE_PFSEARCH)):
         p = bindir / name
         p.write_text(body)
         p.chmod(p.stat().st_mode | stat.S_IEXEC)

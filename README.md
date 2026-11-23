@@ -1,8 +1,5 @@
 # conodb
 
-https://doi.org/10.5281/zenodo.24010252
-https://doi.org/10.5281/zenodo.24010288
-
 Reproducible builder for the ConoDictor reference database. One command
 downloads the current UniProt data, extracts precursor regions, clusters
 them, audits how much independent evidence each superfamily has, builds the
@@ -440,3 +437,10 @@ pip install -e "./conodb[test]" && pytest conodb
 
 The tests run the full pipeline against a local mock of the UniProt REST API
 (pagination, release headers, transient errors, truncated downloads).
+
+## License
+
+GPL-3.0-only, with a commercial licence available from the copyright holders
+(Anicet Ebou and Dominique Koua) for use in proprietary software or services without the GPL's
+obligations: see `LICENSING.md`. Contributions require the terms in
+`CONTRIBUTING.md`. The database is CC BY 4.0 (derived from UniProtKB).

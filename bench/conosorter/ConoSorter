@@ -1,0 +1,99 @@
+#! /bin/bash
+
+################################################################################################################
+######## ConoSorter: Classify cDNA or protein sequences into conopeptide Gene Superfamilies and Classes ########
+
+# usage: ConoSorter -[d|p] <input file>
+# input file : query file must to be in fasta format
+# -d         : input file containing DNA sequences will be first translated into amino acid sequences
+# -p         : input file containing amino acid sequences
+# -h         : help (program usage)
+
+################################################################################################################
+
+ARGS=2
+
+if [[ $# != "$ARGS" && $1 != "-h" ]]
+then
+	echo -e "Error: wrong number of arguments\n\nSee program usage (-h option)\n"
+  	exit 1
+fi
+
+
+usage (){
+	echo -e "Usage: ConoSorter -[d|p] <input file>\n\ninput file : query file must be in fasta format\n-d         : input file containing DNA sequences will be first translated into amino acid sequences\n-p         : input file containing amino acid sequences\n\n-h         : help (program usage)\n"
+	}
+
+
+file=$2
+
+B=`basename $file .fasta`
+
+while getopts :d:p:h opt
+do
+	case $opt in
+		d)
+			## FORMAT & TRANSLATE ##
+			echo -e "Input file contains DNA sequences:\n\nStep 1/3: Formatting & Translating..."
+			./transl $file
+			## REGEX ##
+			echo "Step 2/3: Matching regular expressions..."
+			./regex_d translated.temp
+			;;
+		p)
+			## FORMAT ##
+			echo -e "Input file contains protein sequences:\n\nStep 1/3: Formatting..."
+			./transl $file
+			## REGEX ##
+			echo "Step 2/3: Matching regular expressions..."
+			./regex_p prot.temp
+			;;
+		h)
+			## USAGE ##
+			usage
+			exit 1
+			;;
+			
+		:)  
+			echo -e "Error: input file must be specified\n\nSee program usage (-h option)\n"
+        	exit 1
+        	;;
+        	        
+		*)
+			## ERROR ##
+			echo -e "Invalid option: -$OPTARG\n\nSee program usage (-h option)\n"
+			exit 1
+			;;
+		
+	esac
+	
+## pHMM #######
+
+	echo "Step 3/3: Matching Markov models..."
+	
+	if [ -f HMMER_input_superfam.fasta ]
+	then
+	hmmscan --tblout HMMER_output_superfam.temp --notextw ./models/HMM_superfam_db HMMER_input_superfam.fasta &> /dev/null
+	./pHMM HMMER_output_superfam.temp | sort -t'|' -k 1 > sorted_pHMM_superfam.temp
+	else
+	> sorted_pHMM_superfam.temp
+	fi
+
+    if [ -f HMMER_input_class.fasta ]
+    then
+    hmmscan --tblout HMMER_output_class.temp --notextw ./models/HMM_class_db HMMER_input_class.fasta &> /dev/null
+    ./pHMM HMMER_output_class.temp | sort -t'|' -k 1 > sorted_pHMM_class.temp
+    else
+    > sorted_pHMM_class.temp
+    fi
+    
+	join -t'|' -a1 -a2 -1 1 -2 1 sorted_pHMM_superfam.temp sorted_pHMM_class.temp | ./layout
+	
+## Rename output files ####
+	
+	mv Regex.tab ${B}_Regex.tab
+	mv pHMM.tab ${B}_pHMM.tab
+
+done  	
+    
+     

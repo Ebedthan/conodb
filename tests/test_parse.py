@@ -1,3 +1,6 @@
+# SPDX-License-Identifier: GPL-3.0-only
+# Copyright (C) 2026 Anicet Ebou and Dominique Koua
+# Dual-licensed: see LICENSING.md for commercial licensing.
 from conodb.config import LabelsConfig, RegionsConfig
 from conodb.parse import LabelResolver, cysteine_framework, evidence_class, extract_regions, split_similarity
 

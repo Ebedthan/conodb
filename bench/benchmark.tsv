@@ -1,0 +1,68 @@
+tool	subset	n	positives_correct	positives_correct_lo	positives_correct_hi	called_none	wrong_family	negatives_called_family	negatives_called_family_lo	negatives_called_family_hi	diff_vs_v3	diff_vs_v3_lo	diff_vs_v3_hi
+ConoDictor 3	all positives	184	0.9783	0.9438	1.0000	0.0054	0.0163				0.0000	0.0000	0.0000
+ConoDictor 3	complete precursor	130	1.0000	1.0000	1.0000	0.0000	0.0000				0.0000	0.0000	0.0000
+ConoDictor 3	signal, incomplete	4	1.0000	1.0000	1.0000	0.0000	0.0000				0.0000	0.0000	0.0000
+ConoDictor 3	no signal peptide	50	0.9200	0.8095	1.0000	0.0200	0.0600				0.0000	0.0000	0.0000
+ConoDictor 3	positives, families the tool covers	184	0.9783	0.9434	1.0000	0.0054	0.0163				0.0000	0.0000	0.0000
+ConoDictor 3	positives first public after 2021-07-07 (unseen by every tool)	11	1.0000	1.0000	1.0000	0.0000	0.0000				0.0000	0.0000	0.0000
+ConoDictor 3	all negatives	1109						0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+ConoDictor 3	negative: shuffled	131						0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+ConoDictor 3	negative: uniprot	978						0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+ConoDictor 3 (Bayes)	all positives	184	0.9783	0.9448	1.0000	0.0054	0.0163				0.0000	0.0000	0.0000
+ConoDictor 3 (Bayes)	complete precursor	130	1.0000	1.0000	1.0000	0.0000	0.0000				0.0000	0.0000	0.0000
+ConoDictor 3 (Bayes)	signal, incomplete	4	1.0000	1.0000	1.0000	0.0000	0.0000				0.0000	0.0000	0.0000
+ConoDictor 3 (Bayes)	no signal peptide	50	0.9200	0.8095	1.0000	0.0200	0.0600				0.0000	0.0000	0.0000
+ConoDictor 3 (Bayes)	positives, families the tool covers	184	0.9783	0.9448	1.0000	0.0054	0.0163				0.0000	0.0000	0.0000
+ConoDictor 3 (Bayes)	positives first public after 2021-07-07 (unseen by every tool)	11	1.0000	1.0000	1.0000	0.0000	0.0000				0.0000	0.0000	0.0000
+ConoDictor 3 (Bayes)	all negatives	1109						0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+ConoDictor 3 (Bayes)	negative: shuffled	131						0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+ConoDictor 3 (Bayes)	negative: uniprot	978						0.0000	0.0000	0.0000	0.0000	0.0000	0.0000
+Nearest neighbour	all positives	184	0.9565	0.9113	0.9880	0.0272	0.0163				-0.0217	-0.0473	-0.0044
+Nearest neighbour	complete precursor	130	1.0000	1.0000	1.0000	0.0000	0.0000				0.0000	0.0000	0.0000
+Nearest neighbour	signal, incomplete	4	1.0000	1.0000	1.0000	0.0000	0.0000				0.0000	0.0000	0.0000
+Nearest neighbour	no signal peptide	50	0.8400	0.6888	0.9565	0.1000	0.0600				-0.0800	-0.1702	-0.0175
+Nearest neighbour	positives, families the tool covers	184	0.9565	0.9104	0.9896	0.0272	0.0163				-0.0217	-0.0479	-0.0049
+Nearest neighbour	positives first public after 2021-07-07 (unseen by every tool)	11	1.0000	1.0000	1.0000	0.0000	0.0000				0.0000	0.0000	0.0000
+Nearest neighbour	all negatives	1109						0.0406	0.0212	0.0649	0.0406	0.0220	0.0645
+Nearest neighbour	negative: shuffled	131						0.3359	0.2410	0.4134	0.3359	0.2444	0.4161
+Nearest neighbour	negative: uniprot	978						0.0010	0.0000	0.0036	0.0010	0.0000	0.0033
+ConoDictor 2.3.1	all positives	184	0.9293	0.8718	0.9661	0.0272	0.0435				-0.0489	-0.0900	-0.0168
+ConoDictor 2.3.1	complete precursor	130	1.0000	1.0000	1.0000	0.0000	0.0000				0.0000	0.0000	0.0000
+ConoDictor 2.3.1	signal, incomplete	4	1.0000	1.0000	1.0000	0.0000	0.0000				0.0000	0.0000	0.0000
+ConoDictor 2.3.1	no signal peptide	50	0.7400	0.5428	0.8750	0.1000	0.1600				-0.1800	-0.3182	-0.0635
+ConoDictor 2.3.1	positives, families the tool covers	184	0.9293	0.8716	0.9676	0.0272	0.0435				-0.0489	-0.0857	-0.0181
+ConoDictor 2.3.1	positives first public after 2021-07-07 (unseen by every tool)	11	1.0000	1.0000	1.0000	0.0000	0.0000				0.0000	0.0000	0.0000
+ConoDictor 2.3.1	all negatives	1109						0.2795	0.2229	0.3393	0.2795	0.2236	0.3370
+ConoDictor 2.3.1	positives first public after 2021-07-07 (unseen by this tool)	11	1.0000	1.0000	1.0000	0.0000	0.0000				0.0000	0.0000	0.0000
+ConoDictor 2.3.1	negative: shuffled	131						0.8092	0.7103	0.8906	0.8092	0.7071	0.8947
+ConoDictor 2.3.1	negative: uniprot	978						0.2086	0.1596	0.2664	0.2086	0.1571	0.2660
+ConoDictor 2.3.1 (HMM only)	all positives	184	0.9402	0.8846	0.9752	0.0598	0.0000				-0.0380	-0.0719	-0.0066
+ConoDictor 2.3.1 (HMM only)	complete precursor	130	1.0000	1.0000	1.0000	0.0000	0.0000				0.0000	0.0000	0.0000
+ConoDictor 2.3.1 (HMM only)	signal, incomplete	4	1.0000	1.0000	1.0000	0.0000	0.0000				0.0000	0.0000	0.0000
+ConoDictor 2.3.1 (HMM only)	no signal peptide	50	0.7800	0.6140	0.9032	0.2200	0.0000				-0.1400	-0.2454	-0.0408
+ConoDictor 2.3.1 (HMM only)	positives, families the tool covers	184	0.9402	0.8897	0.9754	0.0598	0.0000				-0.0380	-0.0704	-0.0104
+ConoDictor 2.3.1 (HMM only)	positives first public after 2021-07-07 (unseen by every tool)	11	1.0000	1.0000	1.0000	0.0000	0.0000				0.0000	0.0000	0.0000
+ConoDictor 2.3.1 (HMM only)	all negatives	1109						0.0225	0.0127	0.0348	0.0225	0.0126	0.0347
+ConoDictor 2.3.1 (HMM only)	positives first public after 2021-07-07 (unseen by this tool)	11	1.0000	1.0000	1.0000	0.0000	0.0000				0.0000	0.0000	0.0000
+ConoDictor 2.3.1 (HMM only)	negative: shuffled	131						0.0534	0.0217	0.0900	0.0534	0.0200	0.0923
+ConoDictor 2.3.1 (HMM only)	negative: uniprot	978						0.0184	0.0081	0.0313	0.0184	0.0083	0.0316
+ConoSorter	all positives	184	0.9076	0.8512	0.9474	0.0380	0.0543				-0.0707	-0.1233	-0.0181
+ConoSorter	complete precursor	130	0.9308	0.8791	0.9706	0.0231	0.0462				-0.0692	-0.1204	-0.0296
+ConoSorter	signal, incomplete	4	1.0000	1.0000	1.0000	0.0000	0.0000				0.0000	0.0000	0.0000
+ConoSorter	no signal peptide	50	0.8400	0.7115	0.9273	0.0800	0.0800				-0.0800	-0.2143	0.0715
+ConoSorter	positives, families the tool covers	184	0.9076	0.8544	0.9469	0.0380	0.0543				-0.0707	-0.1263	-0.0226
+ConoSorter	positives first public after 2021-07-07 (unseen by every tool)	11	0.8182	0.5556	1.0000	0.0000	0.1818				-0.1818	-0.4444	0.0000
+ConoSorter	all negatives	1109						0.4860	0.4274	0.5472	0.4860	0.4269	0.5439
+ConoSorter	positives first public after 2013-10-01 (unseen by this tool)	49	0.7959	0.6591	0.8909	0.0408	0.1633				-0.1837	-0.3137	-0.0961
+ConoSorter	negative: shuffled	131						0.5725	0.4383	0.6961	0.5725	0.4341	0.6993
+ConoSorter	negative: uniprot	978						0.4744	0.4104	0.5385	0.4744	0.4064	0.5344
+ConoSorter (regex only)	all positives	184	0.8859	0.8216	0.9298	0.0652	0.0489				-0.0924	-0.1558	-0.0400
+ConoSorter (regex only)	complete precursor	130	0.9308	0.8767	0.9667	0.0231	0.0462				-0.0692	-0.1204	-0.0296
+ConoSorter (regex only)	signal, incomplete	4	1.0000	1.0000	1.0000	0.0000	0.0000				0.0000	0.0000	0.0000
+ConoSorter (regex only)	no signal peptide	50	0.7600	0.6086	0.8718	0.1800	0.0600				-0.1600	-0.3333	0.0213
+ConoSorter (regex only)	positives, families the tool covers	183	0.8907	0.8298	0.9358	0.0656	0.0437				-0.0874	-0.1497	-0.0340
+ConoSorter (regex only)	positives first public after 2021-07-07 (unseen by every tool)	11	0.8182	0.6250	1.0000	0.0000	0.1818				-0.1818	-0.4444	0.0000
+ConoSorter (regex only)	all negatives	1109						0.4662	0.4062	0.5327	0.4662	0.4061	0.5215
+ConoSorter (regex only)	positives first public after 2013-10-01 (unseen by this tool)	49	0.7347	0.5749	0.8571	0.1224	0.1429				-0.2449	-0.4000	-0.1379
+ConoSorter (regex only)	negative: shuffled	131						0.5115	0.3605	0.6768	0.5115	0.3529	0.6618
+ConoSorter (regex only)	negative: uniprot	978						0.4601	0.3916	0.5256	0.4601	0.3906	0.5210

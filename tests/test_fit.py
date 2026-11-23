@@ -1,3 +1,6 @@
+# SPDX-License-Identifier: GPL-3.0-only
+# Copyright (C) 2026 Anicet Ebou and Dominique Koua
+# Dual-licensed: see LICENSING.md for commercial licensing.
 """Fit stage: design matrix, gradient, baseline, penalised and Stan fits."""
 
 
@@ -116,11 +119,12 @@ def test_evaluate_stage(project, mock_uniprot):
     ab = read_tsv(rdir / "evaluation_ablations.tsv")
     names = {r["variant"] for r in ab}
     notes = {n for r in ab for n in r["note"].split("; ") if n}
-    # the fixture has no pftools: PSSM variants are not run; the others are
     assert {"censored · HMM", "censored · HMM+PWM+FW", "floor -20 · HMM", "floor -20 · HMM+PWM"} <= names
     assert {"current settings", "signal only", "without signal"} <= notes
-    assert not any("PSSM" in v for v in names)
-    assert len(names) == len({(r["features"], r["hmm_floor"]) for r in ab})      # no duplicates
+    has_pssm = any(":pssm" in c for c in (rdir / "features.tsv").read_text().split("\n", 1)[0].split("\t"))
+    assert any("PSSM" in v for v in names) == has_pssm               # PSSM variants only when pftools ran
+    keys = [(r["variant"], r["split"], r["subset"]) for r in ab]
+    assert len(keys) == len(set(keys))                                         # each variant once
 
 
 def test_design_floor_and_fill():

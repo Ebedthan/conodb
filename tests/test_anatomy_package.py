@@ -1,3 +1,6 @@
+# SPDX-License-Identifier: GPL-3.0-only
+# Copyright (C) 2026 Anicet Ebou and Dominique Koua
+# Dual-licensed: see LICENSING.md for commercial licensing.
 """Region prediction benchmark, framework feature, package, train/serve consistency."""
 
 import json

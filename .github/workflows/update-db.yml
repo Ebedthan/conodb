@@ -47,7 +47,9 @@ jobs:
       - name: Install conodb
         run: |
           pip install .
-          pfsearch -v || { echo "pfsearch missing"; exit 1; }
+          # the pftools 2.3 pfsearch prints its usage and exits non-zero on -v/-h: test that it exists instead
+          command -v pfsearch >/dev/null || { echo "pfsearch missing"; exit 1; }
+          pfsearch -h 2>&1 | head -1 || true
           conodb --version || true
 
       - name: Is a new UniProt release available?

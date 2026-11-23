@@ -4,12 +4,12 @@ build-backend = "hatchling.build"
 
 [project]
 name = "conodb"
-version = "0.2.0.dev0"
-description = "Reproducible builder for the ConoDictor reference database (UniProt => regions => audit => profiles)."
+version = "0.1.0"
+description = "Reproducible builder for the ConoDictor reference database (UniProt -> regions -> audit -> profiles)."
 readme = "README.md"
-license = "GPL-3.0-or-later"
+license = "GPL-3.0-only"
 requires-python = ">=3.10"
-authors = [{ name = "Anicet Ebou" }]
+authors = [{ name = "Anicet Ebou", email = "anicet.ebou@gmail.com" }, { name = "Dominique Koua", email = "dominique.koua@inphb.ci" }]
 dependencies = [
     "pyopal>=0.7",
     "pyhmmer>=0.11",

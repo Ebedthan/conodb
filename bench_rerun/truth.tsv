@@ -1,0 +1,1294 @@
+id	kind	label	type	group	first_public	length
+A0A068B0Z6	positive	A	no signal peptide	F5C3U4	2018-09-12	41
+A0A075B6I1	negative	NONE	negative: uniprot	A0A075B6I1		120
+A0A075B6I6	negative	NONE	negative: uniprot	A0A075B6I6		118
+A0A075B6I9	negative	NONE	negative: uniprot	A0A075B6I9		117
+A0A075B6J9	negative	NONE	negative: uniprot	P01704		118
+A0A090XBL6	negative	NONE	negative: uniprot	A0A090XBL6		118
+A0A0B4J1U3	negative	NONE	negative: uniprot	A0A075B6I6		117
+A0A0C9S461	negative	NONE	negative: uniprot	A0A0C9S461		123
+A0A0F6QDA5	positive	O1	no signal peptide	M9PQ91	2017-05-10	31
+A0A0K8RCU3	negative	NONE	negative: uniprot	A0A0K8RE99		106
+A0A0K8RDH6	negative	NONE	negative: uniprot	A0A090XBL6		96
+A0A0K8RE99	negative	NONE	negative: uniprot	A0A0K8RE99		110
+A0A125S9F3	positive	O2	complete precursor	A0A125S9F3	2020-10-07	76
+A0A193H361	negative	NONE	negative: uniprot	P31107		75
+A0A193H365	negative	NONE	negative: uniprot	P31107		75
+A0A193H397	negative	NONE	negative: uniprot	P31107		75
+A0A219CMY0	negative	NONE	negative: uniprot	P29004		132
+A0A2I6EDN8	positive	M	no signal peptide	A0A2I6EDN8	2018-07-18	47
+A0A2L2P6T1	positive	O2	complete precursor	A0A2L2P6T1	2021-09-29	84
+A0A2U8JCR5	negative	NONE	negative: uniprot	P31107		70
+A0A384E129	positive	O1	complete precursor	A0A384E129	2019-02-13	76
+A0A3G3C7S0	positive	A	complete precursor	F5C3U4	2021-09-29	65
+A0A3G3C7S9	positive	A	complete precursor	A0SE60	2021-09-29	61
+A0A3G3C7U1	positive	A	complete precursor	F5C3U4	2021-09-29	63
+A0A3G3C7U4	positive	A	complete precursor	A0SE60	2021-09-29	61
+A0A3G3C7V0	positive	A	complete precursor	A0SE60	2021-09-29	61
+A0A3G6IHA6	positive	O1	no signal peptide	A0A3G6IHA6	2021-02-10	34
+A0A3P7XL18	negative	NONE	negative: uniprot	A0A3P7XL18		297
+A0A5P9K470	negative	NONE	negative: uniprot	P31107		76
+A0A5P9K6A8	negative	NONE	negative: uniprot	P31107		75
+A0A5P9NYS6	negative	NONE	negative: uniprot	P31107		71
+A0A7G6KN42	negative	NONE	negative: uniprot	A0A7G6KN42		59
+A0A7G6KN55	negative	NONE	negative: uniprot	A0A7G6KN55		61
+A0A7M4DUE8	positive	M	no signal peptide	C1J5M7	2021-09-29	22
+A0JNM6	negative	NONE	negative: uniprot	A0JNM6		148
+A0JNN8	negative	NONE	negative: uniprot	A0JNN8		97
+A0SE60	positive	A	complete precursor	A0SE60	2009-05-05	67
+A1BN61	negative	NONE	negative: uniprot	P18427		129
+A1IKL2	negative	NONE	negative: uniprot	A1IKL2		152
+A1X8B6	positive	A	complete precursor	F5C3U4	2009-05-05	68
+A1X8C2	positive	A	complete precursor	A1X8C2	2009-05-05	64
+A1X8C3	positive	A	complete precursor	A1X8C2	2009-05-05	64
+A1X8C6	positive	A	no signal peptide	Q6PPB3	2009-07-28	40
+A2VE22	negative	NONE	negative: uniprot	A2VE22		76
+A4IFR0	negative	NONE	negative: uniprot	A4IFR0		118
+A4K2M6	negative	NONE	negative: uniprot	A4K2M6		111
+A4K2P0	negative	NONE	negative: uniprot	A4K2M6		111
+A4K2P8	negative	NONE	negative: uniprot	A4K2M6		111
+A4K2T3	negative	NONE	negative: uniprot	A4K2M6		111
+A4K2U1	negative	NONE	negative: uniprot	A4K2M6		111
+A4K2V4	negative	NONE	negative: uniprot	A4K2M6		90
+A4K2Y4	negative	NONE	negative: uniprot	A4K2M6		111
+A6QLI0	negative	NONE	negative: uniprot	A6QLI0		236
+A7WNV5	negative	NONE	negative: uniprot	A7WNV5		78
+A8XLL0	negative	NONE	negative: uniprot	O17058		66
+A9XE49	negative	NONE	negative: uniprot	A9XE49		200
+B0KZ78	positive	O2	complete precursor	B0KZ78	2010-03-02	87
+B1MTB0	negative	NONE	negative: uniprot	B1MTB0		215
+B3A0N9	negative	NONE	negative: uniprot	P80060		36
+B3A0Q2	negative	NONE	negative: uniprot	B3A0Q2		296
+B3EWZ7	negative	NONE	negative: uniprot	B3EWZ7		288
+B3NKZ6	negative	NONE	negative: uniprot	B3NKZ6		145
+B4G532	negative	NONE	negative: uniprot	B4G532		137
+B4I609	negative	NONE	negative: uniprot	B3NKZ6		134
+B4II56	negative	NONE	negative: uniprot	B4II56		139
+B4PB41	negative	NONE	negative: uniprot	B3NKZ6		134
+B4QAF1	negative	NONE	negative: uniprot	B3NKZ6		134
+B5B3U4	negative	NONE	negative: uniprot	B5B3U4		182
+B5L5M7	negative	NONE	negative: uniprot	B5L5M7		84
+B5LUQ3	negative	NONE	negative: uniprot	B5LUQ9		91
+B5LUQ7	negative	NONE	negative: uniprot	B5LUQ9		123
+B5LUQ8	negative	NONE	negative: uniprot	B5LUQ9		103
+B5LUQ9	negative	NONE	negative: uniprot	B5LUQ9		132
+B5LUR0	negative	NONE	negative: uniprot	B5LUQ9		109
+B5LUR1	negative	NONE	negative: uniprot	B5LUQ9		94
+B5X8I6	negative	NONE	negative: uniprot	B5X8I6		90
+B6HY16	negative	NONE	negative: uniprot	P31107		75
+B6VH75	negative	NONE	negative: uniprot	Q9D9X8		163
+B7XFT1	negative	NONE	negative: uniprot	B7XFT1		74
+B7ZS96	negative	NONE	negative: uniprot	B7ZS96		153
+C0HJU4	negative	NONE	negative: uniprot	P60591		95
+C0HK74	negative	NONE	negative: uniprot	P0DMJ5		56
+C0HKQ1	negative	NONE	negative: uniprot	C0HL00		33
+C0HKT2	negative	NONE	negative: uniprot	C0HKT2		103
+C0HKV8	negative	NONE	negative: uniprot	C0HKV8		70
+C0HKY8	positive	M	no signal peptide	P0DTJ3	2017-09-27	16
+C0HL00	negative	NONE	negative: uniprot	C0HL00		34
+C0HME5	negative	NONE	negative: uniprot	C0HME5		99
+C0HML8	negative	NONE	negative: uniprot	C0HML8		54
+C1J5M5	positive	M	complete precursor	C1J5M7	2009-09-22	77
+C1J5M6	positive	M	complete precursor	C1J5M7	2009-09-22	78
+C1J5M7	positive	M	complete precursor	C1J5M7	2009-09-22	80
+C3RT17	negative	NONE	negative: uniprot	C3RT17		70
+C3RT18	negative	NONE	negative: uniprot	C3RT17		70
+C7DQB9	positive	I2	complete precursor	C7DQB9	2010-03-02	81
+C8CK76	positive	O2	complete precursor	B0KZ78	2010-03-02	85
+C8CK78	positive	O2	complete precursor	B0KZ78	2010-03-02	85
+C8CK79	positive	O2	complete precursor	B0KZ78	2010-03-02	85
+D2XUU4	negative	NONE	negative: uniprot	R9UE59		88
+D2XUU7	negative	NONE	negative: uniprot	R9UE59		81
+D2XUU8	negative	NONE	negative: uniprot	R9UE59		85
+D2XUV1	negative	NONE	negative: uniprot	R9UE59		83
+D2Y172	positive	T	complete precursor	D2Y172	2012-01-25	66
+D3Z9M3	negative	NONE	negative: uniprot	D3Z9M3		109
+D3ZVN1	negative	NONE	negative: uniprot	D3ZVN1		104
+D3ZVP0	negative	NONE	negative: uniprot	D3ZVP0		97
+D6C4H9	positive	I1	complete precursor	D6C4H9	2012-01-25	78
+D6C4J9	positive	T	no signal peptide	D6C4J9	2012-01-25	28
+D6C4K9	positive	O1	complete precursor	D6C4L2	2012-01-25	76
+D6C4L2	positive	O1	complete precursor	D6C4L2	2012-01-25	80
+D6WT67	negative	NONE	negative: uniprot	D6WT67		128
+E2A6P1	negative	NONE	negative: uniprot	E2A6P1		169
+E2AZE8	negative	NONE	negative: uniprot	E2AZE8		105
+E2DIH6	positive	A	complete precursor	A0SE60	2014-01-22	64
+E7EKJ5	negative	NONE	negative: uniprot	C3RT17		65
+E7EKM1	negative	NONE	negative: uniprot	C3RT17		61
+E7F5F0	negative	NONE	negative: uniprot	E7F5F0		169
+F0JA92	negative	NONE	negative: uniprot	F0JA92		59
+F1T149	negative	NONE	negative: uniprot	Q1JS88		84
+F1T156	negative	NONE	negative: uniprot	F1T156		66
+F2Z472	negative	NONE	negative: uniprot	F2Z472		265
+F5C3U4	positive	A	complete precursor	F5C3U4	2014-09-03	69
+G3XDD8	negative	NONE	negative: uniprot	G3XDD8		204
+G5CKU5	negative	NONE	negative: uniprot	G5CKU5		109
+G5EEC2	negative	NONE	negative: uniprot	G5EEC2		177
+G5EFH1	negative	NONE	negative: uniprot	G5EFH1		108
+G5EGH7	negative	NONE	negative: uniprot	G5EGH7		162
+H2A0K9	negative	NONE	negative: uniprot	H2A0K9		223
+H2BKJ0	positive	M	complete precursor	H2BKJ0	2023-05-03	74
+H9N3R7	positive	A	no signal peptide	K8DWB5	2017-04-12	31
+I3LGZ3	negative	NONE	negative: uniprot	I3LGZ3		81
+J7H8J4	negative	NONE	negative: uniprot	P31107		73
+K8DWB5	positive	A	no signal peptide	K8DWB5	2017-04-12	37
+K9J977	negative	NONE	negative: uniprot	K9J977		164
+K9N4Q4	negative	NONE	negative: uniprot	K9N4Q4		246
+L7MB58	negative	NONE	negative: uniprot	L7MB58		111
+L8BU87	positive	A	no signal peptide	Q9XZK6	2014-09-03	37
+M9P2C1	negative	NONE	negative: uniprot	M9P2C1		91
+M9PQ91	positive	O1	complete precursor	M9PQ91	2017-05-10	84
+O00264	negative	NONE	negative: uniprot	O00264		195
+O00626	negative	NONE	negative: uniprot	O00626		93
+O02708	negative	NONE	negative: uniprot	O02837		194
+O02837	negative	NONE	negative: uniprot	O02837		195
+O08615	negative	NONE	negative: uniprot	O08615		46
+O09164	negative	NONE	negative: uniprot	O09164		251
+O13153	negative	NONE	negative: uniprot	O13153		150
+O13235	negative	NONE	negative: uniprot	O13235		121
+O13238	negative	NONE	negative: uniprot	O13235		121
+O13250	negative	NONE	negative: uniprot	O13235		121
+O15263	negative	NONE	negative: uniprot	O15263		64
+O15444	negative	NONE	negative: uniprot	O15444		150
+O15537	negative	NONE	negative: uniprot	O15537		224
+O17058	negative	NONE	negative: uniprot	O17058		69
+O18518	negative	NONE	negative: uniprot	O18518		148
+O18641	negative	NONE	negative: uniprot	O18641		194
+O19092	negative	NONE	negative: uniprot	O19092		146
+O42499	negative	NONE	negative: uniprot	P16042		153
+O44185	negative	NONE	negative: uniprot	O44185		160
+O45201	negative	NONE	negative: uniprot	O45201		252
+O45944	negative	NONE	negative: uniprot	O45944		124
+O46203	negative	NONE	negative: uniprot	O46203		252
+O46430	negative	NONE	negative: uniprot	P18427		129
+O46541	negative	NONE	negative: uniprot	Q9GLK4		129
+O46655	negative	NONE	negative: uniprot	O46655		132
+O54831	negative	NONE	negative: uniprot	O54831		253
+O55006	negative	NONE	negative: uniprot	O55006		240
+O55022	negative	NONE	negative: uniprot	O00264		195
+O55038	negative	NONE	negative: uniprot	O55038		109
+O55042	negative	NONE	negative: uniprot	Q91448		140
+O55186	negative	NONE	negative: uniprot	O55186		123
+O60258	negative	NONE	negative: uniprot	O60258		216
+O60542	negative	NONE	negative: uniprot	O60542		156
+O62053	negative	NONE	negative: uniprot	O62053		111
+O62819	negative	NONE	negative: uniprot	P01238		228
+O70300	negative	NONE	negative: uniprot	O70300		156
+O70301	negative	NONE	negative: uniprot	O70300		156
+O70460	negative	NONE	negative: uniprot	O70460		108
+O73797	negative	NONE	negative: uniprot	O73797		233
+O75973	negative	NONE	negative: uniprot	O75973		258
+O76076	negative	NONE	negative: uniprot	Q9Z0G4		250
+O76818	negative	NONE	negative: uniprot	O18641		193
+O77248	negative	NONE	negative: uniprot	P13276		188
+O77416	negative	NONE	negative: uniprot	O77416		77
+O77517	negative	NONE	negative: uniprot	O77517		119
+O77518	negative	NONE	negative: uniprot	O77517		119
+O77521	negative	NONE	negative: uniprot	O77517		119
+O77523	negative	NONE	negative: uniprot	O77517		119
+O77532	negative	NONE	negative: uniprot	O77517		119
+O77535	negative	NONE	negative: uniprot	O77517		119
+O77537	negative	NONE	negative: uniprot	O77517		119
+O77812	negative	NONE	negative: uniprot	O77812		187
+O88992	negative	NONE	negative: uniprot	O75973		258
+O93223	negative	NONE	negative: uniprot	P31107		75
+O93224	negative	NONE	negative: uniprot	P31107		72
+O93452	negative	NONE	negative: uniprot	P31107		75
+O93474	negative	NONE	negative: uniprot	O73797		140
+O95157	negative	NONE	negative: uniprot	O95157		252
+O95715	negative	NONE	negative: uniprot	O95715		111
+O96382	negative	NONE	negative: uniprot	Q86RS3		165
+O97399	negative	NONE	negative: uniprot	O97399		258
+O97590	negative	NONE	negative: uniprot	P26652		151
+O97686	negative	NONE	negative: uniprot	O97686		110
+O97798	negative	NONE	negative: uniprot	O97798		174
+O97949	negative	NONE	negative: uniprot	O97949		114
+P00000	negative	NONE	negative: uniprot	P00000		68
+P00305	negative	NONE	negative: uniprot	Q00630		189
+P00697	negative	NONE	negative: uniprot	P00697		148
+P00717	negative	NONE	negative: uniprot	G3XDD8		185
+P00718	negative	NONE	negative: uniprot	G3XDD8		185
+P00768	negative	NONE	negative: uniprot	P00769		216
+P00769	negative	NONE	negative: uniprot	P00769		218
+P01032	negative	NONE	negative: uniprot	P01032		74
+P01034	negative	NONE	negative: uniprot	O19092		146
+P01170	negative	NONE	negative: uniprot	P01170		125
+P01212	negative	NONE	negative: uniprot	P01212		262
+P01222	negative	NONE	negative: uniprot	P01222		138
+P01223	negative	NONE	negative: uniprot	P01222		138
+P01225	negative	NONE	negative: uniprot	P18427		129
+P01227	negative	NONE	negative: uniprot	P18427		129
+P01228	negative	NONE	negative: uniprot	P18427		129
+P01236	negative	NONE	negative: uniprot	P01238		227
+P01238	negative	NONE	negative: uniprot	P01238		229
+P01342	negative	NONE	negative: uniprot	P01342		115
+P01350	negative	NONE	negative: uniprot	P55885		101
+P01351	negative	NONE	negative: uniprot	P55885		104
+P01352	negative	NONE	negative: uniprot	P55885		104
+P01354	negative	NONE	negative: uniprot	P55885		104
+P01510	negative	NONE	negative: uniprot	P01510		62
+P01522	positive	O1	complete precursor	A0A384E129	1986-07-21	73
+P01523	positive	M	complete precursor	C1J5M7	1986-07-21	75
+P01574	negative	NONE	negative: uniprot	O77812		187
+P01577	negative	NONE	negative: uniprot	P01577		186
+P01578	negative	NONE	negative: uniprot	P01577		186
+P01701	negative	NONE	negative: uniprot	A0A075B6I6		117
+P01704	negative	NONE	negative: uniprot	P01704		120
+P01705	negative	NONE	negative: uniprot	P01704		113
+P01888	negative	NONE	negative: uniprot	O77517		118
+P02220	negative	NONE	negative: uniprot	P02220		149
+P02732	negative	NONE	negative: uniprot	P23699		31
+P02777	negative	NONE	negative: uniprot	P02777		88
+P02783	negative	NONE	negative: uniprot	P02783		112
+P02815	negative	NONE	negative: uniprot	P02815		138
+P02849	negative	NONE	negative: uniprot	P02849		174
+P02851	negative	NONE	negative: uniprot	P02851		210
+P03969	negative	NONE	negative: uniprot	P09038		155
+P04351	negative	NONE	negative: uniprot	P04351		169
+P04365	negative	NONE	negative: uniprot	P04365		125
+P04401	negative	NONE	negative: uniprot	P04401		133
+P04563	negative	NONE	negative: uniprot	P55885		104
+P04564	negative	NONE	negative: uniprot	P55885		34
+P04639	negative	NONE	negative: uniprot	Q00623		259
+P04652	negative	NONE	negative: uniprot	P01222		138
+P04812	negative	NONE	negative: uniprot	P04812		123
+P04837	negative	NONE	negative: uniprot	P18427		129
+P04939	negative	NONE	negative: uniprot	P04939		184
+P05001	negative	NONE	negative: uniprot	P05001		195
+P05090	negative	NONE	negative: uniprot	P05090		189
+P05484	positive	O1	complete precursor	A0A384E129	1988-11-01	71
+P06027	negative	NONE	negative: uniprot	P06027		147
+P06315	negative	NONE	negative: uniprot	P06315		115
+P06702	negative	NONE	negative: uniprot	P28783		114
+P06910	negative	NONE	negative: uniprot	P06910		177
+P07182	negative	NONE	negative: uniprot	P17111		284
+P07186	negative	NONE	negative: uniprot	P13428		173
+P07194	negative	NONE	negative: uniprot	P01212		216
+P07288	negative	NONE	negative: uniprot	P07288		261
+P07498	negative	NONE	negative: uniprot	P07498		182
+P07732	negative	NONE	negative: uniprot	P07732		142
+P08620	negative	NONE	negative: uniprot	P08620		206
+P08699	negative	NONE	negative: uniprot	P38486		262
+P08905	negative	NONE	negative: uniprot	P00697		148
+P09038	negative	NONE	negative: uniprot	P09038		288
+P09237	negative	NONE	negative: uniprot	P09237		267
+P09337	negative	NONE	negative: uniprot	P09337		251
+P09428	negative	NONE	negative: uniprot	P09428		266
+P09466	negative	NONE	negative: uniprot	P09466		180
+P09682	negative	NONE	negative: uniprot	P09682		36
+P09837	negative	NONE	negative: uniprot	O46655		117
+P09876	negative	NONE	negative: uniprot	P01170		74
+P09929	negative	NONE	negative: uniprot	P09929		89
+P09944	negative	NONE	negative: uniprot	P09944		66
+P0C195	positive	M	no signal peptide	C1J5M7	2006-04-18	22
+P0C1N7	positive	M	complete precursor	C1J5M7	2006-07-11	64
+P0C1T9	positive	M	no signal peptide	P0C1T9	2006-09-05	22
+P0C1U1	positive	M	no signal peptide	C1J5M7	2006-09-05	22
+P0C1U2	positive	M	no signal peptide	P0C1T9	2006-09-05	22
+P0C1V9	positive	A	complete precursor	A0SE60	2006-09-19	62
+P0C1Y2	positive	A	complete precursor	P0C1Y2	2006-10-03	62
+P0C1Z8	negative	NONE	negative: uniprot	P0C1Z8		42
+P0C1Z9	negative	NONE	negative: uniprot	P0C1Z8		42
+P0C257	positive	I1	no signal peptide	P0C257	2006-11-28	46
+P0C259	positive	I1	no signal peptide	P0C257	2006-11-28	43
+P0C349	positive	M	no signal peptide	C1J5M7	2007-05-29	22
+P0C350	positive	M	no signal peptide	C1J5M7	2007-05-29	22
+P0C351	positive	A	no signal peptide	P0DKP3	2007-05-29	16
+P0C425	positive	M	complete precursor	Q9BPH9	2007-05-29	71
+P0C5X1	negative	NONE	negative: uniprot	P0C5X1		33
+P0C5X2	negative	NONE	negative: uniprot	P0C5X1		33
+P0C5X4	negative	NONE	negative: uniprot	P0C5X1		33
+P0C612	positive	I1	no signal peptide	P0C612	2008-01-15	38
+P0C615	positive	I2	no signal peptide	P0C615	2008-01-15	32
+P0C640	positive	T	complete precursor	P0C640	2008-01-15	68
+P0C667	positive	T	complete precursor	P0C640	2008-02-05	66
+P0C670	positive	T	complete precursor	P0C670	2008-02-05	63
+P0C7I1	positive	M	complete precursor	C1J5M7	2008-04-29	74
+P0C7M3	negative	NONE	negative: uniprot	P0C7M3		94
+P0C8A6	negative	NONE	negative: uniprot	P0C8A6		65
+P0CAQ8	positive	A	no signal peptide	Q6PPB3	2009-06-16	40
+P0CAQ9	positive	A	no signal peptide	Q6PPB3	2009-06-16	40
+P0CB07	positive	A	complete precursor	Q9XZK6	2009-07-28	60
+P0CB08	positive	A	complete precursor	Q9XZK6	2009-07-28	64
+P0CB12	positive	A	complete precursor	Q9XZK6	2009-07-28	60
+P0CD95	negative	NONE	negative: uniprot	P0CD95		90
+P0CE74	positive	A	no signal peptide	F5C3U4	2010-03-23	18
+P0CE77	positive	M	no signal peptide	C1J5M7	2010-03-23	20
+P0CH21	positive	M	signal, incomplete	Q9BPH9	2010-08-10	58
+P0CY60	positive	O1	complete precursor	A0A384E129	2011-06-28	70
+P0CY65	positive	O1	complete precursor	P0CY65	2011-06-28	75
+P0CY67	positive	O1	signal, incomplete	Q5K0D7	2011-06-28	63
+P0CY76	positive	A	no signal peptide	P0CY76	2011-06-28	36
+P0CY88	positive	A	complete precursor	P0CY88	2011-06-28	66
+P0DJC6	positive	O1	complete precursor	P0DJC6	2012-01-25	94
+P0DKM1	positive	I2	complete precursor	P0DKM1	2012-10-31	74
+P0DKP9	positive	M	complete precursor	C1J5M7	2012-10-31	72
+P0DKQ0	positive	M	complete precursor	C1J5M7	2012-10-31	73
+P0DKQ1	positive	M	complete precursor	C1J5M7	2012-10-31	73
+P0DKQ2	positive	M	complete precursor	H2BKJ0	2012-10-31	73
+P0DKQ9	positive	M	complete precursor	C1J5M7	2012-10-31	74
+P0DL39	positive	A	no signal peptide	P0DL39	2015-02-04	16
+P0DL66	positive	O1	no signal peptide	M9PQ91	2017-05-10	27
+P0DL67	positive	O1	no signal peptide	M9PQ91	2017-05-10	27
+P0DM21	positive	A	complete precursor	A0SE60	2018-09-12	56
+P0DM23	positive	A	complete precursor	A0SE60	2018-11-07	56
+P0DM84	negative	NONE	negative: uniprot	P0DM84		78
+P0DMJ5	negative	NONE	negative: uniprot	P0DMJ5		78
+P0DML4	negative	NONE	negative: uniprot	P0DML4		127
+P0DML5	negative	NONE	negative: uniprot	P0DML4		127
+P0DMZ8	negative	NONE	negative: uniprot	P0DMZ8		159
+P0DMZ9	negative	NONE	negative: uniprot	P0DMZ8		159
+P0DOC4	negative	NONE	negative: uniprot	P0DML4		127
+P0DOW6	positive	O2	no signal peptide	P0DOW6	2017-01-18	25
+P0DP11	positive	M	no signal peptide	X5IWT5	2017-04-12	14
+P0DP12	positive	T	no signal peptide	D3JWK2	2017-04-12	13
+P0DP53	negative	NONE	negative: uniprot	P0DML4		123
+P0DPH1	negative	NONE	negative: uniprot	P0DM84		78
+P0DPH5	negative	NONE	negative: uniprot	P0DM84		78
+P0DPL5	positive	T	no signal peptide	H2BKJ0	2018-09-12	11
+P0DPL6	positive	T	no signal peptide	A0A3G3C7S2	2018-09-12	12
+P0DPL9	positive	A	complete precursor	Q9XZK6	2018-09-12	61
+P0DPM0	positive	A	complete precursor	P0CY88	2018-09-12	57
+P0DPM4	positive	O1	complete precursor	Q9U657	2018-09-12	82
+P0DQV1	negative	NONE	negative: uniprot	L7MB58		108
+P0DQV2	negative	NONE	negative: uniprot	L7MB58		111
+P0DRI3	negative	NONE	negative: uniprot	P0DRI3		84
+P0DRL4	positive	A	complete precursor	F5C3U4	2026-01-28	65
+P0DTH0	negative	NONE	negative: uniprot	P0DML4		127
+P0DTJ4	positive	M	complete precursor	P0DTJ4	2022-02-23	70
+P0DTU2	negative	NONE	negative: uniprot	P0DTU2		33
+P0DTW3	negative	NONE	negative: uniprot	P0DTW3		117
+P0DTX4	positive	O1	complete precursor	P0DTX4	2020-10-07	63
+P0DTX7	positive	O1	complete precursor	P0DTX7	2020-10-07	76
+P0DTY2	positive	O1	complete precursor	P0DTZ7	2020-10-07	60
+P0DTY4	positive	O1	complete precursor	P0DTZ7	2020-10-07	56
+P0DTZ0	positive	O1	complete precursor	P0DTZ7	2020-10-07	63
+P0DTZ1	positive	O1	complete precursor	D6C4L2	2020-10-07	60
+P0DTZ6	positive	O1	complete precursor	P0DTZ7	2020-10-07	57
+P0DTZ7	positive	O1	complete precursor	P0DTZ7	2020-10-07	67
+P0DUC6	positive	O2	no signal peptide	P0DKP3	2020-12-02	8
+P0DUC8	positive	O2	no signal peptide	D5KXH3	2020-12-02	7
+P0DUE8	negative	NONE	negative: uniprot	P0DM84		78
+P0DV61	negative	NONE	negative: uniprot	P0DV61		37
+P0DX63	negative	NONE	negative: uniprot	H2A0K9		37
+P10000	negative	NONE	negative: uniprot	P10000		226
+P10034	negative	NONE	negative: uniprot	P55885		33
+P10082	negative	NONE	negative: uniprot	P10631		97
+P10631	negative	NONE	negative: uniprot	P10631		98
+P10758	negative	NONE	negative: uniprot	Q08731		165
+P10997	negative	NONE	negative: uniprot	Q28207		89
+P11159	negative	NONE	negative: uniprot	O18641		194
+P11384	negative	NONE	negative: uniprot	P11384		134
+P11449	negative	NONE	negative: uniprot	P11449		141
+P11839	negative	NONE	negative: uniprot	Q9TVD0		222
+P12067	negative	NONE	negative: uniprot	P00697		128
+P12068	negative	NONE	negative: uniprot	P00697		146
+P12082	negative	NONE	negative: uniprot	P01032		74
+P12401	negative	NONE	negative: uniprot	P12401		267
+P12420	negative	NONE	negative: uniprot	P01238		229
+P12656	negative	NONE	negative: uniprot	P01222		138
+P12682	negative	NONE	negative: uniprot	B1MTB0		215
+P12760	negative	NONE	negative: uniprot	P12760		174
+P12836	negative	NONE	negative: uniprot	P27794		93
+P12837	negative	NONE	negative: uniprot	P27767		113
+P12856	negative	NONE	negative: uniprot	P12856		208
+P13085	negative	NONE	negative: uniprot	P13085		177
+P13152	negative	NONE	negative: uniprot	P13152		108
+P13204	negative	NONE	negative: uniprot	Q9GLK4		129
+P13238	negative	NONE	negative: uniprot	P13238		168
+P13276	negative	NONE	negative: uniprot	P13276		189
+P13428	negative	NONE	negative: uniprot	P13428		180
+P13636	negative	NONE	negative: uniprot	P13636		60
+P14478	negative	NONE	negative: uniprot	P14478		41
+P14664	negative	NONE	negative: uniprot	P01510		37
+P14730	negative	NONE	negative: uniprot	P14730		74
+P15175	negative	NONE	negative: uniprot	P51525		96
+P15411	negative	NONE	negative: uniprot	P26726		89
+P15450	negative	NONE	negative: uniprot	P15450		53
+P15743	negative	NONE	negative: uniprot	P15743		119
+P15783	negative	NONE	negative: uniprot	P21841		190
+P15785	negative	NONE	negative: uniprot	P21841		35
+P15814	negative	NONE	negative: uniprot	P15814		213
+P16042	negative	NONE	negative: uniprot	P16042		158
+P16110	negative	NONE	negative: uniprot	P38486		264
+P16312	negative	NONE	negative: uniprot	P16312		30
+P16344	negative	NONE	negative: uniprot	P0DMJ5		56
+P16531	negative	NONE	negative: uniprot	P16531		132
+P16973	negative	NONE	negative: uniprot	P00697		130
+P17108	negative	NONE	negative: uniprot	P04351		155
+P17111	negative	NONE	negative: uniprot	P17111		293
+P17741	negative	NONE	negative: uniprot	B1MTB0		210
+P17931	negative	NONE	negative: uniprot	P38486		250
+P18427	negative	NONE	negative: uniprot	P18427		130
+P18893	negative	NONE	negative: uniprot	P51746		178
+P19159	negative	NONE	negative: uniprot	P12401		238
+P19652	negative	NONE	negative: uniprot	P19652		201
+P19806	negative	NONE	negative: uniprot	Q25683		134
+P20003	negative	NONE	negative: uniprot	P09038		155
+P21621	negative	NONE	negative: uniprot	P09428		266
+P21780	negative	NONE	negative: uniprot	P01170		73
+P21841	negative	NONE	negative: uniprot	P21841		193
+P22301	negative	NONE	negative: uniprot	P51746		178
+P22858	negative	NONE	negative: uniprot	P13085		175
+P22977	negative	NONE	negative: uniprot	P24511		138
+P23063	negative	NONE	negative: uniprot	P23063		38
+P23465	negative	NONE	negative: uniprot	P23465		46
+P23593	negative	NONE	negative: uniprot	P05090		189
+P23699	negative	NONE	negative: uniprot	P23699		91
+P23764	negative	NONE	negative: uniprot	P23764		226
+P24159	positive	O1	no signal peptide	P24159	1992-03-01	27
+P24160	positive	O2	complete precursor	A0A2L2P6T1	1992-03-01	76
+P24302	negative	NONE	negative: uniprot	P31107		79
+P24471	negative	NONE	negative: uniprot	P24471		79
+P24511	negative	NONE	negative: uniprot	P24511		141
+P24516	negative	NONE	negative: uniprot	P24516		198
+P24775	negative	NONE	negative: uniprot	P24775		176
+P24787	negative	NONE	negative: uniprot	P24787		161
+P25142	negative	NONE	negative: uniprot	O97949		114
+P26583	negative	NONE	negative: uniprot	B1MTB0		209
+P26584	negative	NONE	negative: uniprot	B1MTB0		207
+P26652	negative	NONE	negative: uniprot	P26652		212
+P26726	negative	NONE	negative: uniprot	P26726		92
+P26728	negative	NONE	negative: uniprot	P26726		92
+P27613	negative	NONE	negative: uniprot	P27613		173
+P27767	negative	NONE	negative: uniprot	P27767		140
+P27794	negative	NONE	negative: uniprot	P27794		117
+P28094	negative	NONE	negative: uniprot	P28094		223
+P28101	negative	NONE	negative: uniprot	P31284		123
+P28102	negative	NONE	negative: uniprot	P31284		123
+P28105	negative	NONE	negative: uniprot	P31288		123
+P28110	negative	NONE	negative: uniprot	P31288		123
+P28130	negative	NONE	negative: uniprot	P31288		123
+P28133	negative	NONE	negative: uniprot	P31284		123
+P28134	negative	NONE	negative: uniprot	P31284		123
+P28138	negative	NONE	negative: uniprot	P31288		123
+P28140	negative	NONE	negative: uniprot	P31284		123
+P28142	negative	NONE	negative: uniprot	P31284		123
+P28144	negative	NONE	negative: uniprot	P31288		123
+P28146	negative	NONE	negative: uniprot	P28146		128
+P28325	negative	NONE	negative: uniprot	P28325		142
+P28505	negative	NONE	negative: uniprot	P09944		65
+P28507	negative	NONE	negative: uniprot	P09944		65
+P28508	negative	NONE	negative: uniprot	P09944		65
+P28510	negative	NONE	negative: uniprot	P09944		65
+P28511	negative	NONE	negative: uniprot	P09944		65
+P28549	negative	NONE	negative: uniprot	P28549		237
+P28672	negative	NONE	negative: uniprot	Q90WF4		96
+P28783	negative	NONE	negative: uniprot	P28783		156
+P28902	negative	NONE	negative: uniprot	P33680		115
+P29004	negative	NONE	negative: uniprot	P29004		200
+P29006	negative	NONE	negative: uniprot	P29004		137
+P29071	negative	NONE	negative: uniprot	Q90WF4		36
+P29234	negative	NONE	negative: uniprot	P01238		229
+P30035	negative	NONE	negative: uniprot	P02777		85
+P30201	negative	NONE	negative: uniprot	P00697		148
+P30441	negative	NONE	negative: uniprot	O77517		118
+P30681	negative	NONE	negative: uniprot	B1MTB0		210
+P30814	negative	NONE	negative: uniprot	P30814		73
+P31107	negative	NONE	negative: uniprot	P31107		81
+P31283	negative	NONE	negative: uniprot	P31283		128
+P31284	negative	NONE	negative: uniprot	P31284		137
+P31288	negative	NONE	negative: uniprot	P31288		135
+P31289	negative	NONE	negative: uniprot	P31288		135
+P31346	negative	NONE	negative: uniprot	P31346		147
+P31371	negative	NONE	negative: uniprot	Q9ESL9		208
+P32038	negative	NONE	negative: uniprot	P32038		263
+P32194	negative	NONE	negative: uniprot	P51525		149
+P32196	negative	NONE	negative: uniprot	P51525		149
+P32752	negative	NONE	negative: uniprot	P32752		141
+P32753	negative	NONE	negative: uniprot	P32752		141
+P33089	negative	NONE	negative: uniprot	P01238		199
+P33090	negative	NONE	negative: uniprot	P01238		198
+P33619	negative	NONE	negative: uniprot	P07288		261
+P33680	negative	NONE	negative: uniprot	P33680		116
+P33713	negative	NONE	negative: uniprot	P55885		33
+P33735	negative	NONE	negative: uniprot	P33737		250
+P33737	negative	NONE	negative: uniprot	P33737		255
+P34714	negative	NONE	negative: uniprot	P34714		264
+P34964	negative	NONE	negative: uniprot	P34964		173
+P34965	negative	NONE	negative: uniprot	P34964		167
+P34966	negative	NONE	negative: uniprot	P12760		171
+P35033	negative	NONE	negative: uniprot	Q90628		238
+P35042	negative	NONE	negative: uniprot	P35042		256
+P35048	negative	NONE	negative: uniprot	P35048		247
+P35245	negative	NONE	negative: uniprot	P21841		190
+P35495	negative	NONE	negative: uniprot	P35495		133
+P35625	negative	NONE	negative: uniprot	P26652		211
+P35807	negative	NONE	negative: uniprot	P35807		61
+P35808	negative	NONE	negative: uniprot	P35807		39
+P36193	negative	NONE	negative: uniprot	P36193		64
+P36363	negative	NONE	negative: uniprot	P36363		194
+P36364	negative	NONE	negative: uniprot	Q9ESL9		208
+P37141	negative	NONE	negative: uniprot	P23764		226
+P37153	negative	NONE	negative: uniprot	P05090		189
+P37840	negative	NONE	negative: uniprot	Q91448		140
+P38486	negative	NONE	negative: uniprot	P38486		296
+P39876	negative	NONE	negative: uniprot	P26652		211
+P40673	negative	NONE	negative: uniprot	B1MTB0		209
+P41334	negative	NONE	negative: uniprot	P41334		36
+P41485	negative	NONE	negative: uniprot	P41485		127
+P41538	negative	NONE	negative: uniprot	P23465		46
+P41974	negative	NONE	negative: uniprot	P41974		195
+P42202	negative	NONE	negative: uniprot	P42202		134
+P43480	negative	NONE	negative: uniprot	P51746		178
+P43511	negative	NONE	negative: uniprot	O18641		33
+P45646	negative	NONE	negative: uniprot	P45657		159
+P45657	negative	NONE	negative: uniprot	P45657		166
+P46403	negative	NONE	negative: uniprot	P01238		229
+P46412	negative	NONE	negative: uniprot	P23764		226
+P46651	negative	NONE	negative: uniprot	P51746		178
+P47845	negative	NONE	negative: uniprot	P38486		242
+P47965	negative	NONE	negative: uniprot	P51746		178
+P47993	negative	NONE	negative: uniprot	P47993		114
+P48800	negative	NONE	negative: uniprot	P09038		158
+P48804	negative	NONE	negative: uniprot	P08620		194
+P49278	negative	NONE	negative: uniprot	P49278		146
+P49788	negative	NONE	negative: uniprot	P49788		294
+P49913	negative	NONE	negative: uniprot	P49913		170
+P49930	negative	NONE	negative: uniprot	P51525		153
+P49934	negative	NONE	negative: uniprot	P51525		149
+P50117	negative	NONE	negative: uniprot	P28783		132
+P50231	negative	NONE	negative: uniprot	P50231		92
+P50415	negative	NONE	negative: uniprot	P51525		190
+P50419	negative	NONE	negative: uniprot	P50419		182
+P50982	positive	A	complete precursor	F5C3U4	1996-10-01	62
+P50983	positive	A	no signal peptide	Q9XZK6	1996-10-01	17
+P50985	positive	A	complete precursor	A0SE60	1996-10-01	61
+P51496	negative	NONE	negative: uniprot	P51746		178
+P51525	negative	NONE	negative: uniprot	P51525		228
+P51746	negative	NONE	negative: uniprot	P51746		179
+P51909	negative	NONE	negative: uniprot	P05090		189
+P51910	negative	NONE	negative: uniprot	P05090		189
+P51919	negative	NONE	negative: uniprot	P51919		95
+P52925	negative	NONE	negative: uniprot	B1MTB0		210
+P53347	negative	NONE	negative: uniprot	P53347		263
+P53542	negative	NONE	negative: uniprot	P27794		116
+P53715	negative	NONE	negative: uniprot	P53715		176
+P54130	negative	NONE	negative: uniprot	Q9ESL9		208
+P54194	negative	NONE	negative: uniprot	P54194		175
+P54828	negative	NONE	negative: uniprot	P01222		138
+P55032	negative	NONE	negative: uniprot	P09237		262
+P55083	negative	NONE	negative: uniprot	P55083		255
+P55152	negative	NONE	negative: uniprot	P21841		191
+P55751	negative	NONE	negative: uniprot	P01238		199
+P55754	negative	NONE	negative: uniprot	P01238		199
+P55868	negative	NONE	negative: uniprot	P55869		183
+P55869	negative	NONE	negative: uniprot	P55869		185
+P55885	negative	NONE	negative: uniprot	P55885		107
+P56173	negative	NONE	negative: uniprot	P56173		100
+P56633	positive	O1	complete precursor	A0A384E129	1998-12-15	72
+P56686	negative	NONE	negative: uniprot	B7XFT1		37
+P56708	positive	O1	complete precursor	Q9U657	2000-05-30	82
+P56732	negative	NONE	negative: uniprot	O13153		150
+P56733	negative	NONE	negative: uniprot	O13153		150
+P56735	negative	NONE	negative: uniprot	O13153		150
+P58073	negative	NONE	negative: uniprot	P13085		177
+P58623	positive	M	no signal peptide	P58623	2002-01-23	14
+P58917	positive	O1	complete precursor	A0A384E129	2002-07-26	71
+P58920	positive	O1	complete precursor	A0A384E129	2002-07-26	73
+P58925	positive	M	complete precursor	C1J5M7	2002-07-26	73
+P59760	negative	NONE	negative: uniprot	P59760		49
+P60154	negative	NONE	negative: uniprot	P60154		184
+P60207	positive	M	no signal peptide	C1J5M7	2004-01-16	31
+P60591	negative	NONE	negative: uniprot	P60591		200
+P60592	negative	NONE	negative: uniprot	P60591		200
+P60827	negative	NONE	negative: uniprot	P60827		252
+P61138	negative	NONE	negative: uniprot	Q91448		140
+P61139	negative	NONE	negative: uniprot	Q91448		140
+P61140	negative	NONE	negative: uniprot	Q91448		140
+P61141	negative	NONE	negative: uniprot	Q91448		140
+P61142	negative	NONE	negative: uniprot	Q91448		140
+P61143	negative	NONE	negative: uniprot	Q91448		140
+P61144	negative	NONE	negative: uniprot	Q91448		140
+P61146	negative	NONE	negative: uniprot	Q91448		140
+P61364	negative	NONE	negative: uniprot	P61365		130
+P61365	negative	NONE	negative: uniprot	P61365		132
+P61629	negative	NONE	negative: uniprot	P00697		148
+P61769	negative	NONE	negative: uniprot	O77517		119
+P61770	negative	NONE	negative: uniprot	O77517		119
+P61771	negative	NONE	negative: uniprot	O77517		119
+P62756	negative	NONE	negative: uniprot	P04365		123
+P62811	negative	NONE	negative: uniprot	P62811		74
+P63061	negative	NONE	negative: uniprot	O77517		119
+P63063	negative	NONE	negative: uniprot	O77517		119
+P63064	negative	NONE	negative: uniprot	O77517		119
+P63066	negative	NONE	negative: uniprot	O77517		119
+P63067	negative	NONE	negative: uniprot	O77517		119
+P63068	negative	NONE	negative: uniprot	O77517		119
+P63069	negative	NONE	negative: uniprot	O77517		119
+P63071	negative	NONE	negative: uniprot	O77517		119
+P63158	negative	NONE	negative: uniprot	B1MTB0		215
+P63159	negative	NONE	negative: uniprot	B1MTB0		215
+P67788	negative	NONE	negative: uniprot	P67788		65
+P67807	negative	NONE	negative: uniprot	P67807		55
+P67977	negative	NONE	negative: uniprot	P00697		148
+P67978	negative	NONE	negative: uniprot	P00697		148
+P67979	negative	NONE	negative: uniprot	P00697		148
+P67980	negative	NONE	negative: uniprot	P00697		148
+P69095	negative	NONE	negative: uniprot	Q90WF4		36
+P69096	negative	NONE	negative: uniprot	Q90WF4		36
+P69658	positive	A	no signal peptide	P69658	2005-03-29	40
+P69747	positive	A	complete precursor	Q9XZK6	2005-04-26	66
+P69767	positive	T	signal, incomplete	A0A3G3C7S2	2005-04-26	53
+P70074	negative	NONE	negative: uniprot	P51919		95
+P70668	negative	NONE	negative: uniprot	Q8R5G8		106
+P79121	negative	NONE	negative: uniprot	P26652		211
+P79124	negative	NONE	negative: uniprot	P79124		239
+P79150	negative	NONE	negative: uniprot	P36363		194
+P79180	negative	NONE	negative: uniprot	P00697		148
+P79268	negative	NONE	negative: uniprot	P00697		148
+P79294	negative	NONE	negative: uniprot	P00697		148
+P79362	negative	NONE	negative: uniprot	P51525		176
+P79682	negative	NONE	negative: uniprot	O13235		121
+P79709	negative	NONE	negative: uniprot	O13235		121
+P79712	negative	NONE	negative: uniprot	O13235		58
+P79715	negative	NONE	negative: uniprot	O13235		53
+P79717	negative	NONE	negative: uniprot	O13235		121
+P79729	negative	NONE	negative: uniprot	P79729		88
+P79838	negative	NONE	negative: uniprot	O13235		121
+P79839	negative	NONE	negative: uniprot	O13235		58
+P79847	negative	NONE	negative: uniprot	P00697		148
+P79852	negative	NONE	negative: uniprot	O13235		58
+P79853	negative	NONE	negative: uniprot	O13235		58
+P79855	negative	NONE	negative: uniprot	O13235		53
+P79858	negative	NONE	negative: uniprot	O13235		121
+P79860	negative	NONE	negative: uniprot	O13235		58
+P79864	negative	NONE	negative: uniprot	O13235		121
+P79869	negative	NONE	negative: uniprot	O13235		121
+P80060	negative	NONE	negative: uniprot	P80060		92
+P80188	negative	NONE	negative: uniprot	P80188		198
+P80391	negative	NONE	negative: uniprot	P80391		65
+P80663	negative	NONE	negative: uniprot	P18427		106
+P80703	negative	NONE	negative: uniprot	P13276		186
+P80930	negative	NONE	negative: uniprot	P80930		46
+P81129	negative	NONE	negative: uniprot	P0DMJ5		55
+P81278	negative	NONE	negative: uniprot	P81278		83
+P81466	negative	NONE	negative: uniprot	P81468		31
+P81468	negative	NONE	negative: uniprot	P81468		33
+P81485	negative	NONE	negative: uniprot	P31107		74
+P81486	negative	NONE	negative: uniprot	P31107		76
+P81488	negative	NONE	negative: uniprot	P31107		77
+P81755	positive	T	complete precursor	P81755	2000-05-30	67
+P81872	negative	NONE	negative: uniprot	P81872		175
+P82018	negative	NONE	negative: uniprot	P51525		176
+P82143	negative	NONE	negative: uniprot	P82143		200
+P82187	negative	NONE	negative: uniprot	P82187		185
+P82372	negative	NONE	negative: uniprot	E2AZE8		31
+P82705	negative	NONE	negative: uniprot	P82705		42
+P83081	negative	NONE	negative: uniprot	P29004		144
+P83084	negative	NONE	negative: uniprot	P29004		145
+P83411	negative	NONE	negative: uniprot	P83411		40
+P83425	negative	NONE	negative: uniprot	P83425		213
+P83429	negative	NONE	negative: uniprot	P83429		38
+P83430	negative	NONE	negative: uniprot	P83429		38
+P83485	negative	NONE	negative: uniprot	Q25683		72
+P83578	negative	NONE	negative: uniprot	P83578		58
+P83609	negative	NONE	negative: uniprot	P83609		121
+P83627	negative	NONE	negative: uniprot	P83627		83
+P83638	negative	NONE	negative: uniprot	P31107		33
+P83714	negative	NONE	negative: uniprot	P83714		204
+P83762	negative	NONE	negative: uniprot	P83762		89
+P84262	negative	NONE	negative: uniprot	Q1JS88		48
+P84276	negative	NONE	negative: uniprot	A7WNV5		68
+P84278	negative	NONE	negative: uniprot	P84278		31
+P84280	negative	NONE	negative: uniprot	P84278		31
+P84281	negative	NONE	negative: uniprot	Q1JS88		48
+P84590	negative	NONE	negative: uniprot	P09944		63
+P84596	negative	NONE	negative: uniprot	P31107		70
+P84599	negative	NONE	negative: uniprot	P31107		33
+P84750	negative	NONE	negative: uniprot	P84750		121
+P84818	negative	NONE	negative: uniprot	P84818		42
+P84855	negative	NONE	negative: uniprot	P84855		46
+P85008	negative	NONE	negative: uniprot	B7XFT1		38
+P85010	positive	A	no signal peptide	Q9XZK6	2006-10-31	12
+P85059	negative	NONE	negative: uniprot	P85059		46
+P85214	negative	NONE	negative: uniprot	P85214		37
+P85295	negative	NONE	negative: uniprot	P85295		90
+P85826	negative	NONE	negative: uniprot	E2AZE8		31
+P85830	negative	NONE	negative: uniprot	E2AZE8		31
+P85886	positive	A	complete precursor	F5C3U4	2009-05-05	69
+P86151	negative	NONE	negative: uniprot	C0HL00		34
+P86152	negative	NONE	negative: uniprot	C0HL00		30
+P86256	positive	T	no signal peptide	A0A3G3C7S2	2009-05-05	12
+P86257	positive	T	no signal peptide	A0A3G3C7S2	2009-05-05	12
+P86272	negative	NONE	negative: uniprot	P86272		202
+P86289	negative	NONE	negative: uniprot	P86289		113
+P86639	negative	NONE	negative: uniprot	P31107		33
+P86735	negative	NONE	negative: uniprot	P86735		179
+P86736	negative	NONE	negative: uniprot	P86736		296
+P86871	negative	NONE	negative: uniprot	P86871		262
+P86947	negative	NONE	negative: uniprot	P86947		238
+P86986	negative	NONE	negative: uniprot	P86986		135
+P97361	negative	NONE	negative: uniprot	P97361		278
+P97802	negative	NONE	negative: uniprot	P97802		145
+P98173	negative	NONE	negative: uniprot	P98173		230
+Q00623	negative	NONE	negative: uniprot	Q00623		264
+Q00630	negative	NONE	negative: uniprot	Q00630		206
+Q00802	negative	NONE	negative: uniprot	Q00802		256
+Q00855	negative	NONE	negative: uniprot	P49278		146
+Q02011	negative	NONE	negative: uniprot	Q02011		195
+Q03352	negative	NONE	negative: uniprot	Q03352		105
+Q03422	negative	NONE	negative: uniprot	Q03422		116
+Q04475	negative	NONE	negative: uniprot	Q03422		116
+Q06684	negative	NONE	negative: uniprot	Q06684		103
+Q07731	negative	NONE	negative: uniprot	Q07731		211
+Q08125	negative	NONE	negative: uniprot	P04401		132
+Q08420	negative	NONE	negative: uniprot	O09164		244
+Q08731	negative	NONE	negative: uniprot	Q08731		173
+Q08782	negative	NONE	negative: uniprot	Q08782		120
+Q08867	negative	NONE	negative: uniprot	P04351		166
+Q09TK7	negative	NONE	negative: uniprot	Q09TK7		88
+Q0MUT8	negative	NONE	negative: uniprot	Q0MUT8		144
+Q0P5P2	negative	NONE	negative: uniprot	P0CD95		90
+Q0Z972	negative	NONE	negative: uniprot	P51746		178
+Q10738	negative	NONE	negative: uniprot	P09237		264
+Q10746	negative	NONE	negative: uniprot	Q10746		101
+Q13103	negative	NONE	negative: uniprot	Q13103		211
+Q14641	negative	NONE	negative: uniprot	Q14641		139
+Q14WA6	negative	NONE	negative: uniprot	Q14WA6		140
+Q16619	negative	NONE	negative: uniprot	Q60753		201
+Q17QC0	negative	NONE	negative: uniprot	O00264		194
+Q17UY8	negative	NONE	negative: uniprot	P31107		69
+Q17UY9	negative	NONE	negative: uniprot	P31107		57
+Q18158	negative	NONE	negative: uniprot	Q18158		135
+Q18502	negative	NONE	negative: uniprot	Q18502		102
+Q1EJP5	negative	NONE	negative: uniprot	P31107		73
+Q1EN11	negative	NONE	negative: uniprot	P31107		73
+Q1EN12	negative	NONE	negative: uniprot	P31107		72
+Q1EN13	negative	NONE	negative: uniprot	P31107		75
+Q1EN15	negative	NONE	negative: uniprot	P31107		69
+Q1JS88	negative	NONE	negative: uniprot	Q1JS88		86
+Q1JS89	negative	NONE	negative: uniprot	A7WNV5		78
+Q1JS94	negative	NONE	negative: uniprot	A7WNV5		68
+Q1KLX0	negative	NONE	negative: uniprot	P49913		170
+Q1KLX2	negative	NONE	negative: uniprot	P49913		170
+Q1KLX3	negative	NONE	negative: uniprot	P49913		170
+Q1KLX5	negative	NONE	negative: uniprot	P49913		170
+Q1KLX9	negative	NONE	negative: uniprot	P49913		170
+Q1KLY0	negative	NONE	negative: uniprot	P49913		170
+Q1KLY2	negative	NONE	negative: uniprot	P49913		170
+Q1KLY3	negative	NONE	negative: uniprot	P49913		170
+Q1KLY5	negative	NONE	negative: uniprot	P49913		170
+Q1KLY6	negative	NONE	negative: uniprot	P49913		170
+Q1KLY7	negative	NONE	negative: uniprot	P49913		170
+Q1LZB9	negative	NONE	negative: uniprot	Q1LZB9		261
+Q21507	negative	NONE	negative: uniprot	Q21507		76
+Q22687	negative	NONE	negative: uniprot	Q22687		221
+Q25055	negative	NONE	negative: uniprot	Q25055		104
+Q25154	negative	NONE	negative: uniprot	Q25683		134
+Q25313	negative	NONE	negative: uniprot	Q25313		172
+Q25683	negative	NONE	negative: uniprot	Q25683		137
+Q25BC1	negative	NONE	negative: uniprot	P51746		179
+Q26443	positive	O1	complete precursor	Q9U657	2000-05-30	82
+Q27017	negative	NONE	negative: uniprot	Q27017		130
+Q27018	negative	NONE	negative: uniprot	Q27017		128
+Q27262	negative	NONE	negative: uniprot	Q27262		171
+Q28207	negative	NONE	negative: uniprot	Q28207		91
+Q28318	negative	NONE	negative: uniprot	P01238		229
+Q28374	negative	NONE	negative: uniprot	P51746		178
+Q28441	negative	NONE	negative: uniprot	Q29150		145
+Q28605	negative	NONE	negative: uniprot	Q28207		32
+Q28746	negative	NONE	negative: uniprot	O02837		174
+Q28767	negative	NONE	negative: uniprot	O97949		114
+Q29135	negative	NONE	negative: uniprot	P82187		146
+Q29150	negative	NONE	negative: uniprot	Q29150		146
+Q29288	negative	NONE	negative: uniprot	P50231		50
+Q299E6	negative	NONE	negative: uniprot	B4G532		137
+Q29HF1	negative	NONE	negative: uniprot	Q29HF1		286
+Q29TV8	negative	NONE	negative: uniprot	Q29TV8		184
+Q2I2Q2	positive	M	complete precursor	Q9BPH9	2008-01-15	70
+Q2I2Q5	positive	M	complete precursor	Q9BPH9	2008-01-15	69
+Q2I2Q6	positive	O2	complete precursor	B0KZ78	2008-01-15	86
+Q2I2R0	positive	O1	complete precursor	Q2I2R0	2008-01-15	89
+Q2I2R1	positive	O1	complete precursor	Q2I2R0	2008-01-15	89
+Q2I2R3	positive	O1	complete precursor	Q2I2R3	2008-01-15	80
+Q2I2R4	positive	O1	complete precursor	Q2I2R4	2008-01-15	76
+Q2I2R6	positive	A	complete precursor	A1X8C2	2008-01-15	64
+Q2LK95	negative	NONE	negative: uniprot	Q2LK95		277
+Q2PE73	negative	NONE	negative: uniprot	P51746		179
+Q2PUH2	negative	NONE	negative: uniprot	P18427		129
+Q2YHT7	negative	NONE	negative: uniprot	Q2YHT7		300
+Q30HU9	negative	NONE	negative: uniprot	Q30HU9		90
+Q30KJ6	negative	NONE	negative: uniprot	Q30KJ6		62
+Q30KK3	negative	NONE	negative: uniprot	Q30KK3		157
+Q30KL4	negative	NONE	negative: uniprot	Q30KL4		82
+Q30KQ1	negative	NONE	negative: uniprot	Q30KJ6		61
+Q30KQ6	negative	NONE	negative: uniprot	Q30KQ6		69
+Q32L76	negative	NONE	negative: uniprot	Q32L76		129
+Q32ZI1	negative	NONE	negative: uniprot	Q32ZI1		71
+Q32ZI2	negative	NONE	negative: uniprot	Q32ZI1		71
+Q3SYR5	negative	NONE	negative: uniprot	P0DML4		127
+Q3SZ70	negative	NONE	negative: uniprot	Q3SZ70		104
+Q3T004	negative	NONE	negative: uniprot	Q3T004		224
+Q3T1H2	negative	NONE	negative: uniprot	Q3T1H2		293
+Q3TMQ6	negative	NONE	negative: uniprot	P97802		144
+Q3UR78	negative	NONE	negative: uniprot	A0JNN8		90
+Q3UW21	negative	NONE	negative: uniprot	D3ZVN1		102
+Q3Y4G6	negative	NONE	negative: uniprot	P01238		228
+Q3YC02	negative	NONE	negative: uniprot	P18427		129
+Q3YEE8	positive	T	complete precursor	A0A3G3C7S2	2007-01-23	61
+Q3YEH1	positive	T	complete precursor	P81755	2007-01-23	67
+Q3ZFI5	negative	NONE	negative: uniprot	Q9ESL9		209
+Q4FCM6	negative	NONE	negative: uniprot	Q566B1		156
+Q4G0G5	negative	NONE	negative: uniprot	Q4G0G5		96
+Q4KM46	negative	NONE	negative: uniprot	Q8R1R4		234
+Q4V9L6	negative	NONE	negative: uniprot	Q4V9L6		283
+Q52R90	negative	NONE	negative: uniprot	P01222		138
+Q566B1	negative	NONE	negative: uniprot	Q566B1		160
+Q566B3	negative	NONE	negative: uniprot	Q566B3		153
+Q56JZ2	negative	NONE	negative: uniprot	Q56JZ2		144
+Q56TU0	negative	NONE	negative: uniprot	Q56TU0		125
+Q58T39	negative	NONE	negative: uniprot	P29004		144
+Q58T45	negative	NONE	negative: uniprot	P29004		144
+Q58T46	negative	NONE	negative: uniprot	P29004		144
+Q58T48	negative	NONE	negative: uniprot	P29004		144
+Q58T49	negative	NONE	negative: uniprot	P29004		144
+Q58T51	negative	NONE	negative: uniprot	P29004		144
+Q58T56	negative	NONE	negative: uniprot	P29004		144
+Q58T59	negative	NONE	negative: uniprot	P29004		144
+Q58T60	negative	NONE	negative: uniprot	P29004		145
+Q58T62	negative	NONE	negative: uniprot	P29004		139
+Q58T65	negative	NONE	negative: uniprot	P29004		145
+Q58T68	negative	NONE	negative: uniprot	P29004		145
+Q58T69	negative	NONE	negative: uniprot	P29004		145
+Q58T70	negative	NONE	negative: uniprot	P29004		145
+Q58T72	negative	NONE	negative: uniprot	P29004		144
+Q58T74	negative	NONE	negative: uniprot	P29004		144
+Q58T79	negative	NONE	negative: uniprot	P29004		144
+Q58T80	negative	NONE	negative: uniprot	P29004		144
+Q58T83	negative	NONE	negative: uniprot	P29004		144
+Q58T86	negative	NONE	negative: uniprot	P29004		144
+Q58T89	negative	NONE	negative: uniprot	P29004		144
+Q58T90	negative	NONE	negative: uniprot	P29004		144
+Q58T91	negative	NONE	negative: uniprot	P29004		142
+Q58T92	negative	NONE	negative: uniprot	P29004		142
+Q58T93	negative	NONE	negative: uniprot	P29004		142
+Q58T94	negative	NONE	negative: uniprot	P29004		142
+Q58T95	negative	NONE	negative: uniprot	P29004		142
+Q5D0X0	negative	NONE	negative: uniprot	P36363		194
+Q5D710	negative	NONE	negative: uniprot	Q5D710		126
+Q5DQQ6	negative	NONE	negative: uniprot	Q5DQQ6		81
+Q5EHP1	positive	M	complete precursor	Q9BPH9	2007-05-29	71
+Q5EHP2	positive	M	complete precursor	Q9BPH9	2007-05-29	70
+Q5EHP3	positive	M	complete precursor	Q9BPH9	2007-05-29	71
+Q5H8A3	negative	NONE	negative: uniprot	Q5H8A3		153
+Q5I2P0	positive	M	complete precursor	Q9BPH9	2007-05-29	69
+Q5J8R1	negative	NONE	negative: uniprot	Q5J8R1		95
+Q5K0D7	positive	O1	complete precursor	Q5K0D7	2005-03-15	72
+Q5MGP9	negative	NONE	negative: uniprot	Q5MGP9		113
+Q5MGQ0	negative	NONE	negative: uniprot	Q5MGQ0		168
+Q5Q0V6	negative	NONE	negative: uniprot	P51746		178
+Q5R7E7	negative	NONE	negative: uniprot	Q3T1H2		291
+Q5RAY8	negative	NONE	negative: uniprot	P36363		194
+Q5RE35	negative	NONE	negative: uniprot	Q8R1R5		218
+Q5RED0	negative	NONE	negative: uniprot	O00264		195
+Q5S1V9	negative	NONE	negative: uniprot	Q8NEV9		239
+Q5VWW1	negative	NONE	negative: uniprot	O75973		255
+Q5W1L4	negative	NONE	negative: uniprot	Q5W1L4		154
+Q5W1L5	negative	NONE	negative: uniprot	Q5W1L4		154
+Q5XII0	negative	NONE	negative: uniprot	A6QLI0		224
+Q5ZJ73	negative	NONE	negative: uniprot	Q5ZJ73		192
+Q5ZKN2	negative	NONE	negative: uniprot	O00264		192
+Q60487	negative	NONE	negative: uniprot	P09038		170
+Q60753	negative	NONE	negative: uniprot	Q60753		203
+Q60819	negative	NONE	negative: uniprot	Q60819		263
+Q61900	negative	NONE	negative: uniprot	Q61900		147
+Q62472	negative	NONE	negative: uniprot	Q62472		185
+Q62575	negative	NONE	negative: uniprot	P04401		132
+Q62590	negative	NONE	negative: uniprot	P01222		101
+Q62740	negative	NONE	negative: uniprot	Q62740		203
+Q62781	negative	NONE	negative: uniprot	Q62781		120
+Q63086	negative	NONE	negative: uniprot	Q60753		203
+Q64339	negative	NONE	negative: uniprot	Q64339		161
+Q64356	negative	NONE	negative: uniprot	Q64356		99
+Q64438	negative	NONE	negative: uniprot	P97802		145
+Q659U0	negative	NONE	negative: uniprot	P00697		148
+Q659U1	negative	NONE	negative: uniprot	P00697		148
+Q65Z15	negative	NONE	negative: uniprot	Q65Z15		239
+Q6AZ60	negative	NONE	negative: uniprot	Q6AZ60		279
+Q6DT45	negative	NONE	negative: uniprot	P07288		261
+Q6IE38	negative	NONE	negative: uniprot	Q6IE38		97
+Q6IE41	negative	NONE	negative: uniprot	Q6IE41		74
+Q6IE51	negative	NONE	negative: uniprot	Q6IE51		74
+Q6IY73	negative	NONE	negative: uniprot	P18427		129
+Q6MG53	negative	NONE	negative: uniprot	Q6MG53		194
+Q6PPB3	positive	A	complete precursor	Q6PPB3	2009-06-16	67
+Q6PTD4	positive	A	complete precursor	F5C3U4	2006-07-25	68
+Q6PTD6	positive	A	complete precursor	A0SE60	2009-05-05	62
+Q6PTD7	positive	A	complete precursor	Q6PPB3	2009-06-16	67
+Q6PUF3	negative	NONE	negative: uniprot	Q6PUF3		287
+Q6PUF4	negative	NONE	negative: uniprot	Q6PUF4		287
+Q6PZD3	negative	NONE	negative: uniprot	O77517		119
+Q6R2R2	negative	NONE	negative: uniprot	P83714		203
+Q6SI68	negative	NONE	negative: uniprot	P18427		130
+Q6T672	negative	NONE	negative: uniprot	O77517		119
+Q6U830	negative	NONE	negative: uniprot	P18427		129
+Q6UDR6	negative	NONE	negative: uniprot	Q6UDR6		99
+Q6UW01	negative	NONE	negative: uniprot	Q6UW01		205
+Q6UWK7	negative	NONE	negative: uniprot	Q6UWK7		81
+Q6UWQ5	negative	NONE	negative: uniprot	A0JNM6		148
+Q6UWT2	negative	NONE	negative: uniprot	A2VE22		76
+Q6UY27	negative	NONE	negative: uniprot	Q6UY27		113
+Q6V7J5	negative	NONE	negative: uniprot	O77517		119
+Q6VU70	negative	NONE	negative: uniprot	P13276		187
+Q6XE38	negative	NONE	negative: uniprot	Q6XE38		83
+Q6XMH8	negative	NONE	negative: uniprot	P36193		64
+Q70IB1	negative	NONE	negative: uniprot	Q8SPJ0		212
+Q70KL3	negative	NONE	negative: uniprot	Q70KL3		74
+Q710A0	negative	NONE	negative: uniprot	Q710A0		192
+Q71UN4	negative	NONE	negative: uniprot	O77517		119
+Q765P4	negative	NONE	negative: uniprot	Q765P4		197
+Q7M460	negative	NONE	negative: uniprot	Q7M460		56
+Q7PRX9	negative	NONE	negative: uniprot	Q7PRX9		115
+Q7SIB3	negative	NONE	negative: uniprot	Q7SIB3		227
+Q7T3K7	negative	NONE	negative: uniprot	P31107		79
+Q7T3K8	negative	NONE	negative: uniprot	P31107		76
+Q7TNI7	negative	NONE	negative: uniprot	Q7TNI7		161
+Q7TQN2	negative	NONE	negative: uniprot	Q7TQN2		253
+Q7TSL0	negative	NONE	negative: uniprot	Q7TSL0		199
+Q7Z097	positive	I1	no signal peptide	P0C257	2004-02-02	46
+Q7Z098	positive	I1	no signal peptide	P0C257	2004-02-02	46
+Q7Z099	positive	I1	no signal peptide	P0C257	2004-02-02	46
+Q7Z1K3	negative	NONE	negative: uniprot	Q7Z1K3		194
+Q7Z4W2	negative	NONE	negative: uniprot	A0JNM6		148
+Q7ZV46	negative	NONE	negative: uniprot	Q7ZV46		286
+Q7ZZY8	negative	NONE	negative: uniprot	Q7ZZY8		125
+Q805D4	negative	NONE	negative: uniprot	Q805D4		158
+Q805D6	negative	NONE	negative: uniprot	Q8AYR6		126
+Q80W15	negative	NONE	negative: uniprot	Q80W15		270
+Q863T4	negative	NONE	negative: uniprot	Q863T4		81
+Q865X4	negative	NONE	negative: uniprot	P51746		178
+Q86DU6	positive	M	complete precursor	C1J5M7	2004-01-16	73
+Q86RS3	negative	NONE	negative: uniprot	Q86RS3		166
+Q86SC0	negative	NONE	negative: uniprot	Q86SC0		66
+Q86WS3	negative	NONE	negative: uniprot	Q86WS3		158
+Q86XP6	negative	NONE	negative: uniprot	Q29TV8		184
+Q86Z23	negative	NONE	negative: uniprot	O75973		238
+Q8AXA0	negative	NONE	negative: uniprot	Q8AXA0		111
+Q8AXS4	negative	NONE	negative: uniprot	Q8AXS4		167
+Q8AYR5	negative	NONE	negative: uniprot	Q8AYR5		126
+Q8AYR6	negative	NONE	negative: uniprot	Q8AYR6		131
+Q8BFQ8	negative	NONE	negative: uniprot	Q8BFQ8		220
+Q8BIF0	negative	NONE	negative: uniprot	Q8R1R5		237
+Q8BTE6	negative	NONE	negative: uniprot	Q8BTE6		63
+Q8C7V8	negative	NONE	negative: uniprot	Q8C7V8		229
+Q8CG08	negative	NONE	negative: uniprot	Q8CG08		245
+Q8CGK6	negative	NONE	negative: uniprot	Q8CGK6		193
+Q8HXS1	negative	NONE	negative: uniprot	P01238		229
+Q8HY83	negative	NONE	negative: uniprot	P18427		129
+Q8HYQ1	negative	NONE	negative: uniprot	P50231		91
+Q8HYS0	negative	NONE	negative: uniprot	P50231		91
+Q8HZQ3	negative	NONE	negative: uniprot	Q8HZQ3		145
+Q8I6R2	positive	M	complete precursor	Q8I6R2	2006-09-19	68
+Q8I6R5	positive	A	no signal peptide	C1J5M7	2004-01-16	17
+Q8INK6	negative	NONE	negative: uniprot	Q8INK6		232
+Q8IUB3	negative	NONE	negative: uniprot	Q9H1F0		73
+Q8JI37	negative	NONE	negative: uniprot	Q8JI37		124
+Q8K1D8	negative	NONE	negative: uniprot	A2VE22		76
+Q8K1T4	negative	NONE	negative: uniprot	Q6MG53		194
+Q8K1T5	negative	NONE	negative: uniprot	Q8K1T5		149
+Q8K3I6	negative	NONE	negative: uniprot	Q8NEV9		234
+Q8K479	negative	NONE	negative: uniprot	Q8K479		243
+Q8MKD0	negative	NONE	negative: uniprot	P50231		91
+Q8N687	negative	NONE	negative: uniprot	Q30KK3		156
+Q8NB37	negative	NONE	negative: uniprot	Q8BFQ8		220
+Q8NDX9	negative	NONE	negative: uniprot	Q8NDX9		201
+Q8NEV9	negative	NONE	negative: uniprot	Q8NEV9		243
+Q8NFU4	negative	NONE	negative: uniprot	Q8NFU4		85
+Q8QFQ8	negative	NONE	negative: uniprot	Q8QFQ8		196
+Q8R1R4	negative	NONE	negative: uniprot	Q8R1R4		235
+Q8R1R5	negative	NONE	negative: uniprot	Q8R1R5		246
+Q8R2I7	negative	NONE	negative: uniprot	Q8R2I7		77
+Q8R2I8	negative	NONE	negative: uniprot	Q8R2I7		73
+Q8R5G8	negative	NONE	negative: uniprot	Q8R5G8		107
+Q8SPI0	negative	NONE	negative: uniprot	P05090		189
+Q8SPJ0	negative	NONE	negative: uniprot	Q8SPJ0		213
+Q8SPU5	negative	NONE	negative: uniprot	P97361		255
+Q8SQ40	negative	NONE	negative: uniprot	P50231		92
+Q8SY61	negative	NONE	negative: uniprot	Q8SY61		131
+Q8T113	negative	NONE	negative: uniprot	Q8T113		227
+Q8T3S7	negative	NONE	negative: uniprot	Q8T3S7		170
+Q8WN19	negative	NONE	negative: uniprot	P18427		129
+Q8WWG1	negative	NONE	negative: uniprot	Q8WWG1		115
+Q90358	negative	NONE	negative: uniprot	P60591		200
+Q90628	negative	NONE	negative: uniprot	Q90628		248
+Q90629	negative	NONE	negative: uniprot	Q90628		248
+Q90WF4	negative	NONE	negative: uniprot	Q90WF4		99
+Q90YI0	negative	NONE	negative: uniprot	Q90YI0		241
+Q90YI1	negative	NONE	negative: uniprot	Q90YI1		275
+Q910A0	negative	NONE	negative: uniprot	Q910A0		138
+Q91195	negative	NONE	negative: uniprot	Q91195		130
+Q91448	negative	NONE	negative: uniprot	Q91448		143
+Q91875	negative	NONE	negative: uniprot	Q9ESL9		209
+Q91VX5	negative	NONE	negative: uniprot	O95157		252
+Q91ZL1	negative	NONE	negative: uniprot	P50231		91
+Q920D7	negative	NONE	negative: uniprot	Q920D7		104
+Q92876	negative	NONE	negative: uniprot	Q92876		244
+Q95182	negative	NONE	negative: uniprot	Q95182		187
+Q95J82	negative	NONE	negative: uniprot	P18427		129
+Q95L12	negative	NONE	negative: uniprot	Q9ESL9		208
+Q95P48	negative	NONE	negative: uniprot	O18641		191
+Q96IU2	negative	NONE	negative: uniprot	Q96IU2		234
+Q96KW9	negative	NONE	negative: uniprot	Q96KW9		195
+Q96L11	negative	NONE	negative: uniprot	Q96L11		122
+Q96MU5	negative	NONE	negative: uniprot	Q96MU5		243
+Q98849	negative	NONE	negative: uniprot	P27767		140
+Q98967	negative	NONE	negative: uniprot	Q91195		130
+Q98TU0	negative	NONE	negative: uniprot	Q98TU0		235
+Q99013	negative	NONE	negative: uniprot	P23699		82
+Q99731	negative	NONE	negative: uniprot	O70460		98
+Q9BDJ0	negative	NONE	negative: uniprot	P18427		129
+Q9BH51	positive	M	complete precursor	Q9BPH9	2008-01-15	70
+Q9BH73	positive	M	complete precursor	Q9BPH9	2006-07-11	70
+Q9BP45	positive	M	no signal peptide	B3FIA6	2011-02-08	20
+Q9BP56	positive	A	complete precursor	A0SE60	2011-02-08	61
+Q9BP83	positive	O1	complete precursor	Q9BP83	2011-02-08	81
+Q9BP86	positive	O1	complete precursor	Q9BP86	2011-02-08	78
+Q9BP87	positive	O1	complete precursor	Q9BP86	2011-02-08	78
+Q9BP88	positive	O1	complete precursor	Q9BP90	2011-02-08	76
+Q9BP89	positive	O1	complete precursor	Q9BP90	2011-02-08	74
+Q9BP90	positive	O1	complete precursor	Q9BP90	2011-02-08	77
+Q9BP91	positive	O1	complete precursor	Q9BP90	2011-02-08	77
+Q9BP92	positive	O1	complete precursor	Q9BP90	2011-02-08	77
+Q9BPE7	positive	T	complete precursor	P81755	2007-01-23	63
+Q9BPE9	positive	T	complete precursor	A0A3G3C7S2	2011-02-08	64
+Q9BPG6	positive	T	complete precursor	P81755	2011-02-08	67
+Q9BPG8	positive	T	complete precursor	P81755	2007-01-23	62
+Q9BPH4	positive	M	complete precursor	Q9BPH9	2008-01-15	70
+Q9BPH6	positive	M	complete precursor	Q9BPH9	2011-02-08	71
+Q9BPH7	positive	M	complete precursor	Q9BPH9	2011-02-08	69
+Q9BPH8	positive	M	complete precursor	Q9BPH9	2011-02-08	70
+Q9BPH9	positive	M	complete precursor	Q9BPH9	2011-02-08	72
+Q9BPI1	positive	M	complete precursor	Q9BPH9	2011-02-08	68
+Q9BPJ2	positive	M	complete precursor	C1J5M7	2011-02-08	67
+Q9BQP9	negative	NONE	negative: uniprot	Q9BQP9		254
+Q9BSG0	negative	NONE	negative: uniprot	Q9BSG0		188
+Q9CPX3	negative	NONE	negative: uniprot	A0JNM6		148
+Q9CQS6	negative	NONE	negative: uniprot	Q29TV8		184
+Q9D1D6	negative	NONE	negative: uniprot	Q8CG08		245
+Q9D256	negative	NONE	negative: uniprot	Q9D256		87
+Q9D3H2	negative	NONE	negative: uniprot	Q9D3H2		163
+Q9D8T0	negative	NONE	negative: uniprot	P98173		230
+Q9D9G2	negative	NONE	negative: uniprot	Q9D9G2		242
+Q9D9N8	negative	NONE	negative: uniprot	Q9BSG0		188
+Q9D9X8	negative	NONE	negative: uniprot	Q9D9X8		221
+Q9DFD6	negative	NONE	negative: uniprot	Q9DFD6		61
+Q9DG81	negative	NONE	negative: uniprot	Q9DG81		132
+Q9DGK7	negative	NONE	negative: uniprot	Q90WF4		96
+Q9EQC7	negative	NONE	negative: uniprot	Q1LZB9		256
+Q9ESL9	negative	NONE	negative: uniprot	Q9ESL9		211
+Q9ESN4	negative	NONE	negative: uniprot	O75973		255
+Q9ESQ8	negative	NONE	negative: uniprot	Q9ESQ8		188
+Q9GK30	negative	NONE	negative: uniprot	P13085		121
+Q9GLK4	negative	NONE	negative: uniprot	Q9GLK4		132
+Q9GMB7	negative	NONE	negative: uniprot	P13085		137
+Q9GNQ1	negative	NONE	negative: uniprot	Q9GNQ1		121
+Q9GRC4	negative	NONE	negative: uniprot	Q9GRC4		202
+Q9GSA4	negative	NONE	negative: uniprot	Q9GSA4		113
+Q9GZZ7	negative	NONE	negative: uniprot	Q9GZZ7		299
+Q9H1F0	negative	NONE	negative: uniprot	Q9H1F0		79
+Q9H2R5	negative	NONE	negative: uniprot	Q9H2R5		256
+Q9H6E4	negative	NONE	negative: uniprot	Q8C7V8		229
+Q9I8P3	negative	NONE	negative: uniprot	Q9I8P3		96
+Q9I8P5	negative	NONE	negative: uniprot	Q9I8P5		133
+Q9I9D3	negative	NONE	negative: uniprot	Q9I8P3		95
+Q9IA97	negative	NONE	negative: uniprot	Q9IA97		115
+Q9JHG0	negative	NONE	negative: uniprot	Q6UW01		197
+Q9JIE6	negative	NONE	negative: uniprot	Q9JIE6		140
+Q9JK69	negative	NONE	negative: uniprot	P18427		129
+Q9JKV9	negative	NONE	negative: uniprot	Q9JKV9		176
+Q9N0C7	negative	NONE	negative: uniprot	A6QLI0		224
+Q9N633	positive	O1	signal, incomplete	A0A384E129	2019-02-13	66
+Q9NIP6	negative	NONE	negative: uniprot	Q9NIP6		151
+Q9NP55	negative	NONE	negative: uniprot	P97361		256
+Q9NPE2	negative	NONE	negative: uniprot	Q3T1H2		291
+Q9NPH9	negative	NONE	negative: uniprot	Q9NPH9		171
+Q9NYY1	negative	NONE	negative: uniprot	Q9JKV9		176
+Q9NZK7	negative	NONE	negative: uniprot	Q9NZK7		142
+Q9P1C3	negative	NONE	negative: uniprot	Q9P1C3		46
+Q9QUL0	negative	NONE	negative: uniprot	Q9QUN5		211
+Q9QUL3	negative	NONE	negative: uniprot	Q9NZK7		142
+Q9QUN5	negative	NONE	negative: uniprot	Q9QUN5		212
+Q9QY05	negative	NONE	negative: uniprot	Q9QY05		191
+Q9QYB0	negative	NONE	negative: uniprot	P18427		126
+Q9QYN3	negative	NONE	negative: uniprot	Q9UBX7		276
+Q9R006	negative	NONE	negative: uniprot	O54831		250
+Q9TR93	negative	NONE	negative: uniprot	P10631		36
+Q9TT12	negative	NONE	negative: uniprot	O15263		64
+Q9TT95	negative	NONE	negative: uniprot	Q9TT95		120
+Q9TTB4	negative	NONE	negative: uniprot	Q9TTB4		147
+Q9TVD0	negative	NONE	negative: uniprot	Q9TVD0		232
+Q9U619	positive	A	complete precursor	P0C1Y2	2002-08-13	62
+Q9U644	positive	O1	complete precursor	Q9U657	2011-02-08	82
+Q9U657	positive	O1	complete precursor	Q9U657	2011-02-08	83
+Q9U6Z5	positive	T	complete precursor	Q9U6Z5	2002-06-06	62
+Q9UBT3	negative	NONE	negative: uniprot	Q9UBT3		224
+Q9UBU2	negative	NONE	negative: uniprot	Q9UBU2		259
+Q9UBX7	negative	NONE	negative: uniprot	Q9UBX7		282
+Q9UHF1	negative	NONE	negative: uniprot	Q6AZ60		273
+Q9ULC0	negative	NONE	negative: uniprot	Q9ULC0		261
+Q9UNK4	negative	NONE	negative: uniprot	Q9UNK4		145
+Q9V8Y9	negative	NONE	negative: uniprot	Q9V8Y9		134
+Q9VBL6	negative	NONE	negative: uniprot	Q9VBL6		75
+Q9VBV3	negative	NONE	negative: uniprot	Q9VBV3		249
+Q9VDG1	negative	NONE	negative: uniprot	Q9VDG1		80
+Q9VDH4	negative	NONE	negative: uniprot	B4II56		138
+Q9VMM6	negative	NONE	negative: uniprot	Q9VMM6		249
+Q9VS97	negative	NONE	negative: uniprot	Q9VS97		186
+Q9W3T7	negative	NONE	negative: uniprot	Q9W3T7		149
+Q9W7C5	negative	NONE	negative: uniprot	Q9W7C5		212
+Q9WTX4	negative	NONE	negative: uniprot	Q8WWG1		115
+Q9WUK0	negative	NONE	negative: uniprot	Q9WUK0		128
+Q9WUQ5	negative	NONE	negative: uniprot	O95715		99
+Q9WV41	negative	NONE	negative: uniprot	Q9QY05		188
+Q9XS47	negative	NONE	negative: uniprot	Q9XS47		149
+Q9XT48	negative	NONE	negative: uniprot	Q9XT48		201
+Q9XZE6	negative	NONE	negative: uniprot	Q9XZE6		55
+Q9XZK6	positive	A	complete precursor	Q9XZK6	2001-08-29	69
+Q9XZK7	positive	A	complete precursor	Q9XZK6	2001-08-29	66
+Q9Y258	negative	NONE	negative: uniprot	Q9Y258		94
+Q9Y6Y9	negative	NONE	negative: uniprot	Q9Y6Y9		160
+Q9YGP3	negative	NONE	negative: uniprot	Q9YGP3		116
+Q9YH06	negative	NONE	negative: uniprot	B1MTB0		215
+Q9Z0G4	negative	NONE	negative: uniprot	Q9Z0G4		251
+Q9Z0K6	negative	NONE	negative: uniprot	Q9Z0K6		98
+Q9Z0M1	negative	NONE	negative: uniprot	Q9Z0M1		255
+Q9Z1L4	negative	NONE	negative: uniprot	O15537		224
+Q9Z2N5	negative	NONE	negative: uniprot	O95157		252
+R9UC00	negative	NONE	negative: uniprot	R9UE59		85
+R9UE59	negative	NONE	negative: uniprot	R9UE59		89
+R9UFE0	negative	NONE	negative: uniprot	R9UE59		83
+SHUF-A0A125S9F3-1	negative	NONE	negative: shuffled	SHUF-A0A125S9F3		76
+SHUF-A0A2L2P6T1-1	negative	NONE	negative: shuffled	SHUF-A0A2L2P6T1		84
+SHUF-A0A384E129-1	negative	NONE	negative: shuffled	SHUF-A0A384E129		76
+SHUF-A0A3G3C7S0-1	negative	NONE	negative: shuffled	SHUF-F5C3U4		65
+SHUF-A0A3G3C7S9-1	negative	NONE	negative: shuffled	SHUF-A0SE60		61
+SHUF-A0A3G3C7U1-1	negative	NONE	negative: shuffled	SHUF-F5C3U4		63
+SHUF-A0A3G3C7U4-1	negative	NONE	negative: shuffled	SHUF-A0SE60		61
+SHUF-A0A3G3C7V0-1	negative	NONE	negative: shuffled	SHUF-A0SE60		61
+SHUF-A0SE60-1	negative	NONE	negative: shuffled	SHUF-A0SE60		67
+SHUF-A1X8B6-1	negative	NONE	negative: shuffled	SHUF-F5C3U4		68
+SHUF-A1X8C2-1	negative	NONE	negative: shuffled	SHUF-A1X8C2		64
+SHUF-A1X8C3-1	negative	NONE	negative: shuffled	SHUF-A1X8C2		64
+SHUF-B0KZ78-1	negative	NONE	negative: shuffled	SHUF-B0KZ78		87
+SHUF-B3FIA6-1	negative	NONE	negative: shuffled	SHUF-B3FIA6		75
+SHUF-C1J5M5-1	negative	NONE	negative: shuffled	SHUF-C1J5M7		77
+SHUF-C1J5M6-1	negative	NONE	negative: shuffled	SHUF-C1J5M7		78
+SHUF-C1J5M7-1	negative	NONE	negative: shuffled	SHUF-C1J5M7		80
+SHUF-C7DQB9-1	negative	NONE	negative: shuffled	SHUF-C7DQB9		81
+SHUF-C8CK76-1	negative	NONE	negative: shuffled	SHUF-B0KZ78		85
+SHUF-C8CK78-1	negative	NONE	negative: shuffled	SHUF-B0KZ78		85
+SHUF-C8CK79-1	negative	NONE	negative: shuffled	SHUF-B0KZ78		85
+SHUF-D2Y172-1	negative	NONE	negative: shuffled	SHUF-D2Y172		66
+SHUF-D6C4H9-1	negative	NONE	negative: shuffled	SHUF-D6C4H9		78
+SHUF-D6C4K9-1	negative	NONE	negative: shuffled	SHUF-D6C4L2		76
+SHUF-D6C4L2-1	negative	NONE	negative: shuffled	SHUF-D6C4L2		80
+SHUF-E2DIH6-1	negative	NONE	negative: shuffled	SHUF-A0SE60		64
+SHUF-F5C3U4-1	negative	NONE	negative: shuffled	SHUF-F5C3U4		69
+SHUF-H2BKJ0-1	negative	NONE	negative: shuffled	SHUF-H2BKJ0		74
+SHUF-M9PQ91-1	negative	NONE	negative: shuffled	SHUF-M9PQ91		84
+SHUF-P01522-1	negative	NONE	negative: shuffled	SHUF-A0A384E129		73
+SHUF-P01523-1	negative	NONE	negative: shuffled	SHUF-C1J5M7		75
+SHUF-P05484-1	negative	NONE	negative: shuffled	SHUF-A0A384E129		71
+SHUF-P0C1N7-1	negative	NONE	negative: shuffled	SHUF-C1J5M7		64
+SHUF-P0C1V9-1	negative	NONE	negative: shuffled	SHUF-A0SE60		62
+SHUF-P0C1Y2-1	negative	NONE	negative: shuffled	SHUF-P0C1Y2		62
+SHUF-P0C425-1	negative	NONE	negative: shuffled	SHUF-Q9BPH9		71
+SHUF-P0C640-1	negative	NONE	negative: shuffled	SHUF-P0C640		68
+SHUF-P0C667-1	negative	NONE	negative: shuffled	SHUF-P0C640		66
+SHUF-P0C670-1	negative	NONE	negative: shuffled	SHUF-P0C670		63
+SHUF-P0C7I1-1	negative	NONE	negative: shuffled	SHUF-C1J5M7		74
+SHUF-P0CB07-1	negative	NONE	negative: shuffled	SHUF-Q9XZK6		60
+SHUF-P0CB08-1	negative	NONE	negative: shuffled	SHUF-Q9XZK6		64
+SHUF-P0CB12-1	negative	NONE	negative: shuffled	SHUF-Q9XZK6		60
+SHUF-P0CY60-1	negative	NONE	negative: shuffled	SHUF-A0A384E129		70
+SHUF-P0CY65-1	negative	NONE	negative: shuffled	SHUF-P0CY65		75
+SHUF-P0CY88-1	negative	NONE	negative: shuffled	SHUF-P0CY88		66
+SHUF-P0DJC6-1	negative	NONE	negative: shuffled	SHUF-P0DJC6		94
+SHUF-P0DKM1-1	negative	NONE	negative: shuffled	SHUF-P0DKM1		74
+SHUF-P0DKP9-1	negative	NONE	negative: shuffled	SHUF-C1J5M7		72
+SHUF-P0DKQ0-1	negative	NONE	negative: shuffled	SHUF-C1J5M7		73
+SHUF-P0DKQ1-1	negative	NONE	negative: shuffled	SHUF-C1J5M7		73
+SHUF-P0DKQ2-1	negative	NONE	negative: shuffled	SHUF-H2BKJ0		73
+SHUF-P0DKQ9-1	negative	NONE	negative: shuffled	SHUF-C1J5M7		74
+SHUF-P0DM21-1	negative	NONE	negative: shuffled	SHUF-A0SE60		56
+SHUF-P0DM23-1	negative	NONE	negative: shuffled	SHUF-A0SE60		56
+SHUF-P0DPL9-1	negative	NONE	negative: shuffled	SHUF-Q9XZK6		61
+SHUF-P0DPM0-1	negative	NONE	negative: shuffled	SHUF-P0CY88		57
+SHUF-P0DPM4-1	negative	NONE	negative: shuffled	SHUF-Q9U657		82
+SHUF-P0DRL4-1	negative	NONE	negative: shuffled	SHUF-F5C3U4		65
+SHUF-P0DTJ4-1	negative	NONE	negative: shuffled	SHUF-P0DTJ4		70
+SHUF-P0DTX4-1	negative	NONE	negative: shuffled	SHUF-P0DTX4		63
+SHUF-P0DTX7-1	negative	NONE	negative: shuffled	SHUF-P0DTX7		76
+SHUF-P0DTY2-1	negative	NONE	negative: shuffled	SHUF-P0DTZ7		60
+SHUF-P0DTY4-1	negative	NONE	negative: shuffled	SHUF-P0DTZ7		56
+SHUF-P0DTZ0-1	negative	NONE	negative: shuffled	SHUF-P0DTZ7		63
+SHUF-P0DTZ1-1	negative	NONE	negative: shuffled	SHUF-D6C4L2		60
+SHUF-P0DTZ6-1	negative	NONE	negative: shuffled	SHUF-P0DTZ7		57
+SHUF-P0DTZ7-1	negative	NONE	negative: shuffled	SHUF-P0DTZ7		67
+SHUF-P24160-1	negative	NONE	negative: shuffled	SHUF-A0A2L2P6T1		76
+SHUF-P50982-1	negative	NONE	negative: shuffled	SHUF-F5C3U4		62
+SHUF-P50985-1	negative	NONE	negative: shuffled	SHUF-A0SE60		61
+SHUF-P56633-1	negative	NONE	negative: shuffled	SHUF-A0A384E129		72
+SHUF-P56708-1	negative	NONE	negative: shuffled	SHUF-Q9U657		82
+SHUF-P58917-1	negative	NONE	negative: shuffled	SHUF-A0A384E129		71
+SHUF-P58920-1	negative	NONE	negative: shuffled	SHUF-A0A384E129		73
+SHUF-P58925-1	negative	NONE	negative: shuffled	SHUF-C1J5M7		73
+SHUF-P69747-1	negative	NONE	negative: shuffled	SHUF-Q9XZK6		66
+SHUF-P81755-1	negative	NONE	negative: shuffled	SHUF-P81755		67
+SHUF-P85886-1	negative	NONE	negative: shuffled	SHUF-F5C3U4		69
+SHUF-Q26443-1	negative	NONE	negative: shuffled	SHUF-Q9U657		82
+SHUF-Q2I2Q2-1	negative	NONE	negative: shuffled	SHUF-Q9BPH9		70
+SHUF-Q2I2Q5-1	negative	NONE	negative: shuffled	SHUF-Q9BPH9		69
+SHUF-Q2I2Q6-1	negative	NONE	negative: shuffled	SHUF-B0KZ78		86
+SHUF-Q2I2R0-1	negative	NONE	negative: shuffled	SHUF-Q2I2R0		89
+SHUF-Q2I2R1-1	negative	NONE	negative: shuffled	SHUF-Q2I2R0		89
+SHUF-Q2I2R3-1	negative	NONE	negative: shuffled	SHUF-Q2I2R3		80
+SHUF-Q2I2R4-1	negative	NONE	negative: shuffled	SHUF-Q2I2R4		76
+SHUF-Q2I2R6-1	negative	NONE	negative: shuffled	SHUF-A1X8C2		64
+SHUF-Q3YEE8-1	negative	NONE	negative: shuffled	SHUF-A0A3G3C7S2		61
+SHUF-Q3YEH1-1	negative	NONE	negative: shuffled	SHUF-P81755		67
+SHUF-Q5EHP1-1	negative	NONE	negative: shuffled	SHUF-Q9BPH9		71
+SHUF-Q5EHP2-1	negative	NONE	negative: shuffled	SHUF-Q9BPH9		70
+SHUF-Q5EHP3-1	negative	NONE	negative: shuffled	SHUF-Q9BPH9		71
+SHUF-Q5I2P0-1	negative	NONE	negative: shuffled	SHUF-Q9BPH9		69
+SHUF-Q5K0D7-1	negative	NONE	negative: shuffled	SHUF-Q5K0D7		72
+SHUF-Q6PPB3-1	negative	NONE	negative: shuffled	SHUF-Q6PPB3		67
+SHUF-Q6PTD4-1	negative	NONE	negative: shuffled	SHUF-F5C3U4		68
+SHUF-Q6PTD6-1	negative	NONE	negative: shuffled	SHUF-A0SE60		62
+SHUF-Q6PTD7-1	negative	NONE	negative: shuffled	SHUF-Q6PPB3		67
+SHUF-Q86DU6-1	negative	NONE	negative: shuffled	SHUF-C1J5M7		73
+SHUF-Q8I6R2-1	negative	NONE	negative: shuffled	SHUF-Q8I6R2		68
+SHUF-Q9BH51-1	negative	NONE	negative: shuffled	SHUF-Q9BPH9		70
+SHUF-Q9BH73-1	negative	NONE	negative: shuffled	SHUF-Q9BPH9		70
+SHUF-Q9BP56-1	negative	NONE	negative: shuffled	SHUF-A0SE60		61
+SHUF-Q9BP83-1	negative	NONE	negative: shuffled	SHUF-Q9BP83		81
+SHUF-Q9BP86-1	negative	NONE	negative: shuffled	SHUF-Q9BP86		78
+SHUF-Q9BP87-1	negative	NONE	negative: shuffled	SHUF-Q9BP86		78
+SHUF-Q9BP88-1	negative	NONE	negative: shuffled	SHUF-Q9BP90		76
+SHUF-Q9BP89-1	negative	NONE	negative: shuffled	SHUF-Q9BP90		74
+SHUF-Q9BP90-1	negative	NONE	negative: shuffled	SHUF-Q9BP90		77
+SHUF-Q9BP91-1	negative	NONE	negative: shuffled	SHUF-Q9BP90		77
+SHUF-Q9BP92-1	negative	NONE	negative: shuffled	SHUF-Q9BP90		77
+SHUF-Q9BPE7-1	negative	NONE	negative: shuffled	SHUF-P81755		63
+SHUF-Q9BPE9-1	negative	NONE	negative: shuffled	SHUF-A0A3G3C7S2		64
+SHUF-Q9BPG6-1	negative	NONE	negative: shuffled	SHUF-P81755		67
+SHUF-Q9BPG8-1	negative	NONE	negative: shuffled	SHUF-P81755		62
+SHUF-Q9BPH4-1	negative	NONE	negative: shuffled	SHUF-Q9BPH9		70
+SHUF-Q9BPH6-1	negative	NONE	negative: shuffled	SHUF-Q9BPH9		71
+SHUF-Q9BPH7-1	negative	NONE	negative: shuffled	SHUF-Q9BPH9		69
+SHUF-Q9BPH8-1	negative	NONE	negative: shuffled	SHUF-Q9BPH9		70
+SHUF-Q9BPH9-1	negative	NONE	negative: shuffled	SHUF-Q9BPH9		72
+SHUF-Q9BPI1-1	negative	NONE	negative: shuffled	SHUF-Q9BPH9		68
+SHUF-Q9BPJ2-1	negative	NONE	negative: shuffled	SHUF-C1J5M7		67
+SHUF-Q9U619-1	negative	NONE	negative: shuffled	SHUF-P0C1Y2		62
+SHUF-Q9U644-1	negative	NONE	negative: shuffled	SHUF-Q9U657		82
+SHUF-Q9U657-1	negative	NONE	negative: shuffled	SHUF-Q9U657		83
+SHUF-Q9U6Z5-1	negative	NONE	negative: shuffled	SHUF-Q9U6Z5		62
+SHUF-Q9XZK6-1	negative	NONE	negative: shuffled	SHUF-Q9XZK6		69
+SHUF-Q9XZK7-1	negative	NONE	negative: shuffled	SHUF-Q9XZK6		66
+SHUF-X5I9Z2-1	negative	NONE	negative: shuffled	SHUF-F5C3U4		67
+SHUF-X5IWT5-1	negative	NONE	negative: shuffled	SHUF-X5IWT5		88
+V5HBW0	negative	NONE	negative: uniprot	V5HBW0		108
+X5I9Z2	positive	A	complete precursor	F5C3U4	2022-02-23	67
+X5IWT5	positive	S	complete precursor	X5IWT5	2018-05-23	88

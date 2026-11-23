@@ -1,0 +1,89 @@
+#! /usr/bin/gawk -f
+
+BEGIN{
+		RS=">"
+		FS=OFS="|"
+	}
+
+
+# unwrap & concatenate fasta file to pipe delimited
+
+	NR==1{next}
+	
+	NR>1{
+		sub("\n","|",$0)
+	    	gsub("\n","",$0)
+	    	gsub("[\t ]","|",$0)
+	}
+	
+# Translation DNA to protein
+	{
+		
+		
+		if($NF !~ /[FSYLWPHRQIKMNVDE]/){
+			gsub("N", "-", $NF)		
+			frame1 = translate($NF, 1)
+			frame2 = translate($NF, 2)
+			frame3 = translate($NF, 3)
+			frame4 = translate(revcomp($NF), 1)
+			frame5 = translate(revcomp($NF), 2)
+			frame6 = translate(revcomp($NF), 3)
+		
+			print $1 FS frame1 FS frame2 FS frame3 FS frame4 FS frame5 FS frame6 > "translated.temp"
+		}
+		else{
+			print $1 FS $NF > "prot.temp"
+		}
+	}
+
+                                     #######################################################
+                                     #                       FUNCTIONS                     #
+                                     #######################################################
+
+function translate(dna, start){
+{
+c["TTT"]="F";c["TCT"]="S";c["TAT"]="Y";c["TGT"]="C";
+c["TTC"]="F";c["TCC"]="S";c["TAC"]="Y";c["TGC"]="C";
+c["TTA"]="L";c["TCA"]="S";c["TAA"]="*";c["TGA"]="*";
+c["TTG"]="L";c["TCG"]="S";c["TAG"]="*";c["TGG"]="W";
+c["CTT"]="L";c["CCT"]="P";c["CAT"]="H";c["CGT"]="R";
+c["CTC"]="L";c["CCC"]="P";c["CAC"]="H";c["CGC"]="R";
+c["CTA"]="L";c["CCA"]="P";c["CAA"]="Q";c["CGA"]="R";
+c["CTG"]="L";c["CCG"]="P";c["CAG"]="Q";c["CGG"]="R";
+c["ATT"]="I";c["ACT"]="T";c["AAT"]="N";c["AGT"]="S";
+c["ATC"]="I";c["ACC"]="T";c["AAC"]="N";c["AGC"]="S";
+c["ATA"]="I";c["ACA"]="T";c["AAA"]="K";c["AGA"]="R";
+c["ATG"]="M";c["ACG"]="T";c["AAG"]="K";c["AGG"]="R";
+c["GTT"]="V";c["GCT"]="A";c["GAT"]="D";c["GGT"]="G";
+c["GTC"]="V";c["GCC"]="A";c["GAC"]="D";c["GGC"]="G";
+c["GTA"]="V";c["GCA"]="A";c["GAA"]="E";c["GGA"]="G";
+c["GTG"]="V";c["GCG"]="A";c["GAG"]="E";c["GGG"]="G";
+}
+        prot = ""
+        codon = substr(dna, start, 3)
+        while( codon != "" ){
+            prot = prot (codon in c ? c[codon] : "X")
+            start = start + 3
+            codon = substr(dna, start, 3)
+        }
+        return prot
+    }    
+    
+                                     #######################################################
+
+function revcomp(dnaseq){
+	reverse_complement= ""
+	l = length(dnaseq)
+	for(i=l; 0<i; i--){
+		base = substr(dnaseq, i, 1 )
+		if ( "C" == base ) base = "G"
+        else if ( "G" == base ) base = "C"
+        else if ( "A" == base ) base = "T"
+        else if ( "T" == base ) base = "A"
+        else if ( "U" == base ) base = "A"
+        else if ( "" == base ) base = "X"
+
+        reverse_complement = reverse_complement base
+        }
+        return reverse_complement
+    }

@@ -1,0 +1,89 @@
+ConoSorter - A Large-scale Cone Snail Transcriptome/Proteome Analysis Program
+Version 1.0; October 2013
+Copyright © 2013 Institute for Molecular Biosciences (IMB) - The University of Queensland.
+
+HMMER - profile hidden Markov models for biological sequence analysis
+http://hmmer.org/
+Version 3.1b1; May 2013
+Copyright © 2013 Howard Hughes Medical Institute.
+------------------------------------------------------------------------------------------------------------
+
+ConoSorter is a high-throughput standalone program that implements regular expressions and profile Hidden
+Markov Models (pHMMs) for large-scale identification and classification of precursor conopeptides into gene
+superfamilies and classes based on the ER signal, pro-, and mature conopeptide regions generated from raw
+next-generation transcriptomic or proteomic data.
+
+ConoSorter also generates a set of relevant additional information (frequency of protein sequences, length,
+number of cysteine residues, hydrophobicity rate of N-terminal region) and automatically searches ConoServer
+database to allow the user to assess the reliability and relevance of the results and to aid the
+identification of new conopeptide superfamilies and classes.
+
+Content:
+   GET STARTED
+   USAGE
+   RESULTS
+   PROGRAM UPDATE
+   LICENSE
+   CITATION
+
+--------------------------------------
+
+GET STARTED
+ConoSorter doesn't require any compilation. "ConoSorter" file, its appendix files ("transl", "regex_d", "regex-p",
+"pHMM", "layout"), as well as the "models" folder should be placed in the same shell's search PATH directory.
+The shebangs of "ConoSorter" and its appendix files might need to be changed accordingly. Access rights of
+these later may also need to be changed to make them executable.
+The latest version of gawk (available from the GNU project's at http://ftp.gnu.org/gnu/gawk/), as well as
+HMMER package 3.1b1 (available at http://hmmer.janelia.org/) need to be installed in the same PATH directory.
+
+Additional requirements for Windows operating systems:
+In addition of the two programs mentioned previously, Windows users must install Cygwin in order to create a
+Unix-like environment and command-line interface (more information at http://www.cygwin.com/).
+
+Then, the user can check that the program has been installed properly by running the two test files provided
+("test_dna.fasta" and "test_prot.fasta").
+
+USAGE
+Synopsis:
+ConoSorter -[d|p|h] <input file>
+
+* <input file> must be in fasta format.
+
+Options:
+* -d argument is mandatory and mentions that the input file contains cDNA sequences which will be
+translated into amino acid sequences prior analysis.
+* -p argument is mandatory and mentions that the input file contains amino acid sequences.
+* -h option displays ConoSorter usage.
+
+RESULTS
+After processing the input file, ConoSorter will generate two separate files called "Regex.tab" and
+"pHMM.tab", in which query sequences have been classified into conopeptide gene superfamilies and/or classes
+by using regular expressions and pHMMs respectively. Additional information related to the sorted hits is
+also reported. These two files could be imported in a spreadsheet program for reading convenience if needed.
+
+PROGRAM UPDATE
+* ConoServer database search function integrated in the "regex_d", "regex_p" and "pHMM" files can easily be
+updated by adding new sequences at the end of the list. However the user has to respect the following syntax:
+cono["sequence"]="name."
+In case multiple names are given to a same conopeptide sequence, the formers have to be separated by
+semi-colon(s):
+cono["sequence"]="name1; name2."
+* Regular expressions and pHMMs can be updated according to the methodology detailed in the referring
+article (see CITATION).
+
+LICENSE
+ConoSorter is licensed and freely distributed under the GNU General Public License version 3 (GPLv3).
+For a copy of the License, see http://www.gnu.org/licenses/ or refer to the "LICENSE" file.
+
+CITATION
+To correctly cite ConoSorter, please use:
+
+Vincent Lavergne, Sébastien Dutertre, Ai-hua Jin, Richard J Lewis, Ryan J Taft and Paul F Alewood.
+Systematic interrogation of the Conus marmoreus venom duct transcriptome with ConoSorter reveals 158 novel
+conotoxins and 13 new gene superfamilies. BMC Genomics 2013, 14:708
+
+------------------------------------------------------------------------------------------------------------
+Institute for Molecular Biosciences (IMB) - The University of Queensland
+e-mail:
+v.lavergne@imb.uq.edu.au
+

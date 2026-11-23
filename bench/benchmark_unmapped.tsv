@@ -1,0 +1,11 @@
+tool	label	n
+ConoDictor 2.3.1	Conkunitzin	7
+ConoDictor 2.3.1 (HMM only)	Conkunitzin	12
+ConoDictor 2.3.1 (HMM only)	Conopressin-Conophysin	3
+ConoSorter	MKFPLLFISL	1
+ConoSorter	MKVAVVLLVS	1
+ConoSorter	MTFLLLLVSV	2
+ConoSorter	N	1
+ConoSorter	O4	5
+ConoSorter	Y2	1
+ConoSorter (regex only)	O4	5

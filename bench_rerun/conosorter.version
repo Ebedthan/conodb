@@ -1,0 +1,1 @@
+ConoSorter 1.1: cd /home/ediman/Documents/ConoSorter_v1.1/ConoSorter_v1.1 && conda run -n conosorter ./ConoSorter -p /home/ediman/Documents/conodb/bench_rerun/test.faa

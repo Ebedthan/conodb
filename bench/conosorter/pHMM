@@ -1,0 +1,182 @@
+#! /usr/bin/gawk -f
+
+BEGIN{
+    FS=OFS="|"
+    }
+
+
+	NR<4{next}
+	
+	NR>=4{
+	    if($0 !~ /^#/){
+    		gsub(" +","|",$0)
+    		
+			split($1, scol, "_")
+    	
+    		if(count[$3, $4, scol[1]]++ == 0){
+   				line[$3, $4] = (line[$3, $4]? line[$3, $4] : $3 FS $4) FS scol[2]" ("scol[1]")" FS $6 FS $7 FS $8
+    			
+    			$0 = line[$3, $4]
+    		
+    			tot = split($0, ord, FS)
+   					if(!ord[7]){
+   						for(i=7; i<=14; i++)
+   						ord[i] = "-"
+   					}
+   					else if(!ord[11]){
+   						for(i=11; i<=14; i++)
+   						ord[i] = "-"
+   					}
+    		
+    					temp1_1 = ord[3]
+    					temp1_2 = ord[4]
+    					temp1_3 = ord[5]
+    					temp1_4 = ord[6]
+    					temp2_1 = ord[7]
+   						temp2_2 = ord[8]
+   						temp2_3 = ord[9]
+   						temp2_4 = ord[10]
+   						temp3_1 = ord[11]
+    					temp3_2 = ord[12]
+    					temp3_3 = ord[13]
+    					temp3_4 = ord[14]
+    				
+    				if((ord[3] ~ "-" && ord[7] ~ "-" && ord[11] ~ "Pro-region") || (ord[3] ~ "-" && ord[7] ~ "Mature" && ord[11] ~ "-") || (ord[3] ~ "-" && ord[7] ~ "Mature" && ord[11] ~ "Pro-region") || (ord[3] ~ "Signal" && ord[7] ~ "-" && ord[11] ~ "Pro-region") || (ord[3] ~ "Signal" && ord[7] ~ "Mature" && ord[11] ~ "-") || (ord[3] ~ "Signal" && ord[7] ~ "Mature" && ord[11] ~ "Pro-region")){
+    					ord[3] = temp1_1
+    					ord[4] = temp1_2
+    					ord[5] = temp1_3
+    					ord[6] = temp1_4
+    					ord[7] = temp3_1
+    					ord[8] = temp3_2
+    					ord[9] = temp3_3
+    					ord[10] = temp3_4
+    					ord[11] = temp2_1
+    					ord[12] = temp2_2
+    					ord[13] = temp2_3
+    					ord[14] = temp2_4
+    				}
+    				else if((ord[3] ~ "-" && ord[7] ~ "Signal" && ord[11] ~ "-") || (ord[3] ~ "-" && ord[7] ~ "Signal" && ord[11] ~ "Mature") || (ord[3] ~ "Pro-region" && ord[7] ~ "-" && ord[11] ~ "-") || (ord[3] ~ "Pro-region" && ord[7] ~ "-" && ord[11] ~ "Mature") || (ord[3] ~ "Pro-region" && ord[7] ~ "Signal" && ord[11] ~ "-") || (ord[3] ~ "Pro-region" && ord[7] ~ "Signal" && ord[11] ~ "Mature")){
+    					ord[3] = temp2_1
+    					ord[4] = temp2_2
+    					ord[5] = temp2_3
+    					ord[6] = temp2_4
+    					ord[7] = temp1_1
+    					ord[8] = temp1_2
+    					ord[9] = temp1_3
+    					ord[10] = temp1_4
+    					ord[11] = temp3_1
+    					ord[12] = temp3_2
+    					ord[13] = temp3_3
+    					ord[14] = temp3_4
+    				}
+    				else if((ord[3] ~ "-" && ord[7] ~ "Signal" && ord[11] ~ "Pro-region") || (ord[3] ~ "Mature" && ord[7] ~ "-" && ord[11] ~ "Pro-region") || (ord[3] ~ "Mature" && ord[7] ~ "Signal" && ord[11] ~ "-") || (ord[3] ~ "Mature" && ord[7] ~ "Signal" && ord[11] ~ "Pro-region")){
+    					ord[3] = temp2_1
+    					ord[4] = temp2_2
+    					ord[5] = temp2_3
+    					ord[6] = temp2_4
+    					ord[7] = temp3_1
+    					ord[8] = temp3_2
+    					ord[9] = temp3_3
+    					ord[10] = temp3_4
+    					ord[11] = temp1_1
+    					ord[12] = temp1_2
+    					ord[13] = temp1_3
+    					ord[14] = temp1_4
+    				}
+    				else if((ord[3] ~ "-" && ord[7] ~ "Mature" && ord[11] ~ "Signal") || (ord[3] ~ "Pro-region" && ord[7] ~ "-" && ord[11] ~ "Signal") || (ord[3] ~ "Pro-region" && ord[7] ~ "Mature" && ord[11] ~ "-") || (ord[3] ~ "Pro-region" && ord[7] ~ "Mature" && ord[11] ~ "Signal")){
+    					ord[3] = temp3_1
+    					ord[4] = temp3_2
+    					ord[5] = temp3_3
+    					ord[6] = temp3_4
+    					ord[7] = temp1_1
+    					ord[8] = temp1_2
+    					ord[9] = temp1_3
+    					ord[10] = temp1_4
+    					ord[11] = temp2_1
+    					ord[12] = temp2_2
+    					ord[13] = temp2_3
+    					ord[14] = temp2_4
+    				}
+    				else if((ord[3] ~ "-" && ord[7] ~ "-" && ord[11] ~ "Signal") || (ord[3] ~ "-" && ord[7] ~ "Pro-region" && ord[11] ~ "Signal") || (ord[3] ~ "Mature" && ord[7] ~ "-" && ord[11] ~ "-") || (ord[3] ~ "Mature" && ord[7] ~ "-" && ord[11] ~ "Signal") || (ord[3] ~ "Mature" && ord[7] ~ "Pro-region" && ord[11] ~ "-") || (ord[3] ~ "Mature" && ord[7] ~ "Pro-region" && ord[11] ~ "Signal")){
+    					ord[3] = temp3_1
+    					ord[4] = temp3_2
+    					ord[5] = temp3_3
+    					ord[6] = temp3_4
+    					ord[7] = temp2_1
+    					ord[8] = temp2_2
+    					ord[9] = temp2_3
+    					ord[10] = temp2_4
+    					ord[11] = temp1_1
+    					ord[12] = temp1_2
+    					ord[13] = temp1_3
+    					ord[14] = temp1_4
+    				}
+    				else{
+    					ord[3] = temp1_1
+    					ord[4] = temp1_2
+    					ord[5] = temp1_3
+    					ord[6] = temp1_4
+    					ord[7] = temp2_1
+    					ord[8] = temp2_2
+    					ord[9] = temp2_3
+    					ord[10] = temp2_4
+    					ord[11] = temp3_1
+    					ord[12] = temp3_2
+    					ord[13] = temp3_3
+    					ord[14] = temp3_4
+    				}
+    			
+   			 		sorted = ord[1] FS ord[2] FS ord[3] FS ord[4] FS ord[5] FS ord[6] FS ord[7] FS ord[8] FS ord[9] FS ord[10] FS ord[11] FS ord[12] FS ord[13] FS ord[14]
+   			 		    			
+    				for (j=4; j<=12; j+=4)
+	    			if (ord[j] ~ /^-$/){
+	    				ord[j] = "1"
+	    			}
+	
+					score_pHMM = ord[4] * ord[8] * ord[12]
+				
+    	    		if (ord[j] ~ /^1$/ && ord[j-1] = ord[j+1] = ord[j+2] = "-"){
+        	    		ord[j] = "-"
+        			}
+	
+					split(ord[3], reg_sig, " ")
+	 				split(ord[7], reg_pro, " ")
+     				split(ord[11], reg_mat, " ")
+    
+	 				if ((ord[3] !~ /^-$/ && ord[7] ~ /^-$/ && ord[11] ~ /^-$/) || (ord[3] ~ /^-$/ && ord[7] !~ /^-$/ && ord[11] ~ /^-$/) || (ord[3] ~ /^-$/ && ord[7] ~ /^-$/ && ord[11] !~ /^-$/)){
+	 					score_pHMM = score_pHMM
+ 					}
+	 
+	 				else if ((ord[3] !~ /^-$/ && ord[7] !~ /^-$/ && ord[11] ~ /^-$/) && (reg_sig[1] != reg_pro[1])){
+	 					score_pHMM = score_pHMM" (!!CONFLICT!!)"
+	 				}
+	 
+	 				else if ((ord[3] !~ /^-$/ && ord[7] ~ /^-$/ && ord[11] !~ /^-$/) && (reg_sig[1] != reg_mat[1])){
+	 					score_pHMM = score_pHMM" (!!CONFLICT!!)"
+	 				}
+	 
+		 			else if ((ord[3] ~ /^-$/ && ord[7] !~ /^-$/ && ord[11] !~ /^-$/) && (reg_pro[1] != reg_mat[1])){
+	 					score_pHMM = score_pHMM" (!!CONFLICT!!)"
+	 				}
+	 
+	 				else if ((ord[3] !~ /^-$/ && ord[7] !~ /^-$/ && ord[11] !~ /^-$/) && (reg_sig[1] != reg_pro[1] || reg_sig[1] != reg_mat[1] || reg_pro[1] != reg_mat[1])){
+	 					score_pHMM = score_pHMM" (!!CONFLICT!!)"
+	 				}
+	 			
+	 				final = sorted FS score_pHMM
+	 			
+					pos[ord[1], ord[2]] = NR
+					lines[ord[1], ord[2]] = final
+
+			}
+		}
+	}
+		
+	
+END {
+	for(key in pos)
+		reverse[pos[key]] = key
+	for(nr=1;nr<=NR;nr++)
+    	if(nr in reverse)
+    		print lines[reverse[nr]]
+}

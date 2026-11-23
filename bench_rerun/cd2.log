@@ -1,0 +1,26 @@
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-3svwjce9 because the default path (/data/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[INFO][00:22:41] Creating output directory /home/ediman/Documents/conodb/bench_rerun/cd2
+[INFO][00:22:41] This is conodictor 2.3.1
+[INFO][00:22:41] Written by Anicet Ebou, Dominique Koua
+[INFO][00:22:41] Available at https://github.com/koualab/conodictor.git
+[INFO][00:22:41] Localtime is 00:22:41
+[INFO][00:22:41] You are not telling me who you are
+[INFO][00:22:41] Operating system is Linux
+[INFO][00:22:41] System has 8 cores
+[INFO][00:22:41] We will use maximum of 8 cores.
+[INFO][00:22:41] Found hmmsearch
+[INFO][00:22:41] Found pfscanV3
+[INFO][00:22:41] Your file is not gzip compressed
+[INFO][00:22:41] You provided protein fasta file
+[INFO][00:22:41] Running HMM prediction using hmmsearch v3.3
+[INFO][00:22:42] Done with HMM prediction
+[INFO][00:22:42] Running PSSM prediction using pfscan v3.2.6
+[INFO][00:22:43] Done with PSSM predictions
+[INFO][00:22:43] Writing output
+[INFO][00:22:43] Done with writing output.
+[INFO][00:22:43] Classification finished successfully.
+[INFO][00:22:43] Creating donut plot
+[INFO][00:22:43] Done creating donut plot
+[INFO][00:22:43] Check /home/ediman/Documents/conodb/bench_rerun/cd2 folder for results
+[INFO][00:22:43] Walltime used (hh:mm:ss.ms): 0:00:02.151907
+[INFO][00:22:43] Nice to have you. Share, enjoy and come back!

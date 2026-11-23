@@ -9,7 +9,7 @@ page_size = 500
 # Curated mapping of raw UniProt family text -> superfamily/family/scope.
 overrides = "labels.tsv"
 # Per-accession corrections (accession, superfamily, family, scope, note).
-# entry_overrides = "entry_labels.tsv"
+entry_overrides = "entry_labels.tsv"
 # Only these taxonomic families provide classifier classes (others: reference).
 taxon_scope = ["Conidae"]
 # true = stop when UniProt introduces a family no rule or override covers.
@@ -73,7 +73,7 @@ framework = true          # cysteine framework of the predicted mature region
 threads = 0
 
 [fit]
-methods = ["hmm", "pssm", "pwm", "framework"]   # feature types used by the classifiers
+methods = ["hmm", "pssm", "framework"]   # feature types used by the classifiers
 regions = ["SIG", "PRO", "MAT"]           # POST profiles add nothing to classification
 hmm_floor = 0.0             # HMM scores below this are set to it (0 = censored; -20 keeps weak evidence)
 baseline_fpr = 0.01         # baseline HMM cutoffs: false-positive rate per sequence
@@ -106,7 +106,6 @@ seed = 20261106
 [anatomy]
 method = "transfer"         # region prediction: "transfer" (full-precursor HMM) or "envelope"
 sites = ["signal", "mature_start"]  # boundaries refined with lightmotif site matrices (true = all, false = none)
-cterm_trim = true          # drop a trailing G[KR](0, 3) from a C-terminal mature peptide (amidation)
 extension = "within"        # label transfer: extend unaligned ends within the region ("within") or across ("cross")
 min_occupancy = 0.5
 min_run = 3

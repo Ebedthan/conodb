@@ -1,0 +1,1 @@
+conodictor 2.3.1 (docker run --rm -u 1000:1000 -v /home/ediman:/home/ediman -w /home/ediman/Documents biocontainers/conodictor:v2.3.1_cv1 conodictor)

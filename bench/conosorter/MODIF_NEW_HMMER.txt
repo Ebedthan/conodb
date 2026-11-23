@@ -1,0 +1,9 @@
+!!!! MODIF WITH HMMER-3.1B1 !!!
+
+1) press again the "HMM_*_db" files with hmmpress
+
+2) in "pHMM" file add:
+NR>=4{
+    if($0 !~ /^#/){
+    
+    
